@@ -1,6 +1,7 @@
 {
   "name": "fastapi_test",
-  "description": "FastAPI test - unified scraping with limited pages",
+  "description": "⚠️ TEST CONFIG - FastAPI unified scraping test with limited pages (20 max). Demonstrates multi-source scraping. Not for production use.",
+  "_test_config": true,
   "merge_mode": "rule-based",
   "sources": [
     {

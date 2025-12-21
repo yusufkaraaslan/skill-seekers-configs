@@ -1,0 +1,28 @@
+{
+  "name": "template-example",
+  "description": "⚠️ TEMPLATE CONFIG - NOT FOR PRODUCTION USE. Copy and modify this template for your own documentation site. Replace URLs, selectors, and categories with your specific requirements.",
+  "base_url": "https://YOUR-DOCS-SITE.com/",
+  "start_urls": [
+    "https://YOUR-DOCS-SITE.com/getting-started",
+    "https://YOUR-DOCS-SITE.com/api"
+  ],
+  "selectors": {
+    "main_content": "article",
+    "title": "h1",
+    "code_blocks": "pre code"
+  },
+  "url_patterns": {
+    "include": ["/docs/", "/guide/"],
+    "exclude": ["/blog/", "/search/", "/_static/"]
+  },
+  "categories": {
+    "getting_started": ["introduction", "getting-started", "quick", "setup"],
+    "core_concepts": ["concept", "fundamental", "architecture"],
+    "api_reference": ["api", "reference", "method", "function"],
+    "examples": ["example", "tutorial", "guide", "walkthrough"]
+  },
+  "rate_limit": 0.5,
+  "max_pages": 100,
+  "_template": true,
+  "_instructions": "1. Replace base_url and start_urls with your documentation URLs. 2. Test selectors using browser DevTools. 3. Customize categories based on your docs structure. 4. Adjust rate_limit and max_pages as needed."
+}

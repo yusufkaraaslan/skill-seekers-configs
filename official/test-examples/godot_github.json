@@ -1,7 +1,8 @@
 {
   "name": "godot",
   "repo": "godotengine/godot",
-  "description": "Godot Engine - Multi-platform 2D and 3D game engine",
+  "description": "⚠️ TEST CONFIG - GitHub-only scraping example for Godot Engine. Demonstrates code analysis without documentation. Not for production use.",
+  "_test_config": true,
   "github_token": null,
   "include_issues": true,
   "max_issues": 100,

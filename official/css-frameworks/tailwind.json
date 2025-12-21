@@ -18,13 +18,16 @@
     "exclude": ["/blog", "/resources"]
   },
   "categories": {
-    "getting_started": ["installation", "editor-setup", "intellisense"],
-    "core_concepts": ["utility-first", "responsive", "hover-focus", "dark-mode"],
-    "layout": ["container", "columns", "flex", "grid"],
-    "typography": ["font-family", "font-size", "text-align", "text-color"],
+    "getting_started": ["installation", "editor-setup", "intellisense", "quick"],
+    "core_concepts": ["utility-first", "responsive", "hover-focus", "dark-mode", "state"],
+    "layout": ["container", "columns", "flex", "grid", "spacing", "position"],
+    "typography": ["font-family", "font-size", "text-align", "text-color", "line-height"],
     "backgrounds": ["background-color", "background-image", "gradient"],
-    "customization": ["configuration", "theme", "plugins"]
+    "borders": ["border", "border-radius", "border-color", "divide", "ring"],
+    "effects": ["shadow", "opacity", "transition", "animation"],
+    "filters": ["blur", "brightness", "contrast", "grayscale", "saturate"],
+    "customization": ["configuration", "theme", "plugins", "config"]
   },
   "rate_limit": 0.5,
-  "max_pages": 100
+  "max_pages": 200
 }

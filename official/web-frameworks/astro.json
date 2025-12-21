@@ -16,15 +16,17 @@
   },
   "url_patterns": {
     "include": ["/en/"],
-    "exclude": ["/blog", "/integrations"]
+    "exclude": ["/blog/", "/showcase/"]
   },
   "categories": {
-    "getting_started": ["getting-started", "install", "tutorial"],
-    "core_concepts": ["core-concepts", "project-structure", "components", "pages"],
-    "guides": ["guides", "deploy", "migrate"],
-    "configuration": ["configuration", "config", "typescript"],
-    "integrations": ["integrations", "framework", "adapter"]
+    "basics": ["basics", "getting-started", "install", "tutorial", "project"],
+    "components": ["components", "props", "slots", "astro-components"],
+    "routing": ["routing", "pages", "endpoints", "dynamic"],
+    "integrations": ["integration", "framework", "adapter", "react", "vue", "svelte"],
+    "content": ["markdown", "mdx", "content-collections", "content"],
+    "islands": ["islands", "client", "hydration", "partial"],
+    "deployment": ["deploy", "adapter", "host", "vercel", "netlify"]
   },
   "rate_limit": 0.5,
-  "max_pages": 100
+  "max_pages": 250
 }

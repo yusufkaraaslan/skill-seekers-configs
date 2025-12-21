@@ -1,6 +1,7 @@
 {
   "name": "example_manual",
-  "description": "Example PDF documentation skill",
+  "description": "⚠️ EXAMPLE CONFIG - PDF extraction demonstration. Replace pdf_path with your actual PDF file. Not for production use.",
+  "_test_config": true,
   "pdf_path": "docs/manual.pdf",
   "extract_options": {
     "chunk_size": 10,

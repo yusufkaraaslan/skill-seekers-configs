@@ -78,6 +78,24 @@ Have a config for a popular framework or tool? Share it with the community!
 
 ---
 
+## ⭐ Quality Standards
+
+All configs in this repository follow strict quality guidelines to ensure reliability and comprehensive coverage.
+
+**See [QUALITY_GUIDELINES.md](QUALITY_GUIDELINES.md) for detailed standards including:**
+- Category quality checklist (5-13 categories, 3-6 keywords each)
+- Selector fallback chains (semantic HTML, resilient)
+- Description best practices (explain when to use, list capabilities)
+- Rate limiting guidelines (0.3-0.7s based on server type)
+- URL pattern optimization (specific includes, comprehensive excludes)
+
+**Config Quality Levels:**
+- **HIGH Quality** (7 configs): Kubernetes, Godot, Ansible-Core, Django, React, Laravel, Steam Economy
+- **Production Ready** (7 configs): FastAPI, Vue, Claude Code, Tailwind, Astro, Hono, and more
+- **Test/Examples** (10 configs): Clearly marked for testing and demonstration
+
+---
+
 ## 📂 Repository Structure
 
 ```
@@ -109,20 +127,30 @@ skill-seekers-configs/
 ## 📊 Stats
 
 - **Total Configs**: 24
-- **Categories**: 7
+- **Production Configs**: 14 (web frameworks, DevOps, game engines, etc.)
+- **Test/Example Configs**: 10 (clearly marked with ⚠️)
+- **Categories**: 7 major categories
+- **Quality Level**: All production configs validated to HIGH or Production Ready standards
 - **Community Contributions**: Coming soon! (A1.3 in progress)
 
 ---
 
 ## 🤝 Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+**Quality First!** All submissions must meet our quality standards.
 
-**Quick Start:**
-1. Fork this repository
-2. Add your config to `community/`
-3. Test with Skill Seekers
-4. Submit pull request or create issue
+1. **Review [QUALITY_GUIDELINES.md](QUALITY_GUIDELINES.md)** - Learn best practices
+2. **Use the template** from `official/test-examples/template-example.json`
+3. **Test thoroughly** with dry-run mode (`skill-seekers scrape --config your-config.json --dry-run`)
+4. **Submit** via pull request or [submission issue](https://github.com/yusufkaraaslan/skill-seekers-configs/issues/new)
+
+**Target HIGH quality from the start:**
+- 5-13 comprehensive categories
+- Selector fallback chains
+- Clear, detailed description
+- Tested and validated
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
 ---
 
