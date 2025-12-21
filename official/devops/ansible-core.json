@@ -2,6 +2,14 @@
   "name": "ansible-core",
   "description": "Ansible Core 2.19 skill for automation and configuration management",
   "base_url": "https://docs.ansible.com/ansible-core/2.19/",
+  "start_urls": [
+    "https://docs.ansible.com/ansible-core/2.19/installation_guide/index.html",
+    "https://docs.ansible.com/ansible-core/2.19/inventory_guide/index.html",
+    "https://docs.ansible.com/ansible-core/2.19/playbook_guide/index.html",
+    "https://docs.ansible.com/ansible-core/2.19/module_plugin_guide/index.html",
+    "https://docs.ansible.com/ansible-core/2.19/collections_guide/index.html",
+    "https://docs.ansible.com/ansible-core/2.19/vault_guide/index.html"
+  ],
   "selectors": {
     "main_content": "div[role=main]",
     "title": "title",

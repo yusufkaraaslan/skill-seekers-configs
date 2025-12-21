@@ -3,16 +3,25 @@
   "description": "⚠️ TEST CONFIG - Python tutorial for testing MCP tools and quick validation. Limited to 10 pages. Not for production use.",
   "_test_config": true,
   "base_url": "https://docs.python.org/3/tutorial/",
+  "start_urls": [
+    "https://docs.python.org/3/tutorial/introduction.html",
+    "https://docs.python.org/3/tutorial/controlflow.html"
+  ],
   "selectors": {
     "main_content": "article",
     "title": "h1",
     "code_blocks": "pre code"
   },
   "url_patterns": {
-    "include": [],
-    "exclude": []
+    "include": ["/tutorial/"],
+    "exclude": ["/library/", "/reference/"]
   },
-  "categories": {},
+  "categories": {
+    "basics": ["introduction", "basic", "getting-started"],
+    "control_flow": ["control", "if", "for", "while"],
+    "data_structures": ["list", "dict", "tuple", "set"],
+    "functions": ["function", "def", "lambda"]
+  },
   "rate_limit": 0.3,
   "max_pages": 10
 }
