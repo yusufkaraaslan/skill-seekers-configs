@@ -4,9 +4,23 @@
 
 Convert any documentation website into a Claude AI skill using these pre-configured scrapers!
 
+## ✨ v2.6.0+ Support - C3.x Codebase Analysis Features
+
+This repository supports **Skill Seekers v2.6.0+** with the complete C3.x codebase analysis suite:
+- 🔍 **Design Pattern Detection** (C3.1) - Detect 10 common patterns with 87% precision
+- 🧪 **Test Example Extraction** (C3.2) - Extract real usage from tests
+- 📚 **How-To Guide Generation** (C3.3) - Auto-generate tutorials with AI enhancement
+- ⚙️ **Configuration Pattern Extraction** (C3.4) - Analyze config files with security insights
+- 🏗️ **Architectural Overview** (C3.5) - Generate comprehensive ARCHITECTURE.md
+- 🧠 **AI Enhancement** (C3.6) - AI-powered insights for patterns and examples
+- 🏛️ **Architectural Pattern Detection** (C3.7) - Detect MVC, MVVM, Clean Architecture
+- 📄 **Standalone Codebase Scraper** (C3.8) - Generate 300+ line SKILL.md files
+
+**See unified configs in `test-examples/` for C3.x feature demonstrations.**
+
 ---
 
-## 📦 Available Configs (24 Total)
+## 📦 Available Configs (25 Total)
 
 ### Web Frameworks (7 configs)
 - **react.json** - React framework for building UIs
@@ -34,7 +48,8 @@ Convert any documentation website into a Claude AI skill using these pre-configu
 ### Gaming (1 config)
 - **steam-economy-complete.json** - Steam Economy documentation
 
-### Test/Examples (10 configs)
+### Test/Examples (11 configs)
+- **httpx_comprehensive.json** - Complete C3.x codebase analysis example (NEW in v2.6.0!)
 - Unified multi-source configs (docs + GitHub + PDF)
 - GitHub-only scraping examples
 - PDF extraction examples
@@ -126,11 +141,13 @@ skill-seekers-configs/
 
 ## 📊 Stats
 
-- **Total Configs**: 24
+- **Total Configs**: 25
 - **Production Configs**: 14 (web frameworks, DevOps, game engines, etc.)
-- **Test/Example Configs**: 10 (clearly marked with ⚠️)
+- **Test/Example Configs**: 11 (clearly marked with ⚠️ or examples)
+- **C3.x Examples**: 2 (httpx_comprehensive, react_unified with v2.6.0+ features)
 - **Categories**: 7 major categories
 - **Quality Level**: All production configs validated to HIGH or Production Ready standards
+- **Skill Seekers Compatibility**: v2.6.0+ (with full C3.x codebase analysis support)
 - **Community Contributions**: Coming soon! (A1.3 in progress)
 
 ---
