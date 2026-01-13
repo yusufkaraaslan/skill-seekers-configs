@@ -3,12 +3,11 @@
   "repo": "facebook/react",
   "description": "⚠️ TEST CONFIG - GitHub-only scraping example for React library. Demonstrates code analysis without documentation. Not for production use.",
   "_test_config": true,
-  "github_token": null,
-  "include_issues": true,
+  "enable_codebase_analysis": false,
+  "fetch_issues": true,
   "max_issues": 100,
-  "include_changelog": true,
-  "include_releases": true,
-  "include_code": false,
+  "fetch_changelog": true,
+  "fetch_releases": true,
   "file_patterns": [
     "packages/**/*.js",
     "packages/**/*.ts"

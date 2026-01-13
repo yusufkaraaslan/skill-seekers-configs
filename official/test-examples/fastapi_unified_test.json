@@ -28,11 +28,11 @@
     {
       "type": "github",
       "repo": "tiangolo/fastapi",
-      "include_issues": false,
-      "include_changelog": false,
-      "include_releases": true,
-      "include_code": true,
+      "enable_codebase_analysis": true,
       "code_analysis_depth": "surface",
+      "fetch_issues": false,
+      "fetch_changelog": false,
+      "fetch_releases": true,
       "file_patterns": [
         "fastapi/routing.py",
         "fastapi/applications.py"

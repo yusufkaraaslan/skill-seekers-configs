@@ -31,12 +31,12 @@
     {
       "type": "github",
       "repo": "tiangolo/fastapi",
-      "include_issues": true,
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
       "max_issues": 100,
-      "include_changelog": true,
-      "include_releases": true,
-      "include_code": true,
-      "code_analysis_depth": "surface",
+      "fetch_changelog": true,
+      "fetch_releases": true,
       "file_patterns": [
         "fastapi/**/*.py"
       ]
