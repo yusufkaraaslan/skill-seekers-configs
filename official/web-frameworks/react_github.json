@@ -1,15 +1,22 @@
 {
-  "name": "react",
-  "repo": "facebook/react",
-  "description": "⚠️ TEST CONFIG - GitHub-only scraping example for React library. Demonstrates code analysis without documentation. Not for production use.",
-  "_test_config": true,
-  "enable_codebase_analysis": false,
-  "fetch_issues": true,
-  "max_issues": 100,
-  "fetch_changelog": true,
-  "fetch_releases": true,
-  "file_patterns": [
-    "packages/**/*.js",
-    "packages/**/*.ts"
+  "name": "react-codebase",
+  "description": "React library codebase analysis skill. Use for understanding React internals, fiber architecture, reconciliation algorithm, hooks implementation, and React DOM integration. Ideal for library contributors and advanced React developers.",
+  "sources": [
+    {
+      "type": "github",
+      "repo": "facebook/react",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "packages/react/src/**/*.js",
+        "packages/react-dom/src/**/*.js",
+        "packages/react-reconciler/src/**/*.js",
+        "packages/scheduler/src/**/*.js"
+      ]
+    }
   ]
 }
