@@ -20,7 +20,7 @@ This repository supports **Skill Seekers v2.6.0+** with the complete C3.x codeba
 
 ---
 
-## 📦 Available Configs (25 Total)
+## 📦 Available Configs (27 Total)
 
 ### Web Frameworks (7 configs)
 - **react.json** - React framework for building UIs
@@ -48,12 +48,20 @@ This repository supports **Skill Seekers v2.6.0+** with the complete C3.x codeba
 ### Gaming (1 config)
 - **steam-economy-complete.json** - Steam Economy documentation
 
-### Test/Examples (11 configs)
+### Test/Examples (13 configs)
 - **httpx_comprehensive.json** - Complete C3.x codebase analysis example (NEW in v2.6.0!)
-- Unified multi-source configs (docs + GitHub + PDF)
-- GitHub-only scraping examples
-- PDF extraction examples
-- Test configurations
+- **react_unified.json** - React docs + GitHub with C3.x analysis
+- **django_unified.json** - Django docs + GitHub with C3.x analysis
+- **fastapi_unified.json** - FastAPI docs + GitHub with C3.x analysis
+- **godot_unified.json** - Godot docs + GitHub with C3.x analysis
+- **vue_unified.json** - Vue.js docs + GitHub with C3.x analysis (NEW!)
+- **ansible_unified.json** - Ansible docs + GitHub with C3.x analysis (NEW!)
+- **react_github.json** - React GitHub-only scraping example
+- **godot_github.json** - Godot GitHub-only scraping example
+- **fastapi_unified_test.json** - FastAPI test config (limited pages)
+- **python-tutorial-test.json** - Python tutorial test
+- **example_pdf.json** - PDF extraction example
+- **template-example.json** - Template for new configs
 
 ---
 

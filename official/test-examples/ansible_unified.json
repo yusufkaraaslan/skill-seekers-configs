@@ -1,0 +1,52 @@
+{
+  "name": "ansible",
+  "description": "Complete Ansible automation knowledge combining official documentation and Ansible Core codebase. Use when writing playbooks, roles, modules, or automating infrastructure management.",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.ansible.com/ansible/latest/",
+      "extract_api": true,
+      "selectors": {
+        "main_content": "div[role='main']",
+        "title": "h1",
+        "code_blocks": "pre"
+      },
+      "url_patterns": {
+        "include": ["/user_guide/", "/playbook_guide/", "/reference_appendices/", "/collections/"],
+        "exclude": ["/community/", "/roadmap/", "/installation_guide/"]
+      },
+      "categories": {
+        "getting_started": ["getting_started", "intro", "quickstart"],
+        "playbooks": ["playbooks", "plays", "tasks"],
+        "inventory": ["inventory", "hosts", "groups"],
+        "modules": ["modules", "plugins", "collections"],
+        "roles": ["roles", "ansible-galaxy", "galaxy"],
+        "variables": ["variables", "facts", "vars"],
+        "conditionals": ["conditionals", "when", "loops"],
+        "handlers": ["handlers", "notify"],
+        "vault": ["vault", "encryption", "security"],
+        "api": ["api", "reference", "module_index"]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 400
+    },
+    {
+      "type": "github",
+      "repo": "ansible/ansible",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "lib/ansible/playbook/**/*.py",
+        "lib/ansible/executor/**/*.py",
+        "lib/ansible/parsing/**/*.py",
+        "lib/ansible/plugins/**/*.py",
+        "lib/ansible/module_utils/**/*.py"
+      ]
+    }
+  ]
+}
