@@ -1,30 +1,53 @@
 {
   "name": "hono",
-  "description": "Hono web application framework for building fast, lightweight APIs. Use for Hono routing, middleware, context handling, and modern JavaScript/TypeScript web development.",
-  "llms_txt_url": "https://hono.dev/llms-full.txt",
-  "base_url": "https://hono.dev/docs",
-  "start_urls": [
-    "https://hono.dev/docs/getting-started/basic",
-    "https://hono.dev/docs/api/routing",
-    "https://hono.dev/docs/api/middleware"
-  ],
-  "selectors": {
-    "main_content": "article",
-    "title": "h1",
-    "code_blocks": "pre code"
-  },
-  "url_patterns": {
-    "include": ["/docs/"],
-    "exclude": ["/blog/", "/showcase/"]
-  },
-  "categories": {
-    "getting_started": ["introduction", "getting-started", "getting_started", "basic", "quick", "setup"],
-    "routing": ["routing", "route", "path", "endpoint", "handler"],
-    "middleware": ["middleware", "context", "handler", "interceptor"],
-    "validation": ["validation", "schema", "validator", "zod", "sanitize"],
-    "utilities": ["helpers", "utility", "utils", "cookie", "jwt"],
-    "deployment": ["deploy", "deployment", "production", "hosting", "cloudflare"]
-  },
-  "rate_limit": 0.5,
-  "max_pages": 150
+  "description": "Complete Hono framework knowledge combining official documentation and Hono codebase. Use when building Hono applications, understanding middleware, or debugging Hono issues.",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://hono.dev/",
+      "extract_api": true,
+      "start_urls": [
+        "https://hono.dev/getting-started/basic",
+        "https://hono.dev/api/routing",
+        "https://hono.dev/api/hono",
+        "https://hono.dev/api/context",
+        "https://hono.dev/guides/middleware"
+      ],
+      "selectors": {
+        "main_content": "article",
+        "title": "h1",
+        "code_blocks": "pre code"
+      },
+      "url_patterns": {
+        "include": ["/getting-started/", "/api/", "/guides/", "/helpers/"],
+        "exclude": ["/examples/", "/concepts/"]
+      },
+      "categories": {
+        "getting_started": ["getting-started", "basic", "cloudflare-workers"],
+        "api": ["routing", "hono", "context", "request", "response"],
+        "middleware": ["middleware", "builtin-middleware"],
+        "helpers": ["helpers", "adapter", "testing"],
+        "guides": ["guides", "validation", "jsx"]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 200
+    },
+    {
+      "type": "github",
+      "repo": "honojs/hono",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "src/**/*.ts",
+        "src/hono.ts",
+        "src/router/**/*.ts",
+        "src/middleware/**/*.ts"
+      ]
+    }
+  ]
 }

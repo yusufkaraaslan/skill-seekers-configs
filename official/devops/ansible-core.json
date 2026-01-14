@@ -1,39 +1,57 @@
 {
-  "name": "ansible-core",
-  "description": "Ansible Core 2.19 skill for automation and configuration management",
-  "base_url": "https://docs.ansible.com/ansible-core/2.19/",
-  "start_urls": [
-    "https://docs.ansible.com/ansible-core/2.19/installation_guide/index.html",
-    "https://docs.ansible.com/ansible-core/2.19/inventory_guide/index.html",
-    "https://docs.ansible.com/ansible-core/2.19/playbook_guide/index.html",
-    "https://docs.ansible.com/ansible-core/2.19/module_plugin_guide/index.html",
-    "https://docs.ansible.com/ansible-core/2.19/collections_guide/index.html",
-    "https://docs.ansible.com/ansible-core/2.19/vault_guide/index.html"
-  ],
-  "selectors": {
-    "main_content": "div[role=main]",
-    "title": "title",
-    "code_blocks": "pre"
-  },
-  "url_patterns": {
-    "include": [],
-    "exclude": ["/_static/", "/_images/", "/_downloads/", "/search.html", "/genindex.html", "/py-modindex.html", "/index.html", "/roadmap/"]
-  },
-  "categories": {
-    "getting_started": ["getting_started", "getting-started", "introduction", "overview"],
-    "installation": ["installation_guide", "installation", "setup"],
-    "inventory": ["inventory_guide", "inventory"],
-    "playbooks": ["playbook_guide", "playbooks", "playbook"],
-    "modules": ["module_plugin_guide", "modules", "plugins"],
-    "collections": ["collections_guide", "collections"],
-    "vault": ["vault_guide", "vault", "encryption"],
-    "commands": ["command_guide", "commands", "cli"],
-    "porting": ["porting_guides", "porting", "migration"],
-    "os_specific": ["os_guide", "platform"],
-    "tips": ["tips_tricks", "tips", "tricks", "best-practices"],
-    "community": ["community", "contributing", "contributions"],
-    "development": ["dev_guide", "development", "developing"]
-  },
-  "rate_limit": 0.5,
-  "max_pages": 800
+  "name": "ansible",
+  "description": "Complete Ansible automation knowledge combining official documentation and Ansible Core codebase. Use when writing playbooks, roles, modules, or automating infrastructure.",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.ansible.com/ansible/latest/",
+      "extract_api": true,
+      "start_urls": [
+        "https://docs.ansible.com/ansible/latest/getting_started/index.html",
+        "https://docs.ansible.com/ansible/latest/playbook_guide/index.html",
+        "https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html"
+      ],
+      "selectors": {
+        "main_content": "div[role='main']",
+        "title": "h1",
+        "code_blocks": "pre"
+      },
+      "url_patterns": {
+        "include": ["/user_guide/", "/playbook_guide/", "/reference_appendices/", "/collections/"],
+        "exclude": ["/community/", "/roadmap/", "/installation_guide/"]
+      },
+      "categories": {
+        "getting_started": ["getting_started", "intro", "quickstart"],
+        "playbooks": ["playbooks", "plays", "tasks"],
+        "inventory": ["inventory", "hosts", "groups"],
+        "modules": ["modules", "plugins", "collections"],
+        "roles": ["roles", "ansible-galaxy", "galaxy"],
+        "variables": ["variables", "facts", "vars"],
+        "conditionals": ["conditionals", "when", "loops"],
+        "handlers": ["handlers", "notify"],
+        "vault": ["vault", "encryption", "security"],
+        "api": ["api", "reference", "module_index"]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 400
+    },
+    {
+      "type": "github",
+      "repo": "ansible/ansible",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "lib/ansible/playbook/**/*.py",
+        "lib/ansible/executor/**/*.py",
+        "lib/ansible/parsing/**/*.py",
+        "lib/ansible/plugins/**/*.py",
+        "lib/ansible/module_utils/**/*.py"
+      ]
+    }
+  ]
 }

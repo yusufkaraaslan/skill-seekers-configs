@@ -1,33 +1,58 @@
 {
   "name": "tailwind",
-  "description": "Tailwind CSS utility-first framework for rapid UI development. Use for Tailwind utilities, responsive design, custom configurations, and modern CSS workflows.",
-  "base_url": "https://tailwindcss.com/docs",
-  "start_urls": [
-    "https://tailwindcss.com/docs/installation",
-    "https://tailwindcss.com/docs/utility-first",
-    "https://tailwindcss.com/docs/responsive-design",
-    "https://tailwindcss.com/docs/hover-focus-and-other-states"
-  ],
-  "selectors": {
-    "main_content": "div.prose",
-    "title": "h1",
-    "code_blocks": "pre code"
-  },
-  "url_patterns": {
-    "include": ["/docs"],
-    "exclude": ["/blog", "/resources"]
-  },
-  "categories": {
-    "getting_started": ["installation", "editor-setup", "intellisense", "quick"],
-    "core_concepts": ["utility-first", "responsive", "hover-focus", "dark-mode", "state"],
-    "layout": ["container", "columns", "flex", "grid", "spacing", "position"],
-    "typography": ["font-family", "font-size", "text-align", "text-color", "line-height"],
-    "backgrounds": ["background-color", "background-image", "gradient"],
-    "borders": ["border", "border-radius", "border-color", "divide", "ring"],
-    "effects": ["shadow", "opacity", "transition", "animation"],
-    "filters": ["blur", "brightness", "contrast", "grayscale", "saturate"],
-    "customization": ["configuration", "theme", "plugins", "config"]
-  },
-  "rate_limit": 0.5,
-  "max_pages": 200
+  "description": "Complete Tailwind CSS knowledge combining official documentation and Tailwind codebase. Use when styling with Tailwind, understanding utility classes, or customizing configuration.",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://tailwindcss.com/docs",
+      "extract_api": true,
+      "start_urls": [
+        "https://tailwindcss.com/docs/installation",
+        "https://tailwindcss.com/docs/utility-first",
+        "https://tailwindcss.com/docs/responsive-design",
+        "https://tailwindcss.com/docs/configuration"
+      ],
+      "selectors": {
+        "main_content": "article",
+        "title": "h1",
+        "code_blocks": "pre code"
+      },
+      "url_patterns": {
+        "include": ["/docs/"],
+        "exclude": ["/blog/", "/resources/", "/showcase/"]
+      },
+      "categories": {
+        "getting_started": ["installation", "editor-setup", "upgrade-guide"],
+        "core_concepts": ["utility-first", "responsive-design", "hover-focus-and-other-states", "dark-mode", "reusing-styles"],
+        "layout": ["container", "box-sizing", "display", "float", "clear", "object-fit", "overflow", "position", "top-right-bottom-left", "visibility", "z-index"],
+        "flexbox_grid": ["flex-direction", "flex-wrap", "flex", "flex-grow", "flex-shrink", "order", "grid-template-columns", "grid-column", "grid-template-rows", "grid-row", "gap"],
+        "spacing": ["padding", "margin", "space-between"],
+        "typography": ["font-family", "font-size", "font-weight", "text-align", "text-color", "line-height"],
+        "backgrounds": ["background-color", "background-image", "background-size", "background-position"],
+        "borders": ["border-width", "border-color", "border-style", "border-radius"],
+        "effects": ["box-shadow", "opacity", "mix-blend-mode"],
+        "filters": ["blur", "brightness", "contrast", "grayscale"],
+        "transitions": ["transition-property", "transition-duration", "transition-timing-function", "animation"],
+        "customization": ["configuration", "theme", "plugins", "presets"]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 300
+    },
+    {
+      "type": "github",
+      "repo": "tailwindlabs/tailwindcss",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "src/**/*.js",
+        "src/corePlugins.js",
+        "src/util/**/*.js"
+      ]
+    }
+  ]
 }

@@ -1,32 +1,53 @@
 {
   "name": "astro",
-  "description": "Astro web framework for content-focused websites. Use for Astro components, islands architecture, content collections, SSR/SSG, and modern web development.",
-  "base_url": "https://docs.astro.build/en/getting-started/",
-  "start_urls": [
-    "https://docs.astro.build/en/getting-started/",
-    "https://docs.astro.build/en/install/auto/",
-    "https://docs.astro.build/en/core-concepts/project-structure/",
-    "https://docs.astro.build/en/core-concepts/astro-components/",
-    "https://docs.astro.build/en/core-concepts/astro-pages/"
-  ],
-  "selectors": {
-    "main_content": "article",
-    "title": "h1",
-    "code_blocks": "pre code"
-  },
-  "url_patterns": {
-    "include": ["/en/"],
-    "exclude": ["/blog/", "/showcase/"]
-  },
-  "categories": {
-    "basics": ["basics", "getting-started", "install", "tutorial", "project"],
-    "components": ["components", "props", "slots", "astro-components"],
-    "routing": ["routing", "pages", "endpoints", "dynamic"],
-    "integrations": ["integration", "framework", "adapter", "react", "vue", "svelte"],
-    "content": ["markdown", "mdx", "content-collections", "content"],
-    "islands": ["islands", "client", "hydration", "partial"],
-    "deployment": ["deploy", "adapter", "host", "vercel", "netlify"]
-  },
-  "rate_limit": 0.5,
-  "max_pages": 250
+  "description": "Complete Astro framework knowledge combining official documentation and Astro codebase. Use when building Astro sites, understanding islands architecture, or debugging Astro issues.",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.astro.build/en/",
+      "extract_api": true,
+      "start_urls": [
+        "https://docs.astro.build/en/getting-started/",
+        "https://docs.astro.build/en/core-concepts/project-structure/",
+        "https://docs.astro.build/en/core-concepts/astro-components/",
+        "https://docs.astro.build/en/core-concepts/routing/",
+        "https://docs.astro.build/en/guides/integrations-guide/"
+      ],
+      "selectors": {
+        "main_content": "article",
+        "title": "h1",
+        "code_blocks": "pre code"
+      },
+      "url_patterns": {
+        "include": ["/en/getting-started/", "/en/core-concepts/", "/en/guides/", "/en/reference/"],
+        "exclude": ["/en/community/", "/en/blog/"]
+      },
+      "categories": {
+        "getting_started": ["getting-started", "install", "tutorial"],
+        "core_concepts": ["project-structure", "components", "pages", "layouts"],
+        "routing": ["routing", "endpoints", "api-routes"],
+        "integrations": ["integrations", "framework", "ui-frameworks"],
+        "deployment": ["deploy", "deployment", "hosting"],
+        "api": ["api", "reference", "configuration"]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 300
+    },
+    {
+      "type": "github",
+      "repo": "withastro/astro",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "packages/astro/src/**/*.ts",
+        "packages/astro/src/core/**/*.ts",
+        "packages/integrations/**/*.ts"
+      ]
+    }
+  ]
 }
