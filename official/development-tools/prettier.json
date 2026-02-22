@@ -1,7 +1,7 @@
 {
   "name": "prettier",
-  "description": "Complete Prettier knowledge from official documentation. Use when formatting code consistently across projects. Covers configuration, plugins, integrations, and options for all supported languages.",
-  "version": "1.0.0",
+  "description": "Complete Prettier knowledge from official documentation. Use when formatting code consistently across projects. Covers configuration, plugins, editor integrations, linter integration, and all supported languages.",
+  "version": "1.1.0",
   "base_url": "https://prettier.io/docs/en/",
   "sources": [
     {
@@ -11,7 +11,9 @@
         "https://prettier.io/docs/en/index.html",
         "https://prettier.io/docs/en/install.html",
         "https://prettier.io/docs/en/options.html",
-        "https://prettier.io/docs/en/configuration.html"
+        "https://prettier.io/docs/en/configuration.html",
+        "https://prettier.io/docs/en/plugins.html",
+        "https://prettier.io/docs/en/integrating-with-linters.html"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -20,8 +22,7 @@
       },
       "url_patterns": {
         "include": [
-          "/docs/en/",
-          "/docs/en/plugins.html"
+          "/docs/en/"
         ],
         "exclude": [
           "/blog/"
@@ -63,17 +64,18 @@
           "vscode",
           "vim",
           "webstorm",
-          "atom",
-          "sublime"
+          "emacs",
+          "neovim"
+        ],
+        "linter_integration": [
+          "integrating-with-linters",
+          "eslint",
+          "eslint-config-prettier",
+          "stylelint"
         ],
         "ci": [
           "precommit",
           "continuous-integration"
-        ],
-        "integrations": [
-          "eslint",
-          "prettier-vscode",
-          "git"
         ]
       },
       "rate_limit": 0.3

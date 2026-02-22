@@ -1,7 +1,7 @@
 {
   "name": "storybook",
-  "description": "Complete Storybook knowledge from official documentation. Use when building UI component libraries and design systems. Covers stories, addons, theming, testing, and documentation.",
-  "version": "1.0.0",
+  "description": "Complete Storybook 8 knowledge from official documentation. Use when building UI component libraries and design systems. Covers stories, addons, component testing, accessibility, theming, and documentation.",
+  "version": "1.1.0",
   "base_url": "https://storybook.js.org/docs/",
   "sources": [
     {
@@ -9,9 +9,12 @@
       "base_url": "https://storybook.js.org/docs/",
       "start_urls": [
         "https://storybook.js.org/docs/get-started/install",
-        "https://storybook.js.org/docs/writing-stories",
-        "https://storybook.js.org/docs/essentials",
-        "https://storybook.js.org/docs/configure"
+        "https://storybook.js.org/docs/writing-stories/",
+        "https://storybook.js.org/docs/writing-tests/",
+        "https://storybook.js.org/docs/essentials/",
+        "https://storybook.js.org/docs/configure/",
+        "https://storybook.js.org/docs/addons/",
+        "https://storybook.js.org/docs/sharing/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -21,10 +24,12 @@
       "url_patterns": {
         "include": [
           "/docs/get-started/",
-          "/docs/writing-",
+          "/docs/writing-stories/",
+          "/docs/writing-tests/",
           "/docs/essentials/",
           "/docs/addons/",
           "/docs/configure/",
+          "/docs/sharing/",
           "/docs/api/"
         ],
         "exclude": [
@@ -55,7 +60,8 @@
           "testing",
           "interaction-testing",
           "visual-testing",
-          "accessibility"
+          "accessibility",
+          "component-testing"
         ],
         "configuration": [
           "main-config",

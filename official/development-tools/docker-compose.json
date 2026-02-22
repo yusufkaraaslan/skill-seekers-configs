@@ -1,7 +1,7 @@
 {
   "name": "docker-compose",
-  "description": "Complete Docker Compose knowledge from official documentation. Use when defining and running multi-container Docker applications. Covers services, networks, volumes, and profiles.",
-  "version": "1.0.0",
+  "description": "Complete Docker Compose knowledge from official documentation. Use when defining and running multi-container Docker applications. Covers services, networks, volumes, profiles, secrets, health checks, and the Compose Specification.",
+  "version": "1.1.0",
   "base_url": "https://docs.docker.com/compose/",
   "sources": [
     {
@@ -11,7 +11,11 @@
         "https://docs.docker.com/compose/",
         "https://docs.docker.com/compose/gettingstarted/",
         "https://docs.docker.com/compose/compose-file/",
-        "https://docs.docker.com/compose/networking/"
+        "https://docs.docker.com/compose/networking/",
+        "https://docs.docker.com/compose/environment-variables/",
+        "https://docs.docker.com/compose/use-secrets/",
+        "https://docs.docker.com/compose/how-tos/file-watch/",
+        "https://docs.docker.com/compose/profiles/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -20,11 +24,7 @@
       },
       "url_patterns": {
         "include": [
-          "/compose/",
-          "/compose/gettingstarted/",
-          "/compose/compose-file/",
-          "/compose/networking/",
-          "/compose/environment-variables/"
+          "/compose/"
         ],
         "exclude": [
           "/compose/release-notes/"
@@ -32,7 +32,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "gettingstarted",
           "install",
           "quickstart"
@@ -46,11 +45,12 @@
           "secrets"
         ],
         "services": [
-          "compose-file/services",
           "build",
           "image",
           "ports",
-          "environment"
+          "environment",
+          "depends_on",
+          "healthcheck"
         ],
         "networking": [
           "networking",
@@ -60,7 +60,6 @@
           "overlay"
         ],
         "volumes": [
-          "compose-file/volumes",
           "bind-mounts",
           "named-volumes",
           "tmpfs"
@@ -69,6 +68,11 @@
           "environment-variables",
           "env-file",
           "variable-substitution"
+        ],
+        "secrets": [
+          "use-secrets",
+          "secrets",
+          "sensitive"
         ],
         "cli": [
           "reference",
@@ -84,26 +88,16 @@
           "development",
           "production"
         ],
-        "scaling": [
-          "scaling",
-          "replicas",
-          "deploy",
-          "swarm"
-        ],
         "watch": [
           "file-watch",
           "develop",
-          "sync"
+          "sync",
+          "hot-reload"
         ],
         "production": [
           "production",
           "deploying-compose",
           "swarm-mode"
-        ],
-        "migrate": [
-          "migrate",
-          "compose-v2",
-          "compatibility"
         ]
       },
       "rate_limit": 0.3

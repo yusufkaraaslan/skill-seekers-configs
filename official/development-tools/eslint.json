@@ -1,7 +1,7 @@
 {
   "name": "eslint",
-  "description": "Complete ESLint knowledge from official documentation. Use when configuring JavaScript and TypeScript linting rules. Covers configuration, rules, plugins, custom rules, and integrations.",
-  "version": "1.0.0",
+  "description": "Complete ESLint knowledge from official documentation. Use when configuring JavaScript and TypeScript linting. Covers flat config (ESLint 9+), rules, plugins, custom rules, TypeScript integration, and editor integrations.",
+  "version": "1.1.0",
   "base_url": "https://eslint.org/docs/latest/",
   "sources": [
     {
@@ -10,6 +10,7 @@
       "start_urls": [
         "https://eslint.org/docs/latest/",
         "https://eslint.org/docs/latest/use/",
+        "https://eslint.org/docs/latest/use/configure/",
         "https://eslint.org/docs/latest/rules/",
         "https://eslint.org/docs/latest/extend/"
       ],
@@ -23,11 +24,11 @@
           "/docs/latest/use/",
           "/docs/latest/rules/",
           "/docs/latest/extend/",
-          "/docs/latest/integrate/",
-          "/docs/latest/contribute/"
+          "/docs/latest/integrate/"
         ],
         "exclude": [
-          "/docs/latest/maintain/"
+          "/docs/latest/maintain/",
+          "/docs/latest/contribute/"
         ]
       },
       "categories": {
@@ -37,20 +38,26 @@
           "command-line-interface"
         ],
         "configuration": [
-          "configure/",
+          "configure",
           "configuring-language-options",
           "configuring-rules",
-          "ignoring-code"
+          "ignoring-code",
+          "flat-config"
         ],
         "rules": [
-          "rules/",
+          "rules",
           "possible-problems",
           "suggestions",
-          "layout-formatting",
-          "deprecated"
+          "layout-formatting"
+        ],
+        "typescript": [
+          "typescript",
+          "parser-options",
+          "typescript-eslint",
+          "type-checking"
         ],
         "formatters": [
-          "formatters/",
+          "formatters",
           "json",
           "html",
           "stylish"

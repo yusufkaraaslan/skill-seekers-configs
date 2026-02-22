@@ -1,17 +1,19 @@
 {
   "name": "git",
-  "description": "Complete Git knowledge from official documentation. Use when version controlling source code. Covers branching, merging, rebasing, and workflows.",
-  "version": "1.0.0",
-  "base_url": "https://git-scm.com/doc",
+  "description": "Complete Git knowledge from official documentation and Pro Git book. Use when version controlling source code. Covers branching, merging, rebasing, remotes, hooks, submodules, and worktrees.",
+  "version": "1.1.0",
+  "base_url": "https://git-scm.com/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://git-scm.com/doc",
+      "base_url": "https://git-scm.com/",
       "start_urls": [
         "https://git-scm.com/doc",
         "https://git-scm.com/book/en/v2",
         "https://git-scm.com/docs",
-        "https://git-scm.com/docs/gittutorial"
+        "https://git-scm.com/docs/gittutorial",
+        "https://git-scm.com/docs/gitworkflows",
+        "https://git-scm.com/docs/git-worktree"
       ],
       "selectors": {
         "main_content": "article, main, #content",
@@ -21,8 +23,7 @@
       "url_patterns": {
         "include": [
           "/book/en/v2/",
-          "/docs/",
-          "/docs/gittutorial"
+          "/docs/"
         ],
         "exclude": [
           "/docs/api/"
@@ -30,35 +31,33 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "gittutorial",
           "git-basics",
           "installing"
         ],
         "git_basics": [
-          "book/en/v2/Getting-Started-Git-Basics",
-          "book/en/v2/Git-Basics-Getting-a-Git-Repository",
-          "book/en/v2/Git-Basics-Recording-Changes-to-the-Repository"
+          "Getting-Started-Git-Basics",
+          "Getting-a-Git-Repository",
+          "Recording-Changes"
         ],
         "branching": [
-          "book/en/v2/Git-Branching-Branches-in-a-Nutshell",
-          "book/en/v2/Git-Branching-Basic-Branching-and-Merging",
+          "Branches-in-a-Nutshell",
+          "Basic-Branching-and-Merging",
           "branch"
         ],
         "merging": [
-          "book/en/v2/Git-Branching-Basic-Branching-and-Merging",
           "merge",
           "merge-conflicts",
           "merge-strategies"
         ],
         "rebasing": [
-          "book/en/v2/Git-Branching-Rebasing",
+          "Rebasing",
           "rebase",
           "interactive-rebase",
           "rebase-vs-merge"
         ],
         "remote": [
-          "book/en/v2/Git-Basics-Working-with-Remotes",
+          "Working-with-Remotes",
           "remote",
           "fetch",
           "push",
@@ -66,48 +65,53 @@
           "clone"
         ],
         "history": [
-          "book/en/v2/Git-Basics-Viewing-the-Commit-History",
+          "Viewing-the-Commit-History",
           "log",
           "diff",
           "show",
           "blame"
         ],
         "undoing": [
-          "book/en/v2/Git-Basics-Undoing-Things",
+          "Undoing-Things",
           "reset",
           "revert",
           "checkout",
           "restore"
         ],
         "staging": [
-          "book/en/v2/Git-Tools-Interactive-Staging",
+          "Interactive-Staging",
           "add",
           "stash",
           "stage"
         ],
         "tagging": [
-          "book/en/v2/Git-Basics-Tagging",
+          "Tagging",
           "tag",
           "annotated-tags",
           "lightweight-tags"
         ],
         "workflows": [
-          "book/en/v2/Distributed-Git-Distributed-Workflows",
+          "Distributed-Workflows",
           "centralized-workflow",
           "feature-branch",
           "gitflow",
           "forking"
         ],
         "hooks": [
-          "book/en/v2/Customizing-Git-Git-Hooks",
+          "Git-Hooks",
           "hooks",
           "pre-commit",
           "post-merge"
         ],
         "submodules": [
-          "book/en/v2/Git-Tools-Submodules",
+          "Submodules",
           "submodule",
           "subtree"
+        ],
+        "worktrees": [
+          "worktree",
+          "git-worktree",
+          "linked-worktrees"
         ]
       },
       "rate_limit": 0.3

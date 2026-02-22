@@ -1,7 +1,7 @@
 {
   "name": "zod",
-  "description": "Complete Zod knowledge from official documentation. Use when building type-safe TypeScript applications with runtime validation. Covers schemas, parsing, transformations, and error handling.",
-  "version": "1.0.0",
+  "description": "Complete Zod knowledge from official documentation. Use when building type-safe TypeScript applications with runtime validation. Covers schemas, parsing, transformations, error handling, and Zod v4 features.",
+  "version": "1.1.0",
   "base_url": "https://zod.dev/",
   "sources": [
     {
@@ -11,7 +11,9 @@
         "https://zod.dev/",
         "https://zod.dev/README",
         "https://zod.dev/ERROR_HANDLING",
-        "https://zod.dev/PARTIAL"
+        "https://zod.dev/PARTIAL",
+        "https://zod.dev/BRAND",
+        "https://zod.dev/COERCE"
       ],
       "selectors": {
         "main_content": "main",
@@ -23,9 +25,9 @@
           "/README",
           "/ERROR_HANDLING",
           "/PARTIAL",
-          "/PICKOMIT",
           "/BRAND",
-          "/COERCE"
+          "/COERCE",
+          "/packages/"
         ],
         "exclude": []
       },
@@ -67,7 +69,8 @@
           "transform",
           "preprocess",
           "refine",
-          "superRefine"
+          "superRefine",
+          "pipe"
         ],
         "validation": [
           "parse",
@@ -86,7 +89,9 @@
           "promise",
           "record",
           "map",
-          "set"
+          "set",
+          "brand",
+          "coerce"
         ]
       },
       "rate_limit": 0.2

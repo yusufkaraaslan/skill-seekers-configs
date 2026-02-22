@@ -1,17 +1,20 @@
 {
   "name": "vscode",
-  "description": "Complete Visual Studio Code knowledge from official documentation. Use when editing and debugging code. Covers extensions, debugging, tasks, and settings.",
-  "version": "1.0.0",
-  "base_url": "https://code.visualstudio.com/docs",
+  "description": "Complete Visual Studio Code knowledge from official documentation. Use when editing, debugging, and developing code. Covers extensions, debugging, tasks, settings, remote development, Copilot AI features, and the extension API.",
+  "version": "1.1.0",
+  "base_url": "https://code.visualstudio.com/docs/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://code.visualstudio.com/docs",
+      "base_url": "https://code.visualstudio.com/docs/",
       "start_urls": [
         "https://code.visualstudio.com/docs",
         "https://code.visualstudio.com/docs/getstarted/introvideos",
         "https://code.visualstudio.com/docs/editor/codebasics",
-        "https://code.visualstudio.com/docs/editor/debugging"
+        "https://code.visualstudio.com/docs/editor/debugging",
+        "https://code.visualstudio.com/docs/copilot/overview",
+        "https://code.visualstudio.com/docs/remote/remote-overview",
+        "https://code.visualstudio.com/docs/containers/overview"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -25,7 +28,10 @@
           "/docs/languages/",
           "/docs/nodejs/",
           "/docs/typescript/",
-          "/docs/python/"
+          "/docs/python/",
+          "/docs/copilot/",
+          "/docs/remote/",
+          "/docs/containers/"
         ],
         "exclude": [
           "/docs/supporting/"
@@ -33,72 +39,79 @@
       },
       "categories": {
         "getting_started": [
-          "",
-          "getstarted/introvideos",
+          "getstarted",
+          "introvideos",
           "setup",
           "settings"
         ],
         "basics": [
-          "editor/codebasics",
-          "editor/editingevolved",
-          "editor/intellisense",
-          "editor/emmet"
+          "codebasics",
+          "editingevolved",
+          "intellisense",
+          "emmet"
         ],
         "debugging": [
-          "editor/debugging",
-          "nodejs/nodejs-debugging",
-          "python/debugging",
-          "editor/debugging-configuration"
+          "debugging",
+          "nodejs-debugging",
+          "python-debugging",
+          "debugging-configuration"
+        ],
+        "copilot": [
+          "copilot",
+          "ai-features",
+          "inline-chat",
+          "chat",
+          "agent-mode"
         ],
         "git": [
-          "editor/versioncontrol",
-          "editor/github",
-          "sourcecontrol/overview"
+          "versioncontrol",
+          "github",
+          "sourcecontrol"
         ],
         "extensions": [
-          "editor/extension-marketplace",
-          "extensions/overview",
-          "api/get-started/your-first-extension"
+          "extension-marketplace",
+          "extensions",
+          "your-first-extension"
         ],
         "tasks": [
-          "editor/tasks",
-          "editor/tasks-appendix",
-          "editor/task-variables"
+          "tasks",
+          "tasks-appendix",
+          "task-variables"
         ],
         "terminal": [
-          "editor/integrated-terminal",
-          "terminal/appearance",
-          "terminal/profiles"
+          "integrated-terminal",
+          "terminal",
+          "profiles"
         ],
         "languages": [
-          "languages/overview",
-          "languages/javascript",
-          "languages/python",
-          "languages/typescript"
+          "languages",
+          "javascript",
+          "python",
+          "typescript"
         ],
         "remote": [
-          "remote/remote-overview",
-          "remote/ssh",
-          "remote/wsl",
-          "remote/devcontainers"
+          "remote-overview",
+          "ssh",
+          "wsl",
+          "devcontainers"
         ],
         "snippets": [
-          "editor/userdefinedsnippets",
+          "userdefinedsnippets",
           "snippets",
           "snippet-syntax"
         ],
         "themes": [
-          "getstarted/themes",
+          "themes",
           "color-theme",
           "file-icon-themes"
         ],
         "keybindings": [
-          "getstarted/keybindings",
+          "keybindings",
           "custom-keybindings",
           "keybindings-json"
         ],
         "settings": [
-          "getstarted/settings",
+          "settings",
           "settings-sync",
           "workspace-settings"
         ]
