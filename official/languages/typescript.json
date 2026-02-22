@@ -1,7 +1,7 @@
 {
   "name": "typescript",
   "description": "Complete TypeScript knowledge from official documentation. Use when building type-safe JavaScript applications. Covers types, interfaces, generics, decorators, modules, and compiler options.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://www.typescriptlang.org/docs/",
   "sources": [
     {
@@ -10,7 +10,7 @@
       "start_urls": [
         "https://www.typescriptlang.org/docs/",
         "https://www.typescriptlang.org/docs/handbook/intro.html",
-        "https://www.typescriptlang.org/docs/handbook/basic-types.html",
+        "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html",
         "https://www.typescriptlang.org/tsconfig"
       ],
       "selectors": {
@@ -21,12 +21,11 @@
       "url_patterns": {
         "include": [
           "/docs/handbook/",
-          "/docs/handbook/intro.html",
-          "/tsconfig",
-          "/docs/handbook/release-notes/"
+          "/tsconfig"
         ],
         "exclude": [
-          "/docs/community/"
+          "/docs/community/",
+          "/docs/handbook/release-notes/"
         ]
       },
       "categories": {
@@ -36,16 +35,19 @@
           "migration-from-javascript"
         ],
         "types": [
+          "everyday-types",
           "basic-types",
           "advanced-types",
           "literal-types",
           "union-types",
-          "intersection-types"
+          "intersection-types",
+          "narrowing"
         ],
         "interfaces": [
           "interfaces",
           "interface-extending",
-          "hybrid-types"
+          "hybrid-types",
+          "objects"
         ],
         "classes": [
           "classes",
