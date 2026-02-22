@@ -1,17 +1,19 @@
 {
   "name": "vault",
-  "description": "Complete HashiCorp Vault knowledge from official documentation. Use when managing secrets, encryption, and identity-based access. Covers secrets engines, authentication, policies, and PKI.",
-  "version": "1.0.0",
-  "base_url": "https://developer.hashicorp.com/vault/docs",
+  "description": "Complete HashiCorp Vault knowledge from official documentation. Use when managing secrets, encryption, and identity-based access. Covers secrets engines, authentication methods, policies, PKI, and dynamic credentials.",
+  "version": "1.1.0",
+  "base_url": "https://developer.hashicorp.com/vault/docs/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://developer.hashicorp.com/vault/docs",
+      "base_url": "https://developer.hashicorp.com/vault/docs/",
       "start_urls": [
         "https://developer.hashicorp.com/vault/docs/what-is-vault",
         "https://developer.hashicorp.com/vault/docs/get-started/developer-qs",
         "https://developer.hashicorp.com/vault/docs/secrets",
-        "https://developer.hashicorp.com/vault/docs/auth"
+        "https://developer.hashicorp.com/vault/docs/auth",
+        "https://developer.hashicorp.com/vault/docs/concepts",
+        "https://developer.hashicorp.com/vault/docs/configuration"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -72,7 +74,7 @@
           "seal",
           "unseal",
           "auto-unseal",
-          " Shamir"
+          "shamir"
         ],
         "enterprise": [
           "namespaces",

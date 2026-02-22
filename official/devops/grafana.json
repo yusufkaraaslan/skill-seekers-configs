@@ -1,7 +1,7 @@
 {
   "name": "grafana",
-  "description": "Complete Grafana knowledge from official documentation. Use when visualizing metrics, logs, and creating dashboards. Covers data sources, panels, alerting, and Grafana Cloud.",
-  "version": "1.0.0",
+  "description": "Complete Grafana knowledge from official documentation. Use when visualizing metrics, logs, traces, and creating dashboards. Covers data sources, panels, alerting, Grafana Cloud, and the Grafana plugin ecosystem.",
+  "version": "1.1.0",
   "base_url": "https://grafana.com/docs/grafana/latest/",
   "sources": [
     {
@@ -11,7 +11,10 @@
         "https://grafana.com/docs/grafana/latest/getting-started/",
         "https://grafana.com/docs/grafana/latest/dashboards/",
         "https://grafana.com/docs/grafana/latest/datasources/",
-        "https://grafana.com/docs/grafana/latest/alerting/"
+        "https://grafana.com/docs/grafana/latest/panels-visualizations/",
+        "https://grafana.com/docs/grafana/latest/alerting/",
+        "https://grafana.com/docs/grafana/latest/explore/",
+        "https://grafana.com/docs/grafana/latest/administration/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -20,15 +23,11 @@
       },
       "url_patterns": {
         "include": [
-          "/docs/grafana/latest/getting-started/",
-          "/docs/grafana/latest/dashboards/",
-          "/docs/grafana/latest/datasources/",
-          "/docs/grafana/latest/panels/",
-          "/docs/grafana/latest/alerting/",
-          "/docs/grafana/latest/setup-grafana/"
+          "/docs/grafana/latest/"
         ],
         "exclude": [
-          "/docs/grafana/latest/release-notes/"
+          "/docs/grafana/latest/release-notes/",
+          "/docs/grafana/latest/whatsnew/"
         ]
       },
       "categories": {
@@ -44,7 +43,9 @@
           "influxdb",
           "elasticsearch",
           "mysql",
-          "postgres"
+          "postgres",
+          "loki",
+          "tempo"
         ],
         "dashboards": [
           "dashboards",
@@ -55,6 +56,7 @@
         ],
         "panels": [
           "panels",
+          "panels-visualizations",
           "visualizations",
           "queries",
           "transformations",
@@ -64,13 +66,21 @@
           "alerting",
           "alert-rules",
           "notification-channels",
-          "silences"
+          "silences",
+          "contact-points"
         ],
         "explore": [
           "explore",
           "logs",
           "traces",
           "correlation"
+        ],
+        "administration": [
+          "administration",
+          "users",
+          "teams",
+          "auth",
+          "provisioning"
         ],
         "plugins": [
           "plugins",

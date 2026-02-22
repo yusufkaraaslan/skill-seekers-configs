@@ -1,7 +1,7 @@
 {
   "name": "prometheus",
-  "description": "Complete Prometheus knowledge from official documentation. Use when monitoring systems and applications with time-series metrics. Covers scraping, querying, alerting, and exporters.",
-  "version": "1.0.0",
+  "description": "Complete Prometheus knowledge from official documentation. Use when monitoring systems and applications with time-series metrics. Covers PromQL querying, scraping, alerting, exporters, and Alertmanager.",
+  "version": "1.1.0",
   "base_url": "https://prometheus.io/docs/",
   "sources": [
     {
@@ -11,7 +11,10 @@
         "https://prometheus.io/docs/introduction/overview/",
         "https://prometheus.io/docs/concepts/",
         "https://prometheus.io/docs/prometheus/latest/querying/",
-        "https://prometheus.io/docs/prometheus/latest/configuration/"
+        "https://prometheus.io/docs/prometheus/latest/configuration/",
+        "https://prometheus.io/docs/alerting/latest/alertmanager/",
+        "https://prometheus.io/docs/instrumenting/clientlibs/",
+        "https://prometheus.io/docs/guides/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -60,24 +63,28 @@
         "instrumenting": [
           "client-libraries",
           "writing-exporters",
-          "exposition-formats"
+          "exposition-formats",
+          "pushing"
         ],
         "alerting": [
           "alerting",
           "alertmanager",
-          "configuration",
-          "notifications"
+          "notifications",
+          "silences",
+          "inhibition"
         ],
         "storage": [
           "storage",
           "tsdb",
           "retention",
-          "federation"
+          "federation",
+          "remote-write"
         ],
         "exporters": [
           "exporters",
           "node-exporter",
-          "blackbox-exporter"
+          "blackbox-exporter",
+          "pushgateway"
         ]
       },
       "rate_limit": 0.3

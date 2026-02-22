@@ -1,8 +1,9 @@
 {
   "name": "docker",
-  "description": "Complete Docker knowledge combining official documentation and Moby source code. Use when containerizing applications, writing Dockerfiles, managing containers, or orchestrating with Docker Compose. Covers Docker Engine, CLI, and best practices.",
-  "version": "1.0.0",
+  "description": "Complete Docker knowledge combining official documentation and Moby source code. Use when containerizing applications, writing Dockerfiles, managing containers, or orchestrating with Docker Compose. Covers Docker Engine, CLI, BuildKit, and best practices.",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
+  "base_url": "https://docs.docker.com/",
   "sources": [
     {
       "type": "documentation",
@@ -152,6 +153,5 @@
       "terraform",
       "github-actions"
     ]
-  },
-  "base_url": "https://docs.docker.com/"
+  }
 }

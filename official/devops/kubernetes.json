@@ -1,7 +1,9 @@
 {
   "name": "kubernetes",
-  "description": "Complete Kubernetes orchestration knowledge combining official documentation and Kubernetes codebase. Use when deploying, managing, or debugging Kubernetes clusters.",
+  "description": "Complete Kubernetes orchestration knowledge combining official documentation and Kubernetes codebase. Use when deploying, managing, or debugging Kubernetes clusters and workloads.",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
+  "base_url": "https://kubernetes.io/docs/",
   "sources": [
     {
       "type": "documentation",
@@ -10,7 +12,9 @@
       "start_urls": [
         "https://kubernetes.io/docs/concepts/",
         "https://kubernetes.io/docs/tasks/",
-        "https://kubernetes.io/docs/reference/kubectl/"
+        "https://kubernetes.io/docs/reference/kubectl/",
+        "https://kubernetes.io/docs/setup/",
+        "https://kubernetes.io/docs/tutorials/"
       ],
       "selectors": {
         "main_content": "article",
@@ -21,10 +25,11 @@
         "include": [
           "/docs/concepts/",
           "/docs/tasks/",
-          "/docs/reference/"
+          "/docs/reference/",
+          "/docs/setup/",
+          "/docs/tutorials/"
         ],
         "exclude": [
-          "/docs/setup/",
           "/blog/",
           "/case-studies/"
         ]
@@ -33,7 +38,8 @@
         "getting_started": [
           "getting-started",
           "overview",
-          "introduction"
+          "introduction",
+          "setup"
         ],
         "concepts": [
           "concepts",
@@ -45,7 +51,9 @@
           "pods",
           "deployments",
           "statefulsets",
-          "daemonsets"
+          "daemonsets",
+          "jobs",
+          "cronjobs"
         ],
         "services": [
           "services",
@@ -56,18 +64,28 @@
         "storage": [
           "storage",
           "volumes",
-          "persistent"
+          "persistent",
+          "pvc",
+          "storageclass"
         ],
         "configuration": [
           "configmap",
           "secrets",
           "configuration"
         ],
+        "scheduling": [
+          "scheduling",
+          "affinity",
+          "taints",
+          "tolerations",
+          "resource-limits"
+        ],
         "security": [
           "security",
           "rbac",
           "authentication",
-          "authorization"
+          "authorization",
+          "network-policy"
         ],
         "api": [
           "api",
@@ -95,5 +113,23 @@
       ]
     }
   ],
-  "base_url": "https://kubernetes.io/docs/"
+  "metadata": {
+    "author": "Cloud Native Computing Foundation",
+    "language": "Go",
+    "framework_type": "Container Orchestration",
+    "use_cases": [
+      "Container orchestration",
+      "Microservices deployment",
+      "Auto-scaling",
+      "Service discovery",
+      "Rolling deployments"
+    ],
+    "related_skills": [
+      "docker",
+      "helm",
+      "terraform",
+      "prometheus",
+      "istio"
+    ]
+  }
 }

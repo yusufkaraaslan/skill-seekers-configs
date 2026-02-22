@@ -1,7 +1,7 @@
 {
   "name": "helm",
-  "description": "Complete Helm knowledge from official documentation. Use when packaging Kubernetes applications, managing charts, or templating deployments. Covers Helm 3 with OCI support.",
-  "version": "1.0.0",
+  "description": "Complete Helm knowledge from official documentation. Use when packaging Kubernetes applications, managing charts, or templating deployments. Covers Helm 3, chart development, OCI registries, and Helmfile.",
+  "version": "1.1.0",
   "base_url": "https://helm.sh/docs/",
   "sources": [
     {
@@ -11,7 +11,9 @@
         "https://helm.sh/docs/intro/quickstart/",
         "https://helm.sh/docs/chart_template_guide/",
         "https://helm.sh/docs/topics/charts/",
-        "https://helm.sh/docs/helm/"
+        "https://helm.sh/docs/helm/",
+        "https://helm.sh/docs/topics/library_charts/",
+        "https://helm.sh/docs/topics/registries/"
       ],
       "selectors": {
         "main_content": "main, article",
@@ -22,7 +24,7 @@
         "include": [
           "/docs/intro/",
           "/docs/chart_template_guide/",
-          "docs/topics/",
+          "/docs/topics/",
           "/docs/helm/"
         ],
         "exclude": [
@@ -64,7 +66,8 @@
           "search",
           "repo",
           "chartmuseum",
-          "oci"
+          "oci",
+          "registries"
         ],
         "values": [
           "values",
