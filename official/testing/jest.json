@@ -1,7 +1,7 @@
 {
   "name": "jest",
   "description": "Complete Jest knowledge from official documentation. Use when testing JavaScript applications with zero configuration. Covers matchers, async testing, mocks, snapshots, and coverage.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://jestjs.io/docs/",
   "sources": [
     {

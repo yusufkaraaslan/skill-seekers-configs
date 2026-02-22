@@ -1,7 +1,7 @@
 {
   "name": "artillery",
   "description": "Complete Artillery knowledge from official documentation. Use when load testing APIs and applications. Covers scenarios, plugins, metrics, and distributed testing.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://www.artillery.io/docs/",
   "sources": [
     {
@@ -21,7 +21,6 @@
       "url_patterns": {
         "include": [
           "/docs/guides/",
-          "/docs/guides/getting-started/",
           "/docs/reference/",
           "/docs/examples/"
         ],
@@ -31,7 +30,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "guides/getting-started/installation",
           "guides/getting-started/running-first-test",
           "guides/getting-started/writing-your-first-test"

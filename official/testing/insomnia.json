@@ -1,7 +1,7 @@
 {
   "name": "insomnia",
   "description": "Complete Insomnia knowledge from official documentation. Use when designing, testing, and debugging APIs with an open-source client. Covers requests, collections, environments, and plugins.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://docs.insomnia.rest/",
   "sources": [
     {
@@ -20,10 +20,7 @@
       },
       "url_patterns": {
         "include": [
-          "/insomnia/",
-          "/insomnia/get-started",
-          "/insomnia/requests",
-          "/insomnia/environment-variables"
+          "/insomnia/"
         ],
         "exclude": [
           "/changelog/"
@@ -31,7 +28,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "insomnia/get-started",
           "install",
           "first-request"

@@ -1,7 +1,7 @@
 {
   "name": "testing-library",
   "description": "Complete Testing Library knowledge from official documentation. Use when testing UI components with user-centric queries. Covers DOM Testing Library, React Testing Library, and best practices.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://testing-library.com/docs/",
   "sources": [
     {
@@ -20,11 +20,7 @@
       },
       "url_patterns": {
         "include": [
-          "/docs/",
-          "/docs/dom-testing-library/",
-          "/docs/react-testing-library/",
-          "/docs/vue-testing-library/",
-          "/docs/queries/"
+          "/docs/"
         ],
         "exclude": [
           "/docs/react-native-testing-library/"

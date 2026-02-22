@@ -1,7 +1,7 @@
 {
   "name": "pytest",
   "description": "Complete pytest knowledge from official documentation. Use when testing Python applications with simple syntax. Covers fixtures, markers, plugins, and parameterized testing.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://docs.pytest.org/en/stable/",
   "sources": [
     {

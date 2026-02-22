@@ -1,7 +1,7 @@
 {
   "name": "selenium",
   "description": "Complete Selenium knowledge from official documentation. Use when automating browser testing across different platforms. Covers WebDriver, locators, waits, and grid.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://www.selenium.dev/documentation/",
   "sources": [
     {
@@ -30,7 +30,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "overview",
           "getting_started",
           "install"

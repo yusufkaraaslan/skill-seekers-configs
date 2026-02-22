@@ -1,7 +1,7 @@
 {
   "name": "k6",
   "description": "Complete k6 knowledge from official documentation. Use when load testing APIs and applications. Covers HTTP requests, scenarios, thresholds, extensions, and cloud execution.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://k6.io/docs/",
   "sources": [
     {

@@ -1,7 +1,7 @@
 {
   "name": "cypress",
   "description": "Complete Cypress knowledge from official documentation. Use when performing end-to-end testing for modern web applications. Covers commands, assertions, network handling, and CI/CD integration.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://docs.cypress.io/",
   "sources": [
     {

@@ -1,12 +1,12 @@
 {
   "name": "vitest",
   "description": "Complete Vitest knowledge from official documentation. Use when testing Vite-based projects with fast unit testing. Covers configuration, mocking, coverage, and in-source testing.",
-  "version": "1.0.0",
-  "base_url": "https://vitest.dev/guide/",
+  "version": "1.1.0",
+  "base_url": "https://vitest.dev/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://vitest.dev/guide/",
+      "base_url": "https://vitest.dev/",
       "start_urls": [
         "https://vitest.dev/guide/",
         "https://vitest.dev/config/",

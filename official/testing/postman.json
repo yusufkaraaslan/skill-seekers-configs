@@ -1,7 +1,7 @@
 {
   "name": "postman",
   "description": "Complete Postman knowledge from official documentation. Use when building, testing, and documenting APIs. Covers collections, environments, tests, monitors, and Newman CLI.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://learning.postman.com/docs/",
   "sources": [
     {
@@ -32,7 +32,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "getting-started/introduction",
           "installation",
           "sending-your-first-request"
