@@ -1,7 +1,7 @@
 {
   "name": "docusaurus",
-  "description": "Complete Docusaurus knowledge from official documentation. Use when building documentation websites with Markdown and React. Covers theming, plugins, versioning, i18n, and deployment.",
-  "version": "1.0.0",
+  "description": "Complete Docusaurus knowledge from official documentation. Use when building documentation websites with Markdown, MDX, and React. Covers configuration, theming, plugins, versioning, i18n, search, and deployment.",
+  "version": "1.1.0",
   "base_url": "https://docusaurus.io/docs/",
   "sources": [
     {
@@ -9,9 +9,18 @@
       "base_url": "https://docusaurus.io/docs/",
       "start_urls": [
         "https://docusaurus.io/docs/",
-        "https://docusaurus.io/docs/category/getting-started",
-        "https://docusaurus.io/docs/category/guides",
-        "https://docusaurus.io/docs/api/"
+        "https://docusaurus.io/docs/installation",
+        "https://docusaurus.io/docs/configuration",
+        "https://docusaurus.io/docs/markdown-features",
+        "https://docusaurus.io/docs/styling-layout",
+        "https://docusaurus.io/docs/swizzling",
+        "https://docusaurus.io/docs/deployment",
+        "https://docusaurus.io/docs/i18n/introduction",
+        "https://docusaurus.io/docs/versioning",
+        "https://docusaurus.io/docs/search",
+        "https://docusaurus.io/docs/cli",
+        "https://docusaurus.io/docs/api/docusaurus-config",
+        "https://docusaurus.io/docs/advanced/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -20,10 +29,7 @@
       },
       "url_patterns": {
         "include": [
-          "/docs/",
-          "/docs/api/",
-          "/docs/cli/",
-          "/docs/advanced/"
+          "/docs/"
         ],
         "exclude": [
           "/blog/",
@@ -35,56 +41,88 @@
           "introduction",
           "installation",
           "configuration",
-          "deployment"
+          "project-structure"
         ],
         "guides": [
-          "guides",
-          "docs",
+          "creating-pages",
+          "docs-introduction",
           "blog",
-          "pages",
-          "styling"
+          "assets",
+          "static-assets"
+        ],
+        "markdown": [
+          "markdown-features",
+          "mdx",
+          "react",
+          "tabs",
+          "code-blocks",
+          "admonitions",
+          "diagrams"
+        ],
+        "styling": [
+          "styling-layout",
+          "swizzling",
+          "custom-css",
+          "color-mode"
         ],
         "plugins": [
           "plugins",
           "plugin-content-docs",
           "plugin-content-blog",
-          "plugin-pwa"
+          "plugin-pwa",
+          "plugin-sitemap",
+          "plugin-google-analytics"
         ],
         "themes": [
           "themes",
           "classic",
-          "configuration",
-          "swizzling"
+          "swizzling",
+          "navbar",
+          "footer"
         ],
         "api": [
           "api",
+          "docusaurus-config",
           "docusaurus-core",
-          "lifecycle-apis"
+          "lifecycle-apis",
+          "plugin-api"
         ],
         "advanced": [
           "advanced",
           "ssg",
-          "plugins",
-          "architecture"
+          "architecture",
+          "routing"
         ],
         "i18n": [
           "i18n",
           "tutorial",
-          "cli"
+          "cli",
+          "crowdin"
         ],
         "versioning": [
           "versioning",
           "sidebar",
           "fallback"
         ],
+        "deployment": [
+          "deployment",
+          "github-pages",
+          "netlify",
+          "vercel"
+        ],
         "search": [
           "search",
           "algolia",
           "local"
+        ],
+        "cli": [
+          "cli",
+          "docusaurus-start",
+          "docusaurus-build",
+          "docusaurus-deploy"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 250
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

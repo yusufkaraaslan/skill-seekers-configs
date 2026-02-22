@@ -1,7 +1,7 @@
 {
   "name": "strapi",
-  "description": "Complete Strapi knowledge from official documentation. Use when building headless CMS APIs with customizable admin panel. Covers content types, API generation, authentication, plugins, and deployment.",
-  "version": "1.0.0",
+  "description": "Complete Strapi knowledge from official documentation. Use when building headless CMS APIs with a customizable admin panel. Covers content types, REST and GraphQL APIs, authentication, plugins, TypeScript, and deployment.",
+  "version": "1.1.0",
   "base_url": "https://docs.strapi.io/",
   "sources": [
     {
@@ -10,8 +10,16 @@
       "start_urls": [
         "https://docs.strapi.io/dev-docs/intro",
         "https://docs.strapi.io/dev-docs/quick-start",
+        "https://docs.strapi.io/dev-docs/installation",
+        "https://docs.strapi.io/dev-docs/api/rest",
+        "https://docs.strapi.io/dev-docs/api/graphql",
         "https://docs.strapi.io/dev-docs/backend-customization",
-        "https://docs.strapi.io/dev-docs/api/rest"
+        "https://docs.strapi.io/dev-docs/typescript",
+        "https://docs.strapi.io/dev-docs/database",
+        "https://docs.strapi.io/dev-docs/plugins/developing-plugins",
+        "https://docs.strapi.io/dev-docs/deployment",
+        "https://docs.strapi.io/user-docs/intro",
+        "https://docs.strapi.io/cloud/intro"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -39,42 +47,75 @@
           "content-types",
           "create",
           "attributes",
-          "relations"
+          "relations",
+          "components",
+          "dynamic-zones"
         ],
         "api": [
           "api",
           "rest",
           "graphql",
           "filters",
-          "populate"
+          "populate",
+          "sorting",
+          "pagination"
         ],
         "admin": [
           "admin-panel",
           "content-manager",
-          "media-library"
+          "media-library",
+          "internationalization"
         ],
         "authentication": [
           "authentication",
           "jwt",
           "permissions",
-          "roles"
+          "roles",
+          "api-tokens"
         ],
         "customization": [
           "backend-customization",
           "controllers",
           "services",
-          "middlewares"
+          "middlewares",
+          "policies",
+          "routes"
         ],
         "plugins": [
           "plugins",
           "developing-plugins",
           "users-permissions",
-          "graphql"
+          "graphql",
+          "i18n",
+          "upload"
+        ],
+        "typescript": [
+          "typescript",
+          "type-generation",
+          "ts-configuration"
+        ],
+        "database": [
+          "database",
+          "configurations",
+          "migrations",
+          "query-engine"
         ],
         "deployment": [
           "deployment",
           "configurations",
           "environment"
+        ],
+        "user_docs": [
+          "user-docs",
+          "content-manager",
+          "media-library",
+          "settings"
+        ],
+        "cloud": [
+          "cloud",
+          "getting-started",
+          "projects",
+          "deployments"
         ],
         "cli": [
           "cli",
@@ -82,13 +123,12 @@
           "generate"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 350
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
     "author": "Strapi",
-    "language": "JavaScript/Node.js",
+    "language": "JavaScript/TypeScript",
     "framework_type": "Headless CMS",
     "use_cases": [
       "Content management",
@@ -99,11 +139,10 @@
     ],
     "related_skills": [
       "nodejs",
+      "typescript",
       "react",
       "graphql",
-      "rest",
-      "postgresql",
-      "mysql"
+      "postgresql"
     ]
   }
 }

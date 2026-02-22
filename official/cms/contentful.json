@@ -1,7 +1,7 @@
 {
   "name": "contentful",
-  "description": "Complete Contentful knowledge from official documentation. Use when building headless CMS applications with content delivery APIs. Covers content modeling, SDKs, webhooks, and GraphQL.",
-  "version": "1.0.0",
+  "description": "Complete Contentful knowledge from official documentation. Use when building headless CMS applications with content delivery APIs. Covers content modeling, SDKs, GraphQL, webhooks, environments, and the App Framework.",
+  "version": "1.1.0",
   "base_url": "https://www.contentful.com/developers/docs/",
   "sources": [
     {
@@ -10,8 +10,13 @@
       "start_urls": [
         "https://www.contentful.com/developers/docs/",
         "https://www.contentful.com/developers/docs/concepts/",
-        "https://www.contentful.com/developers/docs/references/",
-        "https://www.contentful.com/developers/docs/tutorials/"
+        "https://www.contentful.com/developers/docs/references/content-delivery-api/",
+        "https://www.contentful.com/developers/docs/references/content-management-api/",
+        "https://www.contentful.com/developers/docs/references/graphql/",
+        "https://www.contentful.com/developers/docs/references/images-api/",
+        "https://www.contentful.com/developers/docs/javascript/",
+        "https://www.contentful.com/developers/docs/tutorials/",
+        "https://www.contentful.com/developers/docs/extensibility/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -20,10 +25,7 @@
       },
       "url_patterns": {
         "include": [
-          "/developers/docs/",
-          "/developers/docs/concepts/",
-          "/developers/docs/references/",
-          "/developers/docs/tutorials/"
+          "/developers/docs/"
         ],
         "exclude": [
           "/developers/changelog/"
@@ -41,48 +43,56 @@
           "content-types",
           "fields",
           "validations",
-          "references"
+          "references",
+          "rich-text"
         ],
         "content_delivery": [
           "cda",
           "graphql",
           "rest",
-          "images-api"
+          "images-api",
+          "preview-api"
         ],
         "content_management": [
           "cma",
           "entries",
           "assets",
-          "locales"
+          "locales",
+          "environments",
+          "migrations"
         ],
         "sdks": [
           "javascript",
           "react",
           "nextjs",
           "python",
-          "ruby"
+          "ruby",
+          "ios",
+          "android"
         ],
         "webhooks": [
           "webhooks",
           "events",
           "filters",
-          "security"
+          "security",
+          "transformation"
         ],
         "app_framework": [
           "app-framework",
           "locations",
           "sdk",
-          "deployment"
+          "deployment",
+          "ui-extensions"
         ],
         "security": [
           "authentication",
           "tokens",
           "oauth",
-          "roles"
+          "roles",
+          "api-keys"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 350
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
