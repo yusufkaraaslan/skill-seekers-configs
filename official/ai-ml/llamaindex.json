@@ -32,7 +32,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "getting_started/installation",
           "starter_example",
           "concepts"
@@ -115,8 +114,7 @@
           "retrieval_evaluation"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 600
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

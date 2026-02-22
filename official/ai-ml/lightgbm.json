@@ -31,7 +31,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "Installation-Guide",
           "Quick-Start",
           "Python-Intro"
@@ -99,8 +98,7 @@
           "model_to_string"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 300
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

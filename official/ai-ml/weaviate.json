@@ -32,7 +32,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "quickstart",
           "installation",
           "core-concepts"
@@ -110,8 +109,7 @@
           "crud"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 450
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

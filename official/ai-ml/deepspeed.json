@@ -2,6 +2,7 @@
   "name": "deepspeed",
   "description": "Complete DeepSpeed knowledge from official documentation. Use when training large-scale deep learning models with optimization. Covers ZeRO, mixed precision, pipeline parallelism, and inference.",
   "version": "1.0.0",
+  "base_url": "https://www.deepspeed.ai/",
   "sources": [
     {
       "type": "documentation",
@@ -97,8 +98,7 @@
           "logging"
         ]
       },
-      "rate_limit": 0.5,
-      "max_pages": 150
+      "rate_limit": 0.5
     },
     {
       "type": "documentation",
@@ -140,8 +140,7 @@
           "training"
         ]
       },
-      "rate_limit": 0.5,
-      "max_pages": 100
+      "rate_limit": 0.5
     }
   ],
   "metadata": {

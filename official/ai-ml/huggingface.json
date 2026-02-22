@@ -79,7 +79,7 @@
           "lora",
           "qlora",
           "prompt_tuning",
-          " adapters"
+          "adapters"
         ],
         "trl": [
           "trl",
@@ -110,8 +110,7 @@
           "multi_gpu"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 600
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

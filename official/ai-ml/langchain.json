@@ -1,18 +1,18 @@
 {
   "name": "langchain",
-  "description": "Complete LangChain knowledge from official documentation. Use when building LLM-powered applications with chains, agents, and RAG. Covers LangChain Python/JS, LCEL, and integration with OpenAI, Anthropic, and local models.",
-  "version": "1.0.0",
+  "description": "Complete LangChain knowledge from official documentation. Use when building LLM-powered applications with chains, agents, and RAG. Covers LangChain Python v0.3+, LCEL, LangGraph, LangSmith, and integrations with major LLM providers.",
+  "version": "1.1.0",
   "base_url": "https://python.langchain.com/docs/",
   "sources": [
     {
       "type": "documentation",
       "base_url": "https://python.langchain.com/docs/",
       "start_urls": [
-        "https://python.langchain.com/docs/get_started/introduction",
-        "https://python.langchain.com/docs/expression_language/",
-        "https://python.langchain.com/docs/modules/model_io/",
-        "https://python.langchain.com/docs/modules/agents/",
-        "https://python.langchain.com/docs/use_cases/question_answering/"
+        "https://python.langchain.com/docs/introduction/",
+        "https://python.langchain.com/docs/concepts/",
+        "https://python.langchain.com/docs/how_to/",
+        "https://python.langchain.com/docs/tutorials/",
+        "https://python.langchain.com/docs/integrations/providers/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -21,82 +21,158 @@
       },
       "url_patterns": {
         "include": [
-          "/docs/get_started/",
-          "/docs/expression_language/",
-          "/docs/modules/",
-          "/docs/use_cases/",
+          "/docs/introduction/",
+          "/docs/concepts/",
+          "/docs/how_to/",
+          "/docs/tutorials/",
           "/docs/integrations/"
         ],
         "exclude": [
-          "/docs/changelog/"
+          "/docs/additional_resources/",
+          "/docs/versions/"
         ]
       },
       "categories": {
         "getting_started": [
           "introduction",
-          "quickstart",
           "installation",
+          "quickstart",
           "setup"
         ],
-        "expression_language": [
-          "expression-language",
+        "concepts": [
+          "concepts",
+          "runnables",
           "lcel",
-          "runnable",
-          "pipe",
-          "chain"
+          "messages",
+          "chat_models",
+          "llms",
+          "output_parsers"
+        ],
+        "expression_language": [
+          "lcel",
+          "runnable-interface",
+          "runnable-parallel",
+          "runnable-passthrough",
+          "streaming"
         ],
         "models": [
           "chat-models",
           "llms",
           "openai",
           "anthropic",
-          "local",
-          "streaming"
+          "ollama",
+          "azure",
+          "google"
         ],
         "prompts": [
-          "prompts",
-          "templates",
+          "prompt-templates",
+          "chat-prompt-templates",
           "few-shot",
           "example-selectors"
         ],
-        "indexes": [
+        "document_loaders": [
           "document-loaders",
           "text-splitters",
+          "csv",
+          "pdf",
+          "web"
+        ],
+        "vector_stores": [
           "vector-stores",
+          "retrievers",
           "embeddings",
-          "retrievers"
+          "chroma",
+          "pinecone",
+          "faiss"
         ],
         "chains": [
-          "chains",
-          "llm-chain",
+          "rag",
           "retrieval",
-          "conversational",
+          "conversational-rag",
+          "summarization",
           "sql"
         ],
         "agents": [
           "agents",
           "tools",
           "toolkits",
-          "agent-executor",
-          "plan-and-execute"
+          "react",
+          "openai-tools"
         ],
         "memory": [
           "memory",
-          "buffer",
-          "summary",
-          "vectorstore"
+          "conversation-buffer",
+          "chat-history",
+          "checkpointing"
         ],
         "use_cases": [
-          "qa",
+          "qa-chat-history",
           "chatbots",
           "rag",
           "extraction",
           "sql",
-          "api"
+          "code-writing"
+        ],
+        "output_parsing": [
+          "output-parsers",
+          "structured-output",
+          "json",
+          "pydantic"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 500
+      "rate_limit": 0.3
+    },
+    {
+      "type": "documentation",
+      "base_url": "https://langchain-ai.github.io/langgraph/",
+      "start_urls": [
+        "https://langchain-ai.github.io/langgraph/",
+        "https://langchain-ai.github.io/langgraph/tutorials/introduction/",
+        "https://langchain-ai.github.io/langgraph/concepts/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/langgraph/",
+          "/langgraph/tutorials/",
+          "/langgraph/concepts/",
+          "/langgraph/how-tos/"
+        ],
+        "exclude": [
+          "/langgraph/reference/"
+        ]
+      },
+      "categories": {
+        "langgraph_intro": [
+          "tutorials/introduction",
+          "concepts/why-langgraph",
+          "quickstart"
+        ],
+        "langgraph_concepts": [
+          "concepts/low_level",
+          "state",
+          "nodes",
+          "edges",
+          "graphs"
+        ],
+        "langgraph_agents": [
+          "how-tos/create-react-agent",
+          "agentic-rag",
+          "human-in-the-loop",
+          "multi-agent"
+        ],
+        "langgraph_persistence": [
+          "concepts/persistence",
+          "checkpointers",
+          "memory",
+          "store"
+        ]
+      },
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
@@ -108,13 +184,15 @@
       "RAG systems",
       "AI agents",
       "Chatbots",
-      "Document Q&A"
+      "Document Q&A",
+      "Multi-agent systems"
     ],
     "related_skills": [
       "openai-api",
       "python",
       "vector-databases",
-      "anthropic"
+      "anthropic",
+      "langgraph"
     ]
   }
 }

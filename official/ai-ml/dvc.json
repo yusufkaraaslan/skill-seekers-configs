@@ -31,7 +31,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "start",
           "install",
           "what-is-dvc"
@@ -103,8 +102,7 @@
           "partial"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 400
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

@@ -31,7 +31,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "auto_examples/core/run_core_concepts",
           "install",
           "tutorials"
@@ -103,12 +102,11 @@
           "mmap"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 300
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
-    "author": "Radim \u0158eh\u016f\u0159ek",
+    "author": "Radim Řehůřek",
     "language": "Python",
     "framework_type": "Topic Modeling Library",
     "use_cases": [

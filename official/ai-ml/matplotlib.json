@@ -31,7 +31,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "users/getting_started",
           "users/installing",
           "api/pyplot_summary"
@@ -103,8 +102,7 @@
           "bbox"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 600
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

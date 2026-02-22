@@ -20,9 +20,8 @@
       },
       "url_patterns": {
         "include": [
-          "/",
-          "/tutorial.html",
-          "/api.html",
+          "/tutorial/",
+          "/api/",
           "/examples/",
           "/generated/"
         ],
@@ -32,7 +31,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "installation",
           "introduction",
           "tutorial/function_overview"
@@ -109,8 +107,7 @@
           "figure-size"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 350
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

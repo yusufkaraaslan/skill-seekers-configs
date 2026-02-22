@@ -32,7 +32,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "onnx/intro",
           "docs/get-started",
           "overview"
@@ -99,8 +98,7 @@
           "pretrained-models"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 400
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

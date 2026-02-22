@@ -31,7 +31,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "user_guide",
           "install",
           "faq"
@@ -105,8 +104,7 @@
           "ovo"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 500
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

@@ -31,7 +31,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "tutorial_root",
           "introduction",
           "installation"
@@ -119,8 +118,7 @@
           "neural-networks"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 600
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

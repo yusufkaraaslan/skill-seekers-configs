@@ -32,7 +32,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "ray-overview",
           "installation",
           "quickstart"
@@ -105,8 +104,7 @@
           "profiling"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 600
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

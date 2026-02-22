@@ -1,7 +1,7 @@
 {
   "name": "chroma",
-  "description": "Complete Chroma knowledge from official documentation. Use when building AI-native embeddings databases. Collections, embeddings, querying, filtering, and multi-modal support.",
-  "version": "1.0.0",
+  "description": "Complete Chroma knowledge from official documentation. Use when building AI-native embeddings databases. Collections, embeddings, querying, filtering, multi-modal support, and client-server deployment.",
+  "version": "1.1.0",
   "base_url": "https://docs.trychroma.com/",
   "sources": [
     {
@@ -9,41 +9,42 @@
       "base_url": "https://docs.trychroma.com/",
       "start_urls": [
         "https://docs.trychroma.com/",
-        "https://docs.trychroma.com/getting-started",
-        "https://docs.trychroma.com/usage-guide",
-        "https://docs.trychroma.com/embeddings"
+        "https://docs.trychroma.com/docs/overview/introduction",
+        "https://docs.trychroma.com/docs/overview/getting-started",
+        "https://docs.trychroma.com/reference/py-client"
       ],
       "selectors": {
-        "main_content": "article, main",
+        "main_content": "article, main, [class*='content'], [class*='docs']",
         "title": "h1",
         "code_blocks": "pre code, pre"
       },
       "url_patterns": {
         "include": [
-          "/",
-          "/getting-started",
-          "/usage-guide",
-          "/embeddings",
-          "/integrations"
+          "/docs/",
+          "/reference/",
+          "/integrations/"
         ],
         "exclude": [
-          "/api-reference/"
+          "/blog/",
+          "/community/"
         ]
       },
       "categories": {
         "getting_started": [
-          "",
-          "getting-started",
+          "overview/introduction",
+          "overview/getting-started",
           "installation",
-          "introduction"
+          "quickstart"
         ],
         "collections": [
-          "usage-guide",
-          "creating-collection",
-          "getting-collection",
-          "deleting-collection"
+          "collections",
+          "create-collection",
+          "get-collection",
+          "delete-collection",
+          "collection-configuration"
         ],
         "documents": [
+          "usage-guide",
           "adding-data",
           "upsert",
           "add",
@@ -55,22 +56,26 @@
           "default-embeddings",
           "openai",
           "sentence-transformers",
+          "cohere",
           "custom"
         ],
         "querying": [
           "querying-collections",
           "query",
+          "get",
           "where",
-          "where_document"
+          "where_document",
+          "include"
         ],
-        "metadata": [
+        "metadata_filtering": [
           "metadata",
           "filtering",
           "operators",
           "and",
-          "or"
+          "or",
+          "contains"
         ],
-        "distance": [
+        "distance_metrics": [
           "distance",
           "cosine",
           "l2",
@@ -79,38 +84,40 @@
         ],
         "persistence": [
           "persistence",
-          "save",
-          "load",
-          "client",
-          "http-client"
+          "ephemeral-client",
+          "persistent-client",
+          "http-client",
+          "cloud-client"
         ],
-        "deployment": [
-          "deployment",
+        "client_server": [
+          "client-server",
+          "chroma-server",
           "docker",
-          "aws",
-          "gcp",
-          "azure"
+          "kubernetes",
+          "authentication"
         ],
         "integrations": [
           "integrations",
           "langchain",
           "llamaindex",
           "openai",
-          "huggingface"
+          "huggingface",
+          "haystack"
         ],
         "multi_modal": [
           "multi-modal",
           "images",
-          "data-loader"
+          "data-loader",
+          "CLIP"
         ],
-        "telemetry": [
-          "telemetry",
-          "analytics",
-          "opting-out"
+        "migration": [
+          "migration",
+          "upgrade",
+          "v0.4",
+          "v0.5"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 250
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
@@ -122,7 +129,8 @@
       "Semantic search",
       "RAG",
       "AI applications",
-      "Local vector DB"
+      "Local vector DB",
+      "Multi-modal search"
     ],
     "related_skills": [
       "python",

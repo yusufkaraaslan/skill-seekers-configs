@@ -25,13 +25,10 @@
           "/api/",
           "/examples/"
         ],
-        "exclude": [
-          "/keras_3/"
-        ]
+        "exclude": []
       },
       "categories": {
         "getting_started": [
-          "",
           "getting_started",
           "introduction_to_keras",
           "ecosystem"
@@ -114,8 +111,7 @@
           "custom_training_loop"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 500
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
