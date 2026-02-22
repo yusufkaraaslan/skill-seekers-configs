@@ -108,8 +108,7 @@
           "walkthrough"
         ]
       },
-      "rate_limit": 0.7,
-      "max_pages": 1000
+      "rate_limit": 0.7
     }
   ],
   "base_url": "https://partner.steamgames.com/doc/"

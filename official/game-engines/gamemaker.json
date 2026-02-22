@@ -97,8 +97,7 @@
           "GLSL"
         ]
       },
-      "rate_limit": 0.5,
-      "max_pages": 400
+      "rate_limit": 0.5
     }
   ],
   "metadata": {
