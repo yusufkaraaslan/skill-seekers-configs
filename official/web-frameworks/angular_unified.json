@@ -1,7 +1,7 @@
 {
   "name": "angular",
   "description": "Complete Angular knowledge combining official documentation and source code. Use when building enterprise web applications with TypeScript. Covers components, services, routing, forms, and Angular CLI. Version 17+ with standalone components.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
   "sources": [
     {

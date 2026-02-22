@@ -1,7 +1,7 @@
 {
   "name": "nextjs",
   "description": "Complete Next.js knowledge combining official documentation and Next.js source code. Use when building React applications with SSR, SSG, API routes, and App Router. Covers Next.js 14+ with App Router, Server Components, and edge runtime.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
   "sources": [
     {

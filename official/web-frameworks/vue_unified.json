@@ -1,6 +1,7 @@
 {
   "name": "vue",
   "description": "Complete Vue.js framework knowledge combining official documentation and Vue.js codebase. Use when building Vue applications, understanding reactivity internals, composition API, or debugging Vue issues.",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
   "sources": [
     {

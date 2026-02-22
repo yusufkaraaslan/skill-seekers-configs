@@ -1,6 +1,7 @@
 {
   "name": "react",
   "description": "Complete React knowledge base combining official documentation and React codebase insights. Use when working with React, understanding API changes, or debugging React internals.",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
   "sources": [
     {

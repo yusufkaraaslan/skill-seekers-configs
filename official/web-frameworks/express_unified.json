@@ -1,7 +1,7 @@
 {
   "name": "express",
   "description": "Complete Express.js knowledge combining documentation and source code. Use when building Node.js web servers, APIs, or middleware. Covers routing, middleware, template engines, and production best practices.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
   "sources": [
     {

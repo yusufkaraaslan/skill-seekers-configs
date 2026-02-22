@@ -1,12 +1,12 @@
 {
   "name": "htmx",
   "description": "Complete HTMX knowledge from official documentation. Use when building modern web applications with hypermedia, without JavaScript frameworks. Covers AJAX, CSS transitions, WebSockets, and SSE.",
-  "version": "1.0.0",
-  "base_url": "https://htmx.org/docs/",
+  "version": "1.1.0",
+  "base_url": "https://htmx.org/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://htmx.org/docs/",
+      "base_url": "https://htmx.org/",
       "start_urls": [
         "https://htmx.org/docs/",
         "https://htmx.org/reference/",

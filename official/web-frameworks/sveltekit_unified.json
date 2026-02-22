@@ -1,7 +1,7 @@
 {
   "name": "sveltekit",
   "description": "Complete SvelteKit knowledge combining documentation and source code. Use when building modern web apps with Svelte. Covers routing, server-side rendering, adapters, and full-stack Svelte development.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
   "sources": [
     {

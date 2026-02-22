@@ -1,7 +1,7 @@
 {
   "name": "svelte",
   "description": "Complete Svelte knowledge combining official documentation and source code. Use when building reactive web applications with compiled components. Covers Svelte 4 with runes, stores, animations, and transitions.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
   "sources": [
     {

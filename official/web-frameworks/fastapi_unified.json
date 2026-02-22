@@ -1,6 +1,7 @@
 {
   "name": "fastapi",
   "description": "Complete FastAPI knowledge combining official documentation and FastAPI codebase. Use when building FastAPI applications, understanding async patterns, or working with Pydantic models.",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
   "sources": [
     {

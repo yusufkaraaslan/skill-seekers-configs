@@ -1,7 +1,7 @@
 {
   "name": "astro",
   "description": "Complete Astro knowledge combining official documentation and Astro codebase. Use when building content-focused websites with islands architecture, partial hydration, and zero-JS by default. Covers v4.x with View Transitions.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
   "sources": [
     {
@@ -10,9 +10,9 @@
       "extract_api": true,
       "start_urls": [
         "https://docs.astro.build/en/getting-started/",
-        "https://docs.astro.build/en/core-concepts/project-structure/",
-        "https://docs.astro.build/en/core-concepts/astro-components/",
-        "https://docs.astro.build/en/core-concepts/routing/",
+        "https://docs.astro.build/en/basics/project-structure/",
+        "https://docs.astro.build/en/basics/astro-components/",
+        "https://docs.astro.build/en/basics/routing/",
         "https://docs.astro.build/en/guides/integrations-guide/"
       ],
       "selectors": {
@@ -23,7 +23,7 @@
       "url_patterns": {
         "include": [
           "/en/getting-started/",
-          "/en/core-concepts/",
+          "/en/basics/",
           "/en/guides/",
           "/en/reference/"
         ],

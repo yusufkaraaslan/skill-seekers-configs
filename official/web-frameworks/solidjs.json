@@ -1,7 +1,7 @@
 {
   "name": "solidjs",
   "description": "Complete SolidJS knowledge from official documentation. Use when building high-performance reactive web applications without Virtual DOM. Covers signals, stores, effects, and routing.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://docs.solidjs.com/",
   "sources": [
     {
@@ -20,8 +20,6 @@
       },
       "url_patterns": {
         "include": [
-          "/",
-          "/quick-start",
           "/concepts/",
           "/reference/",
           "/guides/"

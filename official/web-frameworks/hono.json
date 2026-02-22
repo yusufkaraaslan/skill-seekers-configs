@@ -1,6 +1,7 @@
 {
   "name": "hono",
   "description": "Complete Hono framework knowledge combining official documentation and Hono codebase. Use when building Hono applications, understanding middleware, or debugging Hono issues.",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
   "sources": [
     {

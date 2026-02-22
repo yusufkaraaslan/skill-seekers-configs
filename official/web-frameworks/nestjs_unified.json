@@ -1,7 +1,7 @@
 {
   "name": "nestjs",
   "description": "Complete NestJS knowledge combining official documentation and source code. Use when building enterprise-grade Node.js applications with TypeScript. Covers modules, controllers, providers, dependency injection, and microservices.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
   "sources": [
     {

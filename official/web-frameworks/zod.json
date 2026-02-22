@@ -1,17 +1,14 @@
 {
   "name": "zod",
   "description": "Complete Zod knowledge from official documentation. Use when building type-safe schemas for TypeScript validation. Covers schema definition, parsing, inference, transformations, and error handling.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://zod.dev/",
   "sources": [
     {
       "type": "documentation",
       "base_url": "https://zod.dev/",
       "start_urls": [
-        "https://zod.dev/",
-        "https://zod.dev/?id=basic-usage",
-        "https://zod.dev/?id=primitives",
-        "https://zod.dev/?id=error-handling"
+        "https://zod.dev/"
       ],
       "selectors": {
         "main_content": "main, article",
@@ -77,7 +74,7 @@
         ],
         "advanced": [
           "generic-types",
-          " branded",
+          "branded",
           "recursive",
           "promise"
         ]

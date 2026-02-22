@@ -1,7 +1,7 @@
 {
   "name": "nuxt",
   "description": "Complete Nuxt.js knowledge combining official documentation and source code. Use when building Vue-based universal applications with SSR, SSG, and file-based routing. Covers Nuxt 3 with Nitro engine and Vue 3 Composition API.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
   "sources": [
     {
