@@ -1,7 +1,7 @@
 {
   "name": "trpc",
-  "description": "Complete tRPC knowledge from official documentation. Use when building end-to-end type-safe APIs with TypeScript. Covers routers, procedures, middleware, subscriptions, and client integrations.",
-  "version": "1.0.0",
+  "description": "Complete tRPC v11 knowledge from official documentation. Use when building end-to-end type-safe APIs with TypeScript. Covers routers, procedures, middleware, context, subscriptions, TanStack Query integration, server adapters, and error handling.",
+  "version": "1.1.0",
   "base_url": "https://trpc.io/docs/",
   "sources": [
     {
@@ -10,8 +10,20 @@
       "start_urls": [
         "https://trpc.io/docs/",
         "https://trpc.io/docs/quickstart",
+        "https://trpc.io/docs/concepts",
         "https://trpc.io/docs/router",
-        "https://trpc.io/docs/react-query"
+        "https://trpc.io/docs/procedure",
+        "https://trpc.io/docs/context",
+        "https://trpc.io/docs/middleware",
+        "https://trpc.io/docs/merging-routers",
+        "https://trpc.io/docs/subscriptions",
+        "https://trpc.io/docs/error-handling",
+        "https://trpc.io/docs/error-formatting",
+        "https://trpc.io/docs/data-transformers",
+        "https://trpc.io/docs/server/adapters/express",
+        "https://trpc.io/docs/server/adapters/fastify",
+        "https://trpc.io/docs/server/adapters/nextjs",
+        "https://trpc.io/docs/client/react/setup"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -20,12 +32,7 @@
       },
       "url_patterns": {
         "include": [
-          "/docs/",
-          "/docs/quickstart",
-          "/docs/router",
-          "/docs/procedure",
-          "/docs/client/",
-          "/docs/server/"
+          "/docs/"
         ],
         "exclude": [
           "/blog/"
@@ -35,55 +42,75 @@
         "getting_started": [
           "introduction",
           "quickstart",
-          "concepts"
+          "concepts",
+          "example-apps"
         ],
         "router": [
           "router",
           "merging-routers",
-          "subscriptions"
+          "prefix"
         ],
         "procedures": [
           "procedure",
           "queries",
           "mutations",
-          "input-validation"
+          "input-validation",
+          "output-validation",
+          "zod"
         ],
         "context": [
           "context",
           "authorization",
-          "middleware"
+          "create-context"
+        ],
+        "middleware": [
+          "middleware",
+          "logging",
+          "ratelimit",
+          "authorization"
         ],
         "server": [
           "adapters/express",
-          "adapters/next",
+          "adapters/nextjs",
           "adapters/fastify",
-          "adapters/standalone"
+          "adapters/standalone",
+          "adapters/fetch"
         ],
         "client": [
           "vanilla",
           "react",
           "nextjs",
-          "vue"
+          "setup",
+          "links"
         ],
-        "react_query": [
+        "tanstack_query": [
           "react-query",
+          "tanstack",
           "useQuery",
           "useMutation",
-          "ssr"
-        ],
-        "error_handling": [
-          "error-handling",
-          "error-formatting",
-          "error-codes"
+          "useInfiniteQuery",
+          "ssr",
+          "prefetch"
         ],
         "subscriptions": [
           "subscriptions",
           "websockets",
-          "event-emitter"
+          "event-emitter",
+          "observable"
+        ],
+        "error_handling": [
+          "error-handling",
+          "error-formatting",
+          "error-codes",
+          "TRPCError"
+        ],
+        "data_transformers": [
+          "data-transformers",
+          "superjson",
+          "devalue"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 250
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
@@ -94,8 +121,9 @@
       "Type-safe APIs",
       "Full-stack TypeScript",
       "Next.js apps",
-      "Real-time APIs",
-      "Microservices"
+      "Real-time subscriptions",
+      "Monorepo APIs",
+      "Zero-schema API generation"
     ],
     "related_skills": [
       "typescript",
@@ -103,7 +131,7 @@
       "react",
       "prisma",
       "zod",
-      "websocket"
+      "tanstack-query"
     ]
   }
 }

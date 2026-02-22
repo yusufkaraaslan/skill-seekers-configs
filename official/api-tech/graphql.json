@@ -1,7 +1,7 @@
 {
   "name": "graphql",
-  "description": "Complete GraphQL knowledge from official documentation. Use when designing APIs, querying data, or implementing type-safe data fetching. Covers schema, queries, mutations, subscriptions, and best practices.",
-  "version": "1.0.0",
+  "description": "Complete GraphQL knowledge from official documentation. Use when designing APIs, querying data, or implementing type-safe data fetching. Covers schema, queries, mutations, subscriptions, variables, directives, introspection, and best practices.",
+  "version": "1.1.0",
   "base_url": "https://graphql.org/learn/",
   "sources": [
     {
@@ -9,10 +9,15 @@
       "base_url": "https://graphql.org/learn/",
       "start_urls": [
         "https://graphql.org/learn/",
-        "https://graphql.org/learn/schema/",
         "https://graphql.org/learn/queries/",
+        "https://graphql.org/learn/mutations/",
+        "https://graphql.org/learn/subscriptions/",
+        "https://graphql.org/learn/schema/",
         "https://graphql.org/learn/execution/",
-        "https://graphql.org/learn/best-practices/"
+        "https://graphql.org/learn/introspection/",
+        "https://graphql.org/learn/best-practices/",
+        "https://graphql.org/learn/thinking-in-graphs/",
+        "https://graphql.org/learn/global-object-identification/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -24,7 +29,9 @@
           "/learn/"
         ],
         "exclude": [
-          "/foundation/"
+          "/foundation/",
+          "/community/",
+          "/blog/"
         ]
       },
       "categories": {
@@ -38,7 +45,25 @@
           "fields",
           "arguments",
           "aliases",
-          "fragments"
+          "fragments",
+          "operation-name"
+        ],
+        "variables_directives": [
+          "variables",
+          "directives",
+          "skip",
+          "include",
+          "deprecated"
+        ],
+        "mutations": [
+          "mutations",
+          "inline-fragments",
+          "multiple-fields"
+        ],
+        "subscriptions": [
+          "subscriptions",
+          "real-time",
+          "events"
         ],
         "schema": [
           "schema",
@@ -47,31 +72,33 @@
           "scalar",
           "enum",
           "interface",
-          "union"
-        ],
-        "validation": [
-          "validation",
-          "type-system",
-          "introspection"
+          "union",
+          "input"
         ],
         "execution": [
           "execution",
           "root-fields",
-          "resolvers"
+          "resolvers",
+          "scalar-coercion",
+          "list-resolvers"
         ],
         "introspection": [
           "introspection",
-          "schema-exploration"
+          "schema-exploration",
+          "__type",
+          "__schema"
         ],
         "best_practices": [
           "best-practices",
           "pagination",
           "caching",
-          "authorization"
+          "authorization",
+          "global-object-identification",
+          "serving-over-http",
+          "json-with-get"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 150
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
@@ -83,14 +110,16 @@
       "Data fetching",
       "Type-safe queries",
       "Mobile APIs",
-      "Real-time data"
+      "Real-time subscriptions",
+      "Schema-first development"
     ],
     "related_skills": [
       "apollo",
       "nodejs",
       "python",
       "prisma",
-      "trpc"
+      "trpc",
+      "typescript"
     ]
   }
 }
