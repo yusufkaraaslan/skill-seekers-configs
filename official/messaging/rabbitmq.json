@@ -1,7 +1,7 @@
 {
   "name": "rabbitmq",
   "description": "Complete RabbitMQ knowledge from official documentation. Use when building distributed systems with message queuing. Covers exchanges, queues, bindings, routing, and clustering.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://www.rabbitmq.com/docs/",
   "sources": [
     {
@@ -81,7 +81,7 @@
     }
   ],
   "metadata": {
-    "author": "VMware / RabbitMQ",
+    "author": "RabbitMQ",
     "language": "Erlang",
     "framework_type": "Message Broker",
     "use_cases": [

@@ -1,7 +1,7 @@
 {
   "name": "kafka",
   "description": "Complete Apache Kafka knowledge from official documentation. Use when building event-driven architectures and real-time data pipelines. Covers producers, consumers, topics, partitions, and Kafka Streams.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://kafka.apache.org/documentation/",
   "sources": [
     {
@@ -9,10 +9,9 @@
       "base_url": "https://kafka.apache.org/documentation/",
       "start_urls": [
         "https://kafka.apache.org/documentation/",
-        "https://kafka.apache.org/documentation/#gettingStarted",
-        "https://kafka.apache.org/documentation/#api",
-        "https://kafka.apache.org/documentation/#connect",
-        "https://kafka.apache.org/documentation/#streams"
+        "https://kafka.apache.org/documentation/streams/",
+        "https://kafka.apache.org/documentation/streams/quickstart",
+        "https://kafka.apache.org/documentation/streams/developer-guide/"
       ],
       "selectors": {
         "main_content": "article, main, .content",
@@ -24,7 +23,8 @@
           "/documentation/"
         ],
         "exclude": [
-          "/documentation/#quickstart"
+          "/documentation/release-notes/",
+          "/documentation/upgrade/"
         ]
       },
       "categories": {
@@ -39,6 +39,7 @@
           "producers",
           "consumers",
           "brokers",
+          "kraft",
           "zookeeper"
         ],
         "topics": [
