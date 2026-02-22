@@ -1,7 +1,7 @@
 {
   "name": "prisma",
-  "description": "Complete Prisma knowledge from official documentation. Use when building type-safe database applications with Node.js and TypeScript. Covers schema definition, client queries, migrations, and relations.",
-  "version": "1.0.0",
+  "description": "Complete Prisma knowledge from official documentation. Use when building type-safe database applications with Node.js and TypeScript. Covers Prisma ORM schema definition, client queries, migrations, relations, and Prisma Accelerate.",
+  "version": "1.1.0",
   "base_url": "https://www.prisma.io/docs/",
   "sources": [
     {
@@ -9,8 +9,12 @@
       "base_url": "https://www.prisma.io/docs/",
       "start_urls": [
         "https://www.prisma.io/docs/getting-started",
-        "https://www.prisma.io/docs/concepts/",
-        "https://www.prisma.io/docs/reference/",
+        "https://www.prisma.io/docs/orm/overview/",
+        "https://www.prisma.io/docs/orm/prisma-schema/",
+        "https://www.prisma.io/docs/orm/prisma-client/",
+        "https://www.prisma.io/docs/orm/prisma-migrate/",
+        "https://www.prisma.io/docs/orm/reference/",
+        "https://www.prisma.io/docs/accelerate/",
         "https://www.prisma.io/docs/guides/"
       ],
       "selectors": {
@@ -20,9 +24,9 @@
       },
       "url_patterns": {
         "include": [
-          "/docs/getting-started/",
-          "/docs/concepts/",
-          "/docs/reference/",
+          "/docs/getting-started",
+          "/docs/orm/",
+          "/docs/accelerate/",
           "/docs/guides/"
         ],
         "exclude": [
@@ -82,8 +86,7 @@
           "caching"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 400
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

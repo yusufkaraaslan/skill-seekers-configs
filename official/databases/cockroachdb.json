@@ -1,7 +1,7 @@
 {
   "name": "cockroachdb",
-  "description": "Complete CockroachDB knowledge from official documentation. Use when building distributed, horizontally scalable SQL databases. Covers SQL, distributed transactions, replication, and multi-region.",
-  "version": "1.0.0",
+  "description": "Complete CockroachDB knowledge from official documentation. Use when building distributed, horizontally scalable SQL databases. Covers SQL, distributed transactions, multi-region deployment, replication, and changefeeds.",
+  "version": "1.1.0",
   "base_url": "https://www.cockroachlabs.com/docs/stable/",
   "sources": [
     {
@@ -9,9 +9,15 @@
       "base_url": "https://www.cockroachlabs.com/docs/stable/",
       "start_urls": [
         "https://www.cockroachlabs.com/docs/stable/",
+        "https://www.cockroachlabs.com/docs/stable/install-cockroachdb",
+        "https://www.cockroachlabs.com/docs/stable/learn-cockroachdb-sql",
         "https://www.cockroachlabs.com/docs/stable/sql-statements",
+        "https://www.cockroachlabs.com/docs/stable/transactions",
         "https://www.cockroachlabs.com/docs/stable/architecture/overview",
-        "https://www.cockroachlabs.com/docs/stable/performance"
+        "https://www.cockroachlabs.com/docs/stable/multiregion-overview",
+        "https://www.cockroachlabs.com/docs/stable/backup-and-restore",
+        "https://www.cockroachlabs.com/docs/stable/performance",
+        "https://www.cockroachlabs.com/docs/stable/change-data-capture"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -20,10 +26,7 @@
       },
       "url_patterns": {
         "include": [
-          "/docs/stable/",
-          "/docs/stable/sql-statements",
-          "/docs/stable/architecture/",
-          "/docs/stable/performance/"
+          "/docs/stable/"
         ],
         "exclude": [
           "/docs/stable/releases/"
@@ -31,7 +34,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "install-cockroachdb",
           "start-a-local-cluster",
           "learn-cockroachdb-sql"
@@ -105,8 +107,7 @@
           "kafka"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 450
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

@@ -1,17 +1,23 @@
 {
   "name": "mysql",
-  "description": "Complete MySQL knowledge from official documentation. Use when building applications with the world's most popular open-source relational database. Covers SQL, replication, partitioning, and performance tuning.",
-  "version": "1.0.0",
+  "description": "Complete MySQL 8.4 LTS knowledge from official documentation. Use when building applications with the world's most popular open-source relational database. Covers SQL, replication, partitioning, performance tuning, and JSON support.",
+  "version": "1.1.0",
   "base_url": "https://dev.mysql.com/doc/",
   "sources": [
     {
       "type": "documentation",
       "base_url": "https://dev.mysql.com/doc/",
       "start_urls": [
-        "https://dev.mysql.com/doc/refman/8.0/en/",
-        "https://dev.mysql.com/doc/refman/8.0/en/sql-statements.html",
-        "https://dev.mysql.com/doc/refman/8.0/en/optimization.html",
-        "https://dev.mysql.com/doc/workbench/en/"
+        "https://dev.mysql.com/doc/refman/8.4/en/",
+        "https://dev.mysql.com/doc/refman/8.4/en/sql-statements.html",
+        "https://dev.mysql.com/doc/refman/8.4/en/data-types.html",
+        "https://dev.mysql.com/doc/refman/8.4/en/functions.html",
+        "https://dev.mysql.com/doc/refman/8.4/en/optimization.html",
+        "https://dev.mysql.com/doc/refman/8.4/en/replication.html",
+        "https://dev.mysql.com/doc/refman/8.4/en/partitioning.html",
+        "https://dev.mysql.com/doc/refman/8.4/en/security.html",
+        "https://dev.mysql.com/doc/workbench/en/",
+        "https://dev.mysql.com/doc/connector-python/en/"
       ],
       "selectors": {
         "main_content": "article, main, .section",
@@ -20,12 +26,13 @@
       },
       "url_patterns": {
         "include": [
-          "/doc/refman/8.0/en/",
+          "/doc/refman/8.4/en/",
           "/doc/workbench/en/",
-          "/doc/connector-python/en/"
+          "/doc/connector-python/en/",
+          "/doc/connector-j/en/"
         ],
         "exclude": [
-          "/doc/refman/8.0/en/news.html"
+          "/doc/refman/8.4/en/news.html"
         ]
       },
       "categories": {
@@ -79,7 +86,6 @@
         ],
         "replication": [
           "replication",
-          "master-slave",
           "gtid",
           "binlog",
           "replica"
@@ -93,7 +99,6 @@
         "optimization": [
           "optimization",
           "explain",
-          "query-cache",
           "buffer-pool",
           "performance-schema"
         ],
@@ -111,8 +116,7 @@
           "point-in-time-recovery"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 500
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

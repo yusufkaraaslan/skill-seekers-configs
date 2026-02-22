@@ -1,8 +1,9 @@
 {
   "name": "mongodb",
-  "description": "Complete MongoDB knowledge combining documentation and source code. Use when designing NoSQL databases, writing aggregation pipelines, or managing document-based data. Covers CRUD, aggregation, indexing, and Atlas.",
-  "version": "1.0.0",
+  "description": "Complete MongoDB knowledge combining documentation and source code. Use when designing NoSQL databases, writing aggregation pipelines, or managing document-based data. Covers CRUD, aggregation, indexes, Atlas, transactions, change streams, and vector search.",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
+  "base_url": "https://www.mongodb.com/docs/",
   "sources": [
     {
       "type": "documentation",
@@ -10,8 +11,17 @@
       "extract_api": true,
       "start_urls": [
         "https://www.mongodb.com/docs/manual/",
+        "https://www.mongodb.com/docs/manual/crud/",
+        "https://www.mongodb.com/docs/manual/aggregation/",
+        "https://www.mongodb.com/docs/manual/indexes/",
+        "https://www.mongodb.com/docs/manual/replication/",
+        "https://www.mongodb.com/docs/manual/sharding/",
+        "https://www.mongodb.com/docs/manual/security/",
+        "https://www.mongodb.com/docs/manual/core/transactions/",
+        "https://www.mongodb.com/docs/manual/changeStreams/",
         "https://www.mongodb.com/docs/drivers/",
-        "https://www.mongodb.com/docs/atlas/"
+        "https://www.mongodb.com/docs/atlas/",
+        "https://www.mongodb.com/docs/compass/"
       ],
       "selectors": {
         "main_content": "article, main, .content",
@@ -69,6 +79,18 @@
           "embedded",
           "patterns"
         ],
+        "transactions": [
+          "transactions",
+          "acid",
+          "multi-document",
+          "session"
+        ],
+        "change_streams": [
+          "changeStreams",
+          "watch",
+          "resume-token",
+          "event-sourcing"
+        ],
         "replica_sets": [
           "replication",
           "replica-set",
@@ -97,10 +119,16 @@
           "cluster",
           "network",
           "backup"
+        ],
+        "vector_search": [
+          "atlas-vector-search",
+          "vector",
+          "embeddings",
+          "semantic-search",
+          "knn"
         ]
       },
-      "rate_limit": 0.5,
-      "max_pages": 500
+      "rate_limit": 0.5
     },
     {
       "type": "github",
@@ -135,6 +163,5 @@
       "redis",
       "elasticsearch"
     ]
-  },
-  "base_url": "https://www.mongodb.com/docs/"
+  }
 }

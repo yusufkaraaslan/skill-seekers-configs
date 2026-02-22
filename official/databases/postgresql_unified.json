@@ -1,8 +1,9 @@
 {
   "name": "postgresql",
-  "description": "Complete PostgreSQL knowledge combining official documentation and source code. Use when designing databases, writing queries, optimizing performance, or managing PostgreSQL instances. Covers SQL, administration, and advanced features.",
-  "version": "1.0.0",
+  "description": "Complete PostgreSQL knowledge combining official documentation and source code. Use when designing databases, writing queries, optimizing performance, or managing PostgreSQL instances. Covers SQL, administration, extensions, and advanced features.",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
+  "base_url": "https://www.postgresql.org/docs/current/",
   "sources": [
     {
       "type": "documentation",
@@ -12,7 +13,11 @@
         "https://www.postgresql.org/docs/current/tutorial.html",
         "https://www.postgresql.org/docs/current/sql.html",
         "https://www.postgresql.org/docs/current/admin.html",
-        "https://www.postgresql.org/docs/current/reference.html"
+        "https://www.postgresql.org/docs/current/reference.html",
+        "https://www.postgresql.org/docs/current/functions.html",
+        "https://www.postgresql.org/docs/current/indexes.html",
+        "https://www.postgresql.org/docs/current/performance-tips.html",
+        "https://www.postgresql.org/docs/current/high-availability.html"
       ],
       "selectors": {
         "main_content": "div[role='main'], .docContent",
@@ -21,9 +26,7 @@
       },
       "url_patterns": {
         "include": [
-          "/docs/current/",
-          "/docs/15/",
-          "/docs/14/"
+          "/docs/current/"
         ],
         "exclude": [
           "/about/",
@@ -65,6 +68,13 @@
           "window",
           "aggregate"
         ],
+        "functions": [
+          "functions",
+          "string-functions",
+          "math-functions",
+          "date-functions",
+          "aggregate-functions"
+        ],
         "indexes": [
           "indexes",
           "btree",
@@ -102,10 +112,18 @@
           "restore",
           "monitoring",
           "maintenance"
+        ],
+        "extensions": [
+          "extend",
+          "pgvector",
+          "postgis",
+          "pg_trgm",
+          "hstore",
+          "uuid-ossp",
+          "pg_stat"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 600
+      "rate_limit": 0.3
     },
     {
       "type": "github",
@@ -141,6 +159,5 @@
       "typeorm",
       "django"
     ]
-  },
-  "base_url": "https://www.postgresql.org/docs/current/"
+  }
 }

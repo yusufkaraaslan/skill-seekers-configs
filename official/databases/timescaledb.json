@@ -1,7 +1,7 @@
 {
   "name": "timescaledb",
-  "description": "Complete TimescaleDB knowledge from official documentation. Use when building time-series applications on PostgreSQL. Covers hypertables, continuous aggregates, compression, and retention.",
-  "version": "1.0.0",
+  "description": "Complete TimescaleDB knowledge from official documentation. Use when building time-series applications on PostgreSQL. Covers hypertables, continuous aggregates, compression, data retention, tiered storage, and user-defined actions.",
+  "version": "1.1.0",
   "base_url": "https://docs.timescale.com/",
   "sources": [
     {
@@ -11,7 +11,11 @@
         "https://docs.timescale.com/getting-started/latest/",
         "https://docs.timescale.com/use-timescale/latest/hypertables/",
         "https://docs.timescale.com/use-timescale/latest/continuous-aggregates/",
-        "https://docs.timescale.com/use-timescale/latest/compression/"
+        "https://docs.timescale.com/use-timescale/latest/compression/",
+        "https://docs.timescale.com/use-timescale/latest/data-tiering/",
+        "https://docs.timescale.com/use-timescale/latest/user-defined-actions/",
+        "https://docs.timescale.com/use-timescale/latest/schema-management/",
+        "https://docs.timescale.com/api/latest/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -23,7 +27,8 @@
           "/getting-started/",
           "/use-timescale/",
           "/tutorials/",
-          "/api/"
+          "/api/",
+          "/self-hosted/"
         ],
         "exclude": [
           "/release-notes/"
@@ -58,7 +63,20 @@
         "retention": [
           "retention",
           "drop-chunks",
-          "data-tiering"
+          "policies"
+        ],
+        "data_tiering": [
+          "data-tiering",
+          "tiered-storage",
+          "move-chunks",
+          "object-storage"
+        ],
+        "actions": [
+          "user-defined-actions",
+          "automation",
+          "policies",
+          "jobs",
+          "background-workers"
         ],
         "querying": [
           "querying",
@@ -69,11 +87,12 @@
         "api": [
           "hyperfunctions",
           "time_bucket",
-          "approximate"
+          "approximate",
+          "add_dimension",
+          "add_retention_policy"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 250
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

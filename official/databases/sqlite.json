@@ -1,17 +1,21 @@
 {
   "name": "sqlite",
-  "description": "Complete SQLite knowledge from official documentation. Use when building embedded, serverless databases for applications. Covers SQL, FTS, R*Trees, and JSON support.",
-  "version": "1.0.0",
-  "base_url": "https://www.sqlite.org/docs.html",
+  "description": "Complete SQLite knowledge from official documentation. Use when building embedded, serverless databases for applications. Covers SQL, full-text search (FTS5), R*Trees, JSON functions, WAL mode, and the C API.",
+  "version": "1.1.0",
+  "base_url": "https://www.sqlite.org/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://www.sqlite.org/docs.html",
+      "base_url": "https://www.sqlite.org/",
       "start_urls": [
         "https://www.sqlite.org/docs.html",
         "https://www.sqlite.org/lang.html",
         "https://www.sqlite.org/datatype3.html",
-        "https://www.sqlite.org/queryplanner.html"
+        "https://www.sqlite.org/queryplanner.html",
+        "https://www.sqlite.org/fts5.html",
+        "https://www.sqlite.org/json1.html",
+        "https://www.sqlite.org/wal.html",
+        "https://www.sqlite.org/c3ref/intro.html"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -20,12 +24,22 @@
       },
       "url_patterns": {
         "include": [
-          "/lang.html",
-          "/datatype3.html",
-          "/queryplanner.html",
-          "/fts3.html",
-          "/json1.html",
-          "/wal.html"
+          "/lang",
+          "/datatype3",
+          "/queryplanner",
+          "/fts3",
+          "/fts5",
+          "/json1",
+          "/wal",
+          "/c3ref/",
+          "/pragma",
+          "/vtab",
+          "/rtree",
+          "/backup",
+          "/sharedcache",
+          "/uri",
+          "/limits",
+          "/inmemorydb"
         ],
         "exclude": [
           "/changes.html"
@@ -33,7 +47,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "about",
           "quickstart",
           "features"
@@ -107,8 +120,7 @@
           "dump"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 400
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

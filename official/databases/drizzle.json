@@ -1,7 +1,7 @@
 {
   "name": "drizzle",
-  "description": "Complete Drizzle ORM knowledge from official documentation. Use when building type-safe database applications with SQL-like syntax. Covers schema definition, queries, relations, migrations, and type generation.",
-  "version": "1.0.0",
+  "description": "Complete Drizzle ORM knowledge from official documentation. Use when building type-safe database applications with SQL-like syntax in TypeScript. Covers schema definition, queries, relations, transactions, migrations, and multi-database support.",
+  "version": "1.1.0",
   "base_url": "https://orm.drizzle.team/docs/",
   "sources": [
     {
@@ -11,7 +11,13 @@
         "https://orm.drizzle.team/docs/overview",
         "https://orm.drizzle.team/docs/get-started",
         "https://orm.drizzle.team/docs/sql-schema-declaration",
-        "https://orm.drizzle.team/docs/rqb"
+        "https://orm.drizzle.team/docs/rqb",
+        "https://orm.drizzle.team/docs/select",
+        "https://orm.drizzle.team/docs/insert",
+        "https://orm.drizzle.team/docs/update",
+        "https://orm.drizzle.team/docs/delete",
+        "https://orm.drizzle.team/docs/transactions",
+        "https://orm.drizzle.team/docs/migrations"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -20,12 +26,7 @@
       },
       "url_patterns": {
         "include": [
-          "/docs/",
-          "/docs/overview",
-          "/docs/get-started",
-          "/docs/sql-schema-declaration",
-          "/docs/rqb",
-          "/docs/migrations"
+          "/docs/"
         ],
         "exclude": [
           "/docs/changelog/"
@@ -49,13 +50,19 @@
           "insert",
           "update",
           "delete",
-          "filtering"
+          "filtering",
+          "with"
         ],
         "relations": [
           "rqb",
           "one-to-one",
           "one-to-many",
           "many-to-many"
+        ],
+        "transactions": [
+          "transactions",
+          "batch",
+          "atomic"
         ],
         "migrations": [
           "migrations",
@@ -69,11 +76,13 @@
           "mysql",
           "sqlite",
           "turso",
-          "neon"
+          "neon",
+          "planetscale",
+          "d1",
+          "bun-sqlite"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 200
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

@@ -1,7 +1,7 @@
 {
   "name": "oracle",
-  "description": "Complete Oracle Database knowledge from official documentation. Use when building enterprise applications with the world's leading relational database. Covers SQL, PL/SQL, partitioning, and RAC.",
-  "version": "1.0.0",
+  "description": "Complete Oracle Database knowledge from official documentation. Use when building enterprise applications with the world's leading relational database. Covers SQL, PL/SQL, partitioning, RAC, Data Guard, and performance tuning.",
+  "version": "1.1.0",
   "base_url": "https://docs.oracle.com/en/database/",
   "sources": [
     {
@@ -11,7 +11,11 @@
         "https://docs.oracle.com/en/database/oracle/oracle-database/23/",
         "https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/",
         "https://docs.oracle.com/en/database/oracle/oracle-database/23/lnpls/",
-        "https://docs.oracle.com/en/database/oracle/oracle-database/23/admin/"
+        "https://docs.oracle.com/en/database/oracle/oracle-database/23/admin/",
+        "https://docs.oracle.com/en/database/oracle/oracle-database/23/cncpt/",
+        "https://docs.oracle.com/en/database/oracle/oracle-database/23/tgsql/",
+        "https://docs.oracle.com/en/database/oracle/oracle-database/23/vldbg/",
+        "https://docs.oracle.com/en/database/oracle/oracle-database/23/racad/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -23,7 +27,12 @@
           "/oracle-database/23/sqlrf/",
           "/oracle-database/23/lnpls/",
           "/oracle-database/23/admin/",
-          "/oracle-database/23/cncpt/"
+          "/oracle-database/23/cncpt/",
+          "/oracle-database/23/tgsql/",
+          "/oracle-database/23/vldbg/",
+          "/oracle-database/23/racad/",
+          "/oracle-database/23/dbseg/",
+          "/oracle-database/23/bradv/"
         ],
         "exclude": [
           "/release-notes/"
@@ -31,7 +40,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "cncpt",
           "install",
           "sql-introduction"
@@ -52,14 +60,12 @@
           "records"
         ],
         "procedures_functions": [
-          "lnpls",
           "procedures",
           "functions",
           "packages",
           "triggers"
         ],
         "indexes": [
-          "sqlrf",
           "create-index",
           "b-tree",
           "bitmap-index",
@@ -109,8 +115,7 @@
           "flashback"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 600
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

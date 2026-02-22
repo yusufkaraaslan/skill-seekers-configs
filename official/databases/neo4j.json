@@ -1,7 +1,7 @@
 {
   "name": "neo4j",
-  "description": "Complete Neo4j knowledge from official documentation. Use when building graph database applications. Covers Cypher query language, graph modeling, APOC, and graph algorithms.",
-  "version": "1.0.0",
+  "description": "Complete Neo4j knowledge from official documentation. Use when building graph database applications. Covers Cypher query language, graph modeling, APOC, Graph Data Science library, and Neo4j Aura cloud.",
+  "version": "1.1.0",
   "base_url": "https://neo4j.com/docs/",
   "sources": [
     {
@@ -11,7 +11,11 @@
         "https://neo4j.com/docs/getting-started/current/",
         "https://neo4j.com/docs/cypher-manual/current/",
         "https://neo4j.com/docs/operations-manual/current/",
-        "https://neo4j.com/docs/apoc/current/"
+        "https://neo4j.com/docs/apoc/current/",
+        "https://neo4j.com/docs/graph-data-science/current/",
+        "https://neo4j.com/docs/java-reference/current/",
+        "https://neo4j.com/docs/python-manual/current/",
+        "https://neo4j.com/docs/javascript-manual/current/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -24,7 +28,10 @@
           "/docs/cypher-manual/",
           "/docs/operations-manual/",
           "/docs/apoc/",
-          "/docs/java-reference/"
+          "/docs/graph-data-science/",
+          "/docs/java-reference/",
+          "/docs/python-manual/",
+          "/docs/javascript-manual/"
         ],
         "exclude": [
           "/docs/release-notes/"
@@ -72,6 +79,15 @@
           "import",
           "export"
         ],
+        "graph_algorithms": [
+          "graph-data-science",
+          "algorithms",
+          "node-similarity",
+          "centrality",
+          "community-detection",
+          "path-finding",
+          "node-embeddings"
+        ],
         "drivers": [
           "drivers",
           "javascript",
@@ -86,8 +102,7 @@
           "security"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 400
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

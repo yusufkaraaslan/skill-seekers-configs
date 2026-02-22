@@ -1,7 +1,7 @@
 {
   "name": "fauna",
-  "description": "Complete Fauna knowledge from official documentation. Use when building serverless applications with a distributed document-relational database. Covers FQL, GraphQL, and ACID transactions.",
-  "version": "1.0.0",
+  "description": "Complete Fauna knowledge from official documentation. Use when working with Fauna's document-relational database. Covers FQL v10, collections, indexes, access control, and ACID transactions. Note: Fauna's serverless cloud service was discontinued in September 2024; this config is maintained for legacy projects.",
+  "version": "1.1.0",
   "base_url": "https://docs.fauna.com/fauna/current/",
   "sources": [
     {
@@ -31,7 +31,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "learn/quick_start",
           "learn/installation",
           "dashboard"
@@ -73,8 +72,7 @@
         "graphql": [
           "learn/graphql",
           "schema",
-          "resolvers",
-          "@embedded"
+          "resolvers"
         ],
         "transactions": [
           "fql/transactions",
@@ -95,15 +93,14 @@
           "drivers/rust"
         ],
         "cookbook": [
-          "cookbook/",
+          "cookbook",
           "crud",
           "relationships",
           "authentication",
           "pagination"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 300
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

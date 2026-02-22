@@ -1,7 +1,7 @@
 {
   "name": "mariadb",
-  "description": "Complete MariaDB knowledge from official documentation. Use when building applications with the open-source MySQL fork. Covers SQL, storage engines, replication, and Galera Cluster.",
-  "version": "1.0.0",
+  "description": "Complete MariaDB knowledge from official documentation. Use when building applications with the open-source MySQL-compatible database. Covers SQL, storage engines, Galera Cluster, replication, window functions, and JSON support.",
+  "version": "1.1.0",
   "base_url": "https://mariadb.com/kb/en/",
   "sources": [
     {
@@ -11,7 +11,11 @@
         "https://mariadb.com/kb/en/documentation/",
         "https://mariadb.com/kb/en/sql-statements-structure/",
         "https://mariadb.com/kb/en/mariadb-administration/",
-        "https://mariadb.com/kb/en/optimization-and-tuning/"
+        "https://mariadb.com/kb/en/optimization-and-tuning/",
+        "https://mariadb.com/kb/en/replication/",
+        "https://mariadb.com/kb/en/galera-cluster/",
+        "https://mariadb.com/kb/en/security/",
+        "https://mariadb.com/kb/en/connectors/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -23,7 +27,11 @@
           "/kb/en/documentation/",
           "/kb/en/sql-statements-structure/",
           "/kb/en/mariadb-administration/",
-          "/kb/en/optimization-and-tuning/"
+          "/kb/en/optimization-and-tuning/",
+          "/kb/en/replication/",
+          "/kb/en/galera-cluster/",
+          "/kb/en/security/",
+          "/kb/en/connectors/"
         ],
         "exclude": [
           "/kb/en/changelogs/"
@@ -44,7 +52,7 @@
           "delete",
           "join"
         ],
-        "built-in_functions": [
+        "built_in_functions": [
           "built-in-functions",
           "string-functions",
           "numeric-functions",
@@ -59,7 +67,7 @@
           "columnstore"
         ],
         "replication": [
-          "high-availability-performance-tuning-mariadb-replication",
+          "replication",
           "master-slave",
           "gtid",
           "binlog",
@@ -104,14 +112,13 @@
           "point-in-time-recovery"
         ],
         "connectors": [
-          "application-programming-interfaces",
+          "connectors",
           "connector-python",
           "connector-nodejs",
           "connector-j"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 450
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

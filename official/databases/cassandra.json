@@ -1,7 +1,7 @@
 {
   "name": "cassandra",
-  "description": "Complete Apache Cassandra knowledge from official documentation. Use when building highly scalable, distributed NoSQL databases. Covers CQL, data modeling, replication, and performance tuning.",
-  "version": "1.0.0",
+  "description": "Complete Apache Cassandra knowledge from official documentation. Use when building highly scalable, distributed NoSQL databases. Covers CQL, data modeling, replication, storage engine, and performance tuning.",
+  "version": "1.1.0",
   "base_url": "https://cassandra.apache.org/doc/latest/",
   "sources": [
     {
@@ -9,9 +9,13 @@
       "base_url": "https://cassandra.apache.org/doc/latest/",
       "start_urls": [
         "https://cassandra.apache.org/doc/latest/",
+        "https://cassandra.apache.org/doc/latest/cassandra/getting_started/",
         "https://cassandra.apache.org/doc/latest/cassandra/cql/",
+        "https://cassandra.apache.org/doc/latest/cassandra/data_modeling/",
         "https://cassandra.apache.org/doc/latest/cassandra/architecture/",
-        "https://cassandra.apache.org/doc/latest/cassandra/data_modeling/"
+        "https://cassandra.apache.org/doc/latest/cassandra/operating/",
+        "https://cassandra.apache.org/doc/latest/cassandra/configuration/",
+        "https://cassandra.apache.org/doc/latest/cassandra/tools/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -20,10 +24,13 @@
       },
       "url_patterns": {
         "include": [
+          "/doc/latest/cassandra/getting_started/",
           "/doc/latest/cassandra/cql/",
-          "/doc/latest/cassandra/architecture/",
           "/doc/latest/cassandra/data_modeling/",
-          "/doc/latest/cassandra/operating/"
+          "/doc/latest/cassandra/architecture/",
+          "/doc/latest/cassandra/operating/",
+          "/doc/latest/cassandra/configuration/",
+          "/doc/latest/cassandra/tools/"
         ],
         "exclude": [
           "/doc/latest/cassandra/development/"
@@ -31,10 +38,10 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "getting-started",
           "installing",
-          "cqlsh"
+          "cqlsh",
+          "quickstart"
         ],
         "cql": [
           "cql",
@@ -58,27 +65,33 @@
           "vnode"
         ],
         "replication": [
-          "architecture/replication",
+          "replication",
           "snitch",
           "replication_strategy",
           "consistency"
         ],
         "storage_engine": [
-          "architecture/storage_engine",
+          "storage_engine",
           "sstables",
           "memtables",
           "commitlog",
           "compaction"
+        ],
+        "configuration": [
+          "configuration",
+          "cassandra.yaml",
+          "jvm",
+          "properties"
         ],
         "tuning": [
           "operating",
           "compaction",
           "compression",
           "caching",
-          "jvm"
+          "gc"
         ],
         "security": [
-          "operating/security",
+          "security",
           "authentication",
           "authorization",
           "ssl"
@@ -95,15 +108,9 @@
           "java",
           "nodejs",
           "gocql"
-        ],
-        "spark_integration": [
-          "integration",
-          "spark",
-          "hadoop"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 450
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

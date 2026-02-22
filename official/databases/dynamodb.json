@@ -1,17 +1,23 @@
 {
   "name": "dynamodb",
-  "description": "Complete Amazon DynamoDB knowledge from official documentation. Use when building serverless, NoSQL applications at any scale. Covers data modeling, streams, DAX, and global tables.",
-  "version": "1.0.0",
-  "base_url": "https://docs.aws.amazon.com/dynamodb/",
+  "description": "Complete Amazon DynamoDB knowledge from official documentation. Use when building serverless, NoSQL applications at any scale. Covers data modeling, PartiQL, streams, DAX, global tables, and transactions.",
+  "version": "1.1.0",
+  "base_url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://docs.aws.amazon.com/dynamodb/",
+      "base_url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/",
       "start_urls": [
-        "https://docs.aws.amazon.com/dynamodb/latest/developerguide/Introduction.html",
-        "https://docs.aws.amazon.com/dynamodb/latest/developerguide/HowItWorks.html",
+        "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html",
+        "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html",
+        "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.html",
         "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html",
-        "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-general.html"
+        "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html",
+        "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html",
+        "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Transactions.html",
+        "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-general.html",
+        "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GlobalTables.html",
+        "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -20,11 +26,10 @@
       },
       "url_patterns": {
         "include": [
-          "/dynamodb/latest/developerguide/",
           "/amazondynamodb/latest/developerguide/"
         ],
         "exclude": [
-          "/dynamodb/latest/developerguide/WhatsNew.html"
+          "/amazondynamodb/latest/developerguide/WhatsNew.html"
         ]
       },
       "categories": {
@@ -50,7 +55,6 @@
         "tables": [
           "WorkingWithTables",
           "WorkingWithTables.Basics",
-          "WorkingWithTables.Basics.html",
           "CreateTable"
         ],
         "items": [
@@ -68,8 +72,12 @@
         "indexes": [
           "SecondaryIndexes",
           "GSI",
-          "LSI",
-          "ib-secondary-indexes.html"
+          "LSI"
+        ],
+        "transactions": [
+          "Transactions",
+          "transaction-apis",
+          "transaction-conflicts"
         ],
         "streams": [
           "Streams",
@@ -85,27 +93,20 @@
         ],
         "global_tables": [
           "GlobalTables",
-          "GlobalTables HowItWorks",
+          "GlobalTables.HowItWorks",
           "GlobalTables.CreateTable"
-        ],
-        "transactions": [
-          "Transactions",
-          "transaction-apis",
-          "transaction-conflicts"
-        ],
-        "on_demand": [
-          "ReadWriteCapacityMode",
-          "HowItWorks.ReadWriteCapacityMode",
-          "ondemand-capacity-mode"
         ],
         "partiql": [
           "ql-reference",
           "ql-reference.select",
           "ql-reference.insert"
+        ],
+        "on_demand": [
+          "ReadWriteCapacityMode",
+          "ondemand-capacity-mode"
         ]
       },
-      "rate_limit": 0.5,
-      "max_pages": 400
+      "rate_limit": 0.5
     }
   ],
   "metadata": {

@@ -1,18 +1,21 @@
 {
   "name": "supabase",
-  "description": "Complete Supabase knowledge from official documentation. Use when building applications with open-source Firebase alternative. Covers PostgreSQL, Auth, Real-time, Edge Functions, and Storage.",
-  "version": "1.0.0",
-  "base_url": "https://supabase.com/docs",
+  "description": "Complete Supabase knowledge from official documentation. Use when building applications with the open-source Firebase alternative. Covers PostgreSQL, Auth, Real-time, Edge Functions, Storage, and AI/vector search with pgvector.",
+  "version": "1.1.0",
+  "base_url": "https://supabase.com/docs/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://supabase.com/docs",
+      "base_url": "https://supabase.com/docs/",
       "start_urls": [
         "https://supabase.com/docs/guides/getting-started",
         "https://supabase.com/docs/reference/javascript",
         "https://supabase.com/docs/guides/database",
         "https://supabase.com/docs/guides/auth",
-        "https://supabase.com/docs/guides/realtime"
+        "https://supabase.com/docs/guides/realtime",
+        "https://supabase.com/docs/guides/storage",
+        "https://supabase.com/docs/guides/functions",
+        "https://supabase.com/docs/guides/ai"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -75,6 +78,13 @@
           "deno",
           "webhooks"
         ],
+        "vector_ai": [
+          "ai",
+          "vector",
+          "pgvector",
+          "embeddings",
+          "semantic-search"
+        ],
         "cli": [
           "cli",
           "supabase-cli",
@@ -82,8 +92,7 @@
           "migration"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 350
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

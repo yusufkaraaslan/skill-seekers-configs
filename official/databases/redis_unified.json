@@ -1,18 +1,23 @@
 {
   "name": "redis",
-  "description": "Complete Redis knowledge combining documentation and source code. Use when implementing caching, message queues, real-time features, or session storage. Covers data structures, persistence, clustering, and Redis Stack features.",
-  "version": "1.0.0",
+  "description": "Complete Redis knowledge combining documentation and source code. Use when implementing caching, message queues, real-time features, session storage, or vector search. Covers data structures, persistence, clustering, Redis Stack, and vector search.",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
+  "base_url": "https://redis.io/docs/latest/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://redis.io/docs/",
+      "base_url": "https://redis.io/docs/latest/",
       "extract_api": true,
       "start_urls": [
-        "https://redis.io/docs/getting-started/",
-        "https://redis.io/docs/data-types/",
-        "https://redis.io/docs/management/",
-        "https://redis.io/docs/reference/"
+        "https://redis.io/docs/latest/",
+        "https://redis.io/docs/latest/get-started/",
+        "https://redis.io/docs/latest/develop/data-types/",
+        "https://redis.io/docs/latest/operate/",
+        "https://redis.io/docs/latest/commands/",
+        "https://redis.io/docs/latest/develop/",
+        "https://redis.io/docs/latest/integrate/",
+        "https://redis.io/docs/latest/develop/ai/"
       ],
       "selectors": {
         "main_content": "article, main, .docs-content",
@@ -21,11 +26,7 @@
       },
       "url_patterns": {
         "include": [
-          "/docs/getting-started/",
-          "/docs/data-types/",
-          "/docs/management/",
-          "/docs/reference/",
-          "/docs/stack/",
+          "/docs/latest/",
           "/commands/"
         ],
         "exclude": [
@@ -37,6 +38,7 @@
       "categories": {
         "getting_started": [
           "getting-started",
+          "get-started",
           "installation",
           "quick-start",
           "introduction"
@@ -92,8 +94,15 @@
           "search",
           "json",
           "timeseries",
-          "graph",
           "bloom"
+        ],
+        "vector": [
+          "vector",
+          "vector-search",
+          "embeddings",
+          "semantic-search",
+          "ai",
+          "knn"
         ],
         "security": [
           "security",
@@ -103,8 +112,7 @@
           "encryption"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 400
+      "rate_limit": 0.3
     },
     {
       "type": "github",
@@ -140,6 +148,5 @@
       "python",
       "docker"
     ]
-  },
-  "base_url": "https://redis.io/docs/"
+  }
 }
