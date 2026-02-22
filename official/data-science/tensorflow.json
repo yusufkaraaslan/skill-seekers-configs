@@ -1,17 +1,25 @@
 {
   "name": "tensorflow",
-  "description": "Complete TensorFlow knowledge from official documentation. Use when building production ML models, deep learning applications, or deploying AI solutions. Covers Keras, TF Lite, TF.js, and TensorBoard.",
-  "version": "1.0.0",
-  "base_url": "https://www.tensorflow.org/api_docs",
+  "description": "Complete TensorFlow 2.x knowledge from official documentation. Use when building production ML models, deep learning applications, or deploying AI solutions. Covers Keras, tf.data, tf.function, TFLite, TF.js, and TensorBoard.",
+  "version": "1.1.0",
+  "base_url": "https://www.tensorflow.org/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://www.tensorflow.org/api_docs",
+      "base_url": "https://www.tensorflow.org/",
       "start_urls": [
         "https://www.tensorflow.org/tutorials/quickstart/beginner",
+        "https://www.tensorflow.org/tutorials/quickstart/advanced",
         "https://www.tensorflow.org/guide/tensor",
+        "https://www.tensorflow.org/guide/variable",
         "https://www.tensorflow.org/guide/keras",
-        "https://www.tensorflow.org/guide/saved_model"
+        "https://www.tensorflow.org/guide/function",
+        "https://www.tensorflow.org/guide/data",
+        "https://www.tensorflow.org/guide/data_performance",
+        "https://www.tensorflow.org/guide/saved_model",
+        "https://www.tensorflow.org/guide/gpu",
+        "https://www.tensorflow.org/guide/distributed_training",
+        "https://www.tensorflow.org/lite/guide"
       ],
       "selectors": {
         "main_content": "article, main, .devsite-article",
@@ -22,7 +30,8 @@
         "include": [
           "/tutorials/",
           "/guide/",
-          "/api_docs/"
+          "/api_docs/",
+          "/lite/guide"
         ],
         "exclude": [
           "/blog/",
@@ -62,7 +71,8 @@
           "data",
           "tfdata",
           "pipeline",
-          "preprocessing"
+          "preprocessing",
+          "data_performance"
         ],
         "save_load": [
           "savedmodel",
@@ -70,20 +80,16 @@
           "hdf5",
           "export"
         ],
-        "estimator": [
-          "estimator",
-          "premade",
-          "custom"
-        ],
         "distributed": [
           "distributed",
           "strategy",
           "multi-gpu",
           "tpu"
         ],
-        "production": [
+        "deployment": [
           "serving",
           "lite",
+          "tflite",
           "js",
           "tensorboard",
           "quantization"
@@ -91,12 +97,12 @@
         "advanced": [
           "custom",
           "gradienttape",
+          "function",
           "autograph",
           "xla"
         ]
       },
-      "rate_limit": 0.5,
-      "max_pages": 600
+      "rate_limit": 0.5
     }
   ],
   "metadata": {

@@ -1,7 +1,7 @@
 {
   "name": "pytorch",
-  "description": "Complete PyTorch knowledge from official documentation. Use when building deep learning models, neural networks, or performing GPU-accelerated computations. Covers tensors, autograd, nn modules, and deployment.",
-  "version": "1.0.0",
+  "description": "Complete PyTorch knowledge from official documentation. Use when building deep learning models, neural networks, or performing GPU-accelerated computations. Covers tensors, autograd, nn modules, torch.compile, FSDP distributed training, and deployment.",
+  "version": "1.1.0",
   "base_url": "https://pytorch.org/docs/stable/",
   "sources": [
     {
@@ -10,9 +10,16 @@
       "start_urls": [
         "https://pytorch.org/docs/stable/index.html",
         "https://pytorch.org/tutorials/beginner/basics/intro.html",
+        "https://pytorch.org/tutorials/beginner/pytorch_with_examples.html",
         "https://pytorch.org/docs/stable/tensors.html",
+        "https://pytorch.org/docs/stable/autograd.html",
         "https://pytorch.org/docs/stable/nn.html",
-        "https://pytorch.org/docs/stable/optim.html"
+        "https://pytorch.org/docs/stable/optim.html",
+        "https://pytorch.org/docs/stable/data.html",
+        "https://pytorch.org/docs/stable/cuda.html",
+        "https://pytorch.org/docs/stable/distributed.html",
+        "https://pytorch.org/docs/stable/jit.html",
+        "https://pytorch.org/docs/stable/compile/index.html"
       ],
       "selectors": {
         "main_content": "article, main, .pytorch-article",
@@ -77,11 +84,18 @@
           "save",
           "load"
         ],
+        "compilation": [
+          "compile",
+          "dynamo",
+          "inductor",
+          "torch.compile"
+        ],
         "distributed": [
           "distributed",
           "ddp",
           "data-parallel",
-          "multi-gpu"
+          "multi-gpu",
+          "fsdp"
         ],
         "deployment": [
           "torchscript",
@@ -97,8 +111,7 @@
           "fx"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 500
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

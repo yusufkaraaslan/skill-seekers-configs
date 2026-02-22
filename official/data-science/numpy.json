@@ -1,7 +1,7 @@
 {
   "name": "numpy",
-  "description": "Complete NumPy knowledge from official documentation. Use when performing numerical computing, array operations, or mathematical computations in Python. Covers ndarrays, broadcasting, linear algebra, and random sampling.",
-  "version": "1.0.0",
+  "description": "Complete NumPy knowledge from official documentation. Use when performing numerical computing, array operations, or mathematical computations in Python. Covers ndarrays, broadcasting, linear algebra, FFT, and random sampling.",
+  "version": "1.1.0",
   "base_url": "https://numpy.org/doc/stable/",
   "sources": [
     {
@@ -9,9 +9,17 @@
       "base_url": "https://numpy.org/doc/stable/",
       "start_urls": [
         "https://numpy.org/doc/stable/user/quickstart.html",
+        "https://numpy.org/doc/stable/user/absolute_beginners.html",
         "https://numpy.org/doc/stable/user/basics.html",
+        "https://numpy.org/doc/stable/user/basics.broadcasting.html",
+        "https://numpy.org/doc/stable/user/basics.indexing.html",
+        "https://numpy.org/doc/stable/user/basics.copies.html",
         "https://numpy.org/doc/stable/reference/arrays.html",
-        "https://numpy.org/doc/stable/reference/routines.html"
+        "https://numpy.org/doc/stable/reference/routines.html",
+        "https://numpy.org/doc/stable/reference/random/index.html",
+        "https://numpy.org/doc/stable/reference/routines.linalg.html",
+        "https://numpy.org/doc/stable/reference/routines.fft.html",
+        "https://numpy.org/doc/stable/reference/routines.io.html"
       ],
       "selectors": {
         "main_content": "article, main, .section",
@@ -60,6 +68,12 @@
           "eigen",
           "svd"
         ],
+        "fft": [
+          "fft",
+          "fourier",
+          "frequency",
+          "spectrum"
+        ],
         "random": [
           "random",
           "generator",
@@ -93,8 +107,7 @@
           "memory"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 400
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

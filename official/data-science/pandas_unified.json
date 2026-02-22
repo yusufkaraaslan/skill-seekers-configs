@@ -1,8 +1,9 @@
 {
   "name": "pandas",
-  "description": "Complete Pandas knowledge combining documentation and source code. Use when manipulating tabular data, cleaning datasets, or performing data analysis in Python. Covers DataFrames, Series, indexing, and advanced operations.",
-  "version": "1.0.0",
+  "description": "Complete Pandas knowledge combining documentation and source code. Use when manipulating tabular data, cleaning datasets, or performing data analysis in Python. Covers DataFrames, Series, indexing, groupby, time series, and styling.",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
+  "base_url": "https://pandas.pydata.org/docs/",
   "sources": [
     {
       "type": "documentation",
@@ -10,7 +11,16 @@
       "extract_api": true,
       "start_urls": [
         "https://pandas.pydata.org/docs/getting_started/index.html",
+        "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html",
         "https://pandas.pydata.org/docs/user_guide/index.html",
+        "https://pandas.pydata.org/docs/user_guide/dsintro.html",
+        "https://pandas.pydata.org/docs/user_guide/indexing.html",
+        "https://pandas.pydata.org/docs/user_guide/missing_data.html",
+        "https://pandas.pydata.org/docs/user_guide/groupby.html",
+        "https://pandas.pydata.org/docs/user_guide/reshaping.html",
+        "https://pandas.pydata.org/docs/user_guide/timeseries.html",
+        "https://pandas.pydata.org/docs/user_guide/io.html",
+        "https://pandas.pydata.org/docs/user_guide/style.html",
         "https://pandas.pydata.org/docs/reference/index.html"
       ],
       "selectors": {
@@ -22,8 +32,7 @@
         "include": [
           "/docs/getting_started/",
           "/docs/user_guide/",
-          "/docs/reference/",
-          "/docs/development/"
+          "/docs/reference/"
         ],
         "exclude": [
           "/blog/",
@@ -42,7 +51,6 @@
           "dataframe",
           "series",
           "index",
-          "panel",
           "structure"
         ],
         "io": [
@@ -81,7 +89,6 @@
           "merge",
           "join",
           "concat",
-          "append",
           "align"
         ],
         "reshaping": [
@@ -99,6 +106,13 @@
           "timezone",
           "offset"
         ],
+        "style": [
+          "style",
+          "styler",
+          "format",
+          "highlight",
+          "background-gradient"
+        ],
         "plotting": [
           "visualization",
           "plot",
@@ -106,8 +120,7 @@
           "seaborn"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 500
+      "rate_limit": 0.3
     },
     {
       "type": "github",
@@ -142,6 +155,5 @@
       "jupyter",
       "python"
     ]
-  },
-  "base_url": "https://pandas.pydata.org/docs/"
+  }
 }
