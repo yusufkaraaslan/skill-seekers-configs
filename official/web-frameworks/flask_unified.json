@@ -116,8 +116,7 @@
           "env"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 300
+      "rate_limit": 0.3
     },
     {
       "type": "github",

@@ -78,8 +78,7 @@
           "sveltekit-2"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 200
+      "rate_limit": 0.3
     },
     {
       "type": "github",

@@ -110,8 +110,7 @@
           "environment-variables"
         ]
       },
-      "rate_limit": 0.5,
-      "max_pages": 400
+      "rate_limit": 0.5
     },
     {
       "type": "github",
