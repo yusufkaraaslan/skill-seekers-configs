@@ -1,7 +1,7 @@
 {
   "name": "stride",
   "description": "Complete Stride knowledge from official documentation. Use when building cross-platform 3D games with C# and .NET. Covers ECS, rendering, physics, animation, and scripting.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://doc.stride3d.net/latest/en/",
   "sources": [
     {
@@ -20,12 +20,7 @@
       },
       "url_patterns": {
         "include": [
-          "/manual/",
-          "/manual/get-started",
-          "/manual/scripts/",
-          "/manual/graphics/",
-          "/manual/physics/",
-          "/manual/audio/"
+          "/manual/"
         ],
         "exclude": [
           "/release-notes/"
@@ -75,8 +70,8 @@
         "animation": [
           "animation",
           "animation-playback",
-          " skeletal-animation",
-          " blend-trees"
+          "skeletal-animation",
+          "blend-trees"
         ],
         "audio": [
           "audio",

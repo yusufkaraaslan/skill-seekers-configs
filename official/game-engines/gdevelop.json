@@ -1,7 +1,7 @@
 {
   "name": "gdevelop",
   "description": "Complete GDevelop knowledge from official documentation. Use when building games without coding using visual events. Covers behaviors, effects, physics, and export to multiple platforms.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://wiki.gdevelop.io/gdevelop5/",
   "sources": [
     {
@@ -20,12 +20,7 @@
       },
       "url_patterns": {
         "include": [
-          "/gdevelop5/",
-          "/gdevelop5/getting_started",
-          "/gdevelop5/events",
-          "/gdevelop5/objects",
-          "/gdevelop5/behaviors",
-          "/gdevelop5/extensions"
+          "/gdevelop5/"
         ],
         "exclude": [
           "/gdevelop5/releases/"
@@ -33,7 +28,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "getting_started",
           "interface",
           "project-manager",

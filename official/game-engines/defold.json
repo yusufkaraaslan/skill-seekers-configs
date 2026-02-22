@@ -1,7 +1,7 @@
 {
   "name": "defold",
   "description": "Complete Defold knowledge from official documentation. Use when building 2D games with a data-driven approach. Covers game objects, components, Lua scripting, particle effects, and physics.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://defold.com/manuals/",
   "sources": [
     {

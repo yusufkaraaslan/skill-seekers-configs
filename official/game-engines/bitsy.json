@@ -1,7 +1,7 @@
 {
   "name": "bitsy",
   "description": "Complete Bitsy knowledge from official documentation and community resources. Use when creating tiny narrative games in the browser. Covers rooms, sprites, items, dialogue, and game variables.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://bitsy.fandom.com/wiki/",
   "sources": [
     {
@@ -10,8 +10,8 @@
       "start_urls": [
         "https://bitsy.fandom.com/wiki/Bitsy_Wiki",
         "https://bitsy.fandom.com/wiki/Getting_started",
-        "https://www.bitsy.org/",
-        "https://ledoux.itch.io/bitsy"
+        "https://bitsy.fandom.com/wiki/Rooms",
+        "https://bitsy.fandom.com/wiki/Sprites"
       ],
       "selectors": {
         "main_content": "article, main, .mw-parser-output",
@@ -20,11 +20,7 @@
       },
       "url_patterns": {
         "include": [
-          "/wiki/",
-          "/wiki/Bitsy_Wiki",
-          "/wiki/Getting_started",
-          "/wiki/Rooms",
-          "/wiki/Sprites"
+          "/wiki/"
         ],
         "exclude": [
           "/wiki/Special:"

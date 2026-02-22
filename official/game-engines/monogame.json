@@ -1,7 +1,7 @@
 {
   "name": "monogame",
   "description": "Complete MonoGame knowledge from official documentation. Use when building cross-platform games with C# and XNA compatibility. Covers graphics, audio, input, content pipeline, and shaders.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://docs.monogame.net/articles/",
   "sources": [
     {
@@ -21,9 +21,7 @@
       "url_patterns": {
         "include": [
           "/articles/",
-          "/api/",
-          "/articles/getting_started/",
-          "/articles/content_pipeline/"
+          "/api/"
         ],
         "exclude": [
           "/articles/whats_new/"
@@ -33,7 +31,6 @@
         "getting_started": [
           "getting_started",
           "index",
-          "getting_started",
           "platforms"
         ],
         "game_class": [

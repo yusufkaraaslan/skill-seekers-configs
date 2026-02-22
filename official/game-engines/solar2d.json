@@ -1,7 +1,7 @@
 {
   "name": "solar2d",
   "description": "Complete Solar2D knowledge from official documentation. Use when building 2D mobile games and apps with Lua. Covers Corona Simulator, graphics, physics, widgets, and native plugins.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://docs.solar2d.com/",
   "sources": [
     {
@@ -21,9 +21,7 @@
       "url_patterns": {
         "include": [
           "/guide/",
-          "/api/",
-          "/api/library/",
-          "/api/type/"
+          "/api/"
         ],
         "exclude": [
           "/releasenotes/"
@@ -31,7 +29,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "guide/programming/intro",
           "guide/programming/gettingStarted",
           "guide/programming/projectSetup"

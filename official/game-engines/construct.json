@@ -1,7 +1,7 @@
 {
   "name": "construct",
   "description": "Complete Construct 3 knowledge from official documentation. Use when building HTML5 games without coding using visual scripting. Covers events, behaviors, effects, and multiplayer.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://www.construct.net/en/make-games/manuals/construct-3",
   "sources": [
     {
@@ -20,11 +20,7 @@
       },
       "url_patterns": {
         "include": [
-          "/construct-3",
-          "/construct-3/overview",
-          "/construct-3/project-primitives",
-          "/construct-3/event-system",
-          "/construct-3/behaviors"
+          "/construct-3"
         ],
         "exclude": [
           "/release-notes/"

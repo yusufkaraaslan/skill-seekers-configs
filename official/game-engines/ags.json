@@ -1,7 +1,7 @@
 {
   "name": "ags",
   "description": "Complete Adventure Game Studio knowledge from official documentation. Use when building point-and-click adventure games. Covers rooms, characters, inventory, dialogue, and scripting with AGS Script.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://adventuregamestudio.github.io/ags-manual/",
   "sources": [
     {
@@ -20,11 +20,7 @@
       },
       "url_patterns": {
         "include": [
-          "/ags-manual/",
-          "/ags-manual/StartingOff",
-          "/ags-manual/Scripting",
-          "/ags-manual/Character",
-          "/ags-manual/room.html"
+          "/ags-manual/"
         ],
         "exclude": [
           "/ags-manual/ags-migration.html"
@@ -32,7 +28,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "StartingOff",
           "acintro1",
           "acintro2",

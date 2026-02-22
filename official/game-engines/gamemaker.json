@@ -1,32 +1,29 @@
 {
   "name": "gamemaker",
   "description": "Complete GameMaker knowledge from official documentation. Use when building 2D games with drag-and-drop or GML scripting. Covers objects, rooms, sprites, physics, and multiplayer.",
-  "version": "1.0.0",
-  "base_url": "https://manual.yoyogames.com/",
+  "version": "1.1.0",
+  "base_url": "https://manual.gamemaker.io/monthly/en/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://manual.yoyogames.com/",
+      "base_url": "https://manual.gamemaker.io/monthly/en/",
       "start_urls": [
-        "https://manual.yoyogames.com/",
-        "https://manual.yoyogames.com/#t=Content.htm",
-        "https://manual.yoyogames.com/#t=GameMaker_Language.htm",
-        "https://manual.yoyogames.com/#t=The_IDE.htm"
+        "https://manual.gamemaker.io/monthly/en/",
+        "https://manual.gamemaker.io/monthly/en/GameMaker_Language/",
+        "https://manual.gamemaker.io/monthly/en/The_IDE/",
+        "https://manual.gamemaker.io/monthly/en/Settings/"
       ],
       "selectors": {
-        "main_content": "#topic_content, article",
+        "main_content": ".doc-content, article, main",
         "title": "h1",
-        "code_blocks": "pre, code"
+        "code_blocks": "pre code, pre"
       },
       "url_patterns": {
         "include": [
-          "/",
-          "/#t=Content.htm",
-          "/#t=GameMaker_Language.htm",
-          "/#t=The_IDE.htm"
+          "/monthly/en/"
         ],
         "exclude": [
-          "/release-notes/"
+          "/monthly/en/Release_Notes/"
         ]
       },
       "categories": {

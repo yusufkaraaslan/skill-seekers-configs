@@ -1,7 +1,7 @@
 {
   "name": "panda3d",
   "description": "Complete Panda3D knowledge from official documentation. Use when building 3D games and simulations in Python or C++. Covers scene graph, physics, rendering, and pipeline tools.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://docs.panda3d.org/1.10/python/",
   "sources": [
     {
@@ -20,11 +20,7 @@
       },
       "url_patterns": {
         "include": [
-          "/python/programming/",
-          "/python/programming/scenegraph/",
-          "/python/programming/models-textures/",
-          "/python/programming/physics/",
-          "/python/programming/audio/"
+          "/python/programming/"
         ],
         "exclude": [
           "/python/release-notes/"
@@ -32,7 +28,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "installation",
           "hello-world",
           "running-your-program"

@@ -1,7 +1,7 @@
 {
   "name": "heaps",
   "description": "Complete Heaps.io knowledge from official documentation. Use when building high-performance 2D/3D games in Haxe. Covers graphics, shaders, ECS, and resource management.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://heaps.io/documentation/",
   "sources": [
     {
@@ -20,11 +20,7 @@
       },
       "url_patterns": {
         "include": [
-          "/documentation/",
-          "/documentation/getting-started.html",
-          "/documentation/h2d.html",
-          "/documentation/h3d.html",
-          "/documentation/particles.html"
+          "/documentation/"
         ],
         "exclude": [
           "/documentation/changelog.html"
@@ -32,7 +28,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "getting-started",
           "installation",
           "hello-world"

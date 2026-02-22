@@ -1,7 +1,7 @@
 {
   "name": "haxeflixel",
   "description": "Complete HaxeFlixel knowledge from official documentation. Use when building 2D games in Haxe with cross-platform support. Covers sprites, tilemaps, camera, UI, and effects.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://haxeflixel.com/documentation/",
   "sources": [
     {
@@ -21,8 +21,6 @@
       "url_patterns": {
         "include": [
           "/documentation/",
-          "/documentation/getting-started",
-          "/documentation/haxeflixel-handbook",
           "/api/"
         ],
         "exclude": [
@@ -31,7 +29,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "getting-started",
           "hello-world",
           "troubleshooting"

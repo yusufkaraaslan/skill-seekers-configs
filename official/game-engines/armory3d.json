@@ -1,7 +1,7 @@
 {
   "name": "armory3d",
   "description": "Complete Armory3D knowledge from official documentation. Use when building 3D games integrated with Blender. Covers nodes-based logic, Haxe scripting, rendering, and physics.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://github.com/armory3d/armory/wiki",
   "sources": [
     {
@@ -20,10 +20,7 @@
       },
       "url_patterns": {
         "include": [
-          "/armory/wiki",
-          "/armory/wiki/Getting-Started",
-          "/armory/wiki/Logic-Nodes",
-          "/armory/wiki/Rendering"
+          "/armory/wiki"
         ],
         "exclude": [
           "/armory/wiki/Home/_edit/"
@@ -31,7 +28,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "Getting-Started",
           "Installation",
           "First-Game"

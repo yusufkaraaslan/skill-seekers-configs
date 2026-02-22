@@ -1,7 +1,7 @@
 {
   "name": "o3de",
   "description": "Complete Open 3D Engine (O3DE) knowledge from official documentation. Use when building AAA-quality 3D games and simulations. Covers Atom renderer, Script Canvas, physics, and multiplayer networking.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://www.o3de.org/docs/",
   "sources": [
     {
@@ -58,7 +58,7 @@
         "lua": [
           "user-guide/scripting/lua",
           "ebus",
-          " lua-editor"
+          "lua-editor"
         ],
         "atom_renderer": [
           "user-guide/graphics",
@@ -92,7 +92,7 @@
           "canvas",
           "elements"
         ],
-        " multiplayer": [
+        "multiplayer": [
           "user-guide/networking",
           "multiplayer-gem",
           "network-spawning",

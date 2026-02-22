@@ -1,7 +1,7 @@
 {
   "name": "babylonjs",
   "description": "Complete Babylon.js knowledge from official documentation. Use when building 3D web applications and games with WebGL/WebGPU. Covers meshes, materials, physics, particles, and GUI systems.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://doc.babylonjs.com/",
   "sources": [
     {
@@ -95,7 +95,7 @@
           "gamepad",
           "vr"
         ],
-        " xr": [
+        "xr": [
           "webxr",
           "vr-experience",
           "ar-features"

@@ -1,7 +1,7 @@
 {
   "name": "pygame",
   "description": "Complete Pygame knowledge from official documentation. Use when building 2D games in Python. Covers display, surfaces, sprites, collision detection, and sound.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://www.pygame.org/docs/",
   "sources": [
     {
@@ -20,9 +20,7 @@
       },
       "url_patterns": {
         "include": [
-          "/docs/",
-          "/docs/tut/",
-          "/docs/ref/"
+          "/docs/"
         ],
         "exclude": [
           "/docs/news/"
@@ -30,7 +28,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "tut/",
           "tut/MakeGames",
           "tut/ChimpLineByLine"

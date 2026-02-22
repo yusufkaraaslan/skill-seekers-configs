@@ -1,7 +1,7 @@
 {
   "name": "playcanvas",
   "description": "Complete PlayCanvas knowledge from official documentation. Use when building WebGL and WebGPU games that run in browsers. Covers entity system, rendering, physics, and cloud-based development.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://developer.playcanvas.com/en/",
   "sources": [
     {
@@ -30,7 +30,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "getting-started",
           "creating-account",
           "dashboard"

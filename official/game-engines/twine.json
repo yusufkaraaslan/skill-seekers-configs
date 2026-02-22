@@ -1,7 +1,7 @@
 {
   "name": "twine",
   "description": "Complete Twine knowledge from official documentation. Use when building interactive fiction and branching narratives. Covers story formats, variables, macros, styling with CSS, and JavaScript.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://twinery.org/cookbook/",
   "sources": [
     {
@@ -20,11 +20,7 @@
       },
       "url_patterns": {
         "include": [
-          "/cookbook/",
-          "/cookbook/terms/",
-          "/cookbook/passages/",
-          "/cookbook/storyformats/",
-          "/cookbook/starting/"
+          "/cookbook/"
         ],
         "exclude": [
           "/cookbook/appendix/"
@@ -32,7 +28,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "starting/twine2",
           "terms/story",
           "terms/passage"

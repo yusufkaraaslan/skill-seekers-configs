@@ -1,7 +1,7 @@
 {
   "name": "pico8",
   "description": "Complete PICO-8 knowledge from official documentation. Use when creating retro-style games with Lua in a fantasy console environment. Covers graphics, sound, music, and cartridge sharing.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://www.lexaloffle.com/pico8_manual.php",
   "sources": [
     {

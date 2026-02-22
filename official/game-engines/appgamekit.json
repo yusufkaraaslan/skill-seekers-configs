@@ -1,14 +1,14 @@
 {
   "name": "appgamekit",
   "description": "Complete AppGameKit knowledge from official documentation. Use when building cross-platform games with BASIC-like scripting. Covers 2D/3D graphics, physics, multiplayer, and VR.",
-  "version": "1.0.0",
-  "base_url": "https://www.appgamekit.com/documentation",
+  "version": "1.1.0",
+  "base_url": "https://www.appgamekit.com/documentation/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://www.appgamekit.com/documentation",
+      "base_url": "https://www.appgamekit.com/documentation/",
       "start_urls": [
-        "https://www.appgamekit.com/documentation",
+        "https://www.appgamekit.com/documentation/",
         "https://www.appgamekit.com/documentation/guides/introduction.htm",
         "https://www.appgamekit.com/documentation/reference/index.html",
         "https://www.appgamekit.com/documentation/reference/command_list.html"
@@ -20,10 +20,7 @@
       },
       "url_patterns": {
         "include": [
-          "/documentation",
-          "/documentation/guides/",
-          "/documentation/reference/",
-          "/documentation/reference/command_list.html"
+          "/documentation/"
         ],
         "exclude": [
           "/documentation/release-notes/"
@@ -31,7 +28,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "guides/introduction",
           "guides/getting_started",
           "guides/your_first_program"

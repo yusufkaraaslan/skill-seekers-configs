@@ -1,17 +1,17 @@
 {
   "name": "torque3d",
   "description": "Complete Torque3D knowledge from official documentation. Use when building open-source 3D games with C++ and TorqueScript. Covers terrain, vehicles, multiplayer, and world editor.",
-  "version": "1.0.0",
-  "base_url": "http://docs.torque3d.org/",
+  "version": "1.1.0",
+  "base_url": "https://docs.torque3d.org/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "http://docs.torque3d.org/",
+      "base_url": "https://docs.torque3d.org/",
       "start_urls": [
-        "http://docs.torque3d.org/",
-        "http://docs.torque3d.org/gettingstarted/",
-        "http://docs.torque3d.org/torquescript/",
-        "http://docs.torque3d.org/worldeditor/"
+        "https://docs.torque3d.org/",
+        "https://docs.torque3d.org/gettingstarted/",
+        "https://docs.torque3d.org/torquescript/",
+        "https://docs.torque3d.org/worldeditor/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -32,7 +32,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "gettingstarted",
           "setup",
           "project-generation",

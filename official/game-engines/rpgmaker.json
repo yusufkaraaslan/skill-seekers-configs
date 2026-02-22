@@ -1,40 +1,41 @@
 {
   "name": "rpgmaker",
   "description": "Complete RPG Maker knowledge from official documentation. Use when building JRPG-style games without programming. Covers maps, events, database, and scripting with Ruby/JavaScript.",
-  "version": "1.0.0",
-  "base_url": "https://www.rpgmakerweb.com/support",
+  "version": "1.1.0",
+  "base_url": "https://docs.rpgmakerweb.com/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://www.rpgmakerweb.com/support",
+      "base_url": "https://docs.rpgmakerweb.com/",
       "start_urls": [
-        "https://www.rpgmakerweb.com/support",
         "https://docs.rpgmakerweb.com/",
-        "https://forums.rpgmakerweb.com/index.php?pages/documentation/",
-        "https://www.rpgmakerweb.com/additional-downloads"
+        "https://docs.rpgmakerweb.com/guides/",
+        "https://docs.rpgmakerweb.com/api/",
+        "https://docs.rpgmakerweb.com/plugin-development/"
       ],
       "selectors": {
-        "main_content": "article, main, .messageBody",
+        "main_content": "article, main, .content",
         "title": "h1",
         "code_blocks": "pre code, pre"
       },
       "url_patterns": {
         "include": [
-          "/support",
-          "/documentation/",
-          "/tutorial/",
-          "/help/"
+          "/guides/",
+          "/api/",
+          "/plugin-development/",
+          "/tutorials/"
         ],
         "exclude": [
-          "/forum/"
+          "/forum/",
+          "/changelogs/"
         ]
       },
       "categories": {
         "getting_started": [
-          "support",
           "getting-started",
           "installation",
-          "interface"
+          "interface",
+          "first-project"
         ],
         "map_editor": [
           "maps",

@@ -1,17 +1,17 @@
 {
   "name": "unreal-engine",
   "description": "Complete Unreal Engine 5 knowledge from official documentation. Use when building high-fidelity 3D games, architectural visualizations, and virtual productions. Covers Blueprints, C++, Niagara, Lumen, and MetaHuman.",
-  "version": "1.0.0",
-  "base_url": "https://docs.unrealengine.com/5.0/en-US/",
+  "version": "1.1.0",
+  "base_url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://docs.unrealengine.com/5.0/en-US/",
+      "base_url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/",
       "start_urls": [
-        "https://docs.unrealengine.com/5.0/en-US/",
-        "https://docs.unrealengine.com/5.0/en-US/quick-start/",
-        "https://docs.unrealengine.com/5.0/en-US/blueprints/",
-        "https://docs.unrealengine.com/5.0/en-US/programming/"
+        "https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-5-documentation",
+        "https://dev.epicgames.com/documentation/en-us/unreal-engine/blueprints-visual-scripting-in-unreal-engine",
+        "https://dev.epicgames.com/documentation/en-us/unreal-engine/programming-and-scripting-in-unreal-engine",
+        "https://dev.epicgames.com/documentation/en-us/unreal-engine/rendering-and-graphics-in-unreal-engine"
       ],
       "selectors": {
         "main_content": "article, main, .doc-content",
@@ -20,14 +20,10 @@
       },
       "url_patterns": {
         "include": [
-          "/5.0/en-US/",
-          "/5.0/en-US/quick-start/",
-          "/5.0/en-US/blueprints/",
-          "/5.0/en-US/programming/",
-          "/5.0/en-US/rendering/"
+          "/documentation/en-us/unreal-engine/"
         ],
         "exclude": [
-          "/release-notes/"
+          "/documentation/en-us/unreal-engine/release-notes-for-unreal-engine"
         ]
       },
       "categories": {
@@ -35,7 +31,8 @@
           "quick-start",
           "installation",
           "project-setup",
-          "editor-basics"
+          "editor-basics",
+          "unreal-engine-5"
         ],
         "blueprints": [
           "blueprints",
@@ -57,7 +54,8 @@
           "lumen",
           "nanite",
           "materials",
-          "shaders"
+          "shaders",
+          "virtual-shadow-maps"
         ],
         "niagara": [
           "niagara",
@@ -70,7 +68,8 @@
           "skeleton",
           "animation-blueprint",
           "state-machine",
-          "control-rig"
+          "control-rig",
+          "metahuman"
         ],
         "audio": [
           "audio",

@@ -1,17 +1,17 @@
 {
   "name": "phaser",
-  "description": "Complete Phaser knowledge from official documentation. Use when building HTML5 games for web and mobile. Covers scenes, sprites, physics, tilemaps, and WebGL rendering.",
-  "version": "1.0.0",
-  "base_url": "https://phaser.io/tutorials/",
+  "description": "Complete Phaser 3 knowledge from official documentation. Use when building HTML5 games for web and mobile. Covers scenes, sprites, physics, tilemaps, and WebGL rendering.",
+  "version": "1.1.0",
+  "base_url": "https://docs.phaser.io/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://phaser.io/tutorials/",
+      "base_url": "https://docs.phaser.io/",
       "start_urls": [
-        "https://phaser.io/tutorials/getting-started-phaser3",
-        "https://newdocs.phaser.io/docs/3.60.0/",
-        "https://phaser.io/tutorials/making-your-first-phaser-3-game",
-        "https://phaser.io/examples"
+        "https://docs.phaser.io/phaser3/",
+        "https://docs.phaser.io/phaser3/concepts/",
+        "https://docs.phaser.io/api-documentation/",
+        "https://phaser.io/tutorials/making-your-first-phaser-3-game"
       ],
       "selectors": {
         "main_content": "article, main, .content",
@@ -20,9 +20,8 @@
       },
       "url_patterns": {
         "include": [
-          "/tutorials/",
-          "/docs/",
-          "/examples"
+          "/phaser3/",
+          "/api-documentation/"
         ],
         "exclude": [
           "/news/"
@@ -30,7 +29,7 @@
       },
       "categories": {
         "getting_started": [
-          "getting-started-phaser3",
+          "getting-started",
           "making-your-first-phaser-3-game",
           "config"
         ],

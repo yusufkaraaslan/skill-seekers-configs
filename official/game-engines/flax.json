@@ -1,7 +1,7 @@
 {
   "name": "flax",
   "description": "Complete Flax Engine knowledge from official documentation. Use when building modern 3D games with C++ or C#. Covers visual scripting, physics, rendering, and editor extensibility.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://docs.flaxengine.com/",
   "sources": [
     {
@@ -20,12 +20,7 @@
       },
       "url_patterns": {
         "include": [
-          "/manual/",
-          "/manual/getting-started/",
-          "/manual/scripting/",
-          "/manual/graphics/",
-          "/manual/physics/",
-          "/manual/ui/"
+          "/manual/"
         ],
         "exclude": [
           "/release-notes/"

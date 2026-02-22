@@ -1,7 +1,7 @@
 {
   "name": "stencyl",
   "description": "Complete Stencyl knowledge from official documentation. Use when building 2D games with visual block-based programming. Covers actor types, scenes, behaviors, and publishing to multiple platforms.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://www.stencyl.com/help/",
   "sources": [
     {
@@ -22,8 +22,7 @@
         "include": [
           "/help/article/",
           "/help/view/",
-          "/learn/",
-          "/learn/category/"
+          "/learn/"
         ],
         "exclude": [
           "/help/search/"
@@ -31,7 +30,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "welcome",
           "install",
           "crash-course",

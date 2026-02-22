@@ -1,7 +1,7 @@
 {
   "name": "unity",
   "description": "Complete Unity knowledge from official documentation. Use when building 2D/3D games, VR/AR applications, and interactive experiences. Covers C# scripting, physics, rendering, animation, and multiplayer networking.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://docs.unity3d.com/Manual/",
   "sources": [
     {
@@ -20,11 +20,7 @@
       },
       "url_patterns": {
         "include": [
-          "/Manual/",
-          "/Manual/ScriptingSection",
-          "/Manual/PhysicsSection",
-          "/Manual/Graphics",
-          "/Manual/AnimationSection"
+          "/Manual/"
         ],
         "exclude": [
           "/Manual/ReleaseNotes"

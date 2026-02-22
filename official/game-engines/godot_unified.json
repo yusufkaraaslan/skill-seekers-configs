@@ -1,58 +1,121 @@
 {
   "name": "godot",
-  "description": "Complete Godot Engine knowledge base combining official documentation and source code analysis",
-  "merge_mode": "claude-enhanced",
+  "description": "Complete Godot Engine knowledge combining official documentation and source code. Use when building 2D/3D games, tools, or interactive experiences with Godot 4. Covers GDScript, nodes, physics, signals, rendering, and the Godot API.",
+  "version": "1.1.0",
+  "merge_mode": "rule-based",
+  "base_url": "https://docs.godotengine.org/en/stable/",
   "sources": [
     {
       "type": "documentation",
       "base_url": "https://docs.godotengine.org/en/stable/",
       "extract_api": true,
+      "start_urls": [
+        "https://docs.godotengine.org/en/stable/getting_started/introduction/index.html",
+        "https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html",
+        "https://docs.godotengine.org/en/stable/tutorials/2d/index.html",
+        "https://docs.godotengine.org/en/stable/tutorials/3d/index.html",
+        "https://docs.godotengine.org/en/stable/tutorials/physics/index.html",
+        "https://docs.godotengine.org/en/stable/classes/index.html"
+      ],
       "selectors": {
         "main_content": "div[role='main']",
-        "title": "title",
+        "title": "h1",
         "code_blocks": "pre"
       },
       "url_patterns": {
-        "include": [],
+        "include": [
+          "/en/stable/"
+        ],
         "exclude": [
-          "/search.html",
-          "/_static/",
-          "/_images/"
+          "/en/stable/search.html",
+          "/en/stable/_static/",
+          "/en/stable/_images/"
         ]
       },
       "categories": {
         "getting_started": [
           "introduction",
           "getting_started",
-          "step_by_step"
+          "step_by_step",
+          "first_2d_game",
+          "first_3d_game"
         ],
         "scripting": [
           "scripting",
           "gdscript",
-          "c_sharp"
+          "c_sharp",
+          "signals",
+          "groups",
+          "autoloads"
+        ],
+        "nodes": [
+          "node",
+          "scene_tree",
+          "nodes_and_scenes",
+          "instancing"
         ],
         "2d": [
           "2d",
           "canvas",
           "sprite",
-          "animation"
+          "tilemap",
+          "animation",
+          "camera"
         ],
         "3d": [
           "3d",
           "spatial",
           "mesh",
-          "shader"
+          "shader",
+          "environment",
+          "csg"
         ],
         "physics": [
           "physics",
           "collision",
-          "rigidbody"
+          "rigidbody",
+          "characterbody",
+          "area2d",
+          "raycasting"
+        ],
+        "ui": [
+          "ui",
+          "control",
+          "theme",
+          "gui",
+          "containers",
+          "dialogs"
+        ],
+        "input": [
+          "input",
+          "inputmap",
+          "keyboard",
+          "mouse",
+          "gamepad",
+          "touch"
+        ],
+        "audio": [
+          "audio",
+          "audiostream",
+          "audioplayer",
+          "bus",
+          "effects"
+        ],
+        "export": [
+          "export",
+          "build",
+          "packaging",
+          "platform",
+          "windows",
+          "android",
+          "web"
         ],
         "api": [
           "api",
           "class",
           "reference",
-          "method"
+          "method",
+          "property"
         ]
       },
       "rate_limit": 0.5
@@ -76,5 +139,23 @@
       ]
     }
   ],
-  "base_url": "https://docs.godotengine.org/en/stable/"
+  "metadata": {
+    "author": "Godot Engine Contributors",
+    "language": "GDScript/C#/C++",
+    "framework_type": "Game Engine",
+    "use_cases": [
+      "2D games",
+      "3D games",
+      "Interactive experiences",
+      "Educational tools",
+      "Rapid prototyping"
+    ],
+    "related_skills": [
+      "gdscript",
+      "csharp",
+      "glsl",
+      "blender",
+      "tiled"
+    ]
+  }
 }

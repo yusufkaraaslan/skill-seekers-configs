@@ -1,17 +1,17 @@
 {
   "name": "cocos2d",
   "description": "Complete Cocos2d-x knowledge from official documentation. Use when building cross-platform 2D games in C++, Lua, or JavaScript. Covers scenes, sprites, actions, physics, and particle systems.",
-  "version": "1.0.0",
-  "base_url": "https://docs.cocos2d-x.org/api-ref/index.html",
+  "version": "1.1.0",
+  "base_url": "https://docs.cocos2d-x.org/cocos2d-x/en/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://docs.cocos2d-x.org/api-ref/index.html",
+      "base_url": "https://docs.cocos2d-x.org/cocos2d-x/en/",
       "start_urls": [
-        "https://docs.cocos2d-x.org/api-ref/index.html",
         "https://docs.cocos2d-x.org/cocos2d-x/en/",
         "https://docs.cocos2d-x.org/cocos2d-x/en/basic/index.html",
-        "https://docs.cocos2d-x.org/cocos2d-x/en/physics/index.html"
+        "https://docs.cocos2d-x.org/cocos2d-x/en/physics/index.html",
+        "https://docs.cocos2d-x.org/api-ref/index.html"
       ],
       "selectors": {
         "main_content": "article, main, .content",
@@ -21,8 +21,7 @@
       "url_patterns": {
         "include": [
           "/cocos2d-x/en/",
-          "/api-ref/",
-          "/api-ref/cplusplus/"
+          "/api-ref/"
         ],
         "exclude": [
           "/release-notes/"

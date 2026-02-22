@@ -1,7 +1,7 @@
 {
   "name": "love2d",
-  "description": "Complete L\u00d6VE (Love2D) knowledge from official documentation. Use when building 2D games in Lua. Covers graphics, audio, physics, input, and file I/O.",
-  "version": "1.0.0",
+  "description": "Complete LÖVE (Love2D) knowledge from official documentation. Use when building 2D games in Lua. Covers graphics, audio, physics, input, and file I/O.",
+  "version": "1.1.0",
   "base_url": "https://love2d.org/wiki/",
   "sources": [
     {
@@ -20,10 +20,7 @@
       },
       "url_patterns": {
         "include": [
-          "/wiki/",
-          "/wiki/Category:Libraries",
-          "/wiki/Category:Tutorials",
-          "/wiki/love"
+          "/wiki/"
         ],
         "exclude": [
           "/wiki/Special:"
@@ -34,7 +31,7 @@
           "Main_Page",
           "Getting_Started",
           "Game_Distribution",
-          "Building_L\u00d6VE"
+          "Building_LÖVE"
         ],
         "graphics": [
           "love.graphics",
@@ -107,7 +104,7 @@
     }
   ],
   "metadata": {
-    "author": "L\u00d6VE Development Team",
+    "author": "LÖVE Development Team",
     "language": "Lua",
     "framework_type": "Game Engine",
     "use_cases": [
