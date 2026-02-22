@@ -1,12 +1,12 @@
 {
   "name": "stripe",
   "description": "Complete Stripe knowledge from official documentation. Use when implementing payments, subscriptions, invoicing, or financial infrastructure. Covers Stripe.js, Payment Intents, Billing, and Connect.",
-  "version": "1.0.0",
-  "base_url": "https://stripe.com/docs",
+  "version": "1.1.0",
+  "base_url": "https://stripe.com/docs/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://stripe.com/docs",
+      "base_url": "https://stripe.com/docs/",
       "start_urls": [
         "https://stripe.com/docs/payments/accept-a-payment",
         "https://stripe.com/docs/billing/quickstart",

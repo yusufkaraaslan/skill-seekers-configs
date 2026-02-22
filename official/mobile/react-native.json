@@ -1,7 +1,7 @@
 {
   "name": "react-native",
   "description": "Complete React Native knowledge from official documentation. Use when building cross-platform mobile applications with React. Covers components, navigation, native modules, and deployment to iOS/Android.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://reactnative.dev/docs/",
   "sources": [
     {

@@ -1,7 +1,7 @@
 {
   "name": "flutter",
   "description": "Complete Flutter knowledge from official documentation. Use when building cross-platform applications for mobile, web, and desktop with Dart. Covers widgets, state management, navigation, and platform integration.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://docs.flutter.dev/",
   "sources": [
     {
@@ -11,7 +11,7 @@
         "https://docs.flutter.dev/get-started/install",
         "https://docs.flutter.dev/ui/widgets-intro",
         "https://docs.flutter.dev/ui",
-        "https://docs.flutter.dev/development/data-and-backend/state-mgmt",
+        "https://docs.flutter.dev/data-and-backend/state-mgmt/intro",
         "https://docs.flutter.dev/deployment"
       ],
       "selectors": {
@@ -24,7 +24,7 @@
           "/get-started/",
           "/ui/",
           "/cookbook/",
-          "/development/",
+          "/data-and-backend/",
           "/deployment/"
         ],
         "exclude": [
