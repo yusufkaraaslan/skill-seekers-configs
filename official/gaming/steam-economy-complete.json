@@ -1,7 +1,9 @@
 {
   "name": "steam-economy-complete",
   "description": "Complete Steam Economy system knowledge from official documentation. Use for ISteamInventory API, ISteamEconomy API, IInventoryService Web API, Steam Wallet integration, in-app purchases, item definitions, trading, crafting, market integration, and all economy features for game developers.",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
+  "base_url": "https://partner.steamgames.com/doc/",
   "sources": [
     {
       "type": "documentation",
@@ -111,5 +113,23 @@
       "rate_limit": 0.7
     }
   ],
-  "base_url": "https://partner.steamgames.com/doc/"
+  "metadata": {
+    "author": "Valve Corporation",
+    "language": "C++/Web API",
+    "framework_type": "Game Platform SDK",
+    "use_cases": [
+      "Steam inventory systems",
+      "In-game purchases",
+      "Item trading",
+      "Crafting systems",
+      "Steam Market integration"
+    ],
+    "related_skills": [
+      "steam",
+      "steamworks",
+      "cpp",
+      "rest-api",
+      "json"
+    ]
+  }
 }
