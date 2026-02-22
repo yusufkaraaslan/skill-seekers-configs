@@ -1,17 +1,23 @@
 {
   "name": "chakra-ui",
-  "description": "Complete Chakra UI knowledge from official documentation. Use when building accessible React applications with composable components. Covers theming, styling, forms, and hooks.",
-  "version": "1.0.0",
-  "base_url": "https://chakra-ui.com/docs/",
+  "description": "Complete Chakra UI v3 knowledge from official documentation. Use when building accessible React applications with composable, themeable components. Covers the new recipe-based theming system, styling props, component library, and composition patterns.",
+  "version": "1.1.0",
+  "base_url": "https://www.chakra-ui.com/docs/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://chakra-ui.com/docs/",
+      "base_url": "https://www.chakra-ui.com/docs/",
       "start_urls": [
-        "https://chakra-ui.com/getting-started",
-        "https://chakra-ui.com/docs/styled-system/theming",
-        "https://chakra-ui.com/docs/components",
-        "https://chakra-ui.com/docs/hooks"
+        "https://www.chakra-ui.com/docs/get-started/installation",
+        "https://www.chakra-ui.com/docs/get-started/frameworks/next-js",
+        "https://www.chakra-ui.com/docs/get-started/frameworks/vite",
+        "https://www.chakra-ui.com/docs/styling/overview",
+        "https://www.chakra-ui.com/docs/theming/overview",
+        "https://www.chakra-ui.com/docs/components",
+        "https://www.chakra-ui.com/docs/components/button",
+        "https://www.chakra-ui.com/docs/components/input",
+        "https://www.chakra-ui.com/docs/components/dialog",
+        "https://www.chakra-ui.com/docs/components/select"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -20,11 +26,7 @@
       },
       "url_patterns": {
         "include": [
-          "/getting-started",
-          "/docs/",
-          "/docs/components/",
-          "/docs/styled-system/",
-          "/docs/hooks/"
+          "/docs/"
         ],
         "exclude": [
           "/blog/"
@@ -32,63 +34,90 @@
       },
       "categories": {
         "getting_started": [
-          "getting-started",
+          "get-started",
           "installation",
-          "nextjs",
-          "create-react-app"
+          "next-js",
+          "vite",
+          "remix",
+          "migration"
+        ],
+        "styling": [
+          "styling",
+          "overview",
+          "style-props",
+          "responsive-design",
+          "conditional-styles",
+          "css",
+          "keyframes"
+        ],
+        "theming": [
+          "theming",
+          "overview",
+          "tokens",
+          "semantic-tokens",
+          "recipes",
+          "slot-recipes",
+          "dark-mode"
         ],
         "components": [
+          "button",
+          "input",
+          "select",
+          "dialog",
+          "drawer",
+          "card",
+          "table",
+          "badge",
+          "avatar",
+          "checkbox",
+          "radio",
+          "switch",
+          "slider",
+          "toast"
+        ],
+        "layout": [
           "box",
           "stack",
           "flex",
           "grid",
-          "button",
-          "input",
-          "modal",
-          "drawer"
+          "container",
+          "center",
+          "spacer",
+          "separator"
         ],
-        "theming": [
-          "theming",
-          "theme",
-          "colors",
-          "fonts",
-          "breakpoints"
-        ],
-        "styled_system": [
-          "styled-system",
-          "sx",
-          "style-props",
-          "responsive"
+        "overlay": [
+          "dialog",
+          "drawer",
+          "popover",
+          "tooltip",
+          "menu",
+          "context-menu"
         ],
         "forms": [
-          "form-control",
+          "field",
           "input",
-          "select",
           "textarea",
+          "select",
           "checkbox",
-          "radio"
+          "radio",
+          "number-input",
+          "pin-input"
         ],
         "hooks": [
           "use-color-mode",
           "use-theme",
           "use-disclosure",
-          "use-toast"
+          "use-toast",
+          "use-clipboard"
         ],
         "accessibility": [
           "accessibility",
           "aria",
           "keyboard",
           "focus"
-        ],
-        "layout": [
-          "container",
-          "center",
-          "spacer",
-          "divider"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 300
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
@@ -105,9 +134,9 @@
     "related_skills": [
       "react",
       "nextjs",
-      "emotion",
       "typescript",
-      "framer-motion"
+      "ark-ui",
+      "panda-css"
     ]
   }
 }

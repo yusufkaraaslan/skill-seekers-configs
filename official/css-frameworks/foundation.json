@@ -1,7 +1,7 @@
 {
   "name": "foundation",
-  "description": "Complete Foundation knowledge from official documentation. Use when building responsive, accessible websites and apps. Covers grid, components, utilities, and JavaScript plugins.",
-  "version": "1.0.0",
+  "description": "Complete Foundation for Sites knowledge from official documentation. Use when building responsive, accessible websites with this enterprise-grade CSS framework. Covers the XY grid, typography, components, forms, JavaScript plugins, and Sass customization.",
+  "version": "1.1.0",
   "base_url": "https://get.foundation/sites/docs/",
   "sources": [
     {
@@ -10,8 +10,13 @@
       "start_urls": [
         "https://get.foundation/sites/docs/",
         "https://get.foundation/sites/docs/installation.html",
-        "https://get.foundation/sites/docs/grid.html",
-        "https://get.foundation/sites/docs/sass.html"
+        "https://get.foundation/sites/docs/sass.html",
+        "https://get.foundation/sites/docs/xy-grid.html",
+        "https://get.foundation/sites/docs/flexbox-utilities.html",
+        "https://get.foundation/sites/docs/typography-base.html",
+        "https://get.foundation/sites/docs/button.html",
+        "https://get.foundation/sites/docs/forms.html",
+        "https://get.foundation/sites/docs/javascript.html"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -20,11 +25,7 @@
       },
       "url_patterns": {
         "include": [
-          "/sites/docs/",
-          "/sites/docs/grid.html",
-          "/sites/docs/sass.html",
-          "/sites/docs/typography-base.html",
-          "/sites/docs/button.html"
+          "/sites/docs/"
         ],
         "exclude": [
           "/sites/docs/changelog.html"
@@ -32,10 +33,10 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "installation",
           "starter-projects",
-          "javascript"
+          "javascript",
+          "accessibility"
         ],
         "sass": [
           "sass",
@@ -45,11 +46,12 @@
           "variables"
         ],
         "grid": [
-          "grid",
           "xy-grid",
+          "grid",
           "float-grid",
           "flex-grid",
-          "grid-container"
+          "grid-container",
+          "grid-column"
         ],
         "general": [
           "global",
@@ -119,8 +121,7 @@
           "prototype-utilities"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 400
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

@@ -1,7 +1,7 @@
 {
   "name": "shadcn",
-  "description": "Complete shadcn/ui knowledge from official documentation. Use when building accessible React components with Radix UI and Tailwind CSS. Covers components, theming, CLI, and customization.",
-  "version": "1.0.0",
+  "description": "Complete shadcn/ui knowledge from official documentation. Use when building accessible React components with Radix UI primitives and Tailwind CSS. Covers components, theming, dark mode, CLI usage, and framework-specific installation guides.",
+  "version": "1.1.0",
   "base_url": "https://ui.shadcn.com/docs/",
   "sources": [
     {
@@ -10,8 +10,13 @@
       "start_urls": [
         "https://ui.shadcn.com/docs/",
         "https://ui.shadcn.com/docs/installation",
-        "https://ui.shadcn.com/docs/components",
-        "https://ui.shadcn.com/docs/theming"
+        "https://ui.shadcn.com/docs/theming",
+        "https://ui.shadcn.com/docs/dark-mode",
+        "https://ui.shadcn.com/docs/cli",
+        "https://ui.shadcn.com/docs/components/button",
+        "https://ui.shadcn.com/docs/components/form",
+        "https://ui.shadcn.com/docs/components/data-table",
+        "https://ui.shadcn.com/docs/components/dialog"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -20,14 +25,10 @@
       },
       "url_patterns": {
         "include": [
-          "/docs/",
-          "/docs/installation",
-          "/docs/components/",
-          "/docs/theming",
-          "/docs/cli"
+          "/docs/"
         ],
         "exclude": [
-          "/docs/changelog/"
+          "/docs/changelog"
         ]
       },
       "categories": {
@@ -36,29 +37,39 @@
           "installation",
           "nextjs",
           "vite",
-          "remix"
-        ],
-        "components": [
-          "accordion",
-          "alert",
-          "button",
-          "card",
-          "dialog",
-          "dropdown-menu",
-          "form",
-          "table"
+          "remix",
+          "astro",
+          "laravel"
         ],
         "theming": [
           "theming",
           "colors",
           "dark-mode",
-          "customize"
+          "customize",
+          "typography"
         ],
         "cli": [
           "cli",
           "init",
           "add",
-          "update"
+          "diff"
+        ],
+        "components": [
+          "accordion",
+          "alert",
+          "alert-dialog",
+          "badge",
+          "button",
+          "card",
+          "command",
+          "combobox",
+          "dialog",
+          "dropdown-menu",
+          "hover-card",
+          "popover",
+          "sheet",
+          "toast",
+          "tooltip"
         ],
         "forms": [
           "form",
@@ -66,34 +77,36 @@
           "textarea",
           "select",
           "checkbox",
-          "radio-group"
+          "radio-group",
+          "switch",
+          "slider",
+          "date-picker"
+        ],
+        "navigation": [
+          "breadcrumb",
+          "navigation-menu",
+          "pagination",
+          "tabs",
+          "menubar",
+          "sidebar"
         ],
         "layout": [
           "aspect-ratio",
-          "container",
           "resizable",
+          "scroll-area",
           "separator",
           "skeleton"
-        ],
-        "overlays": [
-          "alert-dialog",
-          "dialog",
-          "drawer",
-          "hover-card",
-          "popover",
-          "sheet",
-          "tooltip"
         ],
         "data": [
           "calendar",
           "carousel",
           "chart",
+          "data-table",
           "table",
-          "pagination"
+          "progress"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 200
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

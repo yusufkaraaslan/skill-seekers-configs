@@ -1,7 +1,7 @@
 {
   "name": "bulma",
-  "description": "Complete Bulma knowledge from official documentation. Use when building responsive web interfaces with a modern CSS framework. Covers grid, components, elements, and modifiers.",
-  "version": "1.0.0",
+  "description": "Complete Bulma knowledge from official documentation. Use when building responsive web interfaces with a modern CSS-only framework. Covers the grid system, layout, elements, components, form controls, helpers, and Bulma v1 CSS variables with dark mode support.",
+  "version": "1.1.0",
   "base_url": "https://bulma.io/documentation/",
   "sources": [
     {
@@ -11,7 +11,11 @@
         "https://bulma.io/documentation/",
         "https://bulma.io/documentation/overview/",
         "https://bulma.io/documentation/columns/",
-        "https://bulma.io/documentation/elements/"
+        "https://bulma.io/documentation/layout/",
+        "https://bulma.io/documentation/form/",
+        "https://bulma.io/documentation/elements/",
+        "https://bulma.io/documentation/components/",
+        "https://bulma.io/documentation/helpers/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -20,12 +24,7 @@
       },
       "url_patterns": {
         "include": [
-          "/documentation/overview/",
-          "/documentation/columns/",
-          "/documentation/layout/",
-          "/documentation/form/",
-          "/documentation/elements/",
-          "/documentation/components/"
+          "/documentation/"
         ],
         "exclude": [
           "/blog/"
@@ -33,16 +32,18 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "overview/start",
           "overview/installation",
-          "overview/classes"
+          "overview/classes",
+          "overview/colors",
+          "overview/typography"
         ],
         "customize": [
           "overview/customize",
           "sass",
           "variables",
-          "modifiers"
+          "modifiers",
+          "dark-mode"
         ],
         "columns": [
           "columns/basics",
@@ -100,16 +101,9 @@
           "helpers/typography-helpers",
           "helpers/visibility-helpers",
           "helpers/flexbox-helpers"
-        ],
-        "modifiers": [
-          "modifiers/syntax",
-          "modifiers/helpers",
-          "modifiers/responsive-helpers",
-          "modifiers/color-helpers"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 300
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
@@ -120,8 +114,8 @@
       "Responsive design",
       "Rapid prototyping",
       "Modern interfaces",
-      "CSS-only",
-      "No JavaScript"
+      "CSS-only (no JavaScript)",
+      "Dark mode support"
     ],
     "related_skills": [
       "html",

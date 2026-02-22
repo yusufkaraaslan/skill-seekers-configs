@@ -1,7 +1,7 @@
 {
   "name": "mui-material",
-  "description": "Complete Material-UI (MUI) knowledge from official documentation. Use when building React applications with Material Design components. Covers theming, customization, components, and system utilities.",
-  "version": "1.0.0",
+  "description": "Complete MUI Material UI knowledge from official documentation. Use when building React applications with Material Design components. Covers all components, theming, the sx prop, system utilities, icons, and the Data Grid.",
+  "version": "1.1.0",
   "base_url": "https://mui.com/material-ui/",
   "sources": [
     {
@@ -10,6 +10,11 @@
       "start_urls": [
         "https://mui.com/material-ui/getting-started/",
         "https://mui.com/material-ui/react-button/",
+        "https://mui.com/material-ui/react-text-field/",
+        "https://mui.com/material-ui/react-app-bar/",
+        "https://mui.com/material-ui/react-dialog/",
+        "https://mui.com/material-ui/react-data-grid/",
+        "https://mui.com/material-ui/icons/",
         "https://mui.com/material-ui/customization/theming/",
         "https://mui.com/system/getting-started/"
       ],
@@ -21,8 +26,9 @@
       "url_patterns": {
         "include": [
           "/material-ui/getting-started/",
-          "/material-ui/react-/",
+          "/material-ui/react-",
           "/material-ui/customization/",
+          "/material-ui/icons/",
           "/system/",
           "/x/react-data-grid/"
         ],
@@ -34,7 +40,9 @@
         "getting_started": [
           "installation",
           "usage",
-          "example-projects"
+          "learn",
+          "example-projects",
+          "supported-platforms"
         ],
         "components": [
           "button",
@@ -44,47 +52,69 @@
           "app-bar",
           "drawer",
           "card",
-          "table"
+          "table",
+          "list",
+          "menu",
+          "tabs",
+          "accordion",
+          "chip",
+          "avatar"
         ],
         "layout": [
           "box",
           "container",
           "grid",
-          "stack"
+          "stack",
+          "image-list"
         ],
         "theming": [
           "theming",
           "theme-provider",
           "palette",
           "typography",
-          "dark-mode"
+          "spacing",
+          "breakpoints",
+          "dark-mode",
+          "color-schemes"
         ],
         "customization": [
           "customization",
           "styled",
           "sx",
-          "css-in-js"
+          "css-in-js",
+          "component-overrides"
+        ],
+        "icons": [
+          "icons",
+          "material-icons",
+          "svg-icons",
+          "icon-component",
+          "font-icons"
         ],
         "system": [
           "system",
           "spacing",
           "display",
-          "sx-prop"
-        ],
-        "lab": [
-          "masonry",
-          "timeline",
-          "tree-view"
+          "sx-prop",
+          "borders",
+          "typography"
         ],
         "data_grid": [
           "data-grid",
           "pagination",
           "sorting",
-          "filtering"
+          "filtering",
+          "editing",
+          "row-selection"
+        ],
+        "advanced": [
+          "masonry",
+          "timeline",
+          "tree-view",
+          "date-pickers"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 400
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
@@ -102,7 +132,7 @@
       "react",
       "typescript",
       "emotion",
-      "tailwind",
+      "nextjs",
       "figma"
     ]
   }

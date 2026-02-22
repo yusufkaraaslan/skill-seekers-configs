@@ -1,8 +1,9 @@
 {
   "name": "tailwind",
-  "description": "Complete Tailwind CSS knowledge combining official documentation and Tailwind codebase. Use when styling with Tailwind, understanding utility classes, or customizing configuration. Covers v3.x with JIT engine, plugins, and dark mode.",
-  "version": "1.0.0",
+  "description": "Complete Tailwind CSS knowledge combining official documentation and Tailwind codebase. Use when styling with Tailwind utility classes or customizing configuration. Covers v4 CSS-first configuration with @theme and @utility directives, responsive design, dark mode, plugins, and all utility classes.",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
+  "base_url": "https://tailwindcss.com/docs",
   "sources": [
     {
       "type": "documentation",
@@ -10,9 +11,14 @@
       "extract_api": true,
       "start_urls": [
         "https://tailwindcss.com/docs/installation",
+        "https://tailwindcss.com/docs/upgrade-guide",
         "https://tailwindcss.com/docs/utility-first",
         "https://tailwindcss.com/docs/responsive-design",
-        "https://tailwindcss.com/docs/configuration"
+        "https://tailwindcss.com/docs/configuration",
+        "https://tailwindcss.com/docs/theme",
+        "https://tailwindcss.com/docs/dark-mode",
+        "https://tailwindcss.com/docs/adding-custom-styles",
+        "https://tailwindcss.com/docs/plugins"
       ],
       "selectors": {
         "main_content": "article",
@@ -32,9 +38,10 @@
       "categories": {
         "getting_started": [
           "installation",
-          "editor-setup",
           "upgrade-guide",
-          "using-with-preprocessors"
+          "editor-setup",
+          "using-with-preprocessors",
+          "optimizing-for-production"
         ],
         "core_concepts": [
           "utility-first",
@@ -43,6 +50,14 @@
           "dark-mode",
           "reusing-styles",
           "adding-custom-styles"
+        ],
+        "configuration": [
+          "configuration",
+          "theme",
+          "plugins",
+          "presets",
+          "content",
+          "important-modifier"
         ],
         "layout": [
           "container",
@@ -81,7 +96,8 @@
           "min-width",
           "max-width",
           "min-height",
-          "max-height"
+          "max-height",
+          "size"
         ],
         "typography": [
           "font-family",
@@ -91,7 +107,8 @@
           "text-color",
           "line-height",
           "letter-spacing",
-          "text-transform"
+          "text-transform",
+          "text-decoration"
         ],
         "backgrounds": [
           "background-color",
@@ -105,13 +122,15 @@
           "border-color",
           "border-style",
           "border-radius",
-          "divide"
+          "divide",
+          "outline",
+          "ring"
         ],
         "effects": [
           "box-shadow",
           "opacity",
           "mix-blend-mode",
-          "background-blend-mode"
+          "drop-shadow"
         ],
         "filters": [
           "blur",
@@ -121,11 +140,8 @@
           "hue-rotate",
           "invert",
           "saturate",
-          "sepia"
-        ],
-        "tables": [
-          "border-collapse",
-          "table-layout"
+          "sepia",
+          "backdrop-blur"
         ],
         "transitions": [
           "transition-property",
@@ -139,26 +155,15 @@
           "pointer-events",
           "resize",
           "scroll-behavior",
-          "user-select"
-        ],
-        "svg": [
-          "fill",
-          "stroke",
-          "stroke-width"
+          "user-select",
+          "accent-color"
         ],
         "accessibility": [
           "screen-readers",
           "forced-color-adjust"
-        ],
-        "customization": [
-          "configuration",
-          "theme",
-          "plugins",
-          "presets"
         ]
       },
-      "rate_limit": 0.5,
-      "max_pages": 400
+      "rate_limit": 0.5
     },
     {
       "type": "github",
@@ -191,8 +196,8 @@
       "react",
       "vue",
       "nextjs",
-      "postcss"
+      "postcss",
+      "vite"
     ]
-  },
-  "base_url": "https://tailwindcss.com/docs"
+  }
 }
