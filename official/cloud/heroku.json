@@ -1,16 +1,23 @@
 {
   "name": "heroku",
-  "description": "Complete Heroku knowledge from official documentation. Use when deploying, managing, and scaling applications on the platform-as-a-service. Covers dynos, add-ons, CLI, and pipelines.",
-  "version": "1.0.0",
+  "description": "Complete Heroku knowledge from official documentation. Use when deploying, managing, and scaling applications on the platform-as-a-service. Covers dynos, add-ons, Postgres, pipelines, review apps, config vars, and the Heroku CLI.",
+  "version": "1.1.0",
   "base_url": "https://devcenter.heroku.com/",
   "sources": [
     {
       "type": "documentation",
       "base_url": "https://devcenter.heroku.com/",
       "start_urls": [
-        "https://devcenter.heroku.com/",
         "https://devcenter.heroku.com/articles/getting-started-with-python",
+        "https://devcenter.heroku.com/articles/getting-started-with-nodejs",
+        "https://devcenter.heroku.com/articles/how-heroku-works",
         "https://devcenter.heroku.com/articles/deploying-nodejs",
+        "https://devcenter.heroku.com/articles/git",
+        "https://devcenter.heroku.com/articles/dynos",
+        "https://devcenter.heroku.com/articles/heroku-cli",
+        "https://devcenter.heroku.com/articles/config-vars",
+        "https://devcenter.heroku.com/articles/heroku-postgresql",
+        "https://devcenter.heroku.com/articles/pipelines",
         "https://devcenter.heroku.com/categories/reference"
       ],
       "selectors": {
@@ -20,22 +27,21 @@
       },
       "url_patterns": {
         "include": [
-          "/articles/getting-started",
-          "/articles/deploying",
-          "/categories/reference",
-          "/categories/buildpacks"
+          "/articles/",
+          "/categories/"
         ],
         "exclude": [
-          "/changelog/"
+          "/changelog/",
+          "/articles/heroku-changelog"
         ]
       },
       "categories": {
         "getting_started": [
-          "",
           "getting-started-with-python",
           "getting-started-with-nodejs",
           "getting-started-with-ruby",
-          "getting-started-with-java"
+          "getting-started-with-java",
+          "how-heroku-works"
         ],
         "deployment": [
           "deploying-nodejs",
@@ -103,8 +109,7 @@
           "deployment-method-github-actions"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 350
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

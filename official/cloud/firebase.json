@@ -1,18 +1,24 @@
 {
   "name": "firebase",
-  "description": "Complete Firebase knowledge from official documentation. Use when building mobile and web applications with Google's backend platform. Covers Firestore, Auth, Cloud Functions, Hosting, and Analytics.",
-  "version": "1.0.0",
-  "base_url": "https://firebase.google.com/docs",
+  "description": "Complete Firebase knowledge from official documentation. Use when building mobile and web applications with Google's backend platform. Covers Firestore, Realtime Database, Auth, Cloud Functions, Hosting, Storage, Cloud Messaging, and Analytics.",
+  "version": "1.1.0",
+  "base_url": "https://firebase.google.com/docs/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://firebase.google.com/docs",
+      "base_url": "https://firebase.google.com/docs/",
       "start_urls": [
         "https://firebase.google.com/docs/web/setup",
         "https://firebase.google.com/docs/firestore",
+        "https://firebase.google.com/docs/database",
         "https://firebase.google.com/docs/auth",
         "https://firebase.google.com/docs/functions",
-        "https://firebase.google.com/docs/hosting"
+        "https://firebase.google.com/docs/hosting",
+        "https://firebase.google.com/docs/storage",
+        "https://firebase.google.com/docs/cloud-messaging",
+        "https://firebase.google.com/docs/analytics",
+        "https://firebase.google.com/docs/app-check",
+        "https://firebase.google.com/docs/remote-config"
       ],
       "selectors": {
         "main_content": "article, main, .devsite-article",
@@ -23,6 +29,7 @@
         "include": [
           "/docs/web/",
           "/docs/firestore/",
+          "/docs/database/",
           "/docs/auth/",
           "/docs/functions/",
           "/docs/hosting/",
@@ -32,6 +39,7 @@
           "/docs/crashlytics/",
           "/docs/performance/",
           "/docs/remote-config/",
+          "/docs/app-check/",
           "/docs/ab-testing/"
         ],
         "exclude": [
@@ -51,7 +59,15 @@
           "database",
           "documents",
           "queries",
-          "security-rules"
+          "security-rules",
+          "transactions"
+        ],
+        "realtime_database": [
+          "database",
+          "rtdb",
+          "realtime-database",
+          "read-and-write",
+          "offline"
         ],
         "authentication": [
           "auth",
@@ -59,14 +75,16 @@
           "google",
           "oauth",
           "custom",
-          "anonymous"
+          "anonymous",
+          "phone"
         ],
         "functions": [
           "functions",
           "cloud-functions",
           "triggers",
           "https",
-          "callable"
+          "callable",
+          "schedules"
         ],
         "storage": [
           "storage",
@@ -93,10 +111,11 @@
           "audiences",
           "conversions"
         ],
-        "crashlytics": [
-          "crashlytics",
-          "crashes",
-          "analytics"
+        "app_check": [
+          "app-check",
+          "play-integrity",
+          "device-check",
+          "recaptcha"
         ],
         "remote_config": [
           "remote-config",
@@ -104,8 +123,7 @@
           "experiments"
         ]
       },
-      "rate_limit": 0.5,
-      "max_pages": 600
+      "rate_limit": 0.5
     }
   ],
   "metadata": {

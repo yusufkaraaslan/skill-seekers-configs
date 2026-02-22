@@ -1,17 +1,24 @@
 {
   "name": "cloudflare",
-  "description": "Complete Cloudflare knowledge from official documentation. Use when securing and accelerating web applications. Covers CDN, DNS, Workers, Pages, and Zero Trust.",
-  "version": "1.0.0",
+  "description": "Complete Cloudflare knowledge from official documentation. Use when securing, accelerating, and building on the edge. Covers CDN, DNS, Workers, Pages, R2, D1, Queues, Workers AI, and Zero Trust.",
+  "version": "1.1.0",
   "base_url": "https://developers.cloudflare.com/",
   "sources": [
     {
       "type": "documentation",
       "base_url": "https://developers.cloudflare.com/",
       "start_urls": [
-        "https://developers.cloudflare.com/",
         "https://developers.cloudflare.com/fundamentals/",
         "https://developers.cloudflare.com/workers/",
-        "https://developers.cloudflare.com/pages/"
+        "https://developers.cloudflare.com/pages/",
+        "https://developers.cloudflare.com/r2/",
+        "https://developers.cloudflare.com/d1/",
+        "https://developers.cloudflare.com/queues/",
+        "https://developers.cloudflare.com/workers-ai/",
+        "https://developers.cloudflare.com/ai-gateway/",
+        "https://developers.cloudflare.com/vectorize/",
+        "https://developers.cloudflare.com/zero-trust/",
+        "https://developers.cloudflare.com/api/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -25,6 +32,10 @@
           "/pages/",
           "/r2/",
           "/d1/",
+          "/queues/",
+          "/workers-ai/",
+          "/ai-gateway/",
+          "/vectorize/",
           "/zero-trust/",
           "/api/"
         ],
@@ -34,7 +45,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "fundamentals",
           "get-started",
           "concepts"
@@ -62,7 +72,8 @@
           "get-started",
           "runtime-apis",
           "kv",
-          "durable-objects"
+          "durable-objects",
+          "service-bindings"
         ],
         "pages": [
           "pages",
@@ -82,6 +93,25 @@
           "get-started",
           "query-databases",
           "bindings"
+        ],
+        "queues": [
+          "queues",
+          "get-started",
+          "producers",
+          "consumers"
+        ],
+        "workers_ai": [
+          "workers-ai",
+          "models",
+          "inference",
+          "text-generation",
+          "embeddings"
+        ],
+        "vectorize": [
+          "vectorize",
+          "vector-database",
+          "indexes",
+          "similarity-search"
         ],
         "zero_trust": [
           "zero-trust",
@@ -107,8 +137,7 @@
           "limits"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 500
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
@@ -116,18 +145,18 @@
     "language": "JavaScript/TypeScript",
     "framework_type": "Edge Platform",
     "use_cases": [
-      "CDN",
-      "DDoS protection",
-      "Serverless edge",
-      "Zero Trust",
-      "Static hosting"
+      "CDN and DDoS protection",
+      "Serverless edge computing",
+      "Edge AI inference",
+      "Zero Trust security",
+      "Static site hosting"
     ],
     "related_skills": [
       "javascript",
       "typescript",
       "dns",
-      "cdn",
-      "workers"
+      "workers",
+      "wasm"
     ]
   }
 }

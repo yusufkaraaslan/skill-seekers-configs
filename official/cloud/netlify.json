@@ -1,7 +1,7 @@
 {
   "name": "netlify",
-  "description": "Complete Netlify knowledge from official documentation. Use when deploying JAMstack applications with CI/CD, serverless functions, and edge network. Covers deployments, functions, forms, identity, and large media.",
-  "version": "1.0.0",
+  "description": "Complete Netlify knowledge from official documentation. Use when deploying web applications with CI/CD, serverless functions, edge functions, and global CDN. Covers builds, deploys, functions, forms, identity, blob storage, and CLI.",
+  "version": "1.1.0",
   "base_url": "https://docs.netlify.com/",
   "sources": [
     {
@@ -11,7 +11,12 @@
         "https://docs.netlify.com/get-started/",
         "https://docs.netlify.com/configure-builds/",
         "https://docs.netlify.com/functions/",
-        "https://docs.netlify.com/edge-functions/"
+        "https://docs.netlify.com/edge-functions/",
+        "https://docs.netlify.com/blobs/",
+        "https://docs.netlify.com/routing/",
+        "https://docs.netlify.com/forms/",
+        "https://docs.netlify.com/identity/",
+        "https://docs.netlify.com/cli/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -24,8 +29,11 @@
           "/configure-builds/",
           "/functions/",
           "/edge-functions/",
+          "/blobs/",
+          "/routing/",
           "/forms/",
-          "/identity/"
+          "/identity/",
+          "/cli/"
         ],
         "exclude": [
           "/changelog/"
@@ -41,24 +49,40 @@
           "configure-builds",
           "build-settings",
           "environment-variables",
-          "monorepos"
+          "monorepos",
+          "dependency-caching"
         ],
         "deploys": [
           "deploys",
           "deploy-previews",
           "branch-deploys",
-          "build-hooks"
+          "build-hooks",
+          "rollbacks"
         ],
         "functions": [
           "functions",
           "overview",
           "build-with-javascript",
+          "build-with-typescript",
           "build-with-go"
         ],
         "edge_functions": [
           "edge-functions",
           "create-edge-function",
           "edge-function-API"
+        ],
+        "blobs": [
+          "blobs",
+          "blob-storage",
+          "get-set",
+          "list"
+        ],
+        "routing": [
+          "routing",
+          "redirects",
+          "rewrites",
+          "proxies",
+          "custom-headers"
         ],
         "forms": [
           "forms",
@@ -72,20 +96,21 @@
           "identity-provider",
           "access-control"
         ],
-        "large_media": [
-          "large-media",
-          "setup",
-          "requirements"
-        ],
         "configuration": [
           "file-based-configuration",
-          "redirects",
+          "netlify-toml",
           "headers",
-          "netlify-toml"
+          "environment-variables"
+        ],
+        "cli": [
+          "cli",
+          "install",
+          "deploy",
+          "dev",
+          "env"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 350
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
@@ -104,7 +129,7 @@
       "nextjs",
       "hugo",
       "jekyll",
-      "jamstack"
+      "astro"
     ]
   }
 }

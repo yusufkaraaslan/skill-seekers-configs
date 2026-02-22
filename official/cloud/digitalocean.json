@@ -1,17 +1,22 @@
 {
   "name": "digitalocean",
-  "description": "Complete DigitalOcean knowledge from official documentation. Use when deploying applications on the developer cloud. Covers Droplets, Kubernetes, databases, and App Platform.",
-  "version": "1.0.0",
+  "description": "Complete DigitalOcean knowledge from official documentation. Use when deploying applications on the developer cloud. Covers Droplets, Kubernetes, App Platform, managed databases, Spaces, networking, and the doctl CLI.",
+  "version": "1.1.0",
   "base_url": "https://docs.digitalocean.com/",
   "sources": [
     {
       "type": "documentation",
       "base_url": "https://docs.digitalocean.com/",
       "start_urls": [
-        "https://docs.digitalocean.com/",
         "https://docs.digitalocean.com/products/droplets/",
         "https://docs.digitalocean.com/products/kubernetes/",
-        "https://docs.digitalocean.com/products/app-platform/"
+        "https://docs.digitalocean.com/products/app-platform/",
+        "https://docs.digitalocean.com/products/databases/",
+        "https://docs.digitalocean.com/products/spaces/",
+        "https://docs.digitalocean.com/products/volumes/",
+        "https://docs.digitalocean.com/products/networking/",
+        "https://docs.digitalocean.com/products/monitoring/",
+        "https://docs.digitalocean.com/reference/doctl/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -24,7 +29,12 @@
           "/products/kubernetes/",
           "/products/app-platform/",
           "/products/databases/",
-          "/products/spaces/"
+          "/products/spaces/",
+          "/products/volumes/",
+          "/products/networking/",
+          "/products/monitoring/",
+          "/reference/doctl/",
+          "/reference/api/"
         ],
         "exclude": [
           "/release-notes/"
@@ -32,7 +42,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "getting-started",
           "sign-up",
           "billing"
@@ -110,8 +119,7 @@
           "examples"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 400
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

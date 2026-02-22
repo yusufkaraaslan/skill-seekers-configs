@@ -1,18 +1,28 @@
 {
   "name": "aws-boto3",
-  "description": "Complete AWS Boto3 knowledge from official documentation. Use when building Python applications that interact with AWS services. Covers S3, EC2, Lambda, DynamoDB, and 200+ AWS services.",
-  "version": "1.0.0",
-  "base_url": "https://boto3.amazonaws.com/v1/documentation/api/latest/index.html",
+  "description": "Complete AWS Boto3 knowledge from official documentation. Use when building Python applications that interact with AWS services. Covers S3, EC2, Lambda, DynamoDB, SQS, SNS, IAM, CloudWatch, and 200+ AWS services.",
+  "version": "1.1.0",
+  "base_url": "https://boto3.amazonaws.com/v1/documentation/api/latest/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://boto3.amazonaws.com/v1/documentation/api/latest/index.html",
+      "base_url": "https://boto3.amazonaws.com/v1/documentation/api/latest/",
       "start_urls": [
         "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html",
+        "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html",
+        "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html",
+        "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/resources.html",
+        "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/clients.html",
+        "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/session.html",
+        "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html",
+        "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/error-handling.html",
         "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3.html",
+        "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3-presigned-urls.html",
         "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html",
         "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/sqs.html",
         "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/ec2.html",
+        "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/iam.html",
+        "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/cw-examples.html",
         "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/index.html"
       ],
       "selectors": {
@@ -43,7 +53,9 @@
           "session",
           "exceptions",
           "pagination",
-          "waiters"
+          "paginators",
+          "waiters",
+          "error-handling"
         ],
         "s3": [
           "s3",
@@ -51,47 +63,62 @@
           "objects",
           "upload",
           "download",
-          "presigned"
+          "presigned",
+          "transfer",
+          "multipart"
         ],
         "ec2": [
           "ec2",
           "instances",
           "volumes",
           "security-groups",
-          "key-pairs"
+          "key-pairs",
+          "images"
         ],
         "lambda": [
           "lambda",
           "functions",
           "invocation",
-          "layers"
+          "layers",
+          "event-source"
         ],
         "dynamodb": [
           "dynamodb",
           "tables",
           "items",
           "queries",
-          "scans"
+          "scans",
+          "conditions"
         ],
         "sqs": [
           "sqs",
           "queues",
           "messages",
+          "receive",
+          "delete"
+        ],
+        "sns": [
           "sns",
-          "notifications"
+          "topics",
+          "subscriptions",
+          "notifications",
+          "publish"
         ],
         "iam": [
           "iam",
           "users",
           "roles",
           "policies",
-          "permissions"
+          "permissions",
+          "assume-role"
         ],
-        "cloudformation": [
-          "cloudformation",
-          "stacks",
-          "templates",
-          "resources"
+        "cloudwatch": [
+          "cloudwatch",
+          "cw-examples",
+          "metrics",
+          "alarms",
+          "logs",
+          "events"
         ],
         "security": [
           "kms",
@@ -100,8 +127,7 @@
           "parameter-store"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 400
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

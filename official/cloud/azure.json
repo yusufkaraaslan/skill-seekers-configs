@@ -1,7 +1,7 @@
 {
   "name": "azure",
-  "description": "Complete Microsoft Azure knowledge from official documentation. Use when building applications on Microsoft's cloud platform. Covers compute, storage, databases, AI, and DevOps services.",
-  "version": "1.0.0",
+  "description": "Complete Microsoft Azure knowledge from official documentation. Use when building applications on Microsoft's cloud platform. Covers compute, storage, databases, networking, identity, AI/ML, and DevOps services.",
+  "version": "1.1.0",
   "base_url": "https://learn.microsoft.com/en-us/azure/",
   "sources": [
     {
@@ -11,7 +11,17 @@
         "https://learn.microsoft.com/en-us/azure/",
         "https://learn.microsoft.com/en-us/azure/get-started/",
         "https://learn.microsoft.com/en-us/azure/virtual-machines/",
-        "https://learn.microsoft.com/en-us/azure/app-service/"
+        "https://learn.microsoft.com/en-us/azure/app-service/",
+        "https://learn.microsoft.com/en-us/azure/azure-functions/",
+        "https://learn.microsoft.com/en-us/azure/storage/",
+        "https://learn.microsoft.com/en-us/azure/azure-sql/",
+        "https://learn.microsoft.com/en-us/azure/cosmos-db/",
+        "https://learn.microsoft.com/en-us/azure/aks/",
+        "https://learn.microsoft.com/en-us/azure/container-apps/",
+        "https://learn.microsoft.com/en-us/azure/key-vault/",
+        "https://learn.microsoft.com/en-us/azure/active-directory/",
+        "https://learn.microsoft.com/en-us/azure/monitor/",
+        "https://learn.microsoft.com/en-us/azure/devops/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -23,19 +33,27 @@
           "/en-us/azure/get-started/",
           "/en-us/azure/virtual-machines/",
           "/en-us/azure/app-service/",
+          "/en-us/azure/azure-functions/",
           "/en-us/azure/storage/",
           "/en-us/azure/azure-sql/",
+          "/en-us/azure/cosmos-db/",
           "/en-us/azure/aks/",
-          "/en-us/azure/azure-functions/"
+          "/en-us/azure/container-apps/",
+          "/en-us/azure/container-instances/",
+          "/en-us/azure/key-vault/",
+          "/en-us/azure/active-directory/",
+          "/en-us/azure/entra/",
+          "/en-us/azure/monitor/",
+          "/en-us/azure/devops/"
         ],
         "exclude": [
-          "/en-us/azure/release-notes/"
+          "/en-us/azure/release-notes/",
+          "/en-us/azure/whats-new/"
         ]
       },
       "categories": {
         "getting_started": [
-          "",
-          "get-started/",
+          "get-started",
           "cloud-adoption-framework",
           "architecture"
         ],
@@ -44,6 +62,7 @@
           "app-service",
           "azure-functions",
           "container-instances",
+          "container-apps",
           "aks"
         ],
         "storage": [
@@ -110,8 +129,7 @@
           "service-bus"
         ]
       },
-      "rate_limit": 0.5,
-      "max_pages": 600
+      "rate_limit": 0.5
     }
   ],
   "metadata": {

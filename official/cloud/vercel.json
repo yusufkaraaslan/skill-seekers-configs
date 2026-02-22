@@ -1,7 +1,7 @@
 {
   "name": "vercel",
-  "description": "Complete Vercel knowledge from official documentation. Use when deploying frontend applications and serverless functions. Covers deployments, serverless functions, edge network, preview environments, and CLI.",
-  "version": "1.0.0",
+  "description": "Complete Vercel knowledge from official documentation. Use when deploying frontend applications and serverless functions with global edge infrastructure. Covers deployments, serverless functions, edge functions, preview environments, storage, and CLI.",
+  "version": "1.1.0",
   "base_url": "https://vercel.com/docs",
   "sources": [
     {
@@ -9,9 +9,14 @@
       "base_url": "https://vercel.com/docs",
       "start_urls": [
         "https://vercel.com/docs/getting-started-with-vercel",
-        "https://vercel.com/docs/concepts",
+        "https://vercel.com/docs/deployments",
         "https://vercel.com/docs/functions",
-        "https://vercel.com/docs/cli"
+        "https://vercel.com/docs/edge-network",
+        "https://vercel.com/docs/projects",
+        "https://vercel.com/docs/frameworks",
+        "https://vercel.com/docs/storage",
+        "https://vercel.com/docs/cli",
+        "https://vercel.com/docs/observability"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -20,11 +25,7 @@
       },
       "url_patterns": {
         "include": [
-          "/docs/",
-          "/docs/concepts/",
-          "/docs/functions/",
-          "/docs/cli/",
-          "/docs/frameworks/"
+          "/docs/"
         ],
         "exclude": [
           "/changelog/"
@@ -42,47 +43,60 @@
           "sveltekit",
           "nuxt",
           "remix",
-          "astro"
+          "astro",
+          "create-react-app"
         ],
         "functions": [
           "serverless-functions",
           "edge-functions",
           "python",
           "go",
-          "ruby"
+          "ruby",
+          "streaming"
         ],
         "deployments": [
           "git",
           "preview-deployments",
           "production-checklist",
-          "rollbacks"
+          "rollbacks",
+          "deploy-hooks"
         ],
         "configuration": [
-          "projects/project-configuration",
+          "project-configuration",
           "vercel-json",
           "environment-variables",
-          "build-step"
+          "build-step",
+          "headers",
+          "rewrites"
         ],
         "storage": [
           "storage/vercel-postgres",
           "storage/vercel-kv",
-          "storage/vercel-blob"
+          "storage/vercel-blob",
+          "storage/vercel-edge-config"
         ],
         "cli": [
           "cli",
           "cli/deploy",
           "cli/dev",
-          "cli/env"
+          "cli/env",
+          "cli/pull"
         ],
-        "concepts": [
+        "observability": [
+          "observability",
+          "analytics",
+          "speed-insights",
+          "logs",
+          "monitoring"
+        ],
+        "edge_network": [
           "edge-network",
           "image-optimization",
-          "analytics",
-          "speed-insights"
+          "cdn",
+          "caching"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 300
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
