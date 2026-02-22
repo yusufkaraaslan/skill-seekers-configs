@@ -116,8 +116,7 @@
           "command"
         ]
       },
-      "rate_limit": 0.5,
-      "max_pages": 500
+      "rate_limit": 0.5
     },
     {
       "type": "github",
