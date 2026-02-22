@@ -1,7 +1,7 @@
 {
   "name": "swc",
   "description": "Complete SWC knowledge from official documentation. Use when transforming JavaScript and TypeScript with Rust-based speed. Covers compilation, minification, and bundling.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://swc.rs/docs/",
   "sources": [
     {
@@ -10,8 +10,14 @@
       "start_urls": [
         "https://swc.rs/docs/",
         "https://swc.rs/docs/getting-started",
+        "https://swc.rs/docs/configuration/swcrc",
         "https://swc.rs/docs/configuration/compilation",
-        "https://swc.rs/docs/configuration/bundling"
+        "https://swc.rs/docs/configuration/minification",
+        "https://swc.rs/docs/usage/core",
+        "https://swc.rs/docs/usage/cli",
+        "https://swc.rs/docs/usage/jest",
+        "https://swc.rs/docs/usage/nextjs",
+        "https://swc.rs/docs/plugin/ecmascript/getting-started"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -20,10 +26,7 @@
       },
       "url_patterns": {
         "include": [
-          "/docs/getting-started",
-          "/docs/configuration/",
-          "/docs/usage/",
-          "/docs/plugin/"
+          "/docs/"
         ],
         "exclude": [
           "/docs/changelog"
@@ -31,7 +34,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "getting-started",
           "installation",
           "intro"
@@ -39,10 +41,6 @@
         "configuration": [
           "configuration/compilation",
           "configuration/minification",
-          "configuration/bundling",
-          "configuration/swcrc"
-        ],
-        "swcrc": [
           "configuration/swcrc",
           "jsc",
           "parser",
@@ -54,38 +52,45 @@
           "usage/core",
           "usage/cli",
           "usage/wasm",
-          "usage/plugin"
+          "usage/jest",
+          "usage/nextjs"
         ],
         "cli": [
           "usage/cli",
           "compile",
-          "minify",
-          "bundle"
+          "minify"
         ],
-        "bundling": [
-          "configuration/bundling",
-          "spack",
-          "module",
-          "entry",
-          "output"
+        "jest": [
+          "usage/jest",
+          "jest-transform",
+          "jest-config"
+        ],
+        "integrations": [
+          "usage/nextjs",
+          "usage/jest",
+          "next.js",
+          "webpack",
+          "vite"
         ],
         "plugin": [
-          "plugin/publishing",
           "plugin/ecmascript",
+          "plugin/publishing",
           "plugin/transform",
-          "rust-plugin"
+          "rust-plugin",
+          "wasm-plugin"
         ],
         "typescript": [
-          "configuration/compilation#typescript",
+          "configuration/compilation",
           "tsx",
           "decorators",
           "transform"
         ],
         "react": [
-          "configuration/compilation#react",
           "jsx",
           "tsx",
-          "refresh"
+          "refresh",
+          "emotion",
+          "styled-components"
         ],
         "minification": [
           "configuration/minification",
@@ -94,13 +99,11 @@
           "format"
         ],
         "migration": [
-          "usage/migrating",
           "from-babel",
           "from-tsc"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 200
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
@@ -112,14 +115,15 @@
       "TypeScript compilation",
       "Minification",
       "Babel replacement",
-      "Next.js compilation"
+      "Next.js compilation",
+      "Jest transformation"
     ],
     "related_skills": [
       "javascript",
       "typescript",
-      "rust",
+      "nextjs",
       "babel",
-      "webpack"
+      "jest"
     ]
   }
 }

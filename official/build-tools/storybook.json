@@ -1,7 +1,7 @@
 {
   "name": "storybook",
   "description": "Complete Storybook knowledge from official documentation. Use when developing UI components in isolation. Covers configuration, addons, testing, and documentation.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://storybook.js.org/docs/",
   "sources": [
     {
@@ -9,9 +9,14 @@
       "base_url": "https://storybook.js.org/docs/",
       "start_urls": [
         "https://storybook.js.org/docs/get-started/install",
+        "https://storybook.js.org/docs/get-started/whats-a-story",
         "https://storybook.js.org/docs/writing-stories",
+        "https://storybook.js.org/docs/writing-docs",
+        "https://storybook.js.org/docs/writing-tests",
         "https://storybook.js.org/docs/essentials/",
-        "https://storybook.js.org/docs/configure/"
+        "https://storybook.js.org/docs/configure/",
+        "https://storybook.js.org/docs/addons/",
+        "https://storybook.js.org/docs/api/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -23,32 +28,45 @@
           "/docs/get-started/",
           "/docs/writing-stories/",
           "/docs/writing-docs/",
+          "/docs/writing-tests/",
           "/docs/essentials/",
           "/docs/addons/",
           "/docs/configure/",
           "/docs/api/"
         ],
         "exclude": [
-          "/docs/changelog/"
+          "/docs/changelog/",
+          "/docs/migration-guide/"
         ]
       },
       "categories": {
         "getting_started": [
           "install",
           "whats-a-story",
-          "setup"
+          "setup",
+          "first-component"
         ],
         "writing_stories": [
           "stories",
           "args",
           "parameters",
           "decorators",
-          "play-function"
+          "play-function",
+          "loaders",
+          "naming-components"
         ],
         "writing_docs": [
           "autodocs",
           "mdx",
-          "doc-blocks"
+          "doc-blocks",
+          "documentation"
+        ],
+        "writing_tests": [
+          "interaction-testing",
+          "visual-testing",
+          "accessibility-testing",
+          "test-runner",
+          "coverage"
         ],
         "essentials": [
           "actions",
@@ -56,33 +74,40 @@
           "controls",
           "docs",
           "viewport",
-          "toolbars"
-        ],
-        "testing": [
-          "testing",
-          "interaction-testing",
-          "visual-testing",
-          "coverage"
+          "toolbars",
+          "highlight"
         ],
         "addons": [
           "addons",
           "writing-addons",
-          "addon-catalog"
+          "addon-catalog",
+          "preset"
         ],
         "configure": [
           "overview",
           "story-rendering",
           "typescript",
-          "styling"
+          "styling",
+          "environment-variables",
+          "babel"
+        ],
+        "frameworks": [
+          "react",
+          "vue",
+          "angular",
+          "svelte",
+          "nextjs",
+          "nuxt",
+          "sveltekit"
         ],
         "api": [
-          "stories",
           "arg-types",
-          "parameters"
+          "parameters",
+          "csf",
+          "story-index"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 300
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
@@ -93,15 +118,17 @@
       "Component development",
       "UI documentation",
       "Visual testing",
+      "Interaction testing",
       "Design systems",
-      "Collaboration"
+      "Accessibility testing"
     ],
     "related_skills": [
       "react",
       "vue",
       "angular",
       "svelte",
-      "chromatic"
+      "chromatic",
+      "vitest"
     ]
   }
 }

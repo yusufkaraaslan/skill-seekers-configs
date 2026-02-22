@@ -1,17 +1,21 @@
 {
   "name": "webpack",
   "description": "Complete Webpack knowledge from official documentation. Use when bundling JavaScript applications with custom configurations. Covers entry/output, loaders, plugins, optimization, and development server.",
-  "version": "1.0.0",
-  "base_url": "https://webpack.js.org/concepts/",
+  "version": "1.1.0",
+  "base_url": "https://webpack.js.org/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://webpack.js.org/concepts/",
+      "base_url": "https://webpack.js.org/",
       "start_urls": [
         "https://webpack.js.org/concepts/",
         "https://webpack.js.org/configuration/",
         "https://webpack.js.org/guides/",
-        "https://webpack.js.org/api/"
+        "https://webpack.js.org/guides/asset-modules/",
+        "https://webpack.js.org/concepts/module-federation/",
+        "https://webpack.js.org/api/",
+        "https://webpack.js.org/loaders/",
+        "https://webpack.js.org/plugins/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -36,53 +40,86 @@
           "concepts",
           "entry-points",
           "output",
-          "mode"
+          "mode",
+          "loaders",
+          "plugins"
         ],
         "configuration": [
           "configuration",
           "configuration-types",
-          "configuration-languages"
+          "configuration-languages",
+          "entry-context",
+          "output",
+          "module",
+          "resolve"
         ],
         "loaders": [
           "loaders",
           "babel-loader",
           "css-loader",
           "ts-loader",
-          "file-loader"
+          "sass-loader",
+          "style-loader",
+          "source-map-loader"
+        ],
+        "asset_modules": [
+          "asset-modules",
+          "asset/resource",
+          "asset/inline",
+          "asset/source",
+          "asset"
         ],
         "plugins": [
           "plugins",
           "html-webpack-plugin",
           "mini-css-extract-plugin",
-          "define-plugin"
+          "define-plugin",
+          "copy-webpack-plugin",
+          "terser-webpack-plugin"
+        ],
+        "module_federation": [
+          "module-federation",
+          "ModuleFederationPlugin",
+          "remote",
+          "exposes",
+          "shared",
+          "micro-frontends"
         ],
         "optimization": [
           "code-splitting",
           "tree-shaking",
           "caching",
-          "minimize"
+          "minimize",
+          "splitChunks",
+          "runtimeChunk"
         ],
         "development": [
           "development",
           "webpack-dev-server",
-          "hot-module-replacement"
+          "hot-module-replacement",
+          "source-maps",
+          "devtool"
         ],
         "guides": [
           "getting-started",
           "asset-management",
+          "asset-modules",
           "output-management",
           "development",
-          "production"
+          "production",
+          "lazy-loading",
+          "typescript"
         ],
         "api": [
           "cli",
           "compiler-hooks",
           "loader-api",
-          "plugin-api"
+          "plugin-api",
+          "module-methods",
+          "module-variables"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 350
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
@@ -93,7 +130,8 @@
       "Application bundling",
       "Asset management",
       "Code splitting",
-      "Production optimization",
+      "Module federation",
+      "Micro-frontends",
       "Legacy project support"
     ],
     "related_skills": [
@@ -101,7 +139,7 @@
       "typescript",
       "react",
       "sass",
-      "eslint"
+      "module-federation"
     ]
   }
 }

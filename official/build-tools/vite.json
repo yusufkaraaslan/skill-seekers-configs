@@ -1,14 +1,20 @@
 {
   "name": "vite",
   "description": "Complete Vite knowledge from official documentation. Use when building modern web applications with fast HMR and optimized builds. Covers configuration, plugins, SSR, and library mode.",
-  "version": "1.0.0",
-  "base_url": "https://vitejs.dev/guide/",
+  "version": "1.1.0",
+  "base_url": "https://vitejs.dev/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://vitejs.dev/guide/",
+      "base_url": "https://vitejs.dev/",
       "start_urls": [
         "https://vitejs.dev/guide/",
+        "https://vitejs.dev/guide/features",
+        "https://vitejs.dev/guide/env-and-mode",
+        "https://vitejs.dev/guide/build",
+        "https://vitejs.dev/guide/ssr",
+        "https://vitejs.dev/guide/backend-integration",
+        "https://vitejs.dev/guide/static-deploy",
         "https://vitejs.dev/config/",
         "https://vitejs.dev/plugins/",
         "https://vitejs.dev/api/"
@@ -32,50 +38,80 @@
       "categories": {
         "getting_started": [
           "getting-started",
-          "features",
-          "why-vite"
+          "why-vite",
+          "features"
         ],
         "configuration": [
-          "config/",
-          "build-options",
+          "config",
+          "shared-options",
           "server-options",
-          "define"
+          "build-options",
+          "preview-options",
+          "optimizeDeps",
+          "ssr-options",
+          "worker-options"
         ],
         "features": [
           "features",
           "static-assets",
+          "json",
+          "wasm",
+          "web-workers",
+          "glob-import"
+        ],
+        "env_mode": [
           "env-and-mode",
-          "ssr",
-          "backend-integration"
+          "envprefix",
+          "modes",
+          "dotenv"
+        ],
+        "hmr": [
+          "hot-module-replacement",
+          "hmr-api",
+          "hot.accept",
+          "hot.dispose"
         ],
         "cli": [
           "cli",
-          "build",
-          "dev",
-          "preview"
+          "vite",
+          "vite build",
+          "vite preview",
+          "vite optimize"
         ],
         "plugins": [
           "plugins",
           "using-plugins",
-          "api-plugin"
+          "api-plugin",
+          "rollup-plugins"
         ],
         "ssr": [
           "ssr",
           "ssr-external",
-          "ssr-target"
+          "ssr-target",
+          "server-side-rendering"
         ],
         "api": [
           "javascript-api",
-          "config-reference",
-          "plugin-api"
+          "createServer",
+          "build",
+          "preview",
+          "plugin-api",
+          "hmr-api"
         ],
         "library_mode": [
           "build-lib",
-          "library-mode"
+          "library-mode",
+          "library-entry"
+        ],
+        "deployment": [
+          "static-deploy",
+          "github-pages",
+          "netlify",
+          "vercel",
+          "cloudflare"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 200
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
@@ -85,9 +121,10 @@
     "use_cases": [
       "Modern web apps",
       "Library development",
-      "Fast development",
+      "Fast HMR development",
       "Production builds",
-      "SSR applications"
+      "SSR applications",
+      "Static site generation"
     ],
     "related_skills": [
       "vue",

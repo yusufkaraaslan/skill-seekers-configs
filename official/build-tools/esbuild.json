@@ -1,7 +1,7 @@
 {
   "name": "esbuild",
   "description": "Complete esbuild knowledge from official documentation. Use when bundling JavaScript with extremely fast build speeds. Covers API, plugins, loaders, and transformations.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://esbuild.github.io/",
   "sources": [
     {
@@ -11,7 +11,9 @@
         "https://esbuild.github.io/",
         "https://esbuild.github.io/getting-started/",
         "https://esbuild.github.io/api/",
-        "https://esbuild.github.io/plugins/"
+        "https://esbuild.github.io/plugins/",
+        "https://esbuild.github.io/content-types/",
+        "https://esbuild.github.io/faq/"
       ],
       "selectors": {
         "main_content": "article, main",
@@ -41,14 +43,17 @@
           "api/#build-api",
           "cli",
           "command-line-flags",
-          "serve"
+          "serve",
+          "watch"
         ],
         "javascript_api": [
           "api/#build-api",
           "javascript-api",
           "build",
           "transform",
-          "context"
+          "context",
+          "watch",
+          "serve"
         ],
         "build_options": [
           "api/#build-options",
@@ -117,8 +122,7 @@
           "analysis"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 200
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
