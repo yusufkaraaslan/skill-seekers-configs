@@ -32,7 +32,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "getting-started",
           "installation",
           "chart-studio"
@@ -119,8 +118,7 @@
           "pdf"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 500
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

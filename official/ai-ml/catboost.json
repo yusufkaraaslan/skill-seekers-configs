@@ -31,7 +31,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "concepts/about",
           "concepts/installation",
           "concepts/tutorials"
@@ -105,8 +104,7 @@
           "json"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 350
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

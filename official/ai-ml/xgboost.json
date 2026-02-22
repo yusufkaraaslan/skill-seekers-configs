@@ -31,7 +31,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "tutorials/index",
           "python/python_intro",
           "install"
@@ -110,8 +109,7 @@
           "cupy"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 350
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

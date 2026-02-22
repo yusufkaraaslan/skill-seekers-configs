@@ -32,7 +32,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "quickstart",
           "introduction",
           "installation"
@@ -118,8 +117,7 @@
           "prompt-management"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 400
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

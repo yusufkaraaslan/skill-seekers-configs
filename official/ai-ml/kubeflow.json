@@ -32,7 +32,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "started",
           "installing-kubeflow",
           "getting-started"
@@ -103,8 +102,7 @@
           "pipelines/pipelines-multi-user"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 500
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

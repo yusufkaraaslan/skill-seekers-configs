@@ -33,7 +33,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "guides/getting-started",
           "quickstart",
           "overview"
@@ -107,8 +106,7 @@
           "alerts"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 300
+      "rate_limit": 0.3
     }
   ],
   "metadata": {

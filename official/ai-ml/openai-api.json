@@ -1,7 +1,7 @@
 {
   "name": "openai-api",
-  "description": "Complete OpenAI API knowledge from official documentation. Use when integrating GPT models, DALL-E, Whisper, or embedding models into applications. Covers API v1, function calling, fine-tuning, and best practices.",
-  "version": "1.0.0",
+  "description": "Complete OpenAI API knowledge from official documentation. Use when integrating GPT-4o, o1, o3, DALL-E, Whisper, or embedding models into applications. Covers Responses API, function calling, structured outputs, fine-tuning, realtime, and best practices.",
+  "version": "1.1.0",
   "base_url": "https://platform.openai.com/docs/",
   "sources": [
     {
@@ -12,7 +12,9 @@
         "https://platform.openai.com/docs/api-reference",
         "https://platform.openai.com/docs/guides/text-generation",
         "https://platform.openai.com/docs/guides/function-calling",
-        "https://platform.openai.com/docs/guides/embeddings"
+        "https://platform.openai.com/docs/guides/embeddings",
+        "https://platform.openai.com/docs/guides/structured-outputs",
+        "https://platform.openai.com/docs/guides/realtime"
       ],
       "selectors": {
         "main_content": "main, article, .docs-content",
@@ -42,42 +44,60 @@
         ],
         "models": [
           "models",
-          "gpt-4",
-          "gpt-3.5",
+          "gpt-4o",
+          "gpt-4o-mini",
+          "gpt-4.1",
+          "o1",
+          "o1-mini",
+          "o3",
+          "o3-mini",
           "dall-e",
           "whisper",
-          "embeddings",
-          "moderation"
+          "text-embedding"
         ],
         "text_generation": [
           "chat-completions",
-          "completions",
           "prompt-engineering",
           "system-prompts",
-          "streaming"
+          "streaming",
+          "temperature"
+        ],
+        "responses_api": [
+          "responses",
+          "response-api",
+          "stateful",
+          "context-window"
         ],
         "function_calling": [
           "function-calling",
           "tools",
+          "tool-choice",
           "parallel-functions",
           "forced-function"
+        ],
+        "structured_outputs": [
+          "structured-outputs",
+          "json-mode",
+          "response-format",
+          "json-schema"
         ],
         "embeddings": [
           "embeddings",
           "vector",
           "similarity",
           "clustering",
-          "text-embedding"
+          "text-embedding-3"
         ],
         "fine_tuning": [
           "fine-tuning",
           "training",
           "dataset",
-          "hyperparameters"
+          "hyperparameters",
+          "dpo"
         ],
         "images": [
           "images",
-          "dall-e",
+          "dall-e-3",
           "generation",
           "editing",
           "variations"
@@ -87,14 +107,28 @@
           "whisper",
           "transcription",
           "translation",
-          "text-to-speech"
+          "text-to-speech",
+          "tts-1"
+        ],
+        "realtime_api": [
+          "realtime",
+          "websocket",
+          "voice",
+          "audio-streaming"
         ],
         "assistants": [
           "assistants",
           "threads",
           "messages",
           "runs",
-          "files"
+          "file-search",
+          "code-interpreter"
+        ],
+        "vector_stores": [
+          "vector-stores",
+          "file-search",
+          "retrieval",
+          "uploads"
         ],
         "api_reference": [
           "api-reference",
@@ -108,11 +142,10 @@
           "rate-limits",
           "error-handling",
           "retrying",
-          "streaming"
+          "latency"
         ]
       },
-      "rate_limit": 0.5,
-      "max_pages": 300
+      "rate_limit": 0.5
     }
   ],
   "metadata": {
@@ -125,13 +158,15 @@
       "Code assistance",
       "Image generation",
       "Speech-to-text",
-      "Semantic search"
+      "Semantic search",
+      "Realtime voice AI"
     ],
     "related_skills": [
       "python",
       "javascript",
       "langchain",
-      "vector-databases"
+      "vector-databases",
+      "anthropic"
     ]
   }
 }

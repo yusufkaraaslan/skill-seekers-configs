@@ -31,7 +31,6 @@
       },
       "categories": {
         "getting_started": [
-          "",
           "starter/introduction",
           "starter/converting",
           "starter/installation"
@@ -107,8 +106,7 @@
           "run"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 450
+      "rate_limit": 0.3
     }
   ],
   "metadata": {
