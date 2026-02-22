@@ -2,37 +2,33 @@
   "name": "deepspeed",
   "description": "Complete DeepSpeed knowledge from official documentation. Use when training large-scale deep learning models with optimization. Covers ZeRO, mixed precision, pipeline parallelism, and inference.",
   "version": "1.0.0",
-  "base_url": "https://www.deepspeed.ai/docs/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://www.deepspeed.ai/docs/",
+      "base_url": "https://www.deepspeed.ai/",
       "start_urls": [
-        "https://www.deepspeed.ai/docs/",
         "https://www.deepspeed.ai/getting-started/",
         "https://www.deepspeed.ai/tutorials/",
         "https://www.deepspeed.ai/docs/config-json/"
       ],
       "selectors": {
-        "main_content": "article, main",
+        "main_content": "article, main, .page-content, #main-content",
         "title": "h1",
         "code_blocks": "pre code, pre"
       },
       "url_patterns": {
         "include": [
-          "/docs/",
           "/getting-started/",
           "/tutorials/",
-          "/tutorials/zero/",
-          "/tutorials/megatron/"
+          "/docs/config-json"
         ],
         "exclude": [
-          "/blog/"
+          "/blog/",
+          "/news/"
         ]
       },
       "categories": {
         "getting_started": [
-          "",
           "getting-started",
           "installation",
           "writing-apps"
@@ -70,15 +66,10 @@
           "transformer",
           "moe"
         ],
-        "activation_checkpointing": [
-          "activation-checkpointing",
-          "checkpoint-activations",
-          "cpu-offload"
-        ],
         "data_efficiency": [
           "tutorials/curriculum-learning",
           "data-efficiency",
-          " curriculum",
+          "curriculum",
           "data-sampling"
         ],
         "compression": [
@@ -106,8 +97,51 @@
           "logging"
         ]
       },
-      "rate_limit": 0.3,
-      "max_pages": 400
+      "rate_limit": 0.5,
+      "max_pages": 150
+    },
+    {
+      "type": "documentation",
+      "base_url": "https://deepspeed.readthedocs.io/en/latest/",
+      "start_urls": [
+        "https://deepspeed.readthedocs.io/en/latest/"
+      ],
+      "selectors": {
+        "main_content": ".document, article, main, [role='main']",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/en/latest/"
+        ],
+        "exclude": [
+          "/_modules/",
+          "/_sources/",
+          "/genindex",
+          "/search"
+        ]
+      },
+      "categories": {
+        "api_reference": [
+          "initialize",
+          "inference-init",
+          "inference-engine",
+          "model-checkpointing",
+          "activation-checkpointing",
+          "zero3",
+          "moe",
+          "kernel",
+          "pipeline",
+          "optimizers",
+          "schedulers",
+          "flops-profiler",
+          "autotuning",
+          "training"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 100
     }
   ],
   "metadata": {
