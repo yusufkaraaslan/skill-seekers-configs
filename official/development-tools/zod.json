@@ -89,8 +89,7 @@
           "set"
         ]
       },
-      "rate_limit": 0.2,
-      "max_pages": 50
+      "rate_limit": 0.2
     }
   ],
   "metadata": {

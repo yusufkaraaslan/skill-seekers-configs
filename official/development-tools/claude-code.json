@@ -112,8 +112,7 @@
           "data-usage"
         ]
       },
-      "rate_limit": 0.5,
-      "max_pages": 200
+      "rate_limit": 0.5
     },
     {
       "type": "github",
