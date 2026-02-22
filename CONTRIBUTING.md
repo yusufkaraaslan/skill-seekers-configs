@@ -111,12 +111,11 @@ Categories organize content for the AI. Each category needs:
 4. Extract keywords from page headings
 5. Group related concepts
 
-### Step 6: Set Rate Limit and Max Pages
+### Step 6: Set Rate Limit
 
 ```json
 {
-  "rate_limit": 0.5,
-  "max_pages": 300
+  "rate_limit": 0.5
 }
 ```
 
@@ -126,10 +125,7 @@ Categories organize content for the AI. Each category needs:
 - Partner/commercial docs: 0.7s
 - Small projects: 0.3s
 
-**Max pages guidelines:**
-- Small docs (< 100 pages): 100
-- Medium docs (100-300 pages): 300
-- Large docs (300-1000 pages): 500-1000
+> **Note:** Do not include `max_pages` in production configs. The default limit is applied automatically. If you need to limit pages for local testing, create a separate test config.
 
 ### Step 7: Add GitHub Source (Unified Format)
 
@@ -237,14 +233,7 @@ This validates:
 
 ### Step 3: Limited Page Test
 
-Create a test config with reduced scope:
-
-```json
-{
-  "max_pages": 10,
-  "rate_limit": 0.5
-}
-```
+For initial testing, create a separate test config (in `official/test-examples/`) that scrapes only a few start_urls with no include patterns, to limit scope.
 
 Run actual scrape:
 
@@ -318,9 +307,9 @@ Maintainers will:
 **Problem:** Wrong number of pages detected
 
 **Solutions:**
-- Refine `url_patterns.include`
-- Add more specific `url_patterns.exclude`
-- Adjust `max_pages`
+- Refine `url_patterns.include` to be more specific
+- Add more entries to `url_patterns.exclude`
+- Check that `base_url` has a trailing slash
 
 ### Categories Not Matching
 
@@ -361,7 +350,7 @@ See `official/web-frameworks/nextjs.json` for a complete example:
 {
   "name": "nextjs",
   "description": "Complete Next.js knowledge...",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "merge_mode": "rule-based",
   "sources": [
     {
@@ -379,8 +368,7 @@ See `official/web-frameworks/nextjs.json` for a complete example:
         "exclude": [...]
       },
       "categories": {...},
-      "rate_limit": 0.5,
-      "max_pages": 400
+      "rate_limit": 0.5
     },
     {
       "type": "github",

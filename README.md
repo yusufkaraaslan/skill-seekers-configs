@@ -2,106 +2,76 @@
 
 **Community repository for [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) configuration files**
 
-Convert any documentation website into a Claude AI skill using these pre-configured scrapers!
+Convert any documentation website into an AI skill using these pre-configured scrapers!
 
-## ✨ v2.6.0+ Support - C3.x Codebase Analysis Features
-
-This repository supports **Skill Seekers v2.6.0+** with the complete C3.x codebase analysis suite:
-- 🔍 **Design Pattern Detection** (C3.1) - Detect 10 common patterns with 87% precision
-- 🧪 **Test Example Extraction** (C3.2) - Extract real usage from tests
-- 📚 **How-To Guide Generation** (C3.3) - Auto-generate tutorials with AI enhancement
-- ⚙️ **Configuration Pattern Extraction** (C3.4) - Analyze config files with security insights
-- 🏗️ **Architectural Overview** (C3.5) - Generate comprehensive ARCHITECTURE.md
-- 🧠 **AI Enhancement** (C3.6) - AI-powered insights for patterns and examples
-- 🏛️ **Architectural Pattern Detection** (C3.7) - Detect MVC, MVVM, Clean Architecture
-- 📄 **Standalone Codebase Scraper** (C3.8) - Generate 300+ line SKILL.md files
-
-**See unified configs for C3.x feature demonstrations.**
+> **Skill Seekers v3.1.0+** — 178 production configs across 21 categories.
 
 ---
 
-## 📦 Available Configs (50+ Official Configs!)
+## 📦 Official Configs (178 across 21 categories)
 
-### Web Frameworks (17 configs)
-- **nextjs** ⭐ NEW - Next.js React framework with App Router
-- **react** - React framework for building UIs
-- **vue** - Vue.js progressive framework
-- **nuxt** ⭐ NEW - Vue.js framework with SSR/SSG
-- **svelte** ⭐ NEW - Svelte compiler and runtime
-- **sveltekit** ⭐ NEW - SvelteKit full-stack framework
-- **angular** ⭐ NEW - Angular TypeScript framework
-- **django** - Django Python web framework
-- **flask** ⭐ NEW - Flask Python micro framework
-- **ruby-on-rails** ⭐ NEW - Ruby on Rails framework
-- **laravel** - Laravel PHP framework
-- **fastapi** - FastAPI modern Python framework
-- **express** ⭐ NEW - Express.js Node.js framework
-- **nestjs** ⭐ NEW - NestJS TypeScript framework
-- **astro** - Astro static site generator
-- **hono** - Hono lightweight web framework
+### Game Engines (35 configs)
+Unity, Unreal Engine, Godot, Bevy, Phaser, Babylon.js, PlayCanvas, GameMaker, GDevelop, Defold, Solar2D, Cocos2d, Pygame, Raylib, LÖVE, Ren'Py, Twine, RPG Maker, Construct, Stencyl, MonoGame, HaxeFlixel, Heaps, O3DE, Stride, Flax, Panda3D, Urho3D, Torque3D, Armory3D, PICO-8, AGS, Bitsy, PyGame Zero, Clickteam Fusion
 
-### Databases (4 configs) 
-- **postgresql** ⭐ NEW - PostgreSQL relational database
-- **mongodb** ⭐ NEW - MongoDB document database
-- **redis** ⭐ NEW - Redis in-memory data store
-- **prisma** ⭐ NEW - Prisma ORM
+### AI / ML (34 configs)
+anthropic, openai-api, huggingface, langchain, llamaindex, pytorch, tensorflow, keras, jax, pytorch-lightning, fastai, deepspeed, onnx, scikit-learn, xgboost, lightgbm, catboost, gensim, spacy, nltk, opencv, pinecone, weaviate, chroma, mlflow, wandb, kubeflow, dvc, ray, matplotlib, seaborn, plotly, modin, cohere
+
+### Web Frameworks (21 configs)
+angular, astro, django, express, fastapi, flask, hono, htmx, httpx, laravel, nestjs, nextjs, nuxt, react, react-query, ruby-on-rails, solidjs, svelte, sveltekit, vue, zod
+
+### Databases (16 configs)
+postgresql, mongodb, redis, prisma, mysql, sqlite, elasticsearch-db, cassandra, dynamodb, neo4j, couchdb, influxdb, supabase, planetscale, fauna, cockroachdb
+
+### Testing (11 configs)
+artillery, cypress, insomnia, jest, k6, playwright, postman, pytest, selenium, testing-library, vitest
+
+### DevOps (9 configs)
+docker, kubernetes, github-actions, terraform, ansible, helm, gitlab-ci, jenkins, argocd
+
+### Cloud (9 configs)
+aws-boto3, azure-sdk, gcp, aws-cdk, pulumi, serverless, cloudflare-workers, vercel, netlify
+
+### Development Tools (8 configs)
+claude-code, vscode, git, neovim, tmux, zsh, homebrew, wsl
+
+### Build Tools (7 configs)
+vite, webpack, esbuild, rollup, turbopack, parcel, gradle
+
+### CSS Frameworks (6 configs)
+tailwind, bootstrap, chakra-ui, material-ui, shadcn-ui, daisyui
 
 ### Data Science (4 configs)
-- **pandas** ⭐ NEW - Pandas data analysis library
-- **numpy** ⭐ NEW - NumPy numerical computing
-- **pytorch** ⭐ NEW - PyTorch deep learning
-- **tensorflow** ⭐ NEW - TensorFlow machine learning
+pandas, numpy, pytorch (see AI/ML), tensorflow (see AI/ML)
 
-### AI/ML (1 config) ⭐ NEW CATEGORY
-- **openai-api** ⭐ NEW - OpenAI API (GPT, DALL-E, Whisper)
+### Security (3 configs)
+auth0, clerk, sentry
 
-### DevOps (6 configs)
-- **docker** ⭐ NEW - Docker containerization
-- **kubernetes** - Kubernetes container orchestration
-- **github-actions** ⭐ NEW - GitHub Actions CI/CD
-- **terraform** ⭐ NEW - Terraform infrastructure as code
-- **ansible** - Ansible automation platform
-- **helm** ⭐ NEW - Helm package manager for Kubernetes
+### CMS (3 configs)
+contentful, strapi, sanity
 
-### Cloud (1 config) ⭐ NEW CATEGORY
-- **aws-boto3** ⭐ NEW - AWS SDK for Python
+### Mobile (2 configs)
+flutter, react-native
 
-### Mobile (2 configs) ⭐ NEW CATEGORY
-- **react-native** ⭐ NEW - React Native mobile framework
-- **flutter** ⭐ NEW - Flutter UI toolkit
+### Messaging (2 configs)
+kafka, rabbitmq
 
-### Testing (4 configs) ⭐ NEW CATEGORY
-- **jest** ⭐ NEW - JavaScript testing framework
-- **cypress** ⭐ NEW - E2E testing framework
-- **playwright** ⭐ NEW - Cross-browser testing
-- **pytest** ⭐ NEW - Python testing framework
+### Graphics (2 configs)
+opengl, webgpu
 
-### Search (1 config) ⭐ NEW CATEGORY
-- **elasticsearch** ⭐ NEW - Elasticsearch search engine
+### API Technology (2 configs)
+graphql, rest-api
 
-### Build Tools (1 config) ⭐ NEW CATEGORY
-- **vite** ⭐ NEW - Vite build tool
+### Search (1 config)
+elasticsearch
 
-### API Technology (1 config) ⭐ NEW CATEGORY
-- **graphql** ⭐ NEW - GraphQL API specification
+### Payments (1 config)
+stripe
 
-### Game Engines (1 config)
-- **godot** - Godot game engine
-
-### CSS Frameworks (1 config)
-- **tailwind** - Tailwind CSS utility framework
-
-### Development Tools (1 config)
-- **claude-code** - Claude Code CLI documentation
+### Languages (1 config)
+typescript
 
 ### Gaming (1 config)
-- **steam-economy** - Steam Economy documentation
-
-### Test/Examples (4 configs)
-- **httpx_comprehensive** - Complete C3.x codebase analysis example
-- **react_unified** - React docs + GitHub with C3.x analysis
-- **django_unified** - Django docs + GitHub with C3.x analysis
-- **template-example** - Template for new configs
+steam-economy
 
 ---
 
@@ -116,10 +86,10 @@ fetch_config(config_name='nextjs')
 ### Option 2: Download Manually
 ```bash
 # Download specific config
-curl -O https://raw.githubusercontent.com/yusufkaraaslan/skill-seekers-configs/main/official/web-frameworks/nextjs.json
+curl -O https://raw.githubusercontent.com/yusufkaraaslan/skill-seekers-configs/main/official/web-frameworks/nextjs_unified.json
 
 # Use with Skill Seekers
-skill-seekers scrape --config nextjs.json
+skill-seekers scrape --config nextjs_unified.json
 ```
 
 ### Option 3: Use API
@@ -134,51 +104,36 @@ curl -O https://api.skillseekersweb.com/api/download/nextjs.json
 
 Have a config for a popular framework or tool? Share it with the community!
 
-1. **Test your config** - Make sure it works with Skill Seekers
-2. **Validate your config** - Run `python scripts/validate-config.py your-config.json`
-3. **Submit via Issue** - [Create submission issue](https://github.com/yusufkaraaslan/skill-seekers-configs/issues/new?template=submit-config.md)
-4. **Review process** - Maintainers will test and approve
-5. **Published!** - Your config becomes available to everyone
+1. **Test your config** — `skill-seekers scrape --config your-config.json --dry-run`
+2. **Validate your config** — `python scripts/validate-config.py your-config.json`
+3. **Submit via Issue** — [Create submission issue](https://github.com/yusufkaraaslan/skill-seekers-configs/issues/new/choose)
+4. **Review process** — Maintainers will test and approve
+5. **Published!** — Your config becomes available to everyone
 
 ---
 
 ## ⭐ Quality Standards
 
-All configs in this repository follow strict quality guidelines to ensure reliability and comprehensive coverage.
+All configs follow strict quality guidelines for reliability and comprehensive coverage.
 
 **See [QUALITY_GUIDELINES.md](QUALITY_GUIDELINES.md) for detailed standards including:**
-- Category quality checklist (5-13 categories, 3-6 keywords each)
+- Category quality (5-13 categories, 3-6 keywords each)
 - Selector fallback chains (semantic HTML, resilient)
 - Description best practices (explain when to use, list capabilities)
-- Rate limiting guidelines (0.3-0.7s based on server type)
+- Rate limiting guidelines (0.3–0.7s based on server type)
 - URL pattern optimization (specific includes, comprehensive excludes)
-
-**Config Quality Levels:**
-- **HIGH Quality** (15+ configs): Next.js, Docker, PostgreSQL, Kubernetes, React, etc.
-- **Production Ready** (30+ configs): FastAPI, Vue, Tailwind, Astro, etc.
-- **Test/Examples** (4 configs): Clearly marked for testing and demonstration
 
 ---
 
 ## 🔧 Validation
 
-We provide a validation script to check config quality:
-
 ```bash
 # Validate a single config
-python scripts/validate-config.py official/web-frameworks/react.json
+python scripts/validate-config.py official/web-frameworks/react_unified.json
 
 # Validate all configs in a directory
 python scripts/validate-config.py official/
 ```
-
-The validator checks:
-- Required fields and structure
-- Category count and keyword coverage
-- Selector quality (fallback chains)
-- Description length and content
-- Rate limits and max_pages
-- Metadata completeness
 
 ---
 
@@ -186,27 +141,33 @@ The validator checks:
 
 ```
 skill-seekers-configs/
-├── official/                    # Verified, tested configs
-│   ├── web-frameworks/         # 17 web frameworks
-│   ├── databases/              # 4 databases
+├── official/                    # Verified, tested configs (178 configs)
+│   ├── ai-ml/                  # 34 AI/ML tools
+│   ├── api-tech/               # 2 API technologies
+│   ├── build-tools/            # 7 build tools
+│   ├── cloud/                  # 9 cloud platforms
+│   ├── cms/                    # 3 CMS platforms
+│   ├── css-frameworks/         # 6 CSS frameworks
 │   ├── data-science/           # 4 data science tools
-│   ├── ai-ml/                  # 1 AI/ML config ⭐ NEW
-│   ├── devops/                 # 6 DevOps tools
-│   ├── cloud/                  # 1 cloud SDK ⭐ NEW
-│   ├── mobile/                 # 2 mobile frameworks ⭐ NEW
-│   ├── testing/                # 4 testing tools ⭐ NEW
-│   ├── search/                 # 1 search engine ⭐ NEW
-│   ├── build-tools/            # 1 build tool ⭐ NEW
-│   ├── api-tech/               # 1 API technology ⭐ NEW
-│   ├── game-engines/           # 1 game engine
-│   ├── css-frameworks/         # 1 CSS framework
-│   ├── development-tools/      # 1 dev tool
+│   ├── databases/              # 16 databases & ORMs
+│   ├── development-tools/      # 8 dev tools
+│   ├── devops/                 # 9 DevOps tools
+│   ├── game-engines/           # 35 game engines
 │   ├── gaming/                 # 1 gaming platform
-│   └── test-examples/          # 4 test configs
+│   ├── graphics/               # 2 graphics APIs
+│   ├── languages/              # 1 language
+│   ├── messaging/              # 2 messaging systems
+│   ├── mobile/                 # 2 mobile frameworks
+│   ├── payments/               # 1 payment platform
+│   ├── search/                 # 1 search engine
+│   ├── security/               # 3 auth/security tools
+│   ├── testing/                # 11 testing tools
+│   ├── web-frameworks/         # 21 web frameworks
+│   └── test-examples/          # 4 templates & test configs
 ├── community/                   # Community-submitted configs (pending review)
-├── scripts/                     # Validation and utility scripts
+├── scripts/                     # Validation scripts
 └── .github/
-    └── ISSUE_TEMPLATE/         # Submission templates
+    └── ISSUE_TEMPLATE/         # Issue templates for submissions and bug reports
 ```
 
 ---
@@ -216,17 +177,16 @@ skill-seekers-configs/
 - **Main Project**: [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers)
 - **PyPI Package**: [pip install skill-seekers](https://pypi.org/project/skill-seekers/)
 - **API**: [api.skillseekersweb.com](https://api.skillseekersweb.com)
-- **Documentation**: [Skill Seekers README](https://github.com/yusufkaraaslan/Skill_Seekers#readme)
+- **Website**: [skillseekersweb.com](https://skillseekersweb.com/)
 
 ---
 
 ## 📊 Stats
 
-- **Total Official Configs**: 50+
-- **New in This Release**: 30+ configs
-- **Categories**: 16 major categories
-- **Quality Level**: All production configs validated to HIGH or Production Ready standards
-- **Skill Seekers Compatibility**: v2.6.0+ (with full C3.x codebase analysis support)
+- **Total Official Configs**: 178
+- **Categories**: 21 production + 1 test-examples
+- **Skill Seekers Compatibility**: v3.1.0+
+- **Quality Level**: All production configs validated to v1.1.0 standards
 
 ---
 
@@ -234,25 +194,19 @@ skill-seekers-configs/
 
 **Quality First!** All submissions must meet our quality standards.
 
-1. **Review [QUALITY_GUIDELINES.md](QUALITY_GUIDELINES.md)** - Learn best practices
-2. **Review [CONTRIBUTING.md](CONTRIBUTING.md)** - Detailed contribution guide
+1. **Review [QUALITY_GUIDELINES.md](QUALITY_GUIDELINES.md)** — Learn best practices
+2. **Review [CONTRIBUTING.md](CONTRIBUTING.md)** — Detailed contribution guide
 3. **Use the template** from `official/test-examples/template-example.json`
-4. **Validate your config** with `python scripts/validate-config.py your-config.json`
-5. **Test thoroughly** with dry-run mode (`skill-seekers scrape --config your-config.json --dry-run`)
-6. **Submit** via pull request or [submission issue](https://github.com/yusufkaraaslan/skill-seekers-configs/issues/new)
-
-**Target HIGH quality from the start:**
-- 5-13 comprehensive categories
-- Selector fallback chains
-- Clear, detailed description
-- Tested and validated
+4. **Validate** with `python scripts/validate-config.py your-config.json`
+5. **Test** with dry-run mode (`skill-seekers scrape --config your-config.json --dry-run`)
+6. **Submit** via [submission issue](https://github.com/yusufkaraaslan/skill-seekers-configs/issues/new/choose)
 
 ---
 
 ## 📄 License
 
-MIT License - Same as [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers)
+MIT License — Same as [Skill Seekers](https://github.com/yusufkaraaslan/Skill_Seekers)
 
 ---
 
-**Questions?** Open an [issue](https://github.com/yusufkaraaslan/skill-seekers-configs/issues) or ask in [Discussions](https://github.com/yusufkaraaslan/skill-seekers-configs/discussions)
+**Questions?** Open an [issue](https://github.com/yusufkaraaslan/skill-seekers-configs/issues) or start a [Discussion](https://github.com/yusufkaraaslan/skill-seekers-configs/discussions)

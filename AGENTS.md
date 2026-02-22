@@ -16,14 +16,29 @@ This file provides comprehensive guidance for AI coding agents working with the 
 
 ```
 skill-seekers-configs/
-├── official/                    # Verified, production-ready configs
-│   ├── web-frameworks/         # React, Vue, Django, FastAPI, Laravel, Astro, Hono
-│   ├── game-engines/           # Godot
-│   ├── devops/                 # Kubernetes, Ansible
-│   ├── css-frameworks/         # Tailwind
-│   ├── development-tools/      # Claude Code
-│   ├── gaming/                 # Steam Economy
-│   └── test-examples/          # Templates and limited-page test configs
+├── official/                    # Verified, production-ready configs (178 total)
+│   ├── ai-ml/                  # 34 AI/ML tools
+│   ├── api-tech/               # 2 API technologies
+│   ├── build-tools/            # 7 build tools
+│   ├── cloud/                  # 9 cloud platforms
+│   ├── cms/                    # 3 CMS platforms
+│   ├── css-frameworks/         # 6 CSS frameworks
+│   ├── data-science/           # 4 data science tools
+│   ├── databases/              # 16 databases & ORMs
+│   ├── development-tools/      # 8 dev tools
+│   ├── devops/                 # 9 DevOps tools
+│   ├── game-engines/           # 35 game engines
+│   ├── gaming/                 # 1 gaming platform
+│   ├── graphics/               # 2 graphics APIs
+│   ├── languages/              # 1 language
+│   ├── messaging/              # 2 messaging systems
+│   ├── mobile/                 # 2 mobile frameworks
+│   ├── payments/               # 1 payment platform
+│   ├── search/                 # 1 search engine
+│   ├── security/               # 3 auth/security tools
+│   ├── testing/                # 11 testing tools
+│   ├── web-frameworks/         # 21 web frameworks
+│   └── test-examples/          # 4 templates & test configs
 ├── community/                   # Community-submitted configs pending review
 │   └── .gitkeep                # Empty directory marker
 └── .github/
@@ -91,8 +106,7 @@ Used for combining documentation scraping with GitHub repository analysis (C3.x 
         "getting_started": ["intro", "quickstart"],
         "api": ["api", "reference"]
       },
-      "rate_limit": 0.5,
-      "max_pages": 200
+      "rate_limit": 0.5
     },
     {
       "type": "github",
@@ -147,7 +161,7 @@ For extracting content from PDF files.
 | `url_patterns` | object | No | Include/exclude URL patterns |
 | `categories` | object | Yes | Topic organization with keywords |
 | `rate_limit` | number | Yes | Delay between requests (seconds) |
-| `max_pages` | number | Yes | Maximum pages to scrape |
+| `max_pages` | number | No | **Deprecated.** Do not use in production configs. |
 | `merge_mode` | string | Unified only | How to merge sources: `"rule-based"` or `"claude-enhanced"` |
 | `sources` | array | Unified only | Array of documentation and github sources |
 
@@ -303,6 +317,8 @@ Skill Seekers v2.6.0+ supports advanced codebase analysis (C3.x features):
 - **AI Enhancement** (C3.6) - AI-powered insights
 - **Architectural Pattern Detection** (C3.7) - Detect MVC, MVVM, Clean Architecture
 - **Standalone Codebase Scraper** (C3.8) - Generate 300+ line SKILL.md files
+- **Project Documentation Extraction** (C3.9) - Extract and categorize all markdown docs
+- **Signal Flow Analysis** (C3.10) - Complete signal/event flow analysis (Godot projects)
 
 Enable these by setting `enable_codebase_analysis: true` in GitHub source configurations.
 
@@ -310,8 +326,9 @@ Enable these by setting `enable_codebase_analysis: true` in GitHub source config
 
 - [README.md](README.md) - Project overview and usage instructions
 - [QUALITY_GUIDELINES.md](QUALITY_GUIDELINES.md) - Detailed quality standards
-- [CLAUDE.md](CLAUDE.md) - Claude Code specific guidance (this file's predecessor)
-- `.github/ISSUE_TEMPLATE/submit-config.md` - Config submission template
+- `.github/ISSUE_TEMPLATE/submit-config.yml` - Config submission form
+- `.github/ISSUE_TEMPLATE/bug-report.yml` - Bug report form
+- `.github/ISSUE_TEMPLATE/config-request.yml` - Config request form
 
 ## External Resources
 

@@ -252,10 +252,10 @@ Before marking a config as HIGH quality, verify:
 - [ ] Description explains when to use (50+ characters)
 - [ ] Rate limit is appropriate for server type
 - [ ] URL patterns are specific and tested
-- [ ] max_pages is appropriate for documentation size
 - [ ] start_urls cover key documentation entry points
 - [ ] Config validated with dry-run test
 - [ ] No placeholder URLs or paths
+- [ ] No `max_pages` field (not used in production configs)
 
 ---
 
@@ -267,30 +267,36 @@ Use this template when creating new configs:
 {
   "name": "framework-name",
   "description": "[Framework] for [use case]. Use for [features]. Covers [version]+ including [capabilities].",
+  "version": "1.1.0",
   "base_url": "https://docs.example.com/",
-  "start_urls": [
-    "https://docs.example.com/getting-started",
-    "https://docs.example.com/api",
-    "https://docs.example.com/guide"
-  ],
-  "selectors": {
-    "main_content": "article, main, div[role='main']",
-    "title": "h1, title",
-    "code_blocks": "pre code, pre"
-  },
-  "url_patterns": {
-    "include": ["/docs/", "/guide/", "/api/"],
-    "exclude": ["/blog/", "/search/", "/_static/"]
-  },
-  "categories": {
-    "getting_started": ["introduction", "getting-started", "quick", "setup"],
-    "core_concepts": ["concept", "fundamental", "architecture"],
-    "api_reference": ["api", "reference", "method", "function"],
-    "guides": ["guide", "tutorial", "walkthrough"],
-    "advanced": ["advanced", "optimization", "performance"]
-  },
-  "rate_limit": 0.5,
-  "max_pages": 300
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.example.com/",
+      "start_urls": [
+        "https://docs.example.com/getting-started",
+        "https://docs.example.com/api",
+        "https://docs.example.com/guide"
+      ],
+      "selectors": {
+        "main_content": "article, main, div[role='main']",
+        "title": "h1, title",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": ["/docs/", "/guide/", "/api/"],
+        "exclude": ["/blog/", "/search/", "/_static/"]
+      },
+      "categories": {
+        "getting_started": ["introduction", "getting-started", "quick", "setup"],
+        "core_concepts": ["concept", "fundamental", "architecture"],
+        "api_reference": ["api", "reference", "method", "function"],
+        "guides": ["guide", "tutorial", "walkthrough"],
+        "advanced": ["advanced", "optimization", "performance"]
+      },
+      "rate_limit": 0.5
+    }
+  ]
 }
 ```
 
@@ -339,8 +345,7 @@ Verify:
     "security": ["security", "rbac", "policies", "authentication"],
     "tasks": ["tasks", "administer", "configure"],
     "tutorials": ["tutorials", "stateless", "stateful"]
-  },
-  "max_pages": 1000
+  }
 }
 ```
 
@@ -373,5 +378,5 @@ When submitting new configs to the official library:
 
 ---
 
-**Last Updated:** December 22, 2025
-**Version:** 1.0
+**Last Updated:** February 23, 2026
+**Version:** 1.1

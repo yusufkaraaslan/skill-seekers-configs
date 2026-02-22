@@ -102,8 +102,14 @@ class ConfigValidator:
     
     def validate_categories(self) -> bool:
         """Validate categories quality."""
+        # For unified configs, categories are inside sources[0]; for simple configs, at top level
         categories = self.config.get('categories', {})
-        
+        if not categories and 'sources' in self.config:
+            for source in self.config['sources']:
+                if source.get('type') == 'documentation' and 'categories' in source:
+                    categories = source['categories']
+                    break
+
         if not categories:
             self.errors.append("No categories defined")
             return False
@@ -182,18 +188,14 @@ class ConfigValidator:
         return True
     
     def validate_max_pages(self) -> bool:
-        """Validate max_pages setting."""
-        max_pages = self.config.get('max_pages', 0)
-        
-        if max_pages == 0:
-            self.warnings.append("max_pages not set (defaults may apply)")
-        elif max_pages < 50:
-            self.warnings.append(f"max_pages {max_pages} is very low (may be for testing)")
-        elif max_pages > 1000:
-            self.warnings.append(f"max_pages {max_pages} is very high (ensure documentation is that large)")
+        """Validate max_pages setting — max_pages should NOT be set in production configs."""
+        max_pages = self.config.get('max_pages')
+        if max_pages is not None:
+            self.warnings.append(
+                f"max_pages {max_pages} is set — remove from production configs (defaults apply automatically)"
+            )
         else:
-            self.info.append(f"max_pages {max_pages} is reasonable")
-        
+            self.info.append("max_pages not set (correct for production configs)")
         return True
     
     def validate_metadata(self) -> bool:
