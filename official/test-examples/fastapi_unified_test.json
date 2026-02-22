@@ -33,8 +33,7 @@
           "reference"
         ]
       },
-      "rate_limit": 0.5,
-      "max_pages": 20
+      "rate_limit": 0.5
     },
     {
       "type": "github",

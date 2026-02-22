@@ -52,8 +52,7 @@
           "walkthrough"
         ]
       },
-      "rate_limit": 0.5,
-      "max_pages": 100
+      "rate_limit": 0.5
     }
   ]
 }
