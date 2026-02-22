@@ -1,0 +1,126 @@
+{
+  "name": "armory3d",
+  "description": "Complete Armory3D knowledge from official documentation. Use when building 3D games integrated with Blender. Covers nodes-based logic, Haxe scripting, rendering, and physics.",
+  "version": "1.0.0",
+  "base_url": "https://github.com/armory3d/armory/wiki",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://github.com/armory3d/armory/wiki",
+      "start_urls": [
+        "https://github.com/armory3d/armory/wiki",
+        "https://github.com/armory3d/armory/wiki/Getting-Started",
+        "https://github.com/armory3d/armory/wiki/Logic-Nodes",
+        "https://github.com/armory3d/armory/wiki/Rendering"
+      ],
+      "selectors": {
+        "main_content": "article, main, .wiki-body",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/armory/wiki",
+          "/armory/wiki/Getting-Started",
+          "/armory/wiki/Logic-Nodes",
+          "/armory/wiki/Rendering"
+        ],
+        "exclude": [
+          "/armory/wiki/Home/_edit/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "Getting-Started",
+          "Installation",
+          "First-Game"
+        ],
+        "editor": [
+          "Blender",
+          "UI-Overview",
+          "Scene-Properties",
+          "Render-Properties"
+        ],
+        "logic_nodes": [
+          "Logic-Nodes",
+          "Events",
+          "Actions",
+          "Variables",
+          "Flow-Control"
+        ],
+        "traits": [
+          "Traits",
+          "Haxe-Trait",
+          "Bundled-Scripts",
+          "Custom-Traits"
+        ],
+        "physics": [
+          "Physics",
+          "Rigid-Body",
+          "Collision",
+          "Constraints"
+        ],
+        "animation": [
+          "Animation",
+          "Actions",
+          "State-Machine",
+          "Blending"
+        ],
+        "rendering": [
+          "Rendering",
+          "Materials",
+          "World",
+          "Post-Process",
+          "Lighting"
+        ],
+        "audio": [
+          "Audio",
+          "Speaker",
+          "Playback",
+          "3D-Audio"
+        ],
+        "ui": [
+          "User-Interface",
+          "Canvas",
+          "Elements",
+          "Theming"
+        ],
+        "input": [
+          "Input",
+          "Keyboard",
+          "Mouse",
+          "Gamepad",
+          "Sensors"
+        ],
+        "export": [
+          "Publishing",
+          "HTML5",
+          "Windows",
+          "Mobile"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 250
+    }
+  ],
+  "metadata": {
+    "author": "Armory3D Contributors",
+    "language": "Haxe/Logic Nodes",
+    "framework_type": "3D Game Engine",
+    "use_cases": [
+      "Blender-integrated games",
+      "3D visualization",
+      "Interactive 3D",
+      "WebGL export",
+      "Prototypes"
+    ],
+    "related_skills": [
+      "blender",
+      "haxe",
+      "bullet",
+      "webgl",
+      "kha"
+    ]
+  }
+}

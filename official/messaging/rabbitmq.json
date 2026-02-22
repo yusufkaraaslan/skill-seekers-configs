@@ -1,0 +1,103 @@
+{
+  "name": "rabbitmq",
+  "description": "Complete RabbitMQ knowledge from official documentation. Use when building distributed systems with message queuing. Covers exchanges, queues, bindings, routing, and clustering.",
+  "version": "1.0.0",
+  "base_url": "https://www.rabbitmq.com/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.rabbitmq.com/docs/",
+      "start_urls": [
+        "https://www.rabbitmq.com/docs/getstarted",
+        "https://www.rabbitmq.com/docs/exchanges",
+        "https://www.rabbitmq.com/docs/queues",
+        "https://www.rabbitmq.com/docs/clustering"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/"
+        ],
+        "exclude": [
+          "/docs/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getstarted",
+          "tutorials",
+          "helloworld",
+          "work-queues"
+        ],
+        "exchanges": [
+          "exchanges",
+          "direct",
+          "fanout",
+          "topic",
+          "headers"
+        ],
+        "queues": [
+          "queues",
+          "durable",
+          "exclusive",
+          "auto-delete",
+          "ttl"
+        ],
+        "bindings": [
+          "bindings",
+          "routing-key",
+          "exchange-to-exchange"
+        ],
+        "publishers": [
+          "publishers",
+          "confirm",
+          "mandatory",
+          "immediate"
+        ],
+        "consumers": [
+          "consumers",
+          "acknowledgement",
+          "prefetch",
+          "qos"
+        ],
+        "clustering": [
+          "clustering",
+          "nodes",
+          "mirrored-queues",
+          "federation"
+        ],
+        "security": [
+          "ssl",
+          "authentication",
+          "authorization",
+          "access-control"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "VMware / RabbitMQ",
+    "language": "Erlang",
+    "framework_type": "Message Broker",
+    "use_cases": [
+      "Message queuing",
+      "Async processing",
+      "Microservices",
+      "Task distribution",
+      "Event routing"
+    ],
+    "related_skills": [
+      "python",
+      "nodejs",
+      "java",
+      "celery",
+      "redis"
+    ]
+  }
+}

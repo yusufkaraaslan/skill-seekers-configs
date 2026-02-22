@@ -1,0 +1,135 @@
+{
+  "name": "seaborn",
+  "description": "Complete Seaborn knowledge from official documentation. Use when creating statistical visualizations with beautiful defaults. Covers relational, distributional, and categorical plots.",
+  "version": "1.0.0",
+  "base_url": "https://seaborn.pydata.org/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://seaborn.pydata.org/",
+      "start_urls": [
+        "https://seaborn.pydata.org/",
+        "https://seaborn.pydata.org/tutorial.html",
+        "https://seaborn.pydata.org/api.html",
+        "https://seaborn.pydata.org/examples/index.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/",
+          "/tutorial.html",
+          "/api.html",
+          "/examples/",
+          "/generated/"
+        ],
+        "exclude": [
+          "/archive/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "installation",
+          "introduction",
+          "tutorial/function_overview"
+        ],
+        "relational_plots": [
+          "tutorial/relational",
+          "scatterplot",
+          "lineplot",
+          "relplot"
+        ],
+        "distributional_plots": [
+          "tutorial/distributions",
+          "histplot",
+          "kdeplot",
+          "ecdfplot",
+          "rugplot"
+        ],
+        "categorical_plots": [
+          "tutorial/categorical",
+          "stripplot",
+          "swarmplot",
+          "boxplot",
+          "violinplot",
+          "barplot"
+        ],
+        "regression_plots": [
+          "tutorial/regression",
+          "lmplot",
+          "regplot",
+          "residplot"
+        ],
+        "multiplot_grids": [
+          "tutorial/axis_grids",
+          "FacetGrid",
+          "PairGrid",
+          "JointGrid",
+          "pairplot"
+        ],
+        "plot_aesthetics": [
+          "tutorial/aesthetics",
+          "set_theme",
+          "set_style",
+          "set_palette",
+          "despine"
+        ],
+        "color_palettes": [
+          "tutorial/color_palettes",
+          "color_palette",
+          "set_palette",
+          "husl",
+          "cubehelix"
+        ],
+        "figure_aesthetics": [
+          "tutorial/aesthetics",
+          "set_context",
+          "plotting_context",
+          "axes_style"
+        ],
+        "data_structures": [
+          "tutorial/data_structure",
+          "long-form",
+          "wide-form",
+          "pandas"
+        ],
+        "api_overview": [
+          "api.html",
+          "relational-api",
+          "distributional-api",
+          "categorical-api"
+        ],
+        "customization": [
+          "generated/seaborn.set.html",
+          "matplotlib-integration",
+          "figure-size"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "Michael Waskom",
+    "language": "Python",
+    "framework_type": "Statistical Visualization",
+    "use_cases": [
+      "Statistical plots",
+      "Exploratory data analysis",
+      "Publication figures",
+      "Data science",
+      "Academic research"
+    ],
+    "related_skills": [
+      "python",
+      "matplotlib",
+      "pandas",
+      "numpy",
+      "scipy"
+    ]
+  }
+}

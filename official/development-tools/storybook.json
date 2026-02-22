@@ -1,0 +1,109 @@
+{
+  "name": "storybook",
+  "description": "Complete Storybook knowledge from official documentation. Use when building UI component libraries and design systems. Covers stories, addons, theming, testing, and documentation.",
+  "version": "1.0.0",
+  "base_url": "https://storybook.js.org/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://storybook.js.org/docs/",
+      "start_urls": [
+        "https://storybook.js.org/docs/get-started/install",
+        "https://storybook.js.org/docs/writing-stories",
+        "https://storybook.js.org/docs/essentials",
+        "https://storybook.js.org/docs/configure"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/get-started/",
+          "/docs/writing-",
+          "/docs/essentials/",
+          "/docs/addons/",
+          "/docs/configure/",
+          "/docs/api/"
+        ],
+        "exclude": [
+          "/docs/releases/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "install",
+          "whats-a-story",
+          "frameworks"
+        ],
+        "writing_stories": [
+          "stories",
+          "args",
+          "parameters",
+          "decorators"
+        ],
+        "essentials": [
+          "actions",
+          "controls",
+          "docs",
+          "viewport",
+          "toolbars",
+          "measure"
+        ],
+        "testing": [
+          "testing",
+          "interaction-testing",
+          "visual-testing",
+          "accessibility"
+        ],
+        "configuration": [
+          "main-config",
+          "preview-config",
+          "manager-config",
+          "typescript"
+        ],
+        "addons": [
+          "addons",
+          "install-addons",
+          "writing-addons",
+          "api"
+        ],
+        "builders": [
+          "builders",
+          "vite",
+          "webpack"
+        ],
+        "sharing": [
+          "publish",
+          "composition",
+          "package",
+          "embed"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "Storybook Team",
+    "language": "TypeScript",
+    "framework_type": "Development Tool",
+    "use_cases": [
+      "Component libraries",
+      "Design systems",
+      "UI documentation",
+      "Visual testing",
+      "Team collaboration"
+    ],
+    "related_skills": [
+      "react",
+      "vue",
+      "angular",
+      "svelte",
+      "typescript",
+      "webpack",
+      "vite"
+    ]
+  }
+}

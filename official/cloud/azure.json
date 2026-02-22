@@ -1,0 +1,136 @@
+{
+  "name": "azure",
+  "description": "Complete Microsoft Azure knowledge from official documentation. Use when building applications on Microsoft's cloud platform. Covers compute, storage, databases, AI, and DevOps services.",
+  "version": "1.0.0",
+  "base_url": "https://learn.microsoft.com/en-us/azure/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://learn.microsoft.com/en-us/azure/",
+      "start_urls": [
+        "https://learn.microsoft.com/en-us/azure/",
+        "https://learn.microsoft.com/en-us/azure/get-started/",
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/",
+        "https://learn.microsoft.com/en-us/azure/app-service/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/en-us/azure/get-started/",
+          "/en-us/azure/virtual-machines/",
+          "/en-us/azure/app-service/",
+          "/en-us/azure/storage/",
+          "/en-us/azure/azure-sql/",
+          "/en-us/azure/aks/",
+          "/en-us/azure/azure-functions/"
+        ],
+        "exclude": [
+          "/en-us/azure/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "get-started/",
+          "cloud-adoption-framework",
+          "architecture"
+        ],
+        "compute": [
+          "virtual-machines",
+          "app-service",
+          "azure-functions",
+          "container-instances",
+          "aks"
+        ],
+        "storage": [
+          "storage",
+          "storage-blobs",
+          "storage-files",
+          "storage-queues",
+          "storage-tables"
+        ],
+        "databases": [
+          "azure-sql",
+          "cosmos-db",
+          "mysql",
+          "postgresql",
+          "redis-cache"
+        ],
+        "networking": [
+          "virtual-network",
+          "load-balancer",
+          "application-gateway",
+          "cdn",
+          "dns"
+        ],
+        "identity": [
+          "active-directory",
+          "managed-identities",
+          "role-based-access-control",
+          "entra"
+        ],
+        "security": [
+          "security",
+          "key-vault",
+          "defender-for-cloud",
+          "sentinel"
+        ],
+        "ai_ml": [
+          "cognitive-services",
+          "machine-learning",
+          "openai",
+          "ai-services"
+        ],
+        "devops": [
+          "devops",
+          "azure-pipelines",
+          "azure-repos",
+          "azure-artifacts"
+        ],
+        "monitoring": [
+          "monitor",
+          "application-insights",
+          "log-analytics",
+          "alerts"
+        ],
+        "containers": [
+          "aks",
+          "container-registry",
+          "container-instances",
+          "container-apps"
+        ],
+        "serverless": [
+          "azure-functions",
+          "logic-apps",
+          "event-grid",
+          "service-bus"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 600
+    }
+  ],
+  "metadata": {
+    "author": "Microsoft",
+    "language": "Multi-language",
+    "framework_type": "Cloud Platform",
+    "use_cases": [
+      "Enterprise cloud",
+      "Hybrid cloud",
+      "AI/ML workloads",
+      "Windows workloads",
+      "Enterprise integration"
+    ],
+    "related_skills": [
+      "dotnet",
+      "powershell",
+      "python",
+      "kubernetes",
+      "terraform"
+    ]
+  }
+}

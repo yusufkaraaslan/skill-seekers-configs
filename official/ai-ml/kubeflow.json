@@ -1,0 +1,129 @@
+{
+  "name": "kubeflow",
+  "description": "Complete Kubeflow knowledge from official documentation. Use when deploying ML workflows on Kubernetes. Covers notebooks, pipelines, training, serving, and hyperparameter tuning.",
+  "version": "1.0.0",
+  "base_url": "https://www.kubeflow.org/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.kubeflow.org/docs/",
+      "start_urls": [
+        "https://www.kubeflow.org/docs/",
+        "https://www.kubeflow.org/docs/started/",
+        "https://www.kubeflow.org/docs/components/",
+        "https://www.kubeflow.org/docs/components/pipelines/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/started/",
+          "/docs/components/",
+          "/docs/components/pipelines/",
+          "/docs/components/training/",
+          "/docs/external-add-ons/"
+        ],
+        "exclude": [
+          "/docs/releases/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "started",
+          "installing-kubeflow",
+          "getting-started"
+        ],
+        "notebooks": [
+          "components/notebooks",
+          "jupyter",
+          "vscode",
+          "rstudio"
+        ],
+        "pipelines": [
+          "components/pipelines",
+          "sdk",
+          "dsl",
+          "components",
+          "io"
+        ],
+        "katib": [
+          "components/katib",
+          "hyperparameter-tuning",
+          "experiments",
+          "algorithms"
+        ],
+        "training_operators": [
+          "components/training",
+          "tfjob",
+          "pytorchjob",
+          "xgboostjob",
+          "mpi-operator"
+        ],
+        "serving": [
+          "components/kserve",
+          "inferenceservice",
+          "transformer",
+          "explainer"
+        ],
+        "feature_store": [
+          "components/feature-store",
+          "feast",
+          "features"
+        ],
+        "metadata": [
+          "components/metadata",
+          "ml-metadata",
+          "lineage",
+          "artifacts"
+        ],
+        "fairing": [
+          "external-add-ons/fairing",
+          "build",
+          "deploy",
+          "training"
+        ],
+        "kubernetes": [
+          "started/k8s",
+          "kubectl",
+          "minikube",
+          "kind"
+        ],
+        "authentication": [
+          "started/authentication",
+          "dex",
+          "istio",
+          "rbac"
+        ],
+        "advanced": [
+          "components/multi-tenancy",
+          "pipelines/pipelines-multi-user"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 500
+    }
+  ],
+  "metadata": {
+    "author": "Kubeflow Community",
+    "language": "Python/YAML",
+    "framework_type": "ML Platform (Kubernetes)",
+    "use_cases": [
+      "ML on Kubernetes",
+      "Pipeline orchestration",
+      "Distributed training",
+      "Model serving",
+      "Hyperparameter tuning"
+    ],
+    "related_skills": [
+      "kubernetes",
+      "docker",
+      "tensorflow",
+      "pytorch",
+      "istio"
+    ]
+  }
+}

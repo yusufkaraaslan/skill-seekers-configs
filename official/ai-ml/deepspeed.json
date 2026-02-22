@@ -1,0 +1,132 @@
+{
+  "name": "deepspeed",
+  "description": "Complete DeepSpeed knowledge from official documentation. Use when training large-scale deep learning models with optimization. Covers ZeRO, mixed precision, pipeline parallelism, and inference.",
+  "version": "1.0.0",
+  "base_url": "https://www.deepspeed.ai/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.deepspeed.ai/docs/",
+      "start_urls": [
+        "https://www.deepspeed.ai/docs/",
+        "https://www.deepspeed.ai/getting-started/",
+        "https://www.deepspeed.ai/tutorials/",
+        "https://www.deepspeed.ai/docs/config-json/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/",
+          "/getting-started/",
+          "/tutorials/",
+          "/tutorials/zero/",
+          "/tutorials/megatron/"
+        ],
+        "exclude": [
+          "/blog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "getting-started",
+          "installation",
+          "writing-apps"
+        ],
+        "zero": [
+          "tutorials/zero",
+          "zero-offload",
+          "zero-infinity",
+          "stage1",
+          "stage2",
+          "stage3"
+        ],
+        "config": [
+          "config-json",
+          "train_batch_size",
+          "gradient_accumulation",
+          "optimizer",
+          "scheduler"
+        ],
+        "mixed_precision": [
+          "tutorials/mixed-precision",
+          "fp16",
+          "bf16",
+          "gradient_clipping"
+        ],
+        "pipeline": [
+          "tutorials/pipeline-parallelism",
+          "pipe",
+          "partitioning",
+          "activation-checkpointing"
+        ],
+        "model_parallelism": [
+          "tutorials/megatron",
+          "tensor-slicing",
+          "transformer",
+          "moe"
+        ],
+        "activation_checkpointing": [
+          "activation-checkpointing",
+          "checkpoint-activations",
+          "cpu-offload"
+        ],
+        "data_efficiency": [
+          "tutorials/curriculum-learning",
+          "data-efficiency",
+          " curriculum",
+          "data-sampling"
+        ],
+        "compression": [
+          "tutorials/model-compression",
+          "pruning",
+          "quantization",
+          "knowledge-distillation"
+        ],
+        "inference": [
+          "inference",
+          "fastgen",
+          "mi300",
+          "v100",
+          "a100"
+        ],
+        "autotuning": [
+          "tutorials/autotuning",
+          "ds_config",
+          "tuning"
+        ],
+        "monitoring": [
+          "monitoring",
+          "wandb",
+          "tensorboard",
+          "logging"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Microsoft",
+    "language": "Python",
+    "framework_type": "Deep Learning Optimization",
+    "use_cases": [
+      "Large model training",
+      "Distributed training",
+      "Memory optimization",
+      "Multi-GPU training",
+      "LLM training"
+    ],
+    "related_skills": [
+      "pytorch",
+      "transformers",
+      "huggingface",
+      "gpu",
+      "azure"
+    ]
+  }
+}

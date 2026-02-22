@@ -1,0 +1,112 @@
+{
+  "name": "solidjs",
+  "description": "Complete SolidJS knowledge from official documentation. Use when building high-performance reactive web applications without Virtual DOM. Covers signals, stores, effects, and routing.",
+  "version": "1.0.0",
+  "base_url": "https://docs.solidjs.com/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.solidjs.com/",
+      "start_urls": [
+        "https://docs.solidjs.com/",
+        "https://docs.solidjs.com/quick-start",
+        "https://docs.solidjs.com/concepts/intro",
+        "https://docs.solidjs.com/reference/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/",
+          "/quick-start",
+          "/concepts/",
+          "/reference/",
+          "/guides/"
+        ],
+        "exclude": [
+          "/blog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "quick-start",
+          "installation",
+          "thinking-solid"
+        ],
+        "signals": [
+          "signals",
+          "createSignal",
+          "derived",
+          "fine-grained"
+        ],
+        "reactivity": [
+          "reactivity",
+          "createEffect",
+          "createMemo",
+          "batch"
+        ],
+        "stores": [
+          "stores",
+          "createStore",
+          "produce",
+          "reconcile"
+        ],
+        "components": [
+          "components",
+          "props",
+          "children",
+          "control-flow"
+        ],
+        "rendering": [
+          "rendering",
+          "conditional",
+          "dynamic",
+          "list",
+          "portal"
+        ],
+        "lifecycles": [
+          "lifecycles",
+          "onMount",
+          "onCleanup",
+          "createResource"
+        ],
+        "routing": [
+          "routing",
+          "solid-router",
+          "config",
+          "data"
+        ],
+        "server": [
+          "solid-start",
+          "server",
+          "api-routes",
+          "data-loading"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "SolidJS Team",
+    "language": "TypeScript",
+    "framework_type": "Web Framework",
+    "use_cases": [
+      "High-performance UIs",
+      "Real-time apps",
+      "Dashboards",
+      "Reactive forms",
+      "Complex state management"
+    ],
+    "related_skills": [
+      "typescript",
+      "javascript",
+      "jsx",
+      "vite",
+      "react"
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "catboost",
+  "description": "Complete CatBoost knowledge from official documentation. Use when building gradient boosting with native categorical feature support. Covers classification, regression, ranking, and GPU training.",
+  "version": "1.0.0",
+  "base_url": "https://catboost.ai/en/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://catboost.ai/en/docs/",
+      "start_urls": [
+        "https://catboost.ai/en/docs/",
+        "https://catboost.ai/en/docs/concepts/about.html",
+        "https://catboost.ai/en/docs/concepts/python-reference_catboost.html",
+        "https://catboost.ai/en/docs/concepts/tutorials.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/en/docs/concepts/",
+          "/en/docs/concepts/python",
+          "/en/docs/concepts/r",
+          "/en/docs/features/"
+        ],
+        "exclude": [
+          "/en/docs/releasenotes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "concepts/about",
+          "concepts/installation",
+          "concepts/tutorials"
+        ],
+        "python_api": [
+          "concepts/python-reference_catboost",
+          "concepts/python-reference_catboostclassifier",
+          "concepts/python-reference_catboostregressor",
+          "concepts/python-reference_pool"
+        ],
+        "training": [
+          "concepts/python-reference_catboost_fit",
+          "concepts/python-reference_pool",
+          "concepts/python-reference_parameters-list"
+        ],
+        "parameters": [
+          "concepts/parameter-tuning",
+          "concepts/python-reference_parameters-list",
+          "iterations",
+          "learning_rate",
+          "depth"
+        ],
+        "categorical_features": [
+          "features/categorical-features",
+          "cat_features",
+          "one-hot-max-size",
+          "target-encoding"
+        ],
+        "loss_functions": [
+          "concepts/loss-functions",
+          "concepts/loss-functions-regression",
+          "concepts/loss-functions-classification",
+          "concepts/loss-functions-multiclassification"
+        ],
+        "hyperparameters": [
+          "concepts/parameter-tuning",
+          "concepts/grid-search",
+          "concepts/randomized-search"
+        ],
+        "gpu": [
+          "features/training-on-gpu",
+          "task_type",
+          "devices",
+          "cuda"
+        ],
+        "overfitting": [
+          "concepts/overfitting-detector",
+          "early_stopping_rounds",
+          "od_type",
+          "od_wait"
+        ],
+        "feature_importance": [
+          "concepts/fstr",
+          "PredictionValuesChange",
+          "LossFunctionChange",
+          "ShapValues"
+        ],
+        "cv": [
+          "concepts/python-reference_cv",
+          "cross-validation",
+          "stratified"
+        ],
+        "model_analysis": [
+          "concepts/python-reference_catboost_get_feature_importance",
+          "concepts/python-reference_catboost_plot_tree"
+        ],
+        "saving_loading": [
+          "concepts/python-reference_catboost_save_model",
+          "concepts/python-reference_catboost_load_model",
+          "cbm",
+          "json"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "Yandex",
+    "language": "Python/R/C++",
+    "framework_type": "Gradient Boosting Library",
+    "use_cases": [
+      "Tabular data",
+      "Categorical features",
+      "Classification",
+      "Regression",
+      "Ranking"
+    ],
+    "related_skills": [
+      "python",
+      "xgboost",
+      "lightgbm",
+      "pandas",
+      "scikit-learn"
+    ]
+  }
+}

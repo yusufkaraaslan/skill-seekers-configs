@@ -1,0 +1,145 @@
+{
+  "name": "opencv",
+  "description": "Complete OpenCV knowledge from official documentation. Use when building computer vision applications. Covers image processing, feature detection, object detection, video analysis, and deep learning.",
+  "version": "1.0.0",
+  "base_url": "https://docs.opencv.org/4.x/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.opencv.org/4.x/",
+      "start_urls": [
+        "https://docs.opencv.org/4.x/",
+        "https://docs.opencv.org/4.x/d9/df8/tutorial_root.html",
+        "https://docs.opencv.org/4.x/modules.html",
+        "https://docs.opencv.org/4.x/db/de0/group__core.html"
+      ],
+      "selectors": {
+        "main_content": "article, main, .contents",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/4.x/d9/df8/tutorial_root.html",
+          "/4.x/modules.html",
+          "/4.x/db/de0/group__core.html",
+          "/4.x/d7/dbd/group__imgproc.html"
+        ],
+        "exclude": [
+          "/4.x/d1/dfb/intro.html"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "tutorial_root",
+          "introduction",
+          "installation"
+        ],
+        "core_operations": [
+          "group__core",
+          "mat",
+          "basic-operations",
+          "arithmetic",
+          "logical"
+        ],
+        "image_processing": [
+          "group__imgproc",
+          "filtering",
+          "morphology",
+          "gradients",
+          "histograms"
+        ],
+        "geometric_transformations": [
+          "geometric-transformations",
+          "resize",
+          "warp",
+          "remap",
+          "affine"
+        ],
+        "thresholding": [
+          "thresholding",
+          "adaptive",
+          "otsu",
+          "inrange"
+        ],
+        "filtering": [
+          "filtering",
+          "blur",
+          "gaussian",
+          "median",
+          "bilateral"
+        ],
+        "edge_detection": [
+          "edge-detection",
+          "canny",
+          "sobel",
+          "laplacian",
+          "scharr"
+        ],
+        "contours": [
+          "contours",
+          "findContours",
+          "drawContours",
+          "moments",
+          "approxPolyDP"
+        ],
+        "feature_detection": [
+          "feature-detection",
+          "harris",
+          "shi-tomasi",
+          "sift",
+          "surf",
+          "orb"
+        ],
+        "video_analysis": [
+          "video",
+          "background-subtraction",
+          "optical-flow",
+          "object-tracking"
+        ],
+        "object_detection": [
+          "dnn",
+          "object-detection",
+          "yolo",
+          "ssd",
+          "faster-rcnn"
+        ],
+        "camera_calibration": [
+          "camera-calibration",
+          "calibrateCamera",
+          "stereo",
+          "reprojection"
+        ],
+        "machine_learning": [
+          "ml",
+          "svm",
+          "knn",
+          "decision-trees",
+          "neural-networks"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 600
+    }
+  ],
+  "metadata": {
+    "author": "OpenCV Team",
+    "language": "C++/Python/Java",
+    "framework_type": "Computer Vision Library",
+    "use_cases": [
+      "Image processing",
+      "Object detection",
+      "Face recognition",
+      "Video analysis",
+      "AR/VR"
+    ],
+    "related_skills": [
+      "python",
+      "cpp",
+      "numpy",
+      "tensorflow",
+      "pytorch"
+    ]
+  }
+}

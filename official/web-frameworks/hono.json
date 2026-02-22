@@ -20,15 +20,44 @@
         "code_blocks": "pre code"
       },
       "url_patterns": {
-        "include": ["/getting-started/", "/api/", "/guides/", "/helpers/"],
-        "exclude": ["/examples/", "/concepts/"]
+        "include": [
+          "/getting-started/",
+          "/api/",
+          "/guides/",
+          "/helpers/"
+        ],
+        "exclude": [
+          "/examples/",
+          "/concepts/"
+        ]
       },
       "categories": {
-        "getting_started": ["getting-started", "basic", "cloudflare-workers"],
-        "api": ["routing", "hono", "context", "request", "response"],
-        "middleware": ["middleware", "builtin-middleware"],
-        "helpers": ["helpers", "adapter", "testing"],
-        "guides": ["guides", "validation", "jsx"]
+        "getting_started": [
+          "getting-started",
+          "basic",
+          "cloudflare-workers"
+        ],
+        "api": [
+          "routing",
+          "hono",
+          "context",
+          "request",
+          "response"
+        ],
+        "middleware": [
+          "middleware",
+          "builtin-middleware"
+        ],
+        "helpers": [
+          "helpers",
+          "adapter",
+          "testing"
+        ],
+        "guides": [
+          "guides",
+          "validation",
+          "jsx"
+        ]
       },
       "rate_limit": 0.5,
       "max_pages": 200
@@ -49,5 +78,6 @@
         "src/middleware/**/*.ts"
       ]
     }
-  ]
+  ],
+  "base_url": "https://hono.dev/"
 }

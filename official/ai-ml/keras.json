@@ -1,0 +1,140 @@
+{
+  "name": "keras",
+  "description": "Complete Keras 3 knowledge from official documentation. Use when building deep learning models with a user-friendly API. Covers models, layers, training, callbacks, and multi-backend support.",
+  "version": "1.0.0",
+  "base_url": "https://keras.io/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://keras.io/",
+      "start_urls": [
+        "https://keras.io/",
+        "https://keras.io/getting_started/",
+        "https://keras.io/guides/",
+        "https://keras.io/api/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/getting_started/",
+          "/guides/",
+          "/api/",
+          "/examples/"
+        ],
+        "exclude": [
+          "/keras_3/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "getting_started",
+          "introduction_to_keras",
+          "ecosystem"
+        ],
+        "models": [
+          "api/models",
+          "sequential",
+          "model",
+          "functional-api"
+        ],
+        "layers": [
+          "api/layers",
+          "core_layers",
+          "convolutional_layers",
+          "recurrent_layers",
+          "normalization_layers"
+        ],
+        "training": [
+          "guides/training_with_built_in_methods",
+          "compile",
+          "fit",
+          "evaluate",
+          "predict"
+        ],
+        "callbacks": [
+          "api/callbacks",
+          "early_stopping",
+          "model_checkpoint",
+          "tensorboard",
+          "learning_rate_scheduler"
+        ],
+        "optimizers": [
+          "api/optimizers",
+          "adam",
+          "sgd",
+          "rmsprop",
+          "adamw"
+        ],
+        "losses": [
+          "api/losses",
+          "binary_crossentropy",
+          "categorical_crossentropy",
+          "mse",
+          "custom_loss"
+        ],
+        "metrics": [
+          "api/metrics",
+          "accuracy",
+          "precision",
+          "recall",
+          "custom_metric"
+        ],
+        "data_loading": [
+          "api/data_loading",
+          "image_dataset_from_directory",
+          "timeseries_dataset_from_array",
+          "text_dataset_from_directory"
+        ],
+        "preprocessing": [
+          "api/preprocessing",
+          "image_preprocessing",
+          "text_preprocessing",
+          "numerical_preprocessing"
+        ],
+        "saving": [
+          "guides/serialization_and_saving",
+          "save",
+          "load_model",
+          "export",
+          "onnx"
+        ],
+        "distributed": [
+          "guides/distributed_training",
+          "data_parallelism",
+          "multi_gpu"
+        ],
+        "customization": [
+          "guides/making_new_layers_and_models_via_subclassing",
+          "custom_layers",
+          "custom_training_loop"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 500
+    }
+  ],
+  "metadata": {
+    "author": "Keras Team",
+    "language": "Python",
+    "framework_type": "Deep Learning API",
+    "use_cases": [
+      "Neural networks",
+      "Deep learning",
+      "Computer vision",
+      "NLP",
+      "Multi-backend ML"
+    ],
+    "related_skills": [
+      "tensorflow",
+      "pytorch",
+      "jax",
+      "python",
+      "numpy"
+    ]
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "name": "swc",
+  "description": "Complete SWC knowledge from official documentation. Use when transforming JavaScript and TypeScript with Rust-based speed. Covers compilation, minification, and bundling.",
+  "version": "1.0.0",
+  "base_url": "https://swc.rs/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://swc.rs/docs/",
+      "start_urls": [
+        "https://swc.rs/docs/",
+        "https://swc.rs/docs/getting-started",
+        "https://swc.rs/docs/configuration/compilation",
+        "https://swc.rs/docs/configuration/bundling"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/getting-started",
+          "/docs/configuration/",
+          "/docs/usage/",
+          "/docs/plugin/"
+        ],
+        "exclude": [
+          "/docs/changelog"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "getting-started",
+          "installation",
+          "intro"
+        ],
+        "configuration": [
+          "configuration/compilation",
+          "configuration/minification",
+          "configuration/bundling",
+          "configuration/swcrc"
+        ],
+        "swcrc": [
+          "configuration/swcrc",
+          "jsc",
+          "parser",
+          "transform",
+          "target",
+          "minify"
+        ],
+        "usage": [
+          "usage/core",
+          "usage/cli",
+          "usage/wasm",
+          "usage/plugin"
+        ],
+        "cli": [
+          "usage/cli",
+          "compile",
+          "minify",
+          "bundle"
+        ],
+        "bundling": [
+          "configuration/bundling",
+          "spack",
+          "module",
+          "entry",
+          "output"
+        ],
+        "plugin": [
+          "plugin/publishing",
+          "plugin/ecmascript",
+          "plugin/transform",
+          "rust-plugin"
+        ],
+        "typescript": [
+          "configuration/compilation#typescript",
+          "tsx",
+          "decorators",
+          "transform"
+        ],
+        "react": [
+          "configuration/compilation#react",
+          "jsx",
+          "tsx",
+          "refresh"
+        ],
+        "minification": [
+          "configuration/minification",
+          "compress",
+          "mangle",
+          "format"
+        ],
+        "migration": [
+          "usage/migrating",
+          "from-babel",
+          "from-tsc"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 200
+    }
+  ],
+  "metadata": {
+    "author": "kdy1",
+    "language": "Rust",
+    "framework_type": "Compiler/Transpiler",
+    "use_cases": [
+      "Fast transpilation",
+      "TypeScript compilation",
+      "Minification",
+      "Babel replacement",
+      "Next.js compilation"
+    ],
+    "related_skills": [
+      "javascript",
+      "typescript",
+      "rust",
+      "babel",
+      "webpack"
+    ]
+  }
+}

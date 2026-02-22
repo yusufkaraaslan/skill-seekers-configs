@@ -22,20 +22,95 @@
         "code_blocks": "pre code, pre"
       },
       "url_patterns": {
-        "include": ["/claude-code/"],
-        "exclude": ["/api-reference/", "/claude-ai/", "/claude.ai/", "/prompt-engineering/", "/changelog/"]
+        "include": [
+          "/claude-code/"
+        ],
+        "exclude": [
+          "/api-reference/",
+          "/claude-ai/",
+          "/claude.ai/",
+          "/prompt-engineering/",
+          "/changelog/"
+        ]
       },
       "categories": {
-        "getting_started": ["overview", "quickstart", "installation", "setup", "terminal-config"],
-        "workflows": ["workflow", "common-workflows", "git", "testing", "debugging", "interactive"],
-        "mcp": ["mcp", "model-context-protocol"],
-        "configuration": ["config", "settings", "preferences", "customize", "hooks", "statusline", "model-config", "memory", "output-styles"],
-        "agents": ["agent", "task", "subagent", "sub-agent", "specialized"],
-        "skills": ["skill", "agent-skill"],
-        "integrations": ["ide-integrations", "vs-code", "jetbrains", "plugin", "marketplace"],
-        "deployment": ["bedrock", "vertex", "deployment", "network", "gateway", "devcontainer", "sandboxing", "third-party"],
-        "reference": ["reference", "api", "command", "cli-reference", "slash", "checkpointing", "headless", "sdk"],
-        "enterprise": ["iam", "security", "monitoring", "analytics", "costs", "legal", "data-usage"]
+        "getting_started": [
+          "overview",
+          "quickstart",
+          "installation",
+          "setup",
+          "terminal-config"
+        ],
+        "workflows": [
+          "workflow",
+          "common-workflows",
+          "git",
+          "testing",
+          "debugging",
+          "interactive"
+        ],
+        "mcp": [
+          "mcp",
+          "model-context-protocol"
+        ],
+        "configuration": [
+          "config",
+          "settings",
+          "preferences",
+          "customize",
+          "hooks",
+          "statusline",
+          "model-config",
+          "memory",
+          "output-styles"
+        ],
+        "agents": [
+          "agent",
+          "task",
+          "subagent",
+          "sub-agent",
+          "specialized"
+        ],
+        "skills": [
+          "skill",
+          "agent-skill"
+        ],
+        "integrations": [
+          "ide-integrations",
+          "vs-code",
+          "jetbrains",
+          "plugin",
+          "marketplace"
+        ],
+        "deployment": [
+          "bedrock",
+          "vertex",
+          "deployment",
+          "network",
+          "gateway",
+          "devcontainer",
+          "sandboxing",
+          "third-party"
+        ],
+        "reference": [
+          "reference",
+          "api",
+          "command",
+          "cli-reference",
+          "slash",
+          "checkpointing",
+          "headless",
+          "sdk"
+        ],
+        "enterprise": [
+          "iam",
+          "security",
+          "monitoring",
+          "analytics",
+          "costs",
+          "legal",
+          "data-usage"
+        ]
       },
       "rate_limit": 0.5,
       "max_pages": 200
@@ -56,5 +131,6 @@
         "cli/**/*.js"
       ]
     }
-  ]
+  ],
+  "base_url": "https://docs.claude.com/en/docs/claude-code/"
 }

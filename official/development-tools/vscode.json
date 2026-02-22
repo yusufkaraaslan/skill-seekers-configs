@@ -1,0 +1,129 @@
+{
+  "name": "vscode",
+  "description": "Complete Visual Studio Code knowledge from official documentation. Use when editing and debugging code. Covers extensions, debugging, tasks, and settings.",
+  "version": "1.0.0",
+  "base_url": "https://code.visualstudio.com/docs",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://code.visualstudio.com/docs",
+      "start_urls": [
+        "https://code.visualstudio.com/docs",
+        "https://code.visualstudio.com/docs/getstarted/introvideos",
+        "https://code.visualstudio.com/docs/editor/codebasics",
+        "https://code.visualstudio.com/docs/editor/debugging"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/getstarted/",
+          "/docs/editor/",
+          "/docs/languages/",
+          "/docs/nodejs/",
+          "/docs/typescript/",
+          "/docs/python/"
+        ],
+        "exclude": [
+          "/docs/supporting/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "getstarted/introvideos",
+          "setup",
+          "settings"
+        ],
+        "basics": [
+          "editor/codebasics",
+          "editor/editingevolved",
+          "editor/intellisense",
+          "editor/emmet"
+        ],
+        "debugging": [
+          "editor/debugging",
+          "nodejs/nodejs-debugging",
+          "python/debugging",
+          "editor/debugging-configuration"
+        ],
+        "git": [
+          "editor/versioncontrol",
+          "editor/github",
+          "sourcecontrol/overview"
+        ],
+        "extensions": [
+          "editor/extension-marketplace",
+          "extensions/overview",
+          "api/get-started/your-first-extension"
+        ],
+        "tasks": [
+          "editor/tasks",
+          "editor/tasks-appendix",
+          "editor/task-variables"
+        ],
+        "terminal": [
+          "editor/integrated-terminal",
+          "terminal/appearance",
+          "terminal/profiles"
+        ],
+        "languages": [
+          "languages/overview",
+          "languages/javascript",
+          "languages/python",
+          "languages/typescript"
+        ],
+        "remote": [
+          "remote/remote-overview",
+          "remote/ssh",
+          "remote/wsl",
+          "remote/devcontainers"
+        ],
+        "snippets": [
+          "editor/userdefinedsnippets",
+          "snippets",
+          "snippet-syntax"
+        ],
+        "themes": [
+          "getstarted/themes",
+          "color-theme",
+          "file-icon-themes"
+        ],
+        "keybindings": [
+          "getstarted/keybindings",
+          "custom-keybindings",
+          "keybindings-json"
+        ],
+        "settings": [
+          "getstarted/settings",
+          "settings-sync",
+          "workspace-settings"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 500
+    }
+  ],
+  "metadata": {
+    "author": "Microsoft",
+    "language": "TypeScript",
+    "framework_type": "Code Editor",
+    "use_cases": [
+      "Code editing",
+      "Debugging",
+      "Extension development",
+      "Remote development",
+      "Multi-language support"
+    ],
+    "related_skills": [
+      "typescript",
+      "javascript",
+      "git",
+      "docker",
+      "python"
+    ]
+  }
+}

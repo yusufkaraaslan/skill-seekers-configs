@@ -1,0 +1,99 @@
+{
+  "name": "pytest",
+  "description": "Complete pytest knowledge from official documentation. Use when testing Python applications with simple syntax. Covers fixtures, markers, plugins, and parameterized testing.",
+  "version": "1.0.0",
+  "base_url": "https://docs.pytest.org/en/stable/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.pytest.org/en/stable/",
+      "start_urls": [
+        "https://docs.pytest.org/en/stable/getting-started.html",
+        "https://docs.pytest.org/en/stable/how-to/assert.html",
+        "https://docs.pytest.org/en/stable/how-to/fixtures.html",
+        "https://docs.pytest.org/en/stable/how-to/mark.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/en/stable/"
+        ],
+        "exclude": [
+          "/en/stable/changelog.html"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "install",
+          "first-test"
+        ],
+        "assertions": [
+          "assert",
+          "assertions",
+          "exceptions",
+          "warnings"
+        ],
+        "fixtures": [
+          "fixtures",
+          "setup",
+          "teardown",
+          "scope",
+          "autouse"
+        ],
+        "markers": [
+          "mark",
+          "skip",
+          "xfail",
+          "parametrize",
+          "custom"
+        ],
+        "plugins": [
+          "plugins",
+          "conftest",
+          "hooks"
+        ],
+        "configuration": [
+          "configuration",
+          "pytest-ini",
+          "options"
+        ],
+        "testing": [
+          "test-discovery",
+          "test-classes",
+          "test-modules"
+        ],
+        "advanced": [
+          "monkeypatch",
+          "tmp-path",
+          "capture"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 250
+    }
+  ],
+  "metadata": {
+    "author": "pytest-dev",
+    "language": "Python",
+    "framework_type": "Testing Framework",
+    "use_cases": [
+      "Unit testing",
+      "Integration testing",
+      "Functional testing",
+      "API testing",
+      "Test automation"
+    ],
+    "related_skills": [
+      "python",
+      "django",
+      "flask",
+      "requests",
+      "selenium"
+    ]
+  }
+}

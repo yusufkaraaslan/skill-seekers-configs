@@ -1,0 +1,112 @@
+{
+  "name": "neo4j",
+  "description": "Complete Neo4j knowledge from official documentation. Use when building graph database applications. Covers Cypher query language, graph modeling, APOC, and graph algorithms.",
+  "version": "1.0.0",
+  "base_url": "https://neo4j.com/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://neo4j.com/docs/",
+      "start_urls": [
+        "https://neo4j.com/docs/getting-started/current/",
+        "https://neo4j.com/docs/cypher-manual/current/",
+        "https://neo4j.com/docs/operations-manual/current/",
+        "https://neo4j.com/docs/apoc/current/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/getting-started/",
+          "/docs/cypher-manual/",
+          "/docs/operations-manual/",
+          "/docs/apoc/",
+          "/docs/java-reference/"
+        ],
+        "exclude": [
+          "/docs/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "introduction",
+          "install",
+          "hello-world"
+        ],
+        "cypher": [
+          "cypher",
+          "query-language",
+          "match",
+          "create",
+          "where",
+          "return"
+        ],
+        "nodes_relationships": [
+          "nodes",
+          "relationships",
+          "properties",
+          "labels",
+          "types"
+        ],
+        "modeling": [
+          "graph-modeling",
+          "patterns",
+          "design",
+          "refactoring"
+        ],
+        "advanced_cypher": [
+          "aggregation",
+          "with",
+          "unwind",
+          "subqueries",
+          "functions"
+        ],
+        "apoc": [
+          "apoc",
+          "procedures",
+          "helpers",
+          "import",
+          "export"
+        ],
+        "drivers": [
+          "drivers",
+          "javascript",
+          "python",
+          "java",
+          "go"
+        ],
+        "operations": [
+          "deployment",
+          "clustering",
+          "backup",
+          "security"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Neo4j",
+    "language": "Java",
+    "framework_type": "Graph Database",
+    "use_cases": [
+      "Graph data modeling",
+      "Recommendation engines",
+      "Fraud detection",
+      "Network analysis",
+      "Knowledge graphs"
+    ],
+    "related_skills": [
+      "cypher",
+      "graphql",
+      "python",
+      "javascript",
+      "data-science"
+    ]
+  }
+}

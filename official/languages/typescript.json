@@ -1,0 +1,111 @@
+{
+  "name": "typescript",
+  "description": "Complete TypeScript knowledge from official documentation. Use when building type-safe JavaScript applications. Covers types, interfaces, generics, decorators, modules, and compiler options.",
+  "version": "1.0.0",
+  "base_url": "https://www.typescriptlang.org/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.typescriptlang.org/docs/",
+      "start_urls": [
+        "https://www.typescriptlang.org/docs/",
+        "https://www.typescriptlang.org/docs/handbook/intro.html",
+        "https://www.typescriptlang.org/docs/handbook/basic-types.html",
+        "https://www.typescriptlang.org/tsconfig"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/handbook/",
+          "/docs/handbook/intro.html",
+          "/tsconfig",
+          "/docs/handbook/release-notes/"
+        ],
+        "exclude": [
+          "/docs/community/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "intro",
+          "typescript-in-5-minutes",
+          "migration-from-javascript"
+        ],
+        "types": [
+          "basic-types",
+          "advanced-types",
+          "literal-types",
+          "union-types",
+          "intersection-types"
+        ],
+        "interfaces": [
+          "interfaces",
+          "interface-extending",
+          "hybrid-types"
+        ],
+        "classes": [
+          "classes",
+          "inheritance",
+          "abstract-classes",
+          "access-modifiers"
+        ],
+        "generics": [
+          "generics",
+          "generic-constraints",
+          "generic-classes",
+          "generic-interfaces"
+        ],
+        "functions": [
+          "functions",
+          "function-types",
+          "overloads",
+          "this-parameters"
+        ],
+        "modules": [
+          "modules",
+          "namespaces",
+          "module-resolution",
+          "declaration-files"
+        ],
+        "decorators": [
+          "decorators",
+          "class-decorators",
+          "method-decorators",
+          "property-decorators"
+        ],
+        "compiler": [
+          "tsconfig-json",
+          "compiler-options",
+          "strict-mode",
+          "watch-mode"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Microsoft",
+    "language": "TypeScript",
+    "framework_type": "Programming Language",
+    "use_cases": [
+      "Type-safe JavaScript",
+      "Large applications",
+      "Library development",
+      "Enterprise software",
+      "Modern web apps"
+    ],
+    "related_skills": [
+      "javascript",
+      "nodejs",
+      "react",
+      "angular",
+      "vue",
+      "deno"
+    ]
+  }
+}

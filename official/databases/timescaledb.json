@@ -1,0 +1,98 @@
+{
+  "name": "timescaledb",
+  "description": "Complete TimescaleDB knowledge from official documentation. Use when building time-series applications on PostgreSQL. Covers hypertables, continuous aggregates, compression, and retention.",
+  "version": "1.0.0",
+  "base_url": "https://docs.timescale.com/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.timescale.com/",
+      "start_urls": [
+        "https://docs.timescale.com/getting-started/latest/",
+        "https://docs.timescale.com/use-timescale/latest/hypertables/",
+        "https://docs.timescale.com/use-timescale/latest/continuous-aggregates/",
+        "https://docs.timescale.com/use-timescale/latest/compression/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/getting-started/",
+          "/use-timescale/",
+          "/tutorials/",
+          "/api/"
+        ],
+        "exclude": [
+          "/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "install",
+          "docker",
+          "cloud"
+        ],
+        "hypertables": [
+          "hypertables",
+          "create",
+          "insert",
+          "query",
+          "partitioning"
+        ],
+        "continuous_aggregates": [
+          "continuous-aggregates",
+          "create",
+          "refresh",
+          "real-time"
+        ],
+        "compression": [
+          "compression",
+          "columnar",
+          "decompress",
+          "settings"
+        ],
+        "retention": [
+          "retention",
+          "drop-chunks",
+          "data-tiering"
+        ],
+        "querying": [
+          "querying",
+          "time-bucket",
+          "gapfilling",
+          "last"
+        ],
+        "api": [
+          "hyperfunctions",
+          "time_bucket",
+          "approximate"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 250
+    }
+  ],
+  "metadata": {
+    "author": "Timescale",
+    "language": "C/PostgreSQL",
+    "framework_type": "Time-Series Database",
+    "use_cases": [
+      "Time-series data",
+      "IoT applications",
+      "Monitoring",
+      "Financial data",
+      "Metrics storage"
+    ],
+    "related_skills": [
+      "postgresql",
+      "sql",
+      "grafana",
+      "prometheus",
+      "python"
+    ]
+  }
+}

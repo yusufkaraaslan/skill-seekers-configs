@@ -1,0 +1,137 @@
+{
+  "name": "wandb",
+  "description": "Complete Weights & Biases knowledge from official documentation. Use when tracking experiments, visualizing results, and managing ML models. Covers runs, sweeps, artifacts, and reports.",
+  "version": "1.0.0",
+  "base_url": "https://docs.wandb.ai/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.wandb.ai/",
+      "start_urls": [
+        "https://docs.wandb.ai/",
+        "https://docs.wandb.ai/quickstart",
+        "https://docs.wandb.ai/guides/track",
+        "https://docs.wandb.ai/guides/sweeps"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/quickstart",
+          "/guides/",
+          "/guides/track",
+          "/guides/sweeps",
+          "/guides/artifacts",
+          "/guides/models"
+        ],
+        "exclude": [
+          "/ref/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "quickstart",
+          "install",
+          "init"
+        ],
+        "tracking": [
+          "guides/track",
+          "log",
+          "config",
+          "summary",
+          "finish"
+        ],
+        "integrations": [
+          "guides/integrations",
+          "pytorch",
+          "tensorflow",
+          "keras",
+          "huggingface",
+          "lightning"
+        ],
+        "sweeps": [
+          "guides/sweeps",
+          "bayesian",
+          "grid",
+          "random",
+          "hyperopt"
+        ],
+        "artifacts": [
+          "guides/artifacts",
+          "log_artifact",
+          "use_artifact",
+          "versioning",
+          "lineage"
+        ],
+        "models": [
+          "guides/models",
+          "model-registry",
+          "model-management",
+          "versions"
+        ],
+        "tables": [
+          "guides/tables",
+          "log_table",
+          "visualize",
+          "dataset-versioning"
+        ],
+        "reports": [
+          "guides/reports",
+          "create-report",
+          "panels",
+          "collaboration"
+        ],
+        "launch": [
+          "guides/launch",
+          "scheduling",
+          "queues",
+          "environments"
+        ],
+        "viz": [
+          "guides/app",
+          "workspace",
+          "runs-table",
+          "charts",
+          "media"
+        ],
+        "teams": [
+          "guides/teams",
+          "teams-setup",
+          "user-management",
+          "billing"
+        ],
+        "self_hosted": [
+          "guides/hosting",
+          "local",
+          "server",
+          "deploy"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "Weights & Biases",
+    "language": "Python",
+    "framework_type": "MLOps Platform",
+    "use_cases": [
+      "Experiment tracking",
+      "Hyperparameter tuning",
+      "Model versioning",
+      "Team collaboration",
+      "Visualization"
+    ],
+    "related_skills": [
+      "python",
+      "pytorch",
+      "tensorflow",
+      "mlflow",
+      "docker"
+    ]
+  }
+}

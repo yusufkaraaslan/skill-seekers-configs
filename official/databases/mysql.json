@@ -1,0 +1,137 @@
+{
+  "name": "mysql",
+  "description": "Complete MySQL knowledge from official documentation. Use when building applications with the world's most popular open-source relational database. Covers SQL, replication, partitioning, and performance tuning.",
+  "version": "1.0.0",
+  "base_url": "https://dev.mysql.com/doc/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://dev.mysql.com/doc/",
+      "start_urls": [
+        "https://dev.mysql.com/doc/refman/8.0/en/",
+        "https://dev.mysql.com/doc/refman/8.0/en/sql-statements.html",
+        "https://dev.mysql.com/doc/refman/8.0/en/optimization.html",
+        "https://dev.mysql.com/doc/workbench/en/"
+      ],
+      "selectors": {
+        "main_content": "article, main, .section",
+        "title": "h1, h2",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/doc/refman/8.0/en/",
+          "/doc/workbench/en/",
+          "/doc/connector-python/en/"
+        ],
+        "exclude": [
+          "/doc/refman/8.0/en/news.html"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "installing",
+          "tutorial",
+          "what-is-mysql",
+          "entering-queries"
+        ],
+        "sql_statements": [
+          "sql-statements",
+          "select",
+          "insert",
+          "update",
+          "delete",
+          "join"
+        ],
+        "data_types": [
+          "data-types",
+          "numeric-types",
+          "string-types",
+          "date-and-time-types",
+          "json"
+        ],
+        "functions": [
+          "functions",
+          "string-functions",
+          "numeric-functions",
+          "date-and-time-functions",
+          "aggregate-functions"
+        ],
+        "indexes": [
+          "optimization-indexes",
+          "primary-key",
+          "unique-index",
+          "composite-index",
+          "fulltext"
+        ],
+        "storage_engines": [
+          "storage-engines",
+          "innodb",
+          "myisam",
+          "memory"
+        ],
+        "transactions": [
+          "commit",
+          "rollback",
+          "savepoint",
+          "isolation-levels",
+          "locking"
+        ],
+        "replication": [
+          "replication",
+          "master-slave",
+          "gtid",
+          "binlog",
+          "replica"
+        ],
+        "partitioning": [
+          "partitioning",
+          "range-partitioning",
+          "list-partitioning",
+          "hash-partitioning"
+        ],
+        "optimization": [
+          "optimization",
+          "explain",
+          "query-cache",
+          "buffer-pool",
+          "performance-schema"
+        ],
+        "security": [
+          "security",
+          "user-accounts",
+          "privileges",
+          "ssl",
+          "encryption"
+        ],
+        "backup_recovery": [
+          "backup-and-recovery",
+          "mysqldump",
+          "mysqlbinlog",
+          "point-in-time-recovery"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 500
+    }
+  ],
+  "metadata": {
+    "author": "Oracle",
+    "language": "SQL",
+    "framework_type": "Relational Database",
+    "use_cases": [
+      "Web applications",
+      "E-commerce",
+      "Content management",
+      "Data warehousing",
+      "OLTP systems"
+    ],
+    "related_skills": [
+      "sql",
+      "php",
+      "python",
+      "nodejs",
+      "linux"
+    ]
+  }
+}

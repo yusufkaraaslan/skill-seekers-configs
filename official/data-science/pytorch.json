@@ -1,0 +1,123 @@
+{
+  "name": "pytorch",
+  "description": "Complete PyTorch knowledge from official documentation. Use when building deep learning models, neural networks, or performing GPU-accelerated computations. Covers tensors, autograd, nn modules, and deployment.",
+  "version": "1.0.0",
+  "base_url": "https://pytorch.org/docs/stable/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://pytorch.org/docs/stable/",
+      "start_urls": [
+        "https://pytorch.org/docs/stable/index.html",
+        "https://pytorch.org/tutorials/beginner/basics/intro.html",
+        "https://pytorch.org/docs/stable/tensors.html",
+        "https://pytorch.org/docs/stable/nn.html",
+        "https://pytorch.org/docs/stable/optim.html"
+      ],
+      "selectors": {
+        "main_content": "article, main, .pytorch-article",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/stable/",
+          "/tutorials/"
+        ],
+        "exclude": [
+          "/docs/stable/notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "tutorials",
+          "beginner",
+          "quickstart",
+          "installation"
+        ],
+        "tensors": [
+          "tensors",
+          "tensor",
+          "cuda",
+          "gpu",
+          "device"
+        ],
+        "autograd": [
+          "autograd",
+          "backward",
+          "gradient",
+          "differentiation",
+          "compute-graph"
+        ],
+        "nn": [
+          "nn",
+          "module",
+          "layers",
+          "conv",
+          "linear",
+          "activation"
+        ],
+        "optim": [
+          "optim",
+          "optimizer",
+          "sgd",
+          "adam",
+          "lr-scheduler"
+        ],
+        "data": [
+          "data",
+          "dataloader",
+          "dataset",
+          "transform"
+        ],
+        "training": [
+          "training",
+          "evaluation",
+          "checkpoint",
+          "save",
+          "load"
+        ],
+        "distributed": [
+          "distributed",
+          "ddp",
+          "data-parallel",
+          "multi-gpu"
+        ],
+        "deployment": [
+          "torchscript",
+          "onnx",
+          "mobile",
+          "serve",
+          "quantization"
+        ],
+        "advanced": [
+          "custom",
+          "cpp-extension",
+          "profiler",
+          "fx"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 500
+    }
+  ],
+  "metadata": {
+    "author": "Meta AI / PyTorch Team",
+    "language": "Python/C++",
+    "framework_type": "Deep Learning",
+    "use_cases": [
+      "Neural networks",
+      "Computer vision",
+      "Natural language processing",
+      "Reinforcement learning",
+      "Generative AI"
+    ],
+    "related_skills": [
+      "python",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "tensorflow"
+    ]
+  }
+}

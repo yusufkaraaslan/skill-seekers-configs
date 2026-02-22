@@ -1,0 +1,115 @@
+{
+  "name": "zod",
+  "description": "Complete Zod knowledge from official documentation. Use when building type-safe TypeScript applications with runtime validation. Covers schemas, parsing, transformations, and error handling.",
+  "version": "1.0.0",
+  "base_url": "https://zod.dev/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://zod.dev/",
+      "start_urls": [
+        "https://zod.dev/",
+        "https://zod.dev/README",
+        "https://zod.dev/ERROR_HANDLING",
+        "https://zod.dev/PARTIAL"
+      ],
+      "selectors": {
+        "main_content": "main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/README",
+          "/ERROR_HANDLING",
+          "/PARTIAL",
+          "/PICKOMIT",
+          "/BRAND",
+          "/COERCE"
+        ],
+        "exclude": []
+      },
+      "categories": {
+        "getting_started": [
+          "introduction",
+          "installation",
+          "basic-usage"
+        ],
+        "primitives": [
+          "string",
+          "number",
+          "bigint",
+          "boolean",
+          "date",
+          "symbol"
+        ],
+        "objects": [
+          "object",
+          "shape",
+          "keyof",
+          "extend",
+          "merge"
+        ],
+        "arrays": [
+          "array",
+          "element",
+          "nonempty",
+          "min",
+          "max"
+        ],
+        "unions": [
+          "union",
+          "discriminated",
+          "optional",
+          "nullable"
+        ],
+        "transformations": [
+          "transform",
+          "preprocess",
+          "refine",
+          "superRefine"
+        ],
+        "validation": [
+          "parse",
+          "safeParse",
+          "refine",
+          "custom-validation"
+        ],
+        "error_handling": [
+          "error-handling",
+          "zoderror",
+          "issues",
+          "flatten"
+        ],
+        "advanced": [
+          "lazy",
+          "promise",
+          "record",
+          "map",
+          "set"
+        ]
+      },
+      "rate_limit": 0.2,
+      "max_pages": 50
+    }
+  ],
+  "metadata": {
+    "author": "Colin McDonnell",
+    "language": "TypeScript",
+    "framework_type": "Validation Library",
+    "use_cases": [
+      "API validation",
+      "Form validation",
+      "Runtime type checking",
+      "Environment variables",
+      "Data parsing"
+    ],
+    "related_skills": [
+      "typescript",
+      "react",
+      "nextjs",
+      "trpc",
+      "prisma"
+    ]
+  }
+}

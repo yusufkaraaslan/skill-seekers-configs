@@ -1,0 +1,133 @@
+{
+  "name": "cloudflare",
+  "description": "Complete Cloudflare knowledge from official documentation. Use when securing and accelerating web applications. Covers CDN, DNS, Workers, Pages, and Zero Trust.",
+  "version": "1.0.0",
+  "base_url": "https://developers.cloudflare.com/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://developers.cloudflare.com/",
+      "start_urls": [
+        "https://developers.cloudflare.com/",
+        "https://developers.cloudflare.com/fundamentals/",
+        "https://developers.cloudflare.com/workers/",
+        "https://developers.cloudflare.com/pages/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/fundamentals/",
+          "/workers/",
+          "/pages/",
+          "/r2/",
+          "/d1/",
+          "/zero-trust/",
+          "/api/"
+        ],
+        "exclude": [
+          "/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "fundamentals",
+          "get-started",
+          "concepts"
+        ],
+        "dns": [
+          "dns",
+          "manage-dns-records",
+          "dnssec",
+          "cname-flattening"
+        ],
+        "cdn": [
+          "cache",
+          "caching",
+          "cache-rules",
+          "tiered-caching"
+        ],
+        "ssl_tls": [
+          "ssl",
+          "origin-ca",
+          "client-certificates",
+          "https"
+        ],
+        "workers": [
+          "workers",
+          "get-started",
+          "runtime-apis",
+          "kv",
+          "durable-objects"
+        ],
+        "pages": [
+          "pages",
+          "framework-guides",
+          "functions",
+          "build-configuration"
+        ],
+        "r2": [
+          "r2",
+          "buckets",
+          "objects",
+          "api",
+          "public-buckets"
+        ],
+        "d1": [
+          "d1",
+          "get-started",
+          "query-databases",
+          "bindings"
+        ],
+        "zero_trust": [
+          "zero-trust",
+          "access",
+          "gateway",
+          "tunnel"
+        ],
+        "security": [
+          "waf",
+          "bots",
+          "ddos-protection",
+          "rate-limiting"
+        ],
+        "analytics": [
+          "analytics",
+          "web-analytics",
+          "account-analytics"
+        ],
+        "api": [
+          "api",
+          "authentication",
+          "tokens",
+          "limits"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 500
+    }
+  ],
+  "metadata": {
+    "author": "Cloudflare",
+    "language": "JavaScript/TypeScript",
+    "framework_type": "Edge Platform",
+    "use_cases": [
+      "CDN",
+      "DDoS protection",
+      "Serverless edge",
+      "Zero Trust",
+      "Static hosting"
+    ],
+    "related_skills": [
+      "javascript",
+      "typescript",
+      "dns",
+      "cdn",
+      "workers"
+    ]
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "name": "cassandra",
+  "description": "Complete Apache Cassandra knowledge from official documentation. Use when building highly scalable, distributed NoSQL databases. Covers CQL, data modeling, replication, and performance tuning.",
+  "version": "1.0.0",
+  "base_url": "https://cassandra.apache.org/doc/latest/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://cassandra.apache.org/doc/latest/",
+      "start_urls": [
+        "https://cassandra.apache.org/doc/latest/",
+        "https://cassandra.apache.org/doc/latest/cassandra/cql/",
+        "https://cassandra.apache.org/doc/latest/cassandra/architecture/",
+        "https://cassandra.apache.org/doc/latest/cassandra/data_modeling/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/doc/latest/cassandra/cql/",
+          "/doc/latest/cassandra/architecture/",
+          "/doc/latest/cassandra/data_modeling/",
+          "/doc/latest/cassandra/operating/"
+        ],
+        "exclude": [
+          "/doc/latest/cassandra/development/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "getting-started",
+          "installing",
+          "cqlsh"
+        ],
+        "cql": [
+          "cql",
+          "cql_reference",
+          "cql_commands",
+          "data_types",
+          "functions"
+        ],
+        "data_modeling": [
+          "data_modeling",
+          "conceptual",
+          "logical",
+          "physical",
+          "partitioning"
+        ],
+        "architecture": [
+          "architecture",
+          "dynamo",
+          "gossip",
+          "snitch",
+          "vnode"
+        ],
+        "replication": [
+          "architecture/replication",
+          "snitch",
+          "replication_strategy",
+          "consistency"
+        ],
+        "storage_engine": [
+          "architecture/storage_engine",
+          "sstables",
+          "memtables",
+          "commitlog",
+          "compaction"
+        ],
+        "tuning": [
+          "operating",
+          "compaction",
+          "compression",
+          "caching",
+          "jvm"
+        ],
+        "security": [
+          "operating/security",
+          "authentication",
+          "authorization",
+          "ssl"
+        ],
+        "tools": [
+          "tools",
+          "cqlsh",
+          "nodetool",
+          "sstableloader"
+        ],
+        "drivers": [
+          "drivers",
+          "python",
+          "java",
+          "nodejs",
+          "gocql"
+        ],
+        "spark_integration": [
+          "integration",
+          "spark",
+          "hadoop"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 450
+    }
+  ],
+  "metadata": {
+    "author": "Apache Software Foundation",
+    "language": "CQL/Java",
+    "framework_type": "Distributed NoSQL Database",
+    "use_cases": [
+      "High write throughput",
+      "Time-series data",
+      "IoT data",
+      "Messaging",
+      "Global scale apps"
+    ],
+    "related_skills": [
+      "java",
+      "cql",
+      "spark",
+      "kafka",
+      "linux"
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "name": "fastai",
+  "description": "Complete fast.ai knowledge from official documentation. Use when building practical deep learning applications quickly. Covers vision, text, tabular, and collaborative filtering.",
+  "version": "1.0.0",
+  "base_url": "https://docs.fast.ai/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.fast.ai/",
+      "start_urls": [
+        "https://docs.fast.ai/",
+        "https://docs.fast.ai/quick_start.html",
+        "https://docs.fast.ai/tutorial.html",
+        "https://docs.fast.ai/learner.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/",
+          "/quick_start.html",
+          "/tutorial.html",
+          "/learner.html",
+          "/data.core.html",
+          "/vision.learner.html"
+        ],
+        "exclude": [
+          "/dev/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "quick_start",
+          "tutorial",
+          "install"
+        ],
+        "data": [
+          "data.core",
+          "data.block",
+          "data.load",
+          "datasets"
+        ],
+        "learner": [
+          "learner",
+          "optimizer",
+          "callback",
+          "metrics"
+        ],
+        "vision": [
+          "vision.learner",
+          "vision.core",
+          "vision.augment",
+          "cnn_learner"
+        ],
+        "text": [
+          "text.learner",
+          "text.core",
+          "text.models",
+          "language_model_learner"
+        ],
+        "tabular": [
+          "tabular.learner",
+          "tabular.core",
+          "tabular.model",
+          "tabular_data"
+        ],
+        "collab": [
+          "collab",
+          "collab_learner",
+          "embedding",
+          "recommendation"
+        ],
+        "callbacks": [
+          "callback.core",
+          "callback.schedule",
+          "callback.progress",
+          "callback.data"
+        ],
+        "training": [
+          "learner",
+          "fit",
+          "fit_one_cycle",
+          "fine_tune"
+        ],
+        "inference": [
+          "learner",
+          "predict",
+          "get_preds",
+          "export",
+          "load_learner"
+        ],
+        "distributed": [
+          "distributed",
+          "parallel",
+          "accelerate"
+        ],
+        "medical": [
+          "medical.imaging",
+          "medical.core",
+          "dicom"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "fast.ai",
+    "language": "Python",
+    "framework_type": "Deep Learning Library",
+    "use_cases": [
+      "Practical deep learning",
+      "Computer vision",
+      "NLP",
+      "Tabular data",
+      "Recommendation"
+    ],
+    "related_skills": [
+      "pytorch",
+      "python",
+      "numpy",
+      "pandas",
+      "jupyter"
+    ]
+  }
+}

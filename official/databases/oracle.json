@@ -1,0 +1,135 @@
+{
+  "name": "oracle",
+  "description": "Complete Oracle Database knowledge from official documentation. Use when building enterprise applications with the world's leading relational database. Covers SQL, PL/SQL, partitioning, and RAC.",
+  "version": "1.0.0",
+  "base_url": "https://docs.oracle.com/en/database/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.oracle.com/en/database/",
+      "start_urls": [
+        "https://docs.oracle.com/en/database/oracle/oracle-database/23/",
+        "https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/",
+        "https://docs.oracle.com/en/database/oracle/oracle-database/23/lnpls/",
+        "https://docs.oracle.com/en/database/oracle/oracle-database/23/admin/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/oracle-database/23/sqlrf/",
+          "/oracle-database/23/lnpls/",
+          "/oracle-database/23/admin/",
+          "/oracle-database/23/cncpt/"
+        ],
+        "exclude": [
+          "/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "cncpt",
+          "install",
+          "sql-introduction"
+        ],
+        "sql_reference": [
+          "sqlrf",
+          "select",
+          "insert",
+          "update",
+          "delete",
+          "merge"
+        ],
+        "plsql": [
+          "lnpls",
+          "plsql-language-fundamentals",
+          "control-statements",
+          "collections",
+          "records"
+        ],
+        "procedures_functions": [
+          "lnpls",
+          "procedures",
+          "functions",
+          "packages",
+          "triggers"
+        ],
+        "indexes": [
+          "sqlrf",
+          "create-index",
+          "b-tree",
+          "bitmap-index",
+          "function-based-index"
+        ],
+        "partitioning": [
+          "vldbg",
+          "partitioning-concepts",
+          "range-partitioning",
+          "hash-partitioning",
+          "composite-partitioning"
+        ],
+        "performance": [
+          "tgsql",
+          "sql-tuning",
+          "optimizer",
+          "execution-plans",
+          "hints"
+        ],
+        "rac": [
+          "racad",
+          "real-application-clusters",
+          "clusterware",
+          "scan",
+          "services"
+        ],
+        "dataguard": [
+          "sbdbn",
+          "data-guard",
+          "physical-standby",
+          "logical-standby",
+          "switchover"
+        ],
+        "security": [
+          "dbseg",
+          "user-security",
+          "privileges",
+          "roles",
+          "auditing",
+          "encryption"
+        ],
+        "backup_recovery": [
+          "bradv",
+          "rman",
+          "backup",
+          "recovery",
+          "flashback"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 600
+    }
+  ],
+  "metadata": {
+    "author": "Oracle",
+    "language": "SQL/PLSQL",
+    "framework_type": "Enterprise Database",
+    "use_cases": [
+      "Enterprise applications",
+      "ERP systems",
+      "Banking",
+      "Data warehousing",
+      "High availability"
+    ],
+    "related_skills": [
+      "sql",
+      "plsql",
+      "java",
+      "linux",
+      "enterprise-architecture"
+    ]
+  }
+}

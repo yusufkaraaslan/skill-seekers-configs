@@ -1,0 +1,131 @@
+{
+  "name": "scikit-learn",
+  "description": "Complete scikit-learn knowledge from official documentation. Use when implementing classical machine learning algorithms. Covers classification, regression, clustering, dimensionality reduction, and model selection.",
+  "version": "1.0.0",
+  "base_url": "https://scikit-learn.org/stable/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://scikit-learn.org/stable/",
+      "start_urls": [
+        "https://scikit-learn.org/stable/",
+        "https://scikit-learn.org/stable/user_guide.html",
+        "https://scikit-learn.org/stable/modules/classes.html",
+        "https://scikit-learn.org/stable/tutorial/index.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/stable/user_guide.html",
+          "/stable/modules/",
+          "/stable/tutorial/",
+          "/stable/auto_examples/"
+        ],
+        "exclude": [
+          "/stable/whats_new/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "user_guide",
+          "install",
+          "faq"
+        ],
+        "supervised_learning": [
+          "supervised_learning",
+          "linear_model",
+          "svm",
+          "tree",
+          "ensemble",
+          "neighbors",
+          "naive_bayes",
+          "discriminant_analysis"
+        ],
+        "unsupervised_learning": [
+          "unsupervised_learning",
+          "clustering",
+          "mixture",
+          "manifold",
+          "decomposition"
+        ],
+        "model_selection": [
+          "model_selection",
+          "cross_validation",
+          "grid_search",
+          "validation_curve",
+          "learning_curve"
+        ],
+        "preprocessing": [
+          "preprocessing",
+          "feature_extraction",
+          "feature_selection",
+          "impute",
+          "compose"
+        ],
+        "pipelines": [
+          "compose",
+          "pipeline",
+          "column_transformer",
+          "make_pipeline"
+        ],
+        "metrics": [
+          "metrics",
+          "classification_metrics",
+          "regression_metrics",
+          "clustering_metrics",
+          "pairwise"
+        ],
+        "datasets": [
+          "datasets",
+          "load_iris",
+          "load_digits",
+          "make_classification",
+          "make_regression"
+        ],
+        "model_persistence": [
+          "model_persistence",
+          "joblib",
+          "pickle",
+          "onnx"
+        ],
+        "inspection": [
+          "inspection",
+          "partial_dependence",
+          "permutation_importance"
+        ],
+        "multiclass": [
+          "multiclass",
+          "multioutput",
+          "ovr",
+          "ovo"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 500
+    }
+  ],
+  "metadata": {
+    "author": "scikit-learn developers",
+    "language": "Python",
+    "framework_type": "ML Library",
+    "use_cases": [
+      "Classification",
+      "Regression",
+      "Clustering",
+      "Feature engineering",
+      "Model evaluation"
+    ],
+    "related_skills": [
+      "python",
+      "numpy",
+      "scipy",
+      "pandas",
+      "matplotlib"
+    ]
+  }
+}

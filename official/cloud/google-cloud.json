@@ -1,0 +1,112 @@
+{
+  "name": "google-cloud",
+  "description": "Complete Google Cloud Platform knowledge from official documentation. Use when building applications on GCP. Covers Compute Engine, Cloud Storage, BigQuery, Cloud Run, and Kubernetes Engine.",
+  "version": "1.0.0",
+  "base_url": "https://cloud.google.com/docs",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://cloud.google.com/docs",
+      "start_urls": [
+        "https://cloud.google.com/getting-started",
+        "https://cloud.google.com/compute/docs",
+        "https://cloud.google.com/storage/docs",
+        "https://cloud.google.com/bigquery/docs",
+        "https://cloud.google.com/run/docs"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/",
+          "/getting-started/"
+        ],
+        "exclude": [
+          "/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "setup",
+          "billing",
+          "free-tier"
+        ],
+        "compute": [
+          "compute-engine",
+          "cloud-run",
+          "app-engine",
+          "gke",
+          "cloud-functions"
+        ],
+        "storage": [
+          "cloud-storage",
+          "persistent-disk",
+          "filestore",
+          "backup"
+        ],
+        "database": [
+          "cloud-sql",
+          "firestore",
+          "bigtable",
+          "spanner",
+          "memorystore"
+        ],
+        "analytics": [
+          "bigquery",
+          "dataflow",
+          "dataproc",
+          "pubsub"
+        ],
+        "networking": [
+          "vpc",
+          "load-balancing",
+          "cloud-cdn",
+          "cloud-dns"
+        ],
+        "security": [
+          "iam",
+          "kms",
+          "secret-manager",
+          "cloud-armor"
+        ],
+        "devtools": [
+          "cloud-build",
+          "cloud-source",
+          "cloud-deploy",
+          "monitoring"
+        ],
+        "ai_ml": [
+          "vertex-ai",
+          "ai-platform",
+          "vision",
+          "natural-language"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 600
+    }
+  ],
+  "metadata": {
+    "author": "Google",
+    "language": "Multi-language",
+    "framework_type": "Cloud Platform",
+    "use_cases": [
+      "Cloud infrastructure",
+      "Data analytics",
+      "Machine learning",
+      "Serverless apps",
+      "Enterprise migration"
+    ],
+    "related_skills": [
+      "kubernetes",
+      "terraform",
+      "docker",
+      "python",
+      "nodejs"
+    ]
+  }
+}

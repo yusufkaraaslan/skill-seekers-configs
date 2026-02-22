@@ -1,0 +1,137 @@
+{
+  "name": "cohere",
+  "description": "Complete Cohere API knowledge from official documentation. Use when building applications with enterprise-grade LLMs. Covers generate, embed, classify, summarize, and rerank.",
+  "version": "1.0.0",
+  "base_url": "https://docs.cohere.com/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.cohere.com/",
+      "start_urls": [
+        "https://docs.cohere.com/",
+        "https://docs.cohere.com/docs",
+        "https://docs.cohere.com/reference/about",
+        "https://docs.cohere.com/docs/the-cohere-platform"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/",
+          "/reference/",
+          "/docs/the-cohere-platform",
+          "/docs/models"
+        ],
+        "exclude": [
+          "/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "docs/the-cohere-platform",
+          "quickstart",
+          "authentication"
+        ],
+        "models": [
+          "docs/models",
+          "command",
+          "command-r",
+          "command-r-plus",
+          "embed"
+        ],
+        "text_generation": [
+          "reference/generate",
+          "generate",
+          "chat",
+          "prompt-engineering"
+        ],
+        "embeddings": [
+          "reference/embed",
+          "embed",
+          "embedding-types",
+          "multilingual"
+        ],
+        "rerank": [
+          "reference/rerank-1",
+          "rerank",
+          "semantic-search",
+          "retrieval"
+        ],
+        "classify": [
+          "reference/classify",
+          "classify",
+          "classification",
+          "few-shot"
+        ],
+        "summarize": [
+          "reference/summarize",
+          "summarize",
+          "extractive",
+          "abstractive"
+        ],
+        "tokenize": [
+          "reference/tokenize",
+          "tokenize",
+          "detokenize",
+          "token-count"
+        ],
+        "connectors": [
+          "docs/connectors",
+          "web-search",
+          "document-search"
+        ],
+        "fine_tuning": [
+          "docs/fine-tuning",
+          "custom-models",
+          "training",
+          "datasets"
+        ],
+        "safety_modes": [
+          "docs/safety-modes",
+          "contextual",
+          "strict",
+          "off"
+        ],
+        "parameter_tuning": [
+          "docs/parameter-tuning",
+          "temperature",
+          "top-p",
+          "top-k",
+          "max-tokens"
+        ],
+        "sdks": [
+          "reference/about",
+          "python",
+          "typescript",
+          "go",
+          "java"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Cohere",
+    "language": "Python/JavaScript/Go/Java",
+    "framework_type": "LLM API",
+    "use_cases": [
+      "Text generation",
+      "Semantic search",
+      "Classification",
+      "Embeddings",
+      "Enterprise AI"
+    ],
+    "related_skills": [
+      "python",
+      "embeddings",
+      "vector-search",
+      "openai",
+      "langchain"
+    ]
+  }
+}

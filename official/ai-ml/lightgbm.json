@@ -1,0 +1,125 @@
+{
+  "name": "lightgbm",
+  "description": "Complete LightGBM knowledge from official documentation. Use when building fast, distributed gradient boosting models. Covers histogram-based learning, GOSS, EFB, and categorical features.",
+  "version": "1.0.0",
+  "base_url": "https://lightgbm.readthedocs.io/en/stable/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://lightgbm.readthedocs.io/en/stable/",
+      "start_urls": [
+        "https://lightgbm.readthedocs.io/en/stable/",
+        "https://lightgbm.readthedocs.io/en/stable/Installation-Guide.html",
+        "https://lightgbm.readthedocs.io/en/stable/Python-Intro.html",
+        "https://lightgbm.readthedocs.io/en/stable/Parameters.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/en/stable/",
+          "/en/stable/Python-Intro.html",
+          "/en/stable/Parameters.html",
+          "/en/stable/Features.html"
+        ],
+        "exclude": [
+          "/en/stable/Release-Notes.html"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "Installation-Guide",
+          "Quick-Start",
+          "Python-Intro"
+        ],
+        "python_api": [
+          "Python-Intro",
+          "Python-API",
+          "LGBMClassifier",
+          "LGBMRegressor",
+          "Dataset"
+        ],
+        "parameters": [
+          "Parameters",
+          "Core-Parameters",
+          "Learning-Control-Parameters",
+          "Objective-Parameters"
+        ],
+        "features": [
+          "Features",
+          "Optimization",
+          "Parallel-Learning",
+          "GPU-Learning"
+        ],
+        "optimization": [
+          "Optimization",
+          "histogram",
+          "goss",
+          "efb",
+          "leaf-wise"
+        ],
+        "categorical_features": [
+          "Features",
+          "categorical_feature",
+          "categorical",
+          "encoding"
+        ],
+        "advanced_topics": [
+          "Advanced-Topics",
+          "Categorical-Feature",
+          "Missing-Value-Handling",
+          "Contribute"
+        ],
+        "tuning": [
+          "Parameters-Tuning",
+          "grid_search",
+          "optuna",
+          "early_stopping"
+        ],
+        "gpu": [
+          "GPU-Targets",
+          "GPU-Tutorial",
+          "cuda",
+          "gpu_support"
+        ],
+        "distributed": [
+          "Parallel-Learning-Guide",
+          "distributed",
+          "mpi",
+          "socket"
+        ],
+        "saving_loading": [
+          "Python-API",
+          "save_model",
+          "load_model",
+          "model_to_string"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Microsoft",
+    "language": "Python/R/C++",
+    "framework_type": "Gradient Boosting Library",
+    "use_cases": [
+      "Large-scale ML",
+      "Tabular data",
+      "Competition ML",
+      "Real-time prediction",
+      "Categorical features"
+    ],
+    "related_skills": [
+      "python",
+      "scikit-learn",
+      "xgboost",
+      "catboost",
+      "pandas"
+    ]
+  }
+}

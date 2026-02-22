@@ -1,0 +1,144 @@
+{
+  "name": "express",
+  "description": "Complete Express.js knowledge combining documentation and source code. Use when building Node.js web servers, APIs, or middleware. Covers routing, middleware, template engines, and production best practices.",
+  "version": "1.0.0",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://expressjs.com/",
+      "extract_api": true,
+      "start_urls": [
+        "https://expressjs.com/en/starter/installing.html",
+        "https://expressjs.com/en/guide/routing.html",
+        "https://expressjs.com/en/guide/using-middleware.html",
+        "https://expressjs.com/en/4x/api.html"
+      ],
+      "selectors": {
+        "main_content": "#content, article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/en/starter/",
+          "/en/guide/",
+          "/en/4x/",
+          "/en/advanced/"
+        ],
+        "exclude": [
+          "/en/resources/",
+          "/en/community/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "starter",
+          "installing",
+          "hello-world",
+          "generator",
+          "basic-routing"
+        ],
+        "routing": [
+          "routing",
+          "route",
+          "router",
+          "param",
+          "methods",
+          "path"
+        ],
+        "middleware": [
+          "middleware",
+          "using-middleware",
+          "writing-middleware",
+          "override"
+        ],
+        "request_response": [
+          "req",
+          "res",
+          "request",
+          "response",
+          "body",
+          "query",
+          "params"
+        ],
+        "api_reference": [
+          "api",
+          "application",
+          "express",
+          "router"
+        ],
+        "templates": [
+          "template",
+          "engine",
+          "pug",
+          "ejs",
+          "handlebars",
+          "render"
+        ],
+        "error_handling": [
+          "error",
+          "handling",
+          "404",
+          "500",
+          "debugging"
+        ],
+        "security": [
+          "security",
+          "helmet",
+          "cors",
+          "csrf",
+          "best-practices"
+        ],
+        "performance": [
+          "performance",
+          "best-practice",
+          "compression",
+          "cache"
+        ],
+        "database": [
+          "database",
+          "integration",
+          "mongoose",
+          "sequelize",
+          "prisma"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 200
+    },
+    {
+      "type": "github",
+      "repo": "expressjs/express",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "lib/**/*.js"
+      ]
+    }
+  ],
+  "metadata": {
+    "author": "TJ Holowaychuk / Express Team",
+    "language": "JavaScript",
+    "framework_type": "Web Framework",
+    "use_cases": [
+      "REST APIs",
+      "Web servers",
+      "Middleware chains",
+      "Static file serving",
+      "Server-side rendering"
+    ],
+    "related_skills": [
+      "nodejs",
+      "javascript",
+      "mongodb",
+      "mongoose",
+      "nextjs"
+    ]
+  },
+  "base_url": "https://expressjs.com/"
+}

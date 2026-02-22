@@ -1,0 +1,110 @@
+{
+  "name": "auth0",
+  "description": "Complete Auth0 knowledge from official documentation. Use when implementing authentication and authorization in applications. Covers universal login, APIs, rules, actions, and organizations.",
+  "version": "1.0.0",
+  "base_url": "https://auth0.com/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://auth0.com/docs/",
+      "start_urls": [
+        "https://auth0.com/docs/get-started",
+        "https://auth0.com/docs/authenticate",
+        "https://auth0.com/docs/secure",
+        "https://auth0.com/docs/customize"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/get-started/",
+          "/docs/authenticate/",
+          "/docs/secure/",
+          "/docs/customize/",
+          "/docs/api/"
+        ],
+        "exclude": [
+          "/docs/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "get-started",
+          "architecture",
+          "quickstarts"
+        ],
+        "authentication": [
+          "login",
+          "universal-login",
+          "database-connections",
+          "social",
+          "enterprise"
+        ],
+        "authorization": [
+          "authorization",
+          "roles",
+          "permissions",
+          "rbac"
+        ],
+        "apis": [
+          "api",
+          "scopes",
+          "access-tokens",
+          "refresh-tokens"
+        ],
+        "applications": [
+          "spa",
+          "webapp",
+          "native",
+          "machine-to-machine"
+        ],
+        "actions": [
+          "actions",
+          "flows",
+          "triggers",
+          "customization"
+        ],
+        "rules": [
+          "rules",
+          "context",
+          "configuration"
+        ],
+        "organizations": [
+          "organizations",
+          "multi-tenant",
+          "members"
+        ],
+        "security": [
+          "security",
+          "mfa",
+          "breached-passwords",
+          "bot-detection"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Auth0 / Okta",
+    "language": "Multi-language",
+    "framework_type": "Identity Platform",
+    "use_cases": [
+      "User authentication",
+      "SSO",
+      "API security",
+      "Multi-tenant apps",
+      "Enterprise auth"
+    ],
+    "related_skills": [
+      "react",
+      "nodejs",
+      "jwt",
+      "oauth2",
+      "openid-connect"
+    ]
+  }
+}

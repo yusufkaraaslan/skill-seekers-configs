@@ -1,0 +1,123 @@
+{
+  "name": "vllm",
+  "description": "Complete vLLM knowledge from official documentation. Use when serving LLMs with high throughput and low latency. Covers PagedAttention, continuous batching, tensor parallelism, and OpenAI-compatible API.",
+  "version": "1.0.0",
+  "base_url": "https://docs.vllm.ai/en/latest/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.vllm.ai/en/latest/",
+      "start_urls": [
+        "https://docs.vllm.ai/en/latest/",
+        "https://docs.vllm.ai/en/latest/getting_started/quickstart.html",
+        "https://docs.vllm.ai/en/latest/serving/openai_compatible_server.html",
+        "https://docs.vllm.ai/en/latest/models/engine_args.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/en/latest/getting_started/",
+          "/en/latest/serving/",
+          "/en/latest/models/",
+          "/en/latest/quantization/"
+        ],
+        "exclude": [
+          "/en/latest/dev/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "getting_started/quickstart",
+          "installation",
+          "requirements"
+        ],
+        "serving": [
+          "serving/openai_compatible_server",
+          "serving/deploying_with_docker",
+          "serving/run_llm"
+        ],
+        "engine_args": [
+          "models/engine_args",
+          "model",
+          "tensor_parallel_size",
+          "gpu_memory_utilization"
+        ],
+        "quantization": [
+          "quantization/auto_awq",
+          "quantization/fp8",
+          "quantization/gptq",
+          "awq",
+          "squeezellm"
+        ],
+        "distributed": [
+          "serving/distributed_serving",
+          "tensor_parallel",
+          "pipeline_parallel",
+          "ray"
+        ],
+        "inference": [
+          "getting_started/quickstart",
+          "LLM",
+          "SamplingParams",
+          "prompt"
+        ],
+        "api": [
+          "serving/openai_compatible_server",
+          "v1/chat/completions",
+          "v1/completions",
+          "v1/models"
+        ],
+        "optimization": [
+          "performance_benchmarks",
+          "pagedattention",
+          "continuous_batching",
+          "cuda_graphs"
+        ],
+        "models": [
+          "models/supported_models",
+          "llama",
+          "mistral",
+          "mixtral",
+          "qwen"
+        ],
+        "production": [
+          "serving/deploying_with_docker",
+          "kubernetes",
+          "helm"
+        ],
+        "lora": [
+          "models/lora",
+          "peft",
+          "adapter"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 250
+    }
+  ],
+  "metadata": {
+    "author": "vLLM Team",
+    "language": "Python",
+    "framework_type": "LLM Inference Engine",
+    "use_cases": [
+      "LLM serving",
+      "High-throughput inference",
+      "OpenAI-compatible API",
+      "Multi-GPU serving",
+      "Production deployment"
+    ],
+    "related_skills": [
+      "pytorch",
+      "cuda",
+      "ray",
+      "docker",
+      "kubernetes",
+      "openai"
+    ]
+  }
+}

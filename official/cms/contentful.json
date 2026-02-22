@@ -1,0 +1,107 @@
+{
+  "name": "contentful",
+  "description": "Complete Contentful knowledge from official documentation. Use when building headless CMS applications with content delivery APIs. Covers content modeling, SDKs, webhooks, and GraphQL.",
+  "version": "1.0.0",
+  "base_url": "https://www.contentful.com/developers/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.contentful.com/developers/docs/",
+      "start_urls": [
+        "https://www.contentful.com/developers/docs/",
+        "https://www.contentful.com/developers/docs/concepts/",
+        "https://www.contentful.com/developers/docs/references/",
+        "https://www.contentful.com/developers/docs/tutorials/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/developers/docs/",
+          "/developers/docs/concepts/",
+          "/developers/docs/references/",
+          "/developers/docs/tutorials/"
+        ],
+        "exclude": [
+          "/developers/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "introduction",
+          "quick-start",
+          "apis",
+          "sdks"
+        ],
+        "content_model": [
+          "content-model",
+          "content-types",
+          "fields",
+          "validations",
+          "references"
+        ],
+        "content_delivery": [
+          "cda",
+          "graphql",
+          "rest",
+          "images-api"
+        ],
+        "content_management": [
+          "cma",
+          "entries",
+          "assets",
+          "locales"
+        ],
+        "sdks": [
+          "javascript",
+          "react",
+          "nextjs",
+          "python",
+          "ruby"
+        ],
+        "webhooks": [
+          "webhooks",
+          "events",
+          "filters",
+          "security"
+        ],
+        "app_framework": [
+          "app-framework",
+          "locations",
+          "sdk",
+          "deployment"
+        ],
+        "security": [
+          "authentication",
+          "tokens",
+          "oauth",
+          "roles"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "Contentful",
+    "language": "Multi-language",
+    "framework_type": "Headless CMS",
+    "use_cases": [
+      "Content management",
+      "Multi-channel publishing",
+      "E-commerce",
+      "Marketing sites",
+      "Mobile apps"
+    ],
+    "related_skills": [
+      "graphql",
+      "rest",
+      "nextjs",
+      "react",
+      "javascript"
+    ]
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "name": "prisma",
+  "description": "Complete Prisma knowledge from official documentation. Use when building type-safe database applications with Node.js and TypeScript. Covers schema definition, client queries, migrations, and relations.",
+  "version": "1.0.0",
+  "base_url": "https://www.prisma.io/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.prisma.io/docs/",
+      "start_urls": [
+        "https://www.prisma.io/docs/getting-started",
+        "https://www.prisma.io/docs/concepts/",
+        "https://www.prisma.io/docs/reference/",
+        "https://www.prisma.io/docs/guides/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/getting-started/",
+          "/docs/concepts/",
+          "/docs/reference/",
+          "/docs/guides/"
+        ],
+        "exclude": [
+          "/docs/about/releases/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "quickstart",
+          "setup-prisma",
+          "add-to-existing-project"
+        ],
+        "schema": [
+          "prisma-schema",
+          "models",
+          "fields",
+          "relations",
+          "enums"
+        ],
+        "client": [
+          "prisma-client",
+          "crud",
+          "reading-data",
+          "writing-data",
+          "transactions"
+        ],
+        "relations": [
+          "relations",
+          "one-to-one",
+          "one-to-many",
+          "many-to-many",
+          "self-relations"
+        ],
+        "migrations": [
+          "prisma-migrate",
+          "create-migrations",
+          "seed-database",
+          "production"
+        ],
+        "queries": [
+          "select-fields",
+          "filtering",
+          "sorting",
+          "pagination",
+          "aggregation"
+        ],
+        "advanced": [
+          "raw-queries",
+          "middleware",
+          "connection-management",
+          "logging"
+        ],
+        "accelerate": [
+          "accelerate",
+          "connection-pooling",
+          "global-database",
+          "caching"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Prisma",
+    "language": "TypeScript",
+    "framework_type": "ORM",
+    "use_cases": [
+      "Type-safe database access",
+      "API development",
+      "Full-stack applications",
+      "Data modeling",
+      "Database migrations"
+    ],
+    "related_skills": [
+      "typescript",
+      "nodejs",
+      "postgresql",
+      "mysql",
+      "mongodb",
+      "nextjs"
+    ]
+  }
+}

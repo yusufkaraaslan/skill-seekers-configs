@@ -1,0 +1,105 @@
+{
+  "name": "cypress",
+  "description": "Complete Cypress knowledge from official documentation. Use when performing end-to-end testing for modern web applications. Covers commands, assertions, network handling, and CI/CD integration.",
+  "version": "1.0.0",
+  "base_url": "https://docs.cypress.io/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.cypress.io/",
+      "start_urls": [
+        "https://docs.cypress.io/guides/overview/why-cypress",
+        "https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test",
+        "https://docs.cypress.io/api/commands/get",
+        "https://docs.cypress.io/guides/core-concepts/introduction-to-cypress"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/guides/",
+          "/api/",
+          "/examples/"
+        ],
+        "exclude": [
+          "/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "overview",
+          "installation",
+          "writing-first-test"
+        ],
+        "core_concepts": [
+          "introduction-to-cypress",
+          "querying",
+          "retry-ability",
+          "interacting"
+        ],
+        "commands": [
+          "commands",
+          "get",
+          "find",
+          "click",
+          "type",
+          "should"
+        ],
+        "assertions": [
+          "assertions",
+          "should",
+          "expect",
+          "and"
+        ],
+        "network": [
+          "network-requests",
+          "intercept",
+          "stub",
+          "fixtures"
+        ],
+        "fixtures": [
+          "fixtures",
+          "mock-data",
+          "json"
+        ],
+        "page_objects": [
+          "page-objects",
+          "custom-commands"
+        ],
+        "ci_cd": [
+          "continuous-integration",
+          "github-actions",
+          "dashboard"
+        ],
+        "component": [
+          "component-testing",
+          "mount"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Cypress.io",
+    "language": "JavaScript",
+    "framework_type": "E2E Testing",
+    "use_cases": [
+      "End-to-end testing",
+      "Component testing",
+      "Integration testing",
+      "Visual regression",
+      "CI/CD testing"
+    ],
+    "related_skills": [
+      "javascript",
+      "typescript",
+      "react",
+      "jest",
+      "playwright"
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 {
   "name": "astro",
-  "description": "Complete Astro framework knowledge combining official documentation and Astro codebase. Use when building Astro sites, understanding islands architecture, or debugging Astro issues.",
+  "description": "Complete Astro knowledge combining official documentation and Astro codebase. Use when building content-focused websites with islands architecture, partial hydration, and zero-JS by default. Covers v4.x with View Transitions.",
+  "version": "1.0.0",
   "merge_mode": "rule-based",
   "sources": [
     {
@@ -20,19 +21,88 @@
         "code_blocks": "pre code"
       },
       "url_patterns": {
-        "include": ["/en/getting-started/", "/en/core-concepts/", "/en/guides/", "/en/reference/"],
-        "exclude": ["/en/community/", "/en/blog/"]
+        "include": [
+          "/en/getting-started/",
+          "/en/core-concepts/",
+          "/en/guides/",
+          "/en/reference/"
+        ],
+        "exclude": [
+          "/en/community/",
+          "/en/blog/"
+        ]
       },
       "categories": {
-        "getting_started": ["getting-started", "install", "tutorial"],
-        "core_concepts": ["project-structure", "components", "pages", "layouts"],
-        "routing": ["routing", "endpoints", "api-routes"],
-        "integrations": ["integrations", "framework", "ui-frameworks"],
-        "deployment": ["deploy", "deployment", "hosting"],
-        "api": ["api", "reference", "configuration"]
+        "getting_started": [
+          "getting-started",
+          "install",
+          "tutorial",
+          "editor-setup"
+        ],
+        "core_concepts": [
+          "project-structure",
+          "components",
+          "pages",
+          "layouts",
+          "islands",
+          "partial-hydration"
+        ],
+        "routing": [
+          "routing",
+          "endpoints",
+          "api-routes",
+          "redirects",
+          "rewrites"
+        ],
+        "ui_frameworks": [
+          "integrations",
+          "framework",
+          "ui-frameworks",
+          "react",
+          "vue",
+          "svelte",
+          "solid"
+        ],
+        "content": [
+          "content-collections",
+          "markdown",
+          "mdx",
+          "content"
+        ],
+        "assets": [
+          "images",
+          "fonts",
+          "styles",
+          "scripts"
+        ],
+        "data": [
+          "data-fetching",
+          "astro-db",
+          "backend"
+        ],
+        "view_transitions": [
+          "view-transitions",
+          "transitions",
+          "animation"
+        ],
+        "deployment": [
+          "deploy",
+          "deployment",
+          "hosting",
+          "static",
+          "ssr",
+          "server-side-rendering"
+        ],
+        "reference": [
+          "api",
+          "reference",
+          "configuration",
+          "cli",
+          "error-reference"
+        ]
       },
       "rate_limit": 0.5,
-      "max_pages": 300
+      "max_pages": 400
     },
     {
       "type": "github",
@@ -49,5 +119,25 @@
         "packages/integrations/**/*.ts"
       ]
     }
-  ]
+  ],
+  "metadata": {
+    "author": "withastro",
+    "language": "TypeScript",
+    "framework_type": "Static Site Generator",
+    "use_cases": [
+      "Content websites",
+      "Documentation sites",
+      "Marketing pages",
+      "Blogs",
+      "E-commerce"
+    ],
+    "related_skills": [
+      "react",
+      "vue",
+      "svelte",
+      "mdx",
+      "tailwind"
+    ]
+  },
+  "base_url": "https://docs.astro.build/en/"
 }

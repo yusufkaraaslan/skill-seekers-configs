@@ -1,0 +1,117 @@
+{
+  "name": "threejs",
+  "description": "Complete Three.js knowledge from official documentation. Use when building 3D graphics in the browser with WebGL. Covers scenes, cameras, materials, lighting, geometries, and animation.",
+  "version": "1.0.0",
+  "base_url": "https://threejs.org/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://threejs.org/docs/",
+      "start_urls": [
+        "https://threejs.org/docs/index.html#manual/en/introduction",
+        "https://threejs.org/docs/index.html#api/en/core",
+        "https://threejs.org/docs/index.html#api/en/materials",
+        "https://threejs.org/examples/"
+      ],
+      "selectors": {
+        "main_content": "#content",
+        "title": "h1",
+        "code_blocks": "code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/",
+          "/manual/",
+          "/api/"
+        ],
+        "exclude": [
+          "/examples/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "introduction",
+          "installation",
+          "creating-a-scene",
+          "webgl-compatibility-check"
+        ],
+        "core": [
+          "object3d",
+          "buffergeometry",
+          "material",
+          "texture",
+          "scene",
+          "camera"
+        ],
+        "cameras": [
+          "perspectivecamera",
+          "orthographiccamera",
+          "cameracontrols"
+        ],
+        "geometries": [
+          "boxgeometry",
+          "spheregeometry",
+          "planegeometry",
+          "buffergeometry"
+        ],
+        "materials": [
+          "meshbasicmaterial",
+          "meshstandardmaterial",
+          "meshphysicalmaterial",
+          "shadermaterial"
+        ],
+        "lights": [
+          "ambientlight",
+          "directionallight",
+          "pointlight",
+          "spotlight",
+          "environment"
+        ],
+        "animation": [
+          "animation",
+          "keyframe",
+          "mixer",
+          "loop"
+        ],
+        "loaders": [
+          "gltfloader",
+          "objloader",
+          "textureloader",
+          "jsonloader"
+        ],
+        "renderers": [
+          "webglrenderer",
+          "webgl1renderer",
+          "css3drenderer"
+        ],
+        "postprocessing": [
+          "effectcomposer",
+          "pass",
+          "shaderpass",
+          "bloom"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 500
+    }
+  ],
+  "metadata": {
+    "author": "Three.js Team",
+    "language": "JavaScript",
+    "framework_type": "3D Graphics Library",
+    "use_cases": [
+      "3D web applications",
+      "Games",
+      "Data visualization",
+      "VR/AR experiences",
+      "Product configurators"
+    ],
+    "related_skills": [
+      "webgl",
+      "javascript",
+      "react-three-fiber",
+      "blender",
+      "glsl"
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "name": "clickteam-fusion",
+  "description": "Complete Clickteam Fusion knowledge from official documentation. Use when building 2D games without coding using event-based visual programming. Covers frame editor, objects, events, and exporters.",
+  "version": "1.0.0",
+  "base_url": "https://www.clickteam.com/help",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.clickteam.com/help",
+      "start_urls": [
+        "https://www.clickteam.com/help",
+        "https://www.clickteam.com/fusion-2-5",
+        "https://community.clickteam.com/forums/11-Documentation-and-Tutorials",
+        "https://www.clickteam.com/fusion-2-5-developers"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/help",
+          "/fusion-2-5",
+          "/tutorials",
+          "/documentation"
+        ],
+        "exclude": [
+          "/forum/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "help",
+          "getting-started",
+          "interface",
+          "workspace"
+        ],
+        "frame_editor": [
+          "frame-editor",
+          "layers",
+          "backdrop",
+          "grid",
+          "zoom"
+        ],
+        "objects": [
+          "active-objects",
+          "backdrops",
+          "counters",
+          "strings",
+          "qualifiers"
+        ],
+        "events": [
+          "event-editor",
+          "conditions",
+          "actions",
+          "expressions",
+          "groups"
+        ],
+        "animations": [
+          "animation",
+          "directions",
+          "frames",
+          "transitions"
+        ],
+        "movements": [
+          "movement",
+          "path",
+          "platform",
+          "bounce",
+          "racecar"
+        ],
+        "behaviors": [
+          "behaviors",
+          "physics",
+          "platform",
+          "8-direction"
+        ],
+        "values_strings": [
+          "alterable-values",
+          "strings",
+          "flags",
+          "counters"
+        ],
+        "extensions": [
+          "extensions",
+          "object-extensions",
+          "system-box",
+          "sub-application"
+        ],
+        "audio": [
+          "sounds",
+          "music",
+          "channels",
+          "on-mobile"
+        ],
+        " exporters": [
+          "windows",
+          "android",
+          "ios",
+          "html5",
+          "uwp"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Clickteam",
+    "language": "Visual/Extension SDK",
+    "framework_type": "2D Game Engine",
+    "use_cases": [
+      "No-code games",
+      "2D platformers",
+      "Arcade games",
+      "Rapid prototyping",
+      "Educational games"
+    ],
+    "related_skills": [
+      "pixel-art",
+      "sound-design",
+      "visual-programming",
+      "mobile-export"
+    ]
+  }
+}

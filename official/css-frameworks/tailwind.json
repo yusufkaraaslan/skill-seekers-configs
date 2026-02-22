@@ -1,6 +1,7 @@
 {
   "name": "tailwind",
-  "description": "Complete Tailwind CSS knowledge combining official documentation and Tailwind codebase. Use when styling with Tailwind, understanding utility classes, or customizing configuration.",
+  "description": "Complete Tailwind CSS knowledge combining official documentation and Tailwind codebase. Use when styling with Tailwind, understanding utility classes, or customizing configuration. Covers v3.x with JIT engine, plugins, and dark mode.",
+  "version": "1.0.0",
   "merge_mode": "rule-based",
   "sources": [
     {
@@ -19,25 +20,145 @@
         "code_blocks": "pre code"
       },
       "url_patterns": {
-        "include": ["/docs/"],
-        "exclude": ["/blog/", "/resources/", "/showcase/"]
+        "include": [
+          "/docs/"
+        ],
+        "exclude": [
+          "/blog/",
+          "/resources/",
+          "/showcase/"
+        ]
       },
       "categories": {
-        "getting_started": ["installation", "editor-setup", "upgrade-guide"],
-        "core_concepts": ["utility-first", "responsive-design", "hover-focus-and-other-states", "dark-mode", "reusing-styles"],
-        "layout": ["container", "box-sizing", "display", "float", "clear", "object-fit", "overflow", "position", "top-right-bottom-left", "visibility", "z-index"],
-        "flexbox_grid": ["flex-direction", "flex-wrap", "flex", "flex-grow", "flex-shrink", "order", "grid-template-columns", "grid-column", "grid-template-rows", "grid-row", "gap"],
-        "spacing": ["padding", "margin", "space-between"],
-        "typography": ["font-family", "font-size", "font-weight", "text-align", "text-color", "line-height"],
-        "backgrounds": ["background-color", "background-image", "background-size", "background-position"],
-        "borders": ["border-width", "border-color", "border-style", "border-radius"],
-        "effects": ["box-shadow", "opacity", "mix-blend-mode"],
-        "filters": ["blur", "brightness", "contrast", "grayscale"],
-        "transitions": ["transition-property", "transition-duration", "transition-timing-function", "animation"],
-        "customization": ["configuration", "theme", "plugins", "presets"]
+        "getting_started": [
+          "installation",
+          "editor-setup",
+          "upgrade-guide",
+          "using-with-preprocessors"
+        ],
+        "core_concepts": [
+          "utility-first",
+          "responsive-design",
+          "hover-focus-and-other-states",
+          "dark-mode",
+          "reusing-styles",
+          "adding-custom-styles"
+        ],
+        "layout": [
+          "container",
+          "box-sizing",
+          "display",
+          "float",
+          "clear",
+          "object-fit",
+          "overflow",
+          "position",
+          "top-right-bottom-left",
+          "visibility",
+          "z-index"
+        ],
+        "flexbox_grid": [
+          "flex-direction",
+          "flex-wrap",
+          "flex",
+          "flex-grow",
+          "flex-shrink",
+          "order",
+          "grid-template-columns",
+          "grid-column",
+          "grid-template-rows",
+          "grid-row",
+          "gap"
+        ],
+        "spacing": [
+          "padding",
+          "margin",
+          "space-between"
+        ],
+        "sizing": [
+          "width",
+          "height",
+          "min-width",
+          "max-width",
+          "min-height",
+          "max-height"
+        ],
+        "typography": [
+          "font-family",
+          "font-size",
+          "font-weight",
+          "text-align",
+          "text-color",
+          "line-height",
+          "letter-spacing",
+          "text-transform"
+        ],
+        "backgrounds": [
+          "background-color",
+          "background-image",
+          "background-size",
+          "background-position",
+          "gradient"
+        ],
+        "borders": [
+          "border-width",
+          "border-color",
+          "border-style",
+          "border-radius",
+          "divide"
+        ],
+        "effects": [
+          "box-shadow",
+          "opacity",
+          "mix-blend-mode",
+          "background-blend-mode"
+        ],
+        "filters": [
+          "blur",
+          "brightness",
+          "contrast",
+          "grayscale",
+          "hue-rotate",
+          "invert",
+          "saturate",
+          "sepia"
+        ],
+        "tables": [
+          "border-collapse",
+          "table-layout"
+        ],
+        "transitions": [
+          "transition-property",
+          "transition-duration",
+          "transition-timing-function",
+          "animation",
+          "transform"
+        ],
+        "interactivity": [
+          "cursor",
+          "pointer-events",
+          "resize",
+          "scroll-behavior",
+          "user-select"
+        ],
+        "svg": [
+          "fill",
+          "stroke",
+          "stroke-width"
+        ],
+        "accessibility": [
+          "screen-readers",
+          "forced-color-adjust"
+        ],
+        "customization": [
+          "configuration",
+          "theme",
+          "plugins",
+          "presets"
+        ]
       },
       "rate_limit": 0.5,
-      "max_pages": 300
+      "max_pages": 400
     },
     {
       "type": "github",
@@ -54,5 +175,24 @@
         "src/util/**/*.js"
       ]
     }
-  ]
+  ],
+  "metadata": {
+    "author": "Tailwind Labs",
+    "language": "JavaScript",
+    "framework_type": "CSS Framework",
+    "use_cases": [
+      "Utility-first CSS",
+      "Rapid UI development",
+      "Responsive design",
+      "Custom design systems",
+      "Component styling"
+    ],
+    "related_skills": [
+      "react",
+      "vue",
+      "nextjs",
+      "postcss"
+    ]
+  },
+  "base_url": "https://tailwindcss.com/docs"
 }

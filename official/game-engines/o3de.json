@@ -1,0 +1,137 @@
+{
+  "name": "o3de",
+  "description": "Complete Open 3D Engine (O3DE) knowledge from official documentation. Use when building AAA-quality 3D games and simulations. Covers Atom renderer, Script Canvas, physics, and multiplayer networking.",
+  "version": "1.0.0",
+  "base_url": "https://www.o3de.org/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.o3de.org/docs/",
+      "start_urls": [
+        "https://www.o3de.org/docs/",
+        "https://www.o3de.org/docs/welcome-guide/",
+        "https://www.o3de.org/docs/user-guide/",
+        "https://www.o3de.org/docs/learning-guide/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/welcome-guide/",
+          "/docs/user-guide/",
+          "/docs/learning-guide/",
+          "/docs/api/"
+        ],
+        "exclude": [
+          "/docs/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "welcome-guide",
+          "setup",
+          "create-project",
+          "intro-to-editor"
+        ],
+        "editor": [
+          "user-guide/editor",
+          "interface",
+          "viewport",
+          "entity-outliner",
+          "asset-browser"
+        ],
+        "entities": [
+          "user-guide/components",
+          "entity-inspector",
+          "components",
+          "prefabs"
+        ],
+        "script_canvas": [
+          "user-guide/scripting/script-canvas",
+          "node-reference",
+          "variables",
+          "graphs"
+        ],
+        "lua": [
+          "user-guide/scripting/lua",
+          "ebus",
+          " lua-editor"
+        ],
+        "atom_renderer": [
+          "user-guide/graphics",
+          "atom-renderer",
+          "materials",
+          "lighting",
+          "passes"
+        ],
+        "physx": [
+          "user-guide/interactivity/physics",
+          "nvidia-physx",
+          "colliders",
+          "joints",
+          "ragdolls"
+        ],
+        "animation": [
+          "user-guide/visualization/animation",
+          "animation-editor",
+          "motion-extraction",
+          "root-motion"
+        ],
+        "audio": [
+          "user-guide/interactivity/audio",
+          "audio-translation-layer",
+          "sound-banks",
+          "atl"
+        ],
+        "ui": [
+          "user-guide/interactivity/user-interface",
+          "ui-editor",
+          "canvas",
+          "elements"
+        ],
+        " multiplayer": [
+          "user-guide/networking",
+          "multiplayer-gem",
+          "network-spawning",
+          "replication"
+        ],
+        "gems": [
+          "user-guide/gems",
+          "reference",
+          "development",
+          "gem-structure"
+        ],
+        "assets": [
+          "user-guide/assets",
+          "asset-pipeline",
+          "fbx-settings",
+          "prefabs"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 500
+    }
+  ],
+  "metadata": {
+    "author": "Open 3D Foundation",
+    "language": "C++/Lua/Script Canvas",
+    "framework_type": "AAA Game Engine",
+    "use_cases": [
+      "AAA games",
+      "High-fidelity simulations",
+      "Robotics",
+      "Smart city visualization",
+      "Open world games"
+    ],
+    "related_skills": [
+      "cpp",
+      "lua",
+      "physx",
+      "vulkan",
+      "cmake"
+    ]
+  }
+}

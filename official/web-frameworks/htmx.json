@@ -1,0 +1,112 @@
+{
+  "name": "htmx",
+  "description": "Complete HTMX knowledge from official documentation. Use when building modern web applications with hypermedia, without JavaScript frameworks. Covers AJAX, CSS transitions, WebSockets, and SSE.",
+  "version": "1.0.0",
+  "base_url": "https://htmx.org/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://htmx.org/docs/",
+      "start_urls": [
+        "https://htmx.org/docs/",
+        "https://htmx.org/reference/",
+        "https://htmx.org/examples/",
+        "https://htmx.org/attributes/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/",
+          "/reference/",
+          "/examples/",
+          "/attributes/",
+          "/extensions/"
+        ],
+        "exclude": [
+          "/essays/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "introduction",
+          "installing",
+          "quick-start"
+        ],
+        "core_concepts": [
+          "ajax",
+          "targets",
+          "swapping",
+          "synchronization"
+        ],
+        "attributes": [
+          "hx-get",
+          "hx-post",
+          "hx-target",
+          "hx-swap",
+          "hx-trigger",
+          "hx-vals"
+        ],
+        "triggers": [
+          "triggers",
+          "trigger-modifiers",
+          "polling",
+          "load"
+        ],
+        "swapping": [
+          "swapping",
+          "swap-options",
+          "settling",
+          "oob-swaps"
+        ],
+        "extensions": [
+          "extensions",
+          "json-enc",
+          "class-tools",
+          "loading-states"
+        ],
+        "websockets": [
+          "websockets",
+          "hx-ws",
+          "sse",
+          "hx-sse"
+        ],
+        "security": [
+          "csp",
+          "config",
+          "validate"
+        ],
+        "events": [
+          "events",
+          "htmx:afterSwap",
+          "htmx:beforeRequest"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 200
+    }
+  ],
+  "metadata": {
+    "author": "Big Sky Software",
+    "language": "JavaScript",
+    "framework_type": "Web Framework",
+    "use_cases": [
+      "Hypermedia applications",
+      "Progressive enhancement",
+      "Server-rendered UIs",
+      "Minimal JavaScript",
+      "Real-time updates"
+    ],
+    "related_skills": [
+      "html",
+      "javascript",
+      "django",
+      "flask",
+      "rails",
+      "laravel"
+    ]
+  }
+}

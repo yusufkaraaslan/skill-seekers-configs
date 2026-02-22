@@ -1,0 +1,128 @@
+{
+  "name": "fauna",
+  "description": "Complete Fauna knowledge from official documentation. Use when building serverless applications with a distributed document-relational database. Covers FQL, GraphQL, and ACID transactions.",
+  "version": "1.0.0",
+  "base_url": "https://docs.fauna.com/fauna/current/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.fauna.com/fauna/current/",
+      "start_urls": [
+        "https://docs.fauna.com/fauna/current/",
+        "https://docs.fauna.com/fauna/current/learn/",
+        "https://docs.fauna.com/fauna/current/fql/",
+        "https://docs.fauna.com/fauna/current/cookbook/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/fauna/current/learn/",
+          "/fauna/current/fql/",
+          "/fauna/current/cookbook/",
+          "/fauna/current/drivers/"
+        ],
+        "exclude": [
+          "/fauna/current/release_notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "learn/quick_start",
+          "learn/installation",
+          "dashboard"
+        ],
+        "fql_basics": [
+          "fql/basics",
+          "values",
+          "collections",
+          "documents",
+          "indexes"
+        ],
+        "fql_queries": [
+          "fql/queries",
+          "let",
+          "map",
+          "filter",
+          "reduce"
+        ],
+        "fql_functions": [
+          "fql/functions",
+          "user-defined-functions",
+          "udfs",
+          "lambda"
+        ],
+        "data_modeling": [
+          "learn/data_modeling",
+          "collections",
+          "indexes",
+          "relationships",
+          "normalization"
+        ],
+        "authentication": [
+          "learn/security",
+          "access-providers",
+          "keys",
+          "tokens",
+          "roles"
+        ],
+        "graphql": [
+          "learn/graphql",
+          "schema",
+          "resolvers",
+          "@embedded"
+        ],
+        "transactions": [
+          "fql/transactions",
+          "acid",
+          "serializable",
+          "occ"
+        ],
+        "temporal": [
+          "fql/temporal",
+          "at",
+          "snapshot",
+          "event-sourcing"
+        ],
+        "drivers": [
+          "drivers/js",
+          "drivers/python",
+          "drivers/go",
+          "drivers/rust"
+        ],
+        "cookbook": [
+          "cookbook/",
+          "crud",
+          "relationships",
+          "authentication",
+          "pagination"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Fauna",
+    "language": "FQL/GraphQL",
+    "framework_type": "Serverless Database",
+    "use_cases": [
+      "Serverless apps",
+      "Jamstack",
+      "Real-time apps",
+      "Multi-tenant SaaS",
+      "Global applications"
+    ],
+    "related_skills": [
+      "javascript",
+      "graphql",
+      "serverless",
+      "jamstack",
+      "fauna"
+    ]
+  }
+}

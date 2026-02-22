@@ -1,0 +1,121 @@
+{
+  "name": "tensorflow",
+  "description": "Complete TensorFlow knowledge from official documentation. Use when building production ML models, deep learning applications, or deploying AI solutions. Covers Keras, TF Lite, TF.js, and TensorBoard.",
+  "version": "1.0.0",
+  "base_url": "https://www.tensorflow.org/api_docs",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.tensorflow.org/api_docs",
+      "start_urls": [
+        "https://www.tensorflow.org/tutorials/quickstart/beginner",
+        "https://www.tensorflow.org/guide/tensor",
+        "https://www.tensorflow.org/guide/keras",
+        "https://www.tensorflow.org/guide/saved_model"
+      ],
+      "selectors": {
+        "main_content": "article, main, .devsite-article",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/tutorials/",
+          "/guide/",
+          "/api_docs/"
+        ],
+        "exclude": [
+          "/blog/",
+          "/community/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "quickstart",
+          "beginner",
+          "installation",
+          "overview"
+        ],
+        "tensors": [
+          "tensor",
+          "shape",
+          "dtype",
+          "variable",
+          "constant"
+        ],
+        "keras": [
+          "keras",
+          "sequential",
+          "functional",
+          "model",
+          "layers"
+        ],
+        "training": [
+          "training",
+          "compile",
+          "fit",
+          "evaluate",
+          "predict",
+          "callbacks"
+        ],
+        "data": [
+          "data",
+          "tfdata",
+          "pipeline",
+          "preprocessing"
+        ],
+        "save_load": [
+          "savedmodel",
+          "checkpoint",
+          "hdf5",
+          "export"
+        ],
+        "estimator": [
+          "estimator",
+          "premade",
+          "custom"
+        ],
+        "distributed": [
+          "distributed",
+          "strategy",
+          "multi-gpu",
+          "tpu"
+        ],
+        "production": [
+          "serving",
+          "lite",
+          "js",
+          "tensorboard",
+          "quantization"
+        ],
+        "advanced": [
+          "custom",
+          "gradienttape",
+          "autograph",
+          "xla"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 600
+    }
+  ],
+  "metadata": {
+    "author": "Google / TensorFlow Team",
+    "language": "Python/C++",
+    "framework_type": "Machine Learning",
+    "use_cases": [
+      "Production ML models",
+      "Deep learning",
+      "Mobile deployment",
+      "Edge computing",
+      "Web ML"
+    ],
+    "related_skills": [
+      "keras",
+      "python",
+      "numpy",
+      "pandas",
+      "pytorch"
+    ]
+  }
+}

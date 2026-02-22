@@ -1,0 +1,140 @@
+{
+  "name": "mongodb",
+  "description": "Complete MongoDB knowledge combining documentation and source code. Use when designing NoSQL databases, writing aggregation pipelines, or managing document-based data. Covers CRUD, aggregation, indexing, and Atlas.",
+  "version": "1.0.0",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.mongodb.com/docs/",
+      "extract_api": true,
+      "start_urls": [
+        "https://www.mongodb.com/docs/manual/",
+        "https://www.mongodb.com/docs/drivers/",
+        "https://www.mongodb.com/docs/atlas/"
+      ],
+      "selectors": {
+        "main_content": "article, main, .content",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/manual/",
+          "/docs/drivers/",
+          "/docs/atlas/",
+          "/docs/compass/"
+        ],
+        "exclude": [
+          "/blog/",
+          "/company/",
+          "/products/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "introduction",
+          "installation",
+          "crud"
+        ],
+        "crud_operations": [
+          "insert",
+          "find",
+          "update",
+          "delete",
+          "replace",
+          "bulk"
+        ],
+        "aggregation": [
+          "aggregation",
+          "pipeline",
+          "match",
+          "group",
+          "project",
+          "lookup"
+        ],
+        "indexes": [
+          "indexes",
+          "single-field",
+          "compound",
+          "multikey",
+          "text",
+          "geospatial"
+        ],
+        "data_modeling": [
+          "schema",
+          "validation",
+          "references",
+          "embedded",
+          "patterns"
+        ],
+        "replica_sets": [
+          "replication",
+          "replica-set",
+          "failover",
+          "election",
+          "oplog"
+        ],
+        "sharding": [
+          "sharding",
+          "cluster",
+          "shard",
+          "mongos",
+          "config-server"
+        ],
+        "security": [
+          "security",
+          "authentication",
+          "authorization",
+          "tls",
+          "encryption",
+          "ldap"
+        ],
+        "atlas": [
+          "atlas",
+          "cloud",
+          "cluster",
+          "network",
+          "backup"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 500
+    },
+    {
+      "type": "github",
+      "repo": "mongodb/mongo",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": false,
+      "max_issues": 0,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "src/mongo/**/*.cpp",
+        "src/mongo/**/*.h"
+      ]
+    }
+  ],
+  "metadata": {
+    "author": "MongoDB Inc.",
+    "language": "C++",
+    "framework_type": "Document Database",
+    "use_cases": [
+      "Document storage",
+      "Flexible schema data",
+      "Real-time analytics",
+      "Content management",
+      "Mobile backend"
+    ],
+    "related_skills": [
+      "mongoose",
+      "nodejs",
+      "express",
+      "redis",
+      "elasticsearch"
+    ]
+  },
+  "base_url": "https://www.mongodb.com/docs/"
+}

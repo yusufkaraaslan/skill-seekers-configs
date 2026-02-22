@@ -1,0 +1,137 @@
+{
+  "name": "solar2d",
+  "description": "Complete Solar2D knowledge from official documentation. Use when building 2D mobile games and apps with Lua. Covers Corona Simulator, graphics, physics, widgets, and native plugins.",
+  "version": "1.0.0",
+  "base_url": "https://docs.solar2d.com/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.solar2d.com/",
+      "start_urls": [
+        "https://docs.solar2d.com/",
+        "https://docs.solar2d.com/guide/programming/",
+        "https://docs.solar2d.com/api/",
+        "https://docs.solar2d.com/guide/distribution/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/guide/",
+          "/api/",
+          "/api/library/",
+          "/api/type/"
+        ],
+        "exclude": [
+          "/releasenotes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "guide/programming/intro",
+          "guide/programming/gettingStarted",
+          "guide/programming/projectSetup"
+        ],
+        "basics": [
+          "guide/programming/",
+          "guide/programming/lua",
+          "guide/programming/fileTypes",
+          "guide/programming/configProject"
+        ],
+        "graphics": [
+          "api/library/display",
+          "api/library/graphics",
+          "api/type/DisplayObject",
+          "api/type/GroupObject"
+        ],
+        "images": [
+          "api/library/display/newImage",
+          "api/library/display/newImageRect",
+          "api/type/ImageObject",
+          "api/type/ShapeObject"
+        ],
+        "sprites": [
+          "api/library/display/newSprite",
+          "api/library/graphics/newImageSheet",
+          "api/type/SpriteObject",
+          "guide/media/spriteAnimation"
+        ],
+        "text": [
+          "api/library/display/newText",
+          "api/library/display/newEmbossedText",
+          "api/type/TextObject",
+          "guide/media/textInput"
+        ],
+        "physics": [
+          "api/library/physics",
+          "guide/physics",
+          "api/type/BodyObject",
+          "api/type/PhysicsJoint"
+        ],
+        "audio": [
+          "api/library/audio",
+          "guide/media/audio",
+          "api/type/AudioHandle"
+        ],
+        "input": [
+          "api/library/runtime/addEventListener",
+          "guide/events",
+          "guide/events/touch",
+          "guide/events/accelerometer"
+        ],
+        "widgets": [
+          "api/library/widget",
+          "widget/newButton",
+          "widget/newScrollView",
+          "widget/newTableView"
+        ],
+        "storage": [
+          "guide/data",
+          "api/library/io",
+          "guide/data/readWriteFiles",
+          "api/library/system/pathForFile"
+        ],
+        "network": [
+          "api/library/network",
+          "guide/data/transfers",
+          "api/library/socket"
+        ],
+        "monetization": [
+          "guide/monetization",
+          "guide/monetization/IAP",
+          "guide/monetization/ads"
+        ],
+        "distribution": [
+          "guide/distribution/",
+          "guide/distribution/androidBuild",
+          "guide/distribution/iOSBuild"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Solar2D Community",
+    "language": "Lua",
+    "framework_type": "Mobile Game Engine",
+    "use_cases": [
+      "Mobile games",
+      "iOS apps",
+      "Android apps",
+      "Rapid prototyping",
+      "Educational apps"
+    ],
+    "related_skills": [
+      "lua",
+      "box2d",
+      "opengl",
+      "json",
+      "rest-api"
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "name": "postman",
+  "description": "Complete Postman knowledge from official documentation. Use when building, testing, and documenting APIs. Covers collections, environments, tests, monitors, and Newman CLI.",
+  "version": "1.0.0",
+  "base_url": "https://learning.postman.com/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://learning.postman.com/docs/",
+      "start_urls": [
+        "https://learning.postman.com/docs/",
+        "https://learning.postman.com/docs/getting-started/introduction/",
+        "https://learning.postman.com/docs/sending-requests/requests/",
+        "https://learning.postman.com/docs/writing-scripts/intro-to-scripts/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/getting-started/",
+          "/docs/sending-requests/",
+          "/docs/writing-scripts/",
+          "/docs/designing-and-developing-your-api/",
+          "/docs/running-collections/"
+        ],
+        "exclude": [
+          "/docs/administration/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "getting-started/introduction",
+          "installation",
+          "sending-your-first-request"
+        ],
+        "requests": [
+          "sending-requests/requests",
+          "request-basics",
+          "http-methods",
+          "authorization"
+        ],
+        "collections": [
+          "collections/collections-overview",
+          "creating-collections",
+          "sharing-collections",
+          "collection-templates"
+        ],
+        "environments": [
+          "environments/environment-basics",
+          "variables",
+          "environment-quick-start",
+          "globals"
+        ],
+        "scripts": [
+          "writing-scripts/intro-to-scripts",
+          "pre-request-scripts",
+          "tests",
+          "script-reference"
+        ],
+        "test_scripts": [
+          "writing-scripts/test-scripts",
+          "assertions",
+          "pm-test",
+          "response-validation"
+        ],
+        "api_testing": [
+          "writing-scripts/script-references/test-examples",
+          "automated-testing",
+          "ci-cd"
+        ],
+        "newman": [
+          "running-collections/using-newman-cli",
+          "newman-with-docker",
+          "continuous-integration"
+        ],
+        "monitors": [
+          "monitoring-your-api/intro-monitors",
+          "setting-up-monitors",
+          "viewing-monitor-results"
+        ],
+        "mocks": [
+          "designing-and-developing-your-api/mocking-data/setting-up-mock",
+          "mock-servers",
+          "mock-examples"
+        ],
+        "documentation": [
+          "publishing-your-api/documenting-your-api",
+          "publish-documentation",
+          "add-api-descriptions"
+        ],
+        "workspaces": [
+          "collaborating-in-postman/using-workspaces/creating-workspaces",
+          "workspace-roles",
+          "sharing"
+        ],
+        "api_design": [
+          "designing-and-developing-your-api/the-api-workflow",
+          "defining-apis",
+          "openapi"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Postman",
+    "language": "JavaScript",
+    "framework_type": "API Testing Tool",
+    "use_cases": [
+      "API development",
+      "API testing",
+      "API documentation",
+      "Mock servers",
+      "CI/CD integration"
+    ],
+    "related_skills": [
+      "rest",
+      "graphql",
+      "javascript",
+      "newman",
+      "docker"
+    ]
+  }
+}

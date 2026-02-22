@@ -1,0 +1,136 @@
+{
+  "name": "digitalocean",
+  "description": "Complete DigitalOcean knowledge from official documentation. Use when deploying applications on the developer cloud. Covers Droplets, Kubernetes, databases, and App Platform.",
+  "version": "1.0.0",
+  "base_url": "https://docs.digitalocean.com/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.digitalocean.com/",
+      "start_urls": [
+        "https://docs.digitalocean.com/",
+        "https://docs.digitalocean.com/products/droplets/",
+        "https://docs.digitalocean.com/products/kubernetes/",
+        "https://docs.digitalocean.com/products/app-platform/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/products/droplets/",
+          "/products/kubernetes/",
+          "/products/app-platform/",
+          "/products/databases/",
+          "/products/spaces/"
+        ],
+        "exclude": [
+          "/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "getting-started",
+          "sign-up",
+          "billing"
+        ],
+        "droplets": [
+          "products/droplets",
+          "create",
+          "connect",
+          "resize",
+          "snapshots"
+        ],
+        "kubernetes": [
+          "products/kubernetes",
+          "quickstart",
+          "deploy",
+          "scale",
+          "ingress"
+        ],
+        "app_platform": [
+          "products/app-platform",
+          "quickstart",
+          "deploy",
+          "configuration",
+          "environment-variables"
+        ],
+        "managed_databases": [
+          "products/databases",
+          "mysql",
+          "postgresql",
+          "redis",
+          "mongodb"
+        ],
+        "spaces": [
+          "products/spaces",
+          "s3-compatible",
+          "cdn",
+          "buckets"
+        ],
+        "volumes": [
+          "products/volumes",
+          "create",
+          "attach",
+          "resize",
+          "snapshots"
+        ],
+        "networking": [
+          "products/networking",
+          "vpc",
+          "firewalls",
+          "load-balancers",
+          "floating-ips"
+        ],
+        "monitoring": [
+          "products/monitoring",
+          "metrics",
+          "alerts",
+          "insights"
+        ],
+        "api": [
+          "reference/api",
+          "authentication",
+          "resources",
+          "pagination"
+        ],
+        "cli": [
+          "reference/doctl",
+          "install",
+          "reference",
+          "auth"
+        ],
+        "terraform": [
+          "reference/terraform",
+          "provider",
+          "resources",
+          "examples"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "DigitalOcean",
+    "language": "Multi-language",
+    "framework_type": "Cloud Platform",
+    "use_cases": [
+      "Developer cloud",
+      "VPS hosting",
+      "Kubernetes",
+      "Managed databases",
+      "Static sites"
+    ],
+    "related_skills": [
+      "linux",
+      "docker",
+      "kubernetes",
+      "terraform",
+      "ansible"
+    ]
+  }
+}

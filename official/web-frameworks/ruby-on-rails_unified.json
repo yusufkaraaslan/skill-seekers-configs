@@ -1,0 +1,159 @@
+{
+  "name": "ruby-on-rails",
+  "description": "Complete Ruby on Rails knowledge combining official documentation and source code. Use when building full-stack web applications with Ruby. Covers MVC, Active Record, routing, and deployment.",
+  "version": "1.0.0",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://guides.rubyonrails.org/",
+      "extract_api": true,
+      "start_urls": [
+        "https://guides.rubyonrails.org/getting_started.html",
+        "https://guides.rubyonrails.org/active_record_basics.html",
+        "https://guides.rubyonrails.org/action_controller_overview.html",
+        "https://guides.rubyonrails.org/layouts_and_rendering.html",
+        "https://guides.rubyonrails.org/routing.html"
+      ],
+      "selectors": {
+        "main_content": "article, main, #mainCol",
+        "title": "h2, h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/getting_started",
+          "/active_record",
+          "/action_controller",
+          "/action_view",
+          "/routing",
+          "/action_mailer",
+          "/active_job",
+          "/security",
+          "/debugging",
+          "/testing",
+          "/command_line",
+          "/asset_pipeline",
+          "/caching",
+          "/api_app"
+        ],
+        "exclude": [
+          "/release_notes",
+          "/upgrading_ruby_on_rails"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "installation",
+          "new-app",
+          "directory-structure"
+        ],
+        "models": [
+          "active-record",
+          "models",
+          "database",
+          "migrations",
+          "validations",
+          "associations",
+          "querying"
+        ],
+        "controllers": [
+          "action-controller",
+          "controllers",
+          "routing",
+          "params",
+          "filters",
+          "csrf"
+        ],
+        "views": [
+          "action-view",
+          "views",
+          "erb",
+          "layouts",
+          "partials",
+          "helpers"
+        ],
+        "routing": [
+          "routing",
+          "routes",
+          "resources",
+          "restful",
+          "namespace"
+        ],
+        "testing": [
+          "testing",
+          "unit",
+          "integration",
+          "system",
+          "fixtures"
+        ],
+        "assets": [
+          "asset-pipeline",
+          "javascript",
+          "css",
+          "sprockets",
+          "propshaft"
+        ],
+        "caching": [
+          "caching",
+          "fragment",
+          "page",
+          "action",
+          "redis"
+        ],
+        "security": [
+          "security",
+          "authentication",
+          "authorization",
+          "csrf",
+          "sql-injection"
+        ],
+        "deployment": [
+          "deployment",
+          "production",
+          "capistrano",
+          "docker",
+          "heroku"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    },
+    {
+      "type": "github",
+      "repo": "rails/rails",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "activerecord/lib/**/*.rb",
+        "actionpack/lib/**/*.rb",
+        "activemodel/lib/**/*.rb"
+      ]
+    }
+  ],
+  "metadata": {
+    "author": "David Heinemeier Hansson / Rails Team",
+    "language": "Ruby",
+    "framework_type": "Web Framework",
+    "use_cases": [
+      "Full-stack web applications",
+      "APIs",
+      "E-commerce platforms",
+      "Content management",
+      "SaaS applications"
+    ],
+    "related_skills": [
+      "ruby",
+      "postgresql",
+      "redis",
+      "sidekiq",
+      "docker"
+    ]
+  },
+  "base_url": "https://guides.rubyonrails.org/"
+}

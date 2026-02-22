@@ -1,0 +1,109 @@
+{
+  "name": "trpc",
+  "description": "Complete tRPC knowledge from official documentation. Use when building end-to-end type-safe APIs with TypeScript. Covers routers, procedures, middleware, subscriptions, and client integrations.",
+  "version": "1.0.0",
+  "base_url": "https://trpc.io/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://trpc.io/docs/",
+      "start_urls": [
+        "https://trpc.io/docs/",
+        "https://trpc.io/docs/quickstart",
+        "https://trpc.io/docs/router",
+        "https://trpc.io/docs/react-query"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/",
+          "/docs/quickstart",
+          "/docs/router",
+          "/docs/procedure",
+          "/docs/client/",
+          "/docs/server/"
+        ],
+        "exclude": [
+          "/blog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "introduction",
+          "quickstart",
+          "concepts"
+        ],
+        "router": [
+          "router",
+          "merging-routers",
+          "subscriptions"
+        ],
+        "procedures": [
+          "procedure",
+          "queries",
+          "mutations",
+          "input-validation"
+        ],
+        "context": [
+          "context",
+          "authorization",
+          "middleware"
+        ],
+        "server": [
+          "adapters/express",
+          "adapters/next",
+          "adapters/fastify",
+          "adapters/standalone"
+        ],
+        "client": [
+          "vanilla",
+          "react",
+          "nextjs",
+          "vue"
+        ],
+        "react_query": [
+          "react-query",
+          "useQuery",
+          "useMutation",
+          "ssr"
+        ],
+        "error_handling": [
+          "error-handling",
+          "error-formatting",
+          "error-codes"
+        ],
+        "subscriptions": [
+          "subscriptions",
+          "websockets",
+          "event-emitter"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 250
+    }
+  ],
+  "metadata": {
+    "author": "tRPC Team",
+    "language": "TypeScript",
+    "framework_type": "API Framework",
+    "use_cases": [
+      "Type-safe APIs",
+      "Full-stack TypeScript",
+      "Next.js apps",
+      "Real-time APIs",
+      "Microservices"
+    ],
+    "related_skills": [
+      "typescript",
+      "nextjs",
+      "react",
+      "prisma",
+      "zod",
+      "websocket"
+    ]
+  }
+}

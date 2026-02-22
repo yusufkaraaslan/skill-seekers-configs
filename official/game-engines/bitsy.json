@@ -1,0 +1,117 @@
+{
+  "name": "bitsy",
+  "description": "Complete Bitsy knowledge from official documentation and community resources. Use when creating tiny narrative games in the browser. Covers rooms, sprites, items, dialogue, and game variables.",
+  "version": "1.0.0",
+  "base_url": "https://bitsy.fandom.com/wiki/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://bitsy.fandom.com/wiki/",
+      "start_urls": [
+        "https://bitsy.fandom.com/wiki/Bitsy_Wiki",
+        "https://bitsy.fandom.com/wiki/Getting_started",
+        "https://www.bitsy.org/",
+        "https://ledoux.itch.io/bitsy"
+      ],
+      "selectors": {
+        "main_content": "article, main, .mw-parser-output",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/wiki/",
+          "/wiki/Bitsy_Wiki",
+          "/wiki/Getting_started",
+          "/wiki/Rooms",
+          "/wiki/Sprites"
+        ],
+        "exclude": [
+          "/wiki/Special:"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "Bitsy_Wiki",
+          "Getting_started",
+          "FAQ",
+          "Tips_and_Tricks"
+        ],
+        "editor": [
+          "editor",
+          "paint",
+          "colors",
+          "avatar"
+        ],
+        "rooms": [
+          "Rooms",
+          "Room_tool",
+          "Exits",
+          "Endings",
+          "Tile"
+        ],
+        "sprites": [
+          "Sprites",
+          "Sprite_tool",
+          "Walking",
+          "Dialogue",
+          "Talking"
+        ],
+        "items": [
+          "Items",
+          "Item_tool",
+          "Inventory"
+        ],
+        "dialogue": [
+          "Dialogue",
+          "Text",
+          "Conditions",
+          "Variables"
+        ],
+        "variables": [
+          "variables",
+          "item-variables",
+          "sprite-variables",
+          "room-variables"
+        ],
+        "music": [
+          "Music",
+          "Sound",
+          "Audio_tool"
+        ],
+        "hacks": [
+          "hacks",
+          "bitsy-hacks",
+          "borksy",
+          "customization"
+        ],
+        "sharing": [
+          "sharing",
+          "export",
+          "itchio",
+          "gallery"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 150
+    }
+  ],
+  "metadata": {
+    "author": "Adam Le Doux",
+    "language": "Bitsy Script",
+    "framework_type": "Tiny Game Engine",
+    "use_cases": [
+      "Tiny games",
+      "Walking simulators",
+      "Poetry games",
+      "Prototypes",
+      "Jam games"
+    ],
+    "related_skills": [
+      "pixel-art",
+      "creative-writing",
+      "micro-games",
+      "itchio"
+    ]
+  }
+}

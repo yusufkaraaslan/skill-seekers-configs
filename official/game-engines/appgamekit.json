@@ -1,0 +1,121 @@
+{
+  "name": "appgamekit",
+  "description": "Complete AppGameKit knowledge from official documentation. Use when building cross-platform games with BASIC-like scripting. Covers 2D/3D graphics, physics, multiplayer, and VR.",
+  "version": "1.0.0",
+  "base_url": "https://www.appgamekit.com/documentation",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.appgamekit.com/documentation",
+      "start_urls": [
+        "https://www.appgamekit.com/documentation",
+        "https://www.appgamekit.com/documentation/guides/introduction.htm",
+        "https://www.appgamekit.com/documentation/reference/index.html",
+        "https://www.appgamekit.com/documentation/reference/command_list.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/documentation",
+          "/documentation/guides/",
+          "/documentation/reference/",
+          "/documentation/reference/command_list.html"
+        ],
+        "exclude": [
+          "/documentation/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "guides/introduction",
+          "guides/getting_started",
+          "guides/your_first_program"
+        ],
+        "language": [
+          "guides/variables",
+          "guides/loops",
+          "guides/if_then",
+          "guides/types",
+          "guides/arrays"
+        ],
+        "2d_graphics": [
+          "reference/core-commands",
+          "sprites",
+          "text",
+          "images",
+          "drawing"
+        ],
+        "3d_graphics": [
+          "3d",
+          "objects",
+          "lighting",
+          "camera",
+          "shaders"
+        ],
+        "input": [
+          "input",
+          "keyboard",
+          "mouse",
+          "touch",
+          "gamepad",
+          "sensors"
+        ],
+        "audio": [
+          "audio",
+          "music",
+          "sound",
+          "recording"
+        ],
+        "physics": [
+          "physics",
+          "2d-physics",
+          "3d-physics",
+          "ragdoll"
+        ],
+        "multiplayer": [
+          "network",
+          "multiplayer",
+          "broadcast",
+          "shared-variables"
+        ],
+        "vr": [
+          "vr",
+          "head-tracking",
+          "vr-setup"
+        ],
+        "advanced": [
+          "memblocks",
+          "files",
+          "threads",
+          "advertising"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "The Game Creators",
+    "language": "AGK BASIC",
+    "framework_type": "Game Engine",
+    "use_cases": [
+      "Cross-platform games",
+      "Mobile games",
+      "VR games",
+      "Rapid prototyping",
+      "Educational games"
+    ],
+    "related_skills": [
+      "basic",
+      "c++",
+      "tier2",
+      "box2d",
+      "bullet"
+    ]
+  }
+}

@@ -18,18 +18,62 @@
         "code_blocks": "pre code"
       },
       "url_patterns": {
-        "include": ["/docs/concepts/", "/docs/tasks/", "/docs/reference/"],
-        "exclude": ["/docs/setup/", "/blog/", "/case-studies/"]
+        "include": [
+          "/docs/concepts/",
+          "/docs/tasks/",
+          "/docs/reference/"
+        ],
+        "exclude": [
+          "/docs/setup/",
+          "/blog/",
+          "/case-studies/"
+        ]
       },
       "categories": {
-        "getting_started": ["getting-started", "overview", "introduction"],
-        "concepts": ["concepts", "architecture", "cluster"],
-        "workloads": ["workloads", "pods", "deployments", "statefulsets", "daemonsets"],
-        "services": ["services", "networking", "ingress", "dns"],
-        "storage": ["storage", "volumes", "persistent"],
-        "configuration": ["configmap", "secrets", "configuration"],
-        "security": ["security", "rbac", "authentication", "authorization"],
-        "api": ["api", "reference", "kubectl"]
+        "getting_started": [
+          "getting-started",
+          "overview",
+          "introduction"
+        ],
+        "concepts": [
+          "concepts",
+          "architecture",
+          "cluster"
+        ],
+        "workloads": [
+          "workloads",
+          "pods",
+          "deployments",
+          "statefulsets",
+          "daemonsets"
+        ],
+        "services": [
+          "services",
+          "networking",
+          "ingress",
+          "dns"
+        ],
+        "storage": [
+          "storage",
+          "volumes",
+          "persistent"
+        ],
+        "configuration": [
+          "configmap",
+          "secrets",
+          "configuration"
+        ],
+        "security": [
+          "security",
+          "rbac",
+          "authentication",
+          "authorization"
+        ],
+        "api": [
+          "api",
+          "reference",
+          "kubectl"
+        ]
       },
       "rate_limit": 0.5,
       "max_pages": 400
@@ -51,5 +95,6 @@
         "staging/src/k8s.io/client-go/**/*.go"
       ]
     }
-  ]
+  ],
+  "base_url": "https://kubernetes.io/docs/"
 }

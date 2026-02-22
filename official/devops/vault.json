@@ -1,0 +1,106 @@
+{
+  "name": "vault",
+  "description": "Complete HashiCorp Vault knowledge from official documentation. Use when managing secrets, encryption, and identity-based access. Covers secrets engines, authentication, policies, and PKI.",
+  "version": "1.0.0",
+  "base_url": "https://developer.hashicorp.com/vault/docs",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://developer.hashicorp.com/vault/docs",
+      "start_urls": [
+        "https://developer.hashicorp.com/vault/docs/what-is-vault",
+        "https://developer.hashicorp.com/vault/docs/get-started/developer-qs",
+        "https://developer.hashicorp.com/vault/docs/secrets",
+        "https://developer.hashicorp.com/vault/docs/auth"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/vault/docs/",
+          "/vault/tutorials/"
+        ],
+        "exclude": [
+          "/vault/docs/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "what-is-vault",
+          "use-cases",
+          "quick-start"
+        ],
+        "concepts": [
+          "secrets",
+          "auth",
+          "policies",
+          "tokens",
+          "leases"
+        ],
+        "secrets_engines": [
+          "kv",
+          "pki",
+          "ssh",
+          "database",
+          "transit",
+          "aws"
+        ],
+        "authentication": [
+          "token",
+          "kubernetes",
+          "github",
+          "oidc",
+          "ldap",
+          "approle"
+        ],
+        "policies": [
+          "policies",
+          "syntax",
+          "paths",
+          "capabilities"
+        ],
+        "configuration": [
+          "configuration",
+          "storage",
+          "ha",
+          "raft"
+        ],
+        "security": [
+          "seal",
+          "unseal",
+          "auto-unseal",
+          " Shamir"
+        ],
+        "enterprise": [
+          "namespaces",
+          "performance-standby",
+          "disaster-recovery"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "HashiCorp",
+    "language": "Go",
+    "framework_type": "Secrets Management",
+    "use_cases": [
+      "Secret management",
+      "Data encryption",
+      "Identity access",
+      "PKI as a service",
+      "Database credentials"
+    ],
+    "related_skills": [
+      "kubernetes",
+      "terraform",
+      "consul",
+      "docker",
+      "aws"
+    ]
+  }
+}

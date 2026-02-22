@@ -1,0 +1,151 @@
+{
+  "name": "panda3d",
+  "description": "Complete Panda3D knowledge from official documentation. Use when building 3D games and simulations in Python or C++. Covers scene graph, physics, rendering, and pipeline tools.",
+  "version": "1.0.0",
+  "base_url": "https://docs.panda3d.org/1.10/python/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.panda3d.org/1.10/python/",
+      "start_urls": [
+        "https://docs.panda3d.org/1.10/python/",
+        "https://docs.panda3d.org/1.10/python/programming/",
+        "https://docs.panda3d.org/1.10/python/programming/scenegraph/",
+        "https://docs.panda3d.org/1.10/python/programming/models-textures/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/python/programming/",
+          "/python/programming/scenegraph/",
+          "/python/programming/models-textures/",
+          "/python/programming/physics/",
+          "/python/programming/audio/"
+        ],
+        "exclude": [
+          "/python/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "installation",
+          "hello-world",
+          "running-your-program"
+        ],
+        "scene_graph": [
+          "scenegraph",
+          "scene-graph-manipulations",
+          "paths",
+          "scene-graph-querying"
+        ],
+        "showbase": [
+          "showbase",
+          "directshowbase",
+          "run",
+          "task-manager"
+        ],
+        "actors": [
+          "actors",
+          "loading-actors",
+          "actor-animations",
+          "blending"
+        ],
+        "models_textures": [
+          "models-textures",
+          "loading-models",
+          "textures",
+          "egg-files"
+        ],
+        "camera": [
+          "camera",
+          "camera-control",
+          "lenses",
+          "orthographic"
+        ],
+        "lights": [
+          "lights",
+          "ambient-light",
+          "point-light",
+          "directional-light",
+          "spotlight"
+        ],
+        "shaders": [
+          "shaders",
+          "cg-shaders",
+          "glsl-shaders",
+          "shader-generator"
+        ],
+        "physics": [
+          "physics",
+          "bullet",
+          "ode",
+          "physx"
+        ],
+        "collision": [
+          "collision-detection",
+          "collision-solids",
+          "collision-traversers",
+          "collision-handlers"
+        ],
+        "audio": [
+          "audio",
+          "loading-playing-sounds",
+          "3d-audio",
+          "music"
+        ],
+        "intervals": [
+          "intervals",
+          "lerp-intervals",
+          "function-intervals",
+          "sequences-parallels"
+        ],
+        "gui": [
+          "directgui",
+          "onscreenimage",
+          "onscreentext",
+          "directbutton",
+          "directframe"
+        ],
+        "networking": [
+          "networking",
+          "distributed-objects",
+          "server",
+          "client"
+        ],
+        "pipeline": [
+          "pipeline",
+          "multifile",
+          "packpanda",
+          "distribution"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Carnegie Mellon University",
+    "language": "Python/C++",
+    "framework_type": "3D Game Engine",
+    "use_cases": [
+      "3D games",
+      "Simulations",
+      "Visualizations",
+      "VR applications",
+      "Theme park attractions"
+    ],
+    "related_skills": [
+      "python",
+      "cpp",
+      "opengl",
+      "bullet",
+      "ode",
+      "mayavi"
+    ]
+  }
+}

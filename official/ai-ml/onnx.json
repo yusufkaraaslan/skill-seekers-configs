@@ -1,0 +1,125 @@
+{
+  "name": "onnx",
+  "description": "Complete ONNX knowledge from official documentation. Use when deploying ML models across frameworks. Covers model conversion, runtime, operators, and optimization.",
+  "version": "1.0.0",
+  "base_url": "https://onnx.ai/onnx/intro/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://onnx.ai/onnx/intro/",
+      "start_urls": [
+        "https://onnx.ai/onnx/intro/",
+        "https://onnx.ai/onnx/api/",
+        "https://onnxruntime.ai/docs/",
+        "https://onnxruntime.ai/docs/get-started/with-python.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/onnx/",
+          "/onnx/intro/",
+          "/onnx/api/",
+          "/docs/",
+          "/docs/get-started/"
+        ],
+        "exclude": [
+          "/docs/reference/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "onnx/intro",
+          "docs/get-started",
+          "overview"
+        ],
+        "python_api": [
+          "onnx/api",
+          "onnx.helper",
+          "onnx.checker",
+          "onnx.shape_inference"
+        ],
+        "converters": [
+          "docs/get-started",
+          "pytorch",
+          "tensorflow",
+          "sklearn",
+          "xgboost"
+        ],
+        "runtime": [
+          "docs/get-started",
+          "inference",
+          "execution-providers",
+          "session"
+        ],
+        "operators": [
+          "onnx/operators",
+          "onnx-docs",
+          "operator-schemas",
+          "custom-operators"
+        ],
+        "optimization": [
+          "docs/performance",
+          "graph-optimizations",
+          "quantization",
+          "pruning"
+        ],
+        "quantization": [
+          "docs/performance/quantization",
+          "static-quantization",
+          "dynamic-quantization",
+          "qlinear"
+        ],
+        "execution_providers": [
+          "docs/execution-providers",
+          "cuda",
+          "tensorrt",
+          "directml",
+          "openvino"
+        ],
+        "tutorials": [
+          "docs/tutorials",
+          "onnx-runtime",
+          "deploy",
+          "mobile"
+        ],
+        "serialization": [
+          "onnx/serialization",
+          "protobuf",
+          "save",
+          "load"
+        ],
+        "hub": [
+          "hub",
+          "onnx-model-zoo",
+          "pretrained-models"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "ONNX Runtime Team",
+    "language": "C++/Python",
+    "framework_type": "Model Format/Runtime",
+    "use_cases": [
+      "Model deployment",
+      "Cross-framework",
+      "Edge inference",
+      "Optimization",
+      "Mobile deployment"
+    ],
+    "related_skills": [
+      "pytorch",
+      "tensorflow",
+      "python",
+      "cpp",
+      "cuda"
+    ]
+  }
+}

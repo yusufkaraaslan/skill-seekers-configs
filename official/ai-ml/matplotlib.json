@@ -1,0 +1,129 @@
+{
+  "name": "matplotlib",
+  "description": "Complete Matplotlib knowledge from official documentation. Use when creating static, animated, and interactive visualizations in Python. Covers pyplot, artists, backends, and customization.",
+  "version": "1.0.0",
+  "base_url": "https://matplotlib.org/stable/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://matplotlib.org/stable/",
+      "start_urls": [
+        "https://matplotlib.org/stable/",
+        "https://matplotlib.org/stable/users/index.html",
+        "https://matplotlib.org/stable/api/index.html",
+        "https://matplotlib.org/stable/gallery/index.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/stable/users/",
+          "/stable/api/",
+          "/stable/gallery/",
+          "/stable/tutorials/"
+        ],
+        "exclude": [
+          "/stable/devel/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "users/getting_started",
+          "users/installing",
+          "api/pyplot_summary"
+        ],
+        "pyplot": [
+          "api/pyplot_summary",
+          "plot",
+          "scatter",
+          "bar",
+          "hist",
+          "imshow"
+        ],
+        "figures": [
+          "users/explain/axes",
+          "figure",
+          "axes",
+          "subplots",
+          "gridspec"
+        ],
+        "plot_types": [
+          "gallery/index",
+          "lines_bars_and_markers",
+          "images_contours_and_fields",
+          "subplots_axes_and_figures"
+        ],
+        "colors": [
+          "users/explain/colors",
+          "colormap",
+          "colorbar",
+          "normalize"
+        ],
+        "text": [
+          "users/explain/text",
+          "annotations",
+          "fonts",
+          "math"
+        ],
+        "animation": [
+          "api/animation_api",
+          "FuncAnimation",
+          "ArtistAnimation"
+        ],
+        "backends": [
+          "users/explain/backends",
+          "interactive",
+          "non-interactive",
+          "jupyter"
+        ],
+        "styling": [
+          "users/explain/customizing",
+          "style_sheets_reference",
+          "rcParams"
+        ],
+        "tutorials": [
+          "tutorials/introductory",
+          "tutorials/intermediate",
+          "tutorials/advanced"
+        ],
+        "3d_plotting": [
+          "api/toolkits/mplot3d",
+          "plot_surface",
+          "scatter3d",
+          "contour3d"
+        ],
+        "savefig": [
+          "api/_as_gen/matplotlib.pyplot.savefig",
+          "formats",
+          "dpi",
+          "bbox"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 600
+    }
+  ],
+  "metadata": {
+    "author": "Matplotlib Development Team",
+    "language": "Python",
+    "framework_type": "Visualization Library",
+    "use_cases": [
+      "Data visualization",
+      "Scientific plotting",
+      "Publication figures",
+      "Interactive plots",
+      "Animation"
+    ],
+    "related_skills": [
+      "python",
+      "numpy",
+      "pandas",
+      "jupyter",
+      "seaborn"
+    ]
+  }
+}

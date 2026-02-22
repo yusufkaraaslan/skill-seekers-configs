@@ -1,0 +1,109 @@
+{
+  "name": "mui-material",
+  "description": "Complete Material-UI (MUI) knowledge from official documentation. Use when building React applications with Material Design components. Covers theming, customization, components, and system utilities.",
+  "version": "1.0.0",
+  "base_url": "https://mui.com/material-ui/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://mui.com/material-ui/",
+      "start_urls": [
+        "https://mui.com/material-ui/getting-started/",
+        "https://mui.com/material-ui/react-button/",
+        "https://mui.com/material-ui/customization/theming/",
+        "https://mui.com/system/getting-started/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/material-ui/getting-started/",
+          "/material-ui/react-/",
+          "/material-ui/customization/",
+          "/system/",
+          "/x/react-data-grid/"
+        ],
+        "exclude": [
+          "/blog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "installation",
+          "usage",
+          "example-projects"
+        ],
+        "components": [
+          "button",
+          "text-field",
+          "select",
+          "dialog",
+          "app-bar",
+          "drawer",
+          "card",
+          "table"
+        ],
+        "layout": [
+          "box",
+          "container",
+          "grid",
+          "stack"
+        ],
+        "theming": [
+          "theming",
+          "theme-provider",
+          "palette",
+          "typography",
+          "dark-mode"
+        ],
+        "customization": [
+          "customization",
+          "styled",
+          "sx",
+          "css-in-js"
+        ],
+        "system": [
+          "system",
+          "spacing",
+          "display",
+          "sx-prop"
+        ],
+        "lab": [
+          "masonry",
+          "timeline",
+          "tree-view"
+        ],
+        "data_grid": [
+          "data-grid",
+          "pagination",
+          "sorting",
+          "filtering"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "MUI",
+    "language": "JavaScript/TypeScript",
+    "framework_type": "UI Library",
+    "use_cases": [
+      "Material Design apps",
+      "Admin dashboards",
+      "Enterprise apps",
+      "Rapid prototyping",
+      "Responsive layouts"
+    ],
+    "related_skills": [
+      "react",
+      "typescript",
+      "emotion",
+      "tailwind",
+      "figma"
+    ]
+  }
+}

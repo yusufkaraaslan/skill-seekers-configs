@@ -1,0 +1,136 @@
+{
+  "name": "xgboost",
+  "description": "Complete XGBoost knowledge from official documentation. Use when building gradient boosting models for structured data. Covers classification, regression, ranking, and distributed training.",
+  "version": "1.0.0",
+  "base_url": "https://xgboost.readthedocs.io/en/stable/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://xgboost.readthedocs.io/en/stable/",
+      "start_urls": [
+        "https://xgboost.readthedocs.io/en/stable/",
+        "https://xgboost.readthedocs.io/en/stable/tutorials/index.html",
+        "https://xgboost.readthedocs.io/en/stable/python/python_intro.html",
+        "https://xgboost.readthedocs.io/en/stable/parameter.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/en/stable/tutorials/",
+          "/en/stable/python/",
+          "/en/stable/jvm/",
+          "/en/stable/parameter.html"
+        ],
+        "exclude": [
+          "/en/stable/release/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "tutorials/index",
+          "python/python_intro",
+          "install"
+        ],
+        "python_api": [
+          "python/python_intro",
+          "python/python_api",
+          "XGBClassifier",
+          "XGBRegressor",
+          "DMatrix"
+        ],
+        "parameters": [
+          "parameter",
+          "general-parameters",
+          "booster-parameters",
+          "learning-task-parameters"
+        ],
+        "tree_methods": [
+          "tree_method",
+          "exact",
+          "approx",
+          "hist",
+          "gpu_hist"
+        ],
+        "objectives": [
+          "objective",
+          "reg-squarederror",
+          "binary-logistic",
+          "multi-softmax",
+          "rank-pairwise"
+        ],
+        "evaluation": [
+          "eval_metric",
+          "logloss",
+          "auc",
+          "rmse",
+          "mae",
+          "custom_metric"
+        ],
+        "cross_validation": [
+          "python/cv",
+          "xgb.cv",
+          "early_stopping",
+          "folds"
+        ],
+        "feature_importance": [
+          "python/python_api",
+          "get_score",
+          "plot_importance",
+          "gain",
+          "weight"
+        ],
+        "hyperparameter_tuning": [
+          "tutorials/custom_objective",
+          "grid_search",
+          "optuna",
+          "hyperopt"
+        ],
+        "saving_loading": [
+          "tutorials/saving_model",
+          "save_model",
+          "load_model",
+          "json",
+          "ubj"
+        ],
+        "distributed": [
+          "tutorials/dask",
+          "tutorials/spark",
+          "distributed",
+          "xgboost.dask"
+        ],
+        "gpu": [
+          "gpu",
+          "gpu_hist",
+          "cuda",
+          "cupy"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "DMLC",
+    "language": "Python/R/JVM",
+    "framework_type": "Gradient Boosting Library",
+    "use_cases": [
+      "Classification",
+      "Regression",
+      "Ranking",
+      "Tabular data",
+      "Kaggle competitions"
+    ],
+    "related_skills": [
+      "python",
+      "scikit-learn",
+      "pandas",
+      "numpy",
+      "lightgbm"
+    ]
+  }
+}

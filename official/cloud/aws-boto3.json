@@ -1,0 +1,126 @@
+{
+  "name": "aws-boto3",
+  "description": "Complete AWS Boto3 knowledge from official documentation. Use when building Python applications that interact with AWS services. Covers S3, EC2, Lambda, DynamoDB, and 200+ AWS services.",
+  "version": "1.0.0",
+  "base_url": "https://boto3.amazonaws.com/v1/documentation/api/latest/index.html",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://boto3.amazonaws.com/v1/documentation/api/latest/index.html",
+      "start_urls": [
+        "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html",
+        "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3.html",
+        "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html",
+        "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/sqs.html",
+        "https://boto3.amazonaws.com/v1/documentation/api/latest/guide/ec2.html",
+        "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/index.html"
+      ],
+      "selectors": {
+        "main_content": "article, main, .section",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/guide/",
+          "/reference/services/"
+        ],
+        "exclude": [
+          "/_static/",
+          "/search.html"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "quickstart",
+          "installation",
+          "configuration",
+          "credentials"
+        ],
+        "core_concepts": [
+          "clients",
+          "resources",
+          "session",
+          "exceptions",
+          "pagination",
+          "waiters"
+        ],
+        "s3": [
+          "s3",
+          "buckets",
+          "objects",
+          "upload",
+          "download",
+          "presigned"
+        ],
+        "ec2": [
+          "ec2",
+          "instances",
+          "volumes",
+          "security-groups",
+          "key-pairs"
+        ],
+        "lambda": [
+          "lambda",
+          "functions",
+          "invocation",
+          "layers"
+        ],
+        "dynamodb": [
+          "dynamodb",
+          "tables",
+          "items",
+          "queries",
+          "scans"
+        ],
+        "sqs": [
+          "sqs",
+          "queues",
+          "messages",
+          "sns",
+          "notifications"
+        ],
+        "iam": [
+          "iam",
+          "users",
+          "roles",
+          "policies",
+          "permissions"
+        ],
+        "cloudformation": [
+          "cloudformation",
+          "stacks",
+          "templates",
+          "resources"
+        ],
+        "security": [
+          "kms",
+          "secrets-manager",
+          "ssm",
+          "parameter-store"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Amazon Web Services",
+    "language": "Python",
+    "framework_type": "Cloud SDK",
+    "use_cases": [
+      "AWS automation",
+      "Infrastructure management",
+      "Data pipelines",
+      "Serverless applications",
+      "DevOps scripting"
+    ],
+    "related_skills": [
+      "python",
+      "aws",
+      "docker",
+      "terraform",
+      "lambda"
+    ]
+  }
+}

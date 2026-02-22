@@ -1,6 +1,6 @@
 {
   "name": "fastapi_test",
-  "description": "⚠️ TEST CONFIG - FastAPI unified scraping test with limited pages (20 max). Demonstrates multi-source scraping. Not for production use.",
+  "description": "\u26a0\ufe0f TEST CONFIG - FastAPI unified scraping test with limited pages (20 max). Demonstrates multi-source scraping. Not for production use.",
   "_test_config": true,
   "merge_mode": "rule-based",
   "sources": [
@@ -15,12 +15,23 @@
       },
       "url_patterns": {
         "include": [],
-        "exclude": ["/img/", "/js/"]
+        "exclude": [
+          "/img/",
+          "/js/"
+        ]
       },
       "categories": {
-        "getting_started": ["tutorial", "first-steps"],
-        "path_operations": ["path-params", "query-params"],
-        "api": ["reference"]
+        "getting_started": [
+          "tutorial",
+          "first-steps"
+        ],
+        "path_operations": [
+          "path-params",
+          "query-params"
+        ],
+        "api": [
+          "reference"
+        ]
       },
       "rate_limit": 0.5,
       "max_pages": 20
@@ -38,5 +49,6 @@
         "fastapi/applications.py"
       ]
     }
-  ]
+  ],
+  "base_url": "https://fastapi.tiangolo.com/"
 }

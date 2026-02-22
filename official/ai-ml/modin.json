@@ -1,0 +1,117 @@
+{
+  "name": "modin",
+  "description": "Complete Modin knowledge from official documentation. Use when scaling pandas workflows with distributed computing. Covers DataFrame API, backends, and parallel execution.",
+  "version": "1.0.0",
+  "base_url": "https://modin.readthedocs.io/en/stable/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://modin.readthedocs.io/en/stable/",
+      "start_urls": [
+        "https://modin.readthedocs.io/en/stable/",
+        "https://modin.readthedocs.io/en/stable/getting_started/quickstart.html",
+        "https://modin.readthedocs.io/en/stable/usage_guide/index.html",
+        "https://modin.readthedocs.io/en/stable/flow/modin/pandas/dataframe.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/en/stable/getting_started/",
+          "/en/stable/usage_guide/",
+          "/en/stable/flow/",
+          "/en/stable/supported_apis/"
+        ],
+        "exclude": [
+          "/en/stable/release_notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "getting_started/quickstart",
+          "installation",
+          "why_modin"
+        ],
+        "usage_guide": [
+          "usage_guide/index",
+          "convert_pandas",
+          "io",
+          "advanced_usage"
+        ],
+        "dataframe": [
+          "flow/modin/pandas/dataframe",
+          "api",
+          "indexing",
+          "operations"
+        ],
+        "backends": [
+          "usage_guide/advanced_usage",
+          "ray",
+          "dask",
+          "unidist",
+          "hdk"
+        ],
+        "io_operations": [
+          "supported_apis/dataframe_supported",
+          "read_csv",
+          "read_parquet",
+          "to_csv",
+          "to_parquet"
+        ],
+        "performance": [
+          "usage_guide/optimization_notes",
+          "benchmarks",
+          "parallel",
+          "distributed"
+        ],
+        "configuration": [
+          "usage_guide/advanced_usage",
+          "modin.config",
+          "environment",
+          "npartitions"
+        ],
+        "out_of_core": [
+          "usage_guide/out_of_core",
+          "memory",
+          "large-datasets"
+        ],
+        "integrations": [
+          "usage_guide/integrations",
+          "scikit-learn",
+          "xgboost",
+          "sql"
+        ],
+        "experimental": [
+          "developer/architecture",
+          "batch",
+          "progress_bar"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 250
+    }
+  ],
+  "metadata": {
+    "author": "Modin Team",
+    "language": "Python",
+    "framework_type": "Distributed DataFrame",
+    "use_cases": [
+      "Large datasets",
+      "Pandas at scale",
+      "Parallel processing",
+      "Out-of-core computing",
+      "Distributed analytics"
+    ],
+    "related_skills": [
+      "pandas",
+      "ray",
+      "dask",
+      "python",
+      "numpy"
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "name": "github-actions",
+  "description": "Complete GitHub Actions knowledge from official documentation. Use when creating CI/CD pipelines, automating workflows, or building GitHub integrations. Covers workflow syntax, actions, runners, and advanced features.",
+  "version": "1.0.0",
+  "base_url": "https://docs.github.com/en/actions",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.github.com/en/actions",
+      "start_urls": [
+        "https://docs.github.com/en/actions/learn-github-actions",
+        "https://docs.github.com/en/actions/using-workflows",
+        "https://docs.github.com/en/actions/using-jobs",
+        "https://docs.github.com/en/actions/creating-actions",
+        "https://docs.github.com/en/actions/security-guides"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/actions/learn-github-actions/",
+          "/actions/using-workflows/",
+          "/actions/using-jobs/",
+          "/actions/creating-actions/",
+          "/actions/security-guides/",
+          "/actions/hosting-your-own-runners/",
+          "/actions/managing-workflow-runs/",
+          "/actions/monitoring-and-troubleshooting-workflows/"
+        ],
+        "exclude": [
+          "/actions/quickstart/",
+          "/actions/deployment/",
+          "/actions/migrating-to-github-actions/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "learn",
+          "understanding",
+          "workflow",
+          "introduction",
+          "core-concepts"
+        ],
+        "workflow_syntax": [
+          "syntax",
+          "workflow-syntax",
+          "on",
+          "jobs",
+          "steps",
+          "runs-on",
+          "env"
+        ],
+        "events": [
+          "events",
+          "trigger",
+          "push",
+          "pull_request",
+          "schedule",
+          "workflow_dispatch"
+        ],
+        "jobs": [
+          "jobs",
+          "matrix",
+          "strategy",
+          "needs",
+          "if",
+          "container"
+        ],
+        "actions": [
+          "creating-actions",
+          "composite",
+          "javascript",
+          "docker",
+          "inputs",
+          "outputs"
+        ],
+        "runners": [
+          "runners",
+          "hosted-runners",
+          "self-hosted",
+          "labels",
+          "hardware"
+        ],
+        "secrets": [
+          "secrets",
+          "security-hardening",
+          "encrypted",
+          "environment",
+          "oidc"
+        ],
+        "caching": [
+          "caching",
+          "cache",
+          "artifacts",
+          "upload",
+          "download"
+        ],
+        "deployment": [
+          "deployment",
+          "environments",
+          "protection",
+          "approvals"
+        ],
+        "troubleshooting": [
+          "troubleshooting",
+          "debugging",
+          "logs",
+          "annotations"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "GitHub",
+    "language": "YAML",
+    "framework_type": "CI/CD Platform",
+    "use_cases": [
+      "Continuous integration",
+      "Continuous deployment",
+      "Automated testing",
+      "Release automation",
+      "Code quality checks"
+    ],
+    "related_skills": [
+      "docker",
+      "kubernetes",
+      "terraform",
+      "nodejs",
+      "python"
+    ]
+  }
+}

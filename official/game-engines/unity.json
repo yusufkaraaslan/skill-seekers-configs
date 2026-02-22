@@ -1,0 +1,135 @@
+{
+  "name": "unity",
+  "description": "Complete Unity knowledge from official documentation. Use when building 2D/3D games, VR/AR applications, and interactive experiences. Covers C# scripting, physics, rendering, animation, and multiplayer networking.",
+  "version": "1.0.0",
+  "base_url": "https://docs.unity3d.com/Manual/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.unity3d.com/Manual/",
+      "start_urls": [
+        "https://docs.unity3d.com/Manual/UnityManual.html",
+        "https://docs.unity3d.com/Manual/ScriptingSection.html",
+        "https://docs.unity3d.com/Manual/PhysicsSection.html",
+        "https://docs.unity3d.com/Manual/Graphics.html"
+      ],
+      "selectors": {
+        "main_content": ".doc-content, article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/Manual/",
+          "/Manual/ScriptingSection",
+          "/Manual/PhysicsSection",
+          "/Manual/Graphics",
+          "/Manual/AnimationSection"
+        ],
+        "exclude": [
+          "/Manual/ReleaseNotes"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "UnityManual",
+          "GettingStarted",
+          "InstallingUnity",
+          "UnityBasics"
+        ],
+        "scripting": [
+          "ScriptingSection",
+          "CreatingAndUsingScripts",
+          "MonoBehaviour",
+          "ScriptingAPI"
+        ],
+        "physics": [
+          "PhysicsSection",
+          "Rigidbodies",
+          "Colliders",
+          "Physics2D",
+          "Raycasting"
+        ],
+        "graphics": [
+          "Graphics",
+          "Shaders",
+          "Materials",
+          "Lighting",
+          "URP",
+          "HDRP"
+        ],
+        "animation": [
+          "AnimationSection",
+          "Animator",
+          "AnimationClips",
+          "StateMachines",
+          "BlendTrees"
+        ],
+        "audio": [
+          "Audio",
+          "AudioSource",
+          "AudioListener",
+          "Mixers"
+        ],
+        "ui": [
+          "UI",
+          "UGUI",
+          "Canvas",
+          "TextMeshPro"
+        ],
+        "input": [
+          "Input",
+          "InputManager",
+          "InputSystem",
+          "MobileInput"
+        ],
+        "multiplayer": [
+          "Multiplayer",
+          "Netcode",
+          "UNET",
+          "Mirror"
+        ],
+        "vr_ar": [
+          "XR",
+          "VR",
+          "ARFoundation",
+          "OpenXR"
+        ],
+        "asset_management": [
+          "AssetWorkflow",
+          "AssetBundles",
+          "Addressables",
+          "Resources"
+        ],
+        "optimization": [
+          "Profiler",
+          "Performance",
+          "DrawCalls",
+          "OcclusionCulling",
+          "LOD"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 500
+    }
+  ],
+  "metadata": {
+    "author": "Unity Technologies",
+    "language": "C#",
+    "framework_type": "Game Engine",
+    "use_cases": [
+      "2D/3D games",
+      "VR/AR applications",
+      "Mobile games",
+      "Console games",
+      "Interactive experiences"
+    ],
+    "related_skills": [
+      "csharp",
+      "blender",
+      "maya",
+      "photoshop",
+      "shaders"
+    ]
+  }
+}

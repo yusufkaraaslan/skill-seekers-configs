@@ -1,0 +1,123 @@
+{
+  "name": "gdevelop",
+  "description": "Complete GDevelop knowledge from official documentation. Use when building games without coding using visual events. Covers behaviors, effects, physics, and export to multiple platforms.",
+  "version": "1.0.0",
+  "base_url": "https://wiki.gdevelop.io/gdevelop5/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://wiki.gdevelop.io/gdevelop5/",
+      "start_urls": [
+        "https://wiki.gdevelop.io/gdevelop5/",
+        "https://wiki.gdevelop.io/gdevelop5/getting_started",
+        "https://wiki.gdevelop.io/gdevelop5/events",
+        "https://wiki.gdevelop.io/gdevelop5/objects"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/gdevelop5/",
+          "/gdevelop5/getting_started",
+          "/gdevelop5/events",
+          "/gdevelop5/objects",
+          "/gdevelop5/behaviors",
+          "/gdevelop5/extensions"
+        ],
+        "exclude": [
+          "/gdevelop5/releases/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "getting_started",
+          "interface",
+          "project-manager",
+          "preview"
+        ],
+        "objects": [
+          "objects",
+          "sprite",
+          "tiled-sprite",
+          "text-object",
+          "shape-painter"
+        ],
+        "events": [
+          "events",
+          "standard-events",
+          "events-editor",
+          "conditions",
+          "actions"
+        ],
+        "behaviors": [
+          "behaviors",
+          "platformer",
+          "physics",
+          "pathfinding",
+          "tween"
+        ],
+        "variables": [
+          "variables",
+          "scene-variables",
+          "global-variables",
+          "object-variables"
+        ],
+        "expressions": [
+          "expressions-reference",
+          "mathematical-tools",
+          "string-tools"
+        ],
+        "layers": [
+          "layers-and-cameras",
+          "parallax",
+          "lighting",
+          "effects"
+        ],
+        "extensions": [
+          "extensions",
+          "create-extensions",
+          "share-extensions",
+          "firebase",
+          "admob"
+        ],
+        "publishing": [
+          "publishing",
+          "web",
+          "android-and-ios",
+          "windows-macos-linux"
+        ],
+        "tutorials": [
+          "tutorials",
+          "platformer",
+          "shooting-game",
+          "physics-game"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "GDevelop Team",
+    "language": "Visual/JavaScript",
+    "framework_type": "No-Code Game Engine",
+    "use_cases": [
+      "No-code games",
+      "Visual scripting",
+      "Educational games",
+      "Rapid prototyping",
+      "2D games"
+    ],
+    "related_skills": [
+      "javascript",
+      "html5",
+      "webgl",
+      "electron",
+      "cordova"
+    ]
+  }
+}

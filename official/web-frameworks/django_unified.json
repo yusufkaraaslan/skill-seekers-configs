@@ -14,17 +14,46 @@
       },
       "url_patterns": {
         "include": [],
-        "exclude": ["/search/", "/genindex/"]
+        "exclude": [
+          "/search/",
+          "/genindex/"
+        ]
       },
       "categories": {
-        "getting_started": ["intro", "tutorial", "install"],
-        "models": ["models", "orm", "queries", "database"],
-        "views": ["views", "urls", "templates"],
-        "forms": ["forms", "modelforms"],
-        "admin": ["admin"],
-        "api": ["ref/"],
-        "topics": ["topics/"],
-        "security": ["security", "csrf", "authentication"]
+        "getting_started": [
+          "intro",
+          "tutorial",
+          "install"
+        ],
+        "models": [
+          "models",
+          "orm",
+          "queries",
+          "database"
+        ],
+        "views": [
+          "views",
+          "urls",
+          "templates"
+        ],
+        "forms": [
+          "forms",
+          "modelforms"
+        ],
+        "admin": [
+          "admin"
+        ],
+        "api": [
+          "ref/"
+        ],
+        "topics": [
+          "topics/"
+        ],
+        "security": [
+          "security",
+          "csrf",
+          "authentication"
+        ]
       },
       "rate_limit": 0.5,
       "max_pages": 300
@@ -45,5 +74,6 @@
         "django/contrib/admin/**/*.py"
       ]
     }
-  ]
+  ],
+  "base_url": "https://docs.djangoproject.com/en/stable/"
 }

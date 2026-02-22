@@ -1,0 +1,71 @@
+name: Request a Config
+Description: Request a configuration for a framework or tool that's not yet available
+title: "[Config Request] <framework-name>"
+labels: ["config-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Config Request
+        
+        Request a new configuration file. This helps us prioritize which configs to create.
+
+  - type: input
+    id: framework-name
+    attributes:
+      label: Framework/Tool Name
+      description: What framework or tool do you need a config for?
+      placeholder: e.g., Next.js, Docker, PostgreSQL
+    validations:
+      required: true
+
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      description: Which category would this belong to?
+      placeholder: e.g., web-frameworks, devops, databases
+    validations:
+      required: true
+
+  - type: input
+    id: documentation-url
+    attributes:
+      label: Documentation URL
+      description: Link to the official documentation
+      placeholder: https://docs.example.com/
+    validations:
+      required: true
+
+  - type: input
+    id: github-repo
+    attributes:
+      label: GitHub Repository
+      description: Link to the source code repository (if open source)
+      placeholder: https://github.com/owner/repo
+
+  - type: textarea
+    id: why-needed
+    attributes:
+      label: Why is this needed?
+      description: Explain why this config would be valuable
+      placeholder: "Next.js is one of the most popular React frameworks and would benefit many developers..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: popularity
+    attributes:
+      label: Popularity Indicators
+      description: Help us understand the popularity of this tool
+      options:
+        - label: Widely used in production
+        - label: Growing community
+        - label: Official documentation is comprehensive
+        - label: Would benefit many Skill Seekers users
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Any other details that might be helpful

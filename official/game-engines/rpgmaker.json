@@ -1,0 +1,134 @@
+{
+  "name": "rpgmaker",
+  "description": "Complete RPG Maker knowledge from official documentation. Use when building JRPG-style games without programming. Covers maps, events, database, and scripting with Ruby/JavaScript.",
+  "version": "1.0.0",
+  "base_url": "https://www.rpgmakerweb.com/support",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.rpgmakerweb.com/support",
+      "start_urls": [
+        "https://www.rpgmakerweb.com/support",
+        "https://docs.rpgmakerweb.com/",
+        "https://forums.rpgmakerweb.com/index.php?pages/documentation/",
+        "https://www.rpgmakerweb.com/additional-downloads"
+      ],
+      "selectors": {
+        "main_content": "article, main, .messageBody",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/support",
+          "/documentation/",
+          "/tutorial/",
+          "/help/"
+        ],
+        "exclude": [
+          "/forum/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "support",
+          "getting-started",
+          "installation",
+          "interface"
+        ],
+        "map_editor": [
+          "maps",
+          "tilesets",
+          "layers",
+          "events",
+          "regions"
+        ],
+        "database": [
+          "database",
+          "actors",
+          "classes",
+          "skills",
+          "items",
+          "enemies",
+          "troops"
+        ],
+        "events": [
+          "events",
+          "event-commands",
+          "parallel",
+          "autorun",
+          "switches",
+          "variables"
+        ],
+        "battle_system": [
+          "battle",
+          "troop",
+          "battle-events",
+          "damage-formula"
+        ],
+        "resources": [
+          "resources",
+          "importing",
+          "images",
+          "audio",
+          "movies"
+        ],
+        "scripting": [
+          "scripting",
+          "rgss",
+          "javascript",
+          "plugins",
+          "common-events"
+        ],
+        "animation": [
+          "animations",
+          "frames",
+          "cells",
+          "timing"
+        ],
+        "system": [
+          "system",
+          "options",
+          "title-screen",
+          "game-over"
+        ],
+        "deployment": [
+          "deployment",
+          "export",
+          "windows",
+          "mac",
+          "mobile",
+          "web"
+        ],
+        "plugins": [
+          "plugins",
+          "plugin-manager",
+          "community",
+          "mv-plugins",
+          "mz-plugins"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Gotcha Gotcha Games",
+    "language": "Ruby/JavaScript",
+    "framework_type": "RPG Game Engine",
+    "use_cases": [
+      "JRPG games",
+      "Story-driven games",
+      "No-code RPGs",
+      "Prototypes",
+      "Educational games"
+    ],
+    "related_skills": [
+      "ruby",
+      "javascript",
+      "pixel-art",
+      "parallax",
+      "tilesets"
+    ]
+  }
+}

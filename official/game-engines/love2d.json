@@ -1,0 +1,128 @@
+{
+  "name": "love2d",
+  "description": "Complete L\u00d6VE (Love2D) knowledge from official documentation. Use when building 2D games in Lua. Covers graphics, audio, physics, input, and file I/O.",
+  "version": "1.0.0",
+  "base_url": "https://love2d.org/wiki/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://love2d.org/wiki/",
+      "start_urls": [
+        "https://love2d.org/wiki/Main_Page",
+        "https://love2d.org/wiki/Category:Libraries",
+        "https://love2d.org/wiki/Category:Tutorials",
+        "https://love2d.org/wiki/love"
+      ],
+      "selectors": {
+        "main_content": "#mw-content-text, article",
+        "title": "h1",
+        "code_blocks": "pre, code"
+      },
+      "url_patterns": {
+        "include": [
+          "/wiki/",
+          "/wiki/Category:Libraries",
+          "/wiki/Category:Tutorials",
+          "/wiki/love"
+        ],
+        "exclude": [
+          "/wiki/Special:"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "Main_Page",
+          "Getting_Started",
+          "Game_Distribution",
+          "Building_L\u00d6VE"
+        ],
+        "graphics": [
+          "love.graphics",
+          "Drawing",
+          "Images",
+          "Canvases",
+          "Shaders"
+        ],
+        "audio": [
+          "love.audio",
+          "Source",
+          "Music",
+          "Sound_Effects"
+        ],
+        "physics": [
+          "love.physics",
+          "World",
+          "Body",
+          "Fixture",
+          "Joint"
+        ],
+        "input": [
+          "love.keyboard",
+          "love.mouse",
+          "love.joystick",
+          "love.touch"
+        ],
+        "filesystem": [
+          "love.filesystem",
+          "Reading",
+          "Writing",
+          "Directories"
+        ],
+        "math": [
+          "love.math",
+          "Vectors",
+          "Random",
+          "Noise"
+        ],
+        "window": [
+          "love.window",
+          "Modes",
+          "Fullscreen",
+          "Icon"
+        ],
+        "events": [
+          "love.event",
+          "Callbacks",
+          "love.update",
+          "love.draw"
+        ],
+        "system": [
+          "love.system",
+          "Clipboard",
+          "OS",
+          "Power"
+        ],
+        "threading": [
+          "love.thread",
+          "Channel",
+          "Threads"
+        ],
+        "data": [
+          "love.data",
+          "ByteData",
+          "Compression"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "L\u00d6VE Development Team",
+    "language": "Lua",
+    "framework_type": "Game Engine",
+    "use_cases": [
+      "2D games",
+      "Prototypes",
+      "Game jams",
+      "Indie games",
+      "Educational games"
+    ],
+    "related_skills": [
+      "lua",
+      "box2d",
+      "opengl",
+      "tiled"
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "name": "monogame",
+  "description": "Complete MonoGame knowledge from official documentation. Use when building cross-platform games with C# and XNA compatibility. Covers graphics, audio, input, content pipeline, and shaders.",
+  "version": "1.0.0",
+  "base_url": "https://docs.monogame.net/articles/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.monogame.net/articles/",
+      "start_urls": [
+        "https://docs.monogame.net/articles/getting_started/index.html",
+        "https://docs.monogame.net/articles/getting_started/getting_started.html",
+        "https://docs.monogame.net/api/",
+        "https://docs.monogame.net/articles/content_pipeline/index.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/articles/",
+          "/api/",
+          "/articles/getting_started/",
+          "/articles/content_pipeline/"
+        ],
+        "exclude": [
+          "/articles/whats_new/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting_started",
+          "index",
+          "getting_started",
+          "platforms"
+        ],
+        "game_class": [
+          "Game",
+          "Initialize",
+          "LoadContent",
+          "Update",
+          "Draw"
+        ],
+        "graphics": [
+          "graphics",
+          "SpriteBatch",
+          "Texture2D",
+          "SpriteFont",
+          "RenderTarget2D"
+        ],
+        "content": [
+          "content_pipeline",
+          "ContentManager",
+          "mgcb",
+          "importers"
+        ],
+        "audio": [
+          "audio",
+          "SoundEffect",
+          "Song",
+          "MediaPlayer"
+        ],
+        "input": [
+          "input",
+          "Keyboard",
+          "Mouse",
+          "GamePad",
+          "TouchPanel"
+        ],
+        "math": [
+          "math",
+          "Vector2",
+          "Vector3",
+          "Matrix",
+          "Rectangle",
+          "MathHelper"
+        ],
+        "shaders": [
+          "shaders",
+          "Effect",
+          "HLSL",
+          "mgfx"
+        ],
+        "2d_drawing": [
+          "SpriteBatch",
+          "Draw",
+          "Begin",
+          "End",
+          "sorting"
+        ],
+        "platforms": [
+          "platforms",
+          "desktop",
+          "mobile",
+          "consoles"
+        ],
+        "troubleshooting": [
+          "troubleshooting",
+          "common_issues",
+          "debugging"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "MonoGame Team",
+    "language": "C#",
+    "framework_type": "Game Framework",
+    "use_cases": [
+      "2D games",
+      "3D games",
+      "Cross-platform",
+      "XNA migration",
+      "Indie games"
+    ],
+    "related_skills": [
+      "csharp",
+      "dotnet",
+      "hlsl",
+      "xna",
+      "opengl",
+      "directx"
+    ]
+  }
+}

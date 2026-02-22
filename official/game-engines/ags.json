@@ -1,0 +1,137 @@
+{
+  "name": "ags",
+  "description": "Complete Adventure Game Studio knowledge from official documentation. Use when building point-and-click adventure games. Covers rooms, characters, inventory, dialogue, and scripting with AGS Script.",
+  "version": "1.0.0",
+  "base_url": "https://adventuregamestudio.github.io/ags-manual/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://adventuregamestudio.github.io/ags-manual/",
+      "start_urls": [
+        "https://adventuregamestudio.github.io/ags-manual/",
+        "https://adventuregamestudio.github.io/ags-manual/StartingOff",
+        "https://adventuregamestudio.github.io/ags-manual/Scripting",
+        "https://adventuregamestudio.github.io/ags-manual/Character"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/ags-manual/",
+          "/ags-manual/StartingOff",
+          "/ags-manual/Scripting",
+          "/ags-manual/Character",
+          "/ags-manual/room.html"
+        ],
+        "exclude": [
+          "/ags-manual/ags-migration.html"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "StartingOff",
+          "acintro1",
+          "acintro2",
+          "acintro3"
+        ],
+        "editor": [
+          "EditorRoom",
+          "EditorSprite",
+          "EditorInventory",
+          "EditorDialog"
+        ],
+        "scripting": [
+          "Scripting",
+          "ScriptingLanguage",
+          "ScriptingTutorialPart1",
+          "ScriptKeywords"
+        ],
+        "character": [
+          "Character",
+          "CharacterCommands",
+          "Talking",
+          "Following"
+        ],
+        "room": [
+          "room",
+          "RoomCommands",
+          "object",
+          "hotspot",
+          "region"
+        ],
+        "inventory": [
+          "InventoryItem",
+          "InventoryCommands",
+          "cursor-modes"
+        ],
+        "dialog": [
+          "Dialog",
+          "DialogCommands",
+          "DialogOptions",
+          "topic"
+        ],
+        "gui": [
+          "GUI",
+          "GUIControl",
+          "Button",
+          "Label",
+          "InvWindow"
+        ],
+        "audio": [
+          "AudioClip",
+          "AudioChannel",
+          "Music",
+          "Sound"
+        ],
+        "animation": [
+          "object",
+          "animate",
+          "views",
+          "loops"
+        ],
+        "game": [
+          "Game",
+          "GameCommands",
+          "parser",
+          "text-parser"
+        ],
+        "file_io": [
+          "File",
+          "DynamicArrays",
+          "String"
+        ],
+        "advanced": [
+          "ExtenderFunctions",
+          "Plugins",
+          "Object",
+          "DrawingSurface"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 250
+    }
+  ],
+  "metadata": {
+    "author": "AGS Team",
+    "language": "AGS Script",
+    "framework_type": "Adventure Game Engine",
+    "use_cases": [
+      "Point-and-click games",
+      "Adventure games",
+      "Visual novels",
+      "Retro games",
+      "Indie adventures"
+    ],
+    "related_skills": [
+      "pixel-art",
+      "aseprite",
+      "digital-audio",
+      "story-writing",
+      "voice-acting"
+    ]
+  }
+}

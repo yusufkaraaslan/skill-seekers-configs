@@ -1,0 +1,141 @@
+{
+  "name": "babylonjs",
+  "description": "Complete Babylon.js knowledge from official documentation. Use when building 3D web applications and games with WebGL/WebGPU. Covers meshes, materials, physics, particles, and GUI systems.",
+  "version": "1.0.0",
+  "base_url": "https://doc.babylonjs.com/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://doc.babylonjs.com/",
+      "start_urls": [
+        "https://doc.babylonjs.com/",
+        "https://doc.babylonjs.com/setup/",
+        "https://doc.babylonjs.com/features/",
+        "https://doc.babylonjs.com/toolsAndResources/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/setup/",
+          "/features/",
+          "/toolsAndResources/",
+          "/divingDeeper/",
+          "/api/"
+        ],
+        "exclude": [
+          "/whats-new/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "setup",
+          "first-app",
+          "npm-support",
+          "es6-support"
+        ],
+        "features": [
+          "features",
+          "scene",
+          "mesh",
+          "material",
+          "texture"
+        ],
+        "cameras": [
+          "cameras",
+          "universal-camera",
+          "arc-rotate-camera",
+          "follow-camera"
+        ],
+        "lights": [
+          "lights",
+          "point-light",
+          "directional-light",
+          "spot-light",
+          "shadows"
+        ],
+        "animation": [
+          "animation",
+          "animation-system",
+          "skeleton",
+          "morph-targets"
+        ],
+        "physics": [
+          "physics",
+          "cannon",
+          "ammo",
+          "oimo",
+          "havok"
+        ],
+        "particles": [
+          "particles",
+          "particle-system",
+          "solid-particles",
+          "gpu-particles"
+        ],
+        "gui": [
+          "gui",
+          "babylon-gui",
+          "3d-gui",
+          "advanced-texture"
+        ],
+        "audio": [
+          "audio",
+          "sound",
+          "music",
+          "spatial-audio"
+        ],
+        "inputs": [
+          "inputs",
+          "keyboard",
+          "mouse",
+          "gamepad",
+          "vr"
+        ],
+        " xr": [
+          "webxr",
+          "vr-experience",
+          "ar-features"
+        ],
+        "exporters": [
+          "exporters",
+          "blender",
+          "3dsmax",
+          "maya",
+          "gltf"
+        ],
+        "performance": [
+          "performance",
+          "occlusion-queries",
+          "lod",
+          "instances",
+          "thin-instances"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 500
+    }
+  ],
+  "metadata": {
+    "author": "Babylon.js Team",
+    "language": "TypeScript/JavaScript",
+    "framework_type": "3D Web Engine",
+    "use_cases": [
+      "3D web games",
+      "Product configurators",
+      "Architectural visualization",
+      "VR/AR experiences",
+      "Educational 3D apps"
+    ],
+    "related_skills": [
+      "typescript",
+      "webgl",
+      "webgpu",
+      "gltf",
+      "blender"
+    ]
+  }
+}

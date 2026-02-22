@@ -1,0 +1,99 @@
+name: Submit New Config
+Description: Submit a new configuration file for a framework or tool
+title: "[Config Submission] <framework-name>"
+labels: ["config-submission", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Config Submission
+        
+        Thank you for contributing a config! Please fill out the information below.
+        
+        **Before submitting:**
+        - [ ] Tested your config with `skill-seekers scrape --config your-config.json --dry-run`
+        - [ ] Validated with the validation script: `python scripts/validate-config.py your-config.json`
+        - [ ] Reviewed [QUALITY_GUIDELINES.md](../QUALITY_GUIDELINES.md)
+        - [ ] Used the [template](../official/test-examples/template-example.json) as a starting point
+
+  - type: input
+    id: framework-name
+    attributes:
+      label: Framework/Tool Name
+      description: The name of the framework or tool
+      placeholder: e.g., Next.js, Docker, PostgreSQL
+    validations:
+      required: true
+
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      description: Which category does this belong to?
+      placeholder: e.g., web-frameworks, devops, databases, data-science
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: When should this skill be used? What does it cover?
+      placeholder: "Use when building React applications with SSR, SSG, and API routes. Covers Next.js 14+ with App Router, Server Components..."
+    validations:
+      required: true
+
+  - type: input
+    id: documentation-url
+    attributes:
+      label: Documentation URL
+      description: Primary documentation website
+      placeholder: https://docs.example.com/
+    validations:
+      required: true
+
+  - type: input
+    id: github-repo
+    attributes:
+      label: GitHub Repository (optional)
+      description: For unified configs with source code analysis
+      placeholder: owner/repo (e.g., vercel/next.js)
+
+  - type: textarea
+    id: config-json
+    attributes:
+      label: Config JSON
+      description: Paste your complete config JSON here
+      render: json
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: quality-checklist
+    attributes:
+      label: Quality Checklist
+      description: Confirm these quality standards are met
+      options:
+        - label: 5-13 categories with 3-6 keywords each
+          required: true
+        - label: Selectors use semantic HTML with fallbacks
+          required: true
+        - label: Description explains when to use (50+ characters)
+          required: true
+        - label: Appropriate rate_limit (0.3-0.7s)
+          required: true
+        - label: URL patterns exclude blog/search/static
+          required: true
+
+  - type: textarea
+    id: testing-notes
+    attributes:
+      label: Testing Notes
+      description: Describe how you tested this config
+      placeholder: "Tested with dry-run mode, validated 47 pages found, selectors work on Chrome DevTools..."
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: Any other information you'd like to share

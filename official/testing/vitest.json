@@ -1,0 +1,103 @@
+{
+  "name": "vitest",
+  "description": "Complete Vitest knowledge from official documentation. Use when testing Vite-based projects with fast unit testing. Covers configuration, mocking, coverage, and in-source testing.",
+  "version": "1.0.0",
+  "base_url": "https://vitest.dev/guide/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://vitest.dev/guide/",
+      "start_urls": [
+        "https://vitest.dev/guide/",
+        "https://vitest.dev/config/",
+        "https://vitest.dev/api/",
+        "https://vitest.dev/guide/mocking.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/guide/",
+          "/config/",
+          "/api/"
+        ],
+        "exclude": [
+          "/blog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "guide",
+          "installation",
+          "features",
+          "comparisons"
+        ],
+        "configuration": [
+          "config",
+          "options",
+          "workspace",
+          "file-config"
+        ],
+        "api": [
+          "test",
+          "describe",
+          "it",
+          "expect",
+          "beforeEach",
+          "afterEach"
+        ],
+        "mocking": [
+          "mocking",
+          "vi",
+          "fn",
+          "mock",
+          "spyOn"
+        ],
+        "coverage": [
+          "coverage",
+          "istanbul",
+          "v8"
+        ],
+        "in_source": [
+          "in-source-testing",
+          "typecheck"
+        ],
+        "features": [
+          "filtering",
+          "watch-mode",
+          "reporters",
+          "snapshot"
+        ],
+        "advanced": [
+          "plugins",
+          "browser-mode",
+          "benchmark"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 200
+    }
+  ],
+  "metadata": {
+    "author": "Vitest Team",
+    "language": "TypeScript",
+    "framework_type": "Testing Framework",
+    "use_cases": [
+      "Vite project testing",
+      "Fast unit tests",
+      "In-source testing",
+      "TypeScript testing",
+      "Modern ESM testing"
+    ],
+    "related_skills": [
+      "vite",
+      "typescript",
+      "jest",
+      "playwright",
+      "cypress"
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "name": "pygame",
+  "description": "Complete Pygame knowledge from official documentation. Use when building 2D games in Python. Covers display, surfaces, sprites, collision detection, and sound.",
+  "version": "1.0.0",
+  "base_url": "https://www.pygame.org/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.pygame.org/docs/",
+      "start_urls": [
+        "https://www.pygame.org/docs/",
+        "https://www.pygame.org/docs/tut/",
+        "https://www.pygame.org/docs/ref/",
+        "https://www.pygame.org/docs/ref/pygame.html"
+      ],
+      "selectors": {
+        "main_content": "#content, article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/",
+          "/docs/tut/",
+          "/docs/ref/"
+        ],
+        "exclude": [
+          "/docs/news/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "tut/",
+          "tut/MakeGames",
+          "tut/ChimpLineByLine"
+        ],
+        "display": [
+          "ref/display",
+          "set_mode",
+          "set_caption",
+          "flip",
+          "update"
+        ],
+        "surface": [
+          "ref/surface",
+          "blit",
+          "fill",
+          "convert",
+          "get_rect"
+        ],
+        "draw": [
+          "ref/draw",
+          "rect",
+          "circle",
+          "line",
+          "polygon"
+        ],
+        "event": [
+          "ref/event",
+          "get",
+          "poll",
+          "wait",
+          "KEYDOWN"
+        ],
+        "sprite": [
+          "ref/sprite",
+          "Sprite",
+          "Group",
+          "collide",
+          "LayeredUpdates"
+        ],
+        "image": [
+          "ref/image",
+          "load",
+          "save",
+          "get_extended"
+        ],
+        "transform": [
+          "ref/transform",
+          "scale",
+          "rotate",
+          "flip",
+          "smoothscale"
+        ],
+        "mixer": [
+          "ref/mixer",
+          "Sound",
+          "music",
+          "Channel"
+        ],
+        "time": [
+          "ref/time",
+          "Clock",
+          "tick",
+          "wait",
+          "get_ticks"
+        ],
+        "key": [
+          "ref/key",
+          "get_pressed",
+          "get_mods",
+          "set_repeat"
+        ],
+        "mouse": [
+          "ref/mouse",
+          "get_pos",
+          "get_pressed",
+          "set_visible"
+        ],
+        "rect": [
+          "ref/rect",
+          "collidepoint",
+          "colliderect",
+          "move",
+          "inflate"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 250
+    }
+  ],
+  "metadata": {
+    "author": "Pygame Community",
+    "language": "Python",
+    "framework_type": "Game Library",
+    "use_cases": [
+      "2D games",
+      "Educational games",
+      "Prototypes",
+      "Game jams",
+      "Interactive visualizations"
+    ],
+    "related_skills": [
+      "python",
+      "sdl",
+      "numpy",
+      "pyopengl"
+    ]
+  }
+}

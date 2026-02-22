@@ -13,20 +13,68 @@
         "code_blocks": "pre"
       },
       "url_patterns": {
-        "include": ["/user_guide/", "/playbook_guide/", "/reference_appendices/", "/collections/"],
-        "exclude": ["/community/", "/roadmap/", "/installation_guide/"]
+        "include": [
+          "/user_guide/",
+          "/playbook_guide/",
+          "/reference_appendices/",
+          "/collections/"
+        ],
+        "exclude": [
+          "/community/",
+          "/roadmap/",
+          "/installation_guide/"
+        ]
       },
       "categories": {
-        "getting_started": ["getting_started", "intro", "quickstart"],
-        "playbooks": ["playbooks", "plays", "tasks"],
-        "inventory": ["inventory", "hosts", "groups"],
-        "modules": ["modules", "plugins", "collections"],
-        "roles": ["roles", "ansible-galaxy", "galaxy"],
-        "variables": ["variables", "facts", "vars"],
-        "conditionals": ["conditionals", "when", "loops"],
-        "handlers": ["handlers", "notify"],
-        "vault": ["vault", "encryption", "security"],
-        "api": ["api", "reference", "module_index"]
+        "getting_started": [
+          "getting_started",
+          "intro",
+          "quickstart"
+        ],
+        "playbooks": [
+          "playbooks",
+          "plays",
+          "tasks"
+        ],
+        "inventory": [
+          "inventory",
+          "hosts",
+          "groups"
+        ],
+        "modules": [
+          "modules",
+          "plugins",
+          "collections"
+        ],
+        "roles": [
+          "roles",
+          "ansible-galaxy",
+          "galaxy"
+        ],
+        "variables": [
+          "variables",
+          "facts",
+          "vars"
+        ],
+        "conditionals": [
+          "conditionals",
+          "when",
+          "loops"
+        ],
+        "handlers": [
+          "handlers",
+          "notify"
+        ],
+        "vault": [
+          "vault",
+          "encryption",
+          "security"
+        ],
+        "api": [
+          "api",
+          "reference",
+          "module_index"
+        ]
       },
       "rate_limit": 0.5,
       "max_pages": 400
@@ -48,5 +96,6 @@
         "lib/ansible/module_utils/**/*.py"
       ]
     }
-  ]
+  ],
+  "base_url": "https://docs.ansible.com/ansible/latest/"
 }

@@ -1,0 +1,110 @@
+{
+  "name": "netlify",
+  "description": "Complete Netlify knowledge from official documentation. Use when deploying JAMstack applications with CI/CD, serverless functions, and edge network. Covers deployments, functions, forms, identity, and large media.",
+  "version": "1.0.0",
+  "base_url": "https://docs.netlify.com/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.netlify.com/",
+      "start_urls": [
+        "https://docs.netlify.com/get-started/",
+        "https://docs.netlify.com/configure-builds/",
+        "https://docs.netlify.com/functions/",
+        "https://docs.netlify.com/edge-functions/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/get-started/",
+          "/configure-builds/",
+          "/functions/",
+          "/edge-functions/",
+          "/forms/",
+          "/identity/"
+        ],
+        "exclude": [
+          "/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "get-started",
+          "deploy-button",
+          "site-dashboard"
+        ],
+        "builds": [
+          "configure-builds",
+          "build-settings",
+          "environment-variables",
+          "monorepos"
+        ],
+        "deploys": [
+          "deploys",
+          "deploy-previews",
+          "branch-deploys",
+          "build-hooks"
+        ],
+        "functions": [
+          "functions",
+          "overview",
+          "build-with-javascript",
+          "build-with-go"
+        ],
+        "edge_functions": [
+          "edge-functions",
+          "create-edge-function",
+          "edge-function-API"
+        ],
+        "forms": [
+          "forms",
+          "setup",
+          "submissions",
+          "notifications"
+        ],
+        "identity": [
+          "identity",
+          "add-to-site",
+          "identity-provider",
+          "access-control"
+        ],
+        "large_media": [
+          "large-media",
+          "setup",
+          "requirements"
+        ],
+        "configuration": [
+          "file-based-configuration",
+          "redirects",
+          "headers",
+          "netlify-toml"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "Netlify",
+    "language": "Multi-language",
+    "framework_type": "Cloud Platform",
+    "use_cases": [
+      "Static site hosting",
+      "Serverless functions",
+      "Edge computing",
+      "Form handling",
+      "CI/CD"
+    ],
+    "related_skills": [
+      "gatsby",
+      "nextjs",
+      "hugo",
+      "jekyll",
+      "jamstack"
+    ]
+  }
+}

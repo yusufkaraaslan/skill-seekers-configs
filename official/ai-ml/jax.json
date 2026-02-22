@@ -1,0 +1,141 @@
+{
+  "name": "jax",
+  "description": "Complete JAX knowledge from official documentation. Use when building high-performance ML research code with automatic differentiation. Covers NumPy, transformations, JIT, grad, vmap, and pmap.",
+  "version": "1.0.0",
+  "base_url": "https://jax.readthedocs.io/en/latest/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://jax.readthedocs.io/en/latest/",
+      "start_urls": [
+        "https://jax.readthedocs.io/en/latest/",
+        "https://jax.readthedocs.io/en/latest/notebooks/quickstart.html",
+        "https://jax.readthedocs.io/en/latest/jax-101/index.html",
+        "https://jax.readthedocs.io/en/latest/key-concepts.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/en/latest/",
+          "/en/latest/notebooks/",
+          "/en/latest/jax-101/",
+          "/en/latest/_autosummary/"
+        ],
+        "exclude": [
+          "/en/latest/changelog.html"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "notebooks/quickstart",
+          "installation",
+          "key-concepts"
+        ],
+        "numpy": [
+          "jax.numpy",
+          "numpy-compatibility",
+          "lax",
+          "device-arrays"
+        ],
+        "transformations": [
+          "transformations",
+          "jit",
+          "grad",
+          "vmap",
+          "pmap",
+          "pjit"
+        ],
+        "automatic_differentiation": [
+          "automatic-differentiation",
+          "grad",
+          "value_and_grad",
+          "jacfwd",
+          "jacrev",
+          "hessian"
+        ],
+        "vectorization": [
+          "vmap",
+          "automatic-vectorization",
+          "batching",
+          "in_axes"
+        ],
+        "parallelism": [
+          "pmap",
+          "parallel-computing",
+          "multi-device",
+          "sharding",
+          "pjit"
+        ],
+        "random_numbers": [
+          "random-numbers",
+          "jax.random",
+          "prng",
+          "split"
+        ],
+        "control_flow": [
+          "control-flow",
+          "lax.cond",
+          "lax.scan",
+          "lax.while_loop",
+          "lax.fori_loop"
+        ],
+        "flax": [
+          "flax",
+          "linen",
+          "modules",
+          "parameters",
+          "state"
+        ],
+        "optax": [
+          "optax",
+          "optimizers",
+          "chain",
+          "gradient-transformation"
+        ],
+        "haiku": [
+          "dm-haiku",
+          "transform",
+          "init",
+          "apply"
+        ],
+        "profiling": [
+          "profiling",
+          "jax.profiler",
+          "tensorboard"
+        ],
+        "debugging": [
+          "debugging",
+          "jax.debug",
+          "checkify",
+          "errors"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Google",
+    "language": "Python",
+    "framework_type": "ML Framework",
+    "use_cases": [
+      "Deep learning research",
+      "Scientific computing",
+      "High-performance ML",
+      "Neural network training",
+      "GPU/TPU acceleration"
+    ],
+    "related_skills": [
+      "python",
+      "numpy",
+      "flax",
+      "optax",
+      "tensorflow"
+    ]
+  }
+}

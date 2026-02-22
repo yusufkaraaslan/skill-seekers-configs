@@ -14,14 +14,38 @@
       },
       "url_patterns": {
         "include": [],
-        "exclude": ["/blog/", "/community/"]
+        "exclude": [
+          "/blog/",
+          "/community/"
+        ]
       },
       "categories": {
-        "getting_started": ["learn", "installation", "quick-start"],
-        "components": ["components", "props", "state"],
-        "hooks": ["hooks", "usestate", "useeffect", "usecontext"],
-        "api": ["api", "reference"],
-        "advanced": ["context", "refs", "portals", "suspense"]
+        "getting_started": [
+          "learn",
+          "installation",
+          "quick-start"
+        ],
+        "components": [
+          "components",
+          "props",
+          "state"
+        ],
+        "hooks": [
+          "hooks",
+          "usestate",
+          "useeffect",
+          "usecontext"
+        ],
+        "api": [
+          "api",
+          "reference"
+        ],
+        "advanced": [
+          "context",
+          "refs",
+          "portals",
+          "suspense"
+        ]
       },
       "rate_limit": 0.5,
       "max_pages": 200
@@ -40,5 +64,6 @@
         "packages/react-dom/src/**/*.js"
       ]
     }
-  ]
+  ],
+  "base_url": "https://react.dev/"
 }

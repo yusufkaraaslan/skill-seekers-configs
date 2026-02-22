@@ -1,0 +1,148 @@
+{
+  "name": "terraform",
+  "description": "Complete Terraform knowledge combining documentation and source code. Use when writing infrastructure as code, managing cloud resources, or implementing GitOps workflows. Covers HCL, providers, modules, and state management.",
+  "version": "1.0.0",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://developer.hashicorp.com/terraform/docs",
+      "extract_api": true,
+      "start_urls": [
+        "https://developer.hashicorp.com/terraform/intro",
+        "https://developer.hashicorp.com/terraform/language",
+        "https://developer.hashicorp.com/terraform/cli",
+        "https://developer.hashicorp.com/terraform/cloud-docs"
+      ],
+      "selectors": {
+        "main_content": "article, main, .content",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/terraform/intro/",
+          "/terraform/language/",
+          "/terraform/cli/",
+          "/terraform/cloud-docs/",
+          "/terraform/enterprise/"
+        ],
+        "exclude": [
+          "/terraform/tutorials/",
+          "/terraform/downloads/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "intro",
+          "getting-started",
+          "install",
+          "aws-get-started"
+        ],
+        "configuration": [
+          "configuration",
+          "syntax",
+          "resource",
+          "provider",
+          "variable",
+          "output"
+        ],
+        "hcl": [
+          "syntax",
+          "expressions",
+          "functions",
+          "string",
+          "collection",
+          "dynamic"
+        ],
+        "modules": [
+          "modules",
+          "source",
+          "registry",
+          "composition",
+          "publish"
+        ],
+        "state": [
+          "state",
+          "remote",
+          "backend",
+          "locking",
+          "migration"
+        ],
+        "workspaces": [
+          "workspaces",
+          "environment",
+          "tfvars",
+          "override"
+        ],
+        "provisioners": [
+          "provisioner",
+          "local-exec",
+          "remote-exec",
+          "connection"
+        ],
+        "cli": [
+          "cli",
+          "init",
+          "plan",
+          "apply",
+          "destroy",
+          "import",
+          "validate"
+        ],
+        "cloud_enterprise": [
+          "cloud",
+          "enterprise",
+          "run",
+          "workspace",
+          "vcs",
+          "sentinel"
+        ],
+        "providers": [
+          "provider",
+          "aws",
+          "azure",
+          "gcp",
+          "kubernetes",
+          "docker"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 400
+    },
+    {
+      "type": "github",
+      "repo": "hashicorp/terraform",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "internal/**/*.go",
+        "terraform/**/*.go"
+      ]
+    }
+  ],
+  "metadata": {
+    "author": "HashiCorp",
+    "language": "Go",
+    "framework_type": "Infrastructure as Code",
+    "use_cases": [
+      "Cloud infrastructure provisioning",
+      "Multi-cloud management",
+      "GitOps workflows",
+      "Infrastructure versioning",
+      "Disaster recovery"
+    ],
+    "related_skills": [
+      "aws",
+      "kubernetes",
+      "docker",
+      "ansible",
+      "github-actions"
+    ]
+  },
+  "base_url": "https://developer.hashicorp.com/terraform/docs"
+}

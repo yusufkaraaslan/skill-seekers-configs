@@ -1,0 +1,120 @@
+{
+  "name": "langchain",
+  "description": "Complete LangChain knowledge from official documentation. Use when building LLM-powered applications with chains, agents, and RAG. Covers LangChain Python/JS, LCEL, and integration with OpenAI, Anthropic, and local models.",
+  "version": "1.0.0",
+  "base_url": "https://python.langchain.com/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://python.langchain.com/docs/",
+      "start_urls": [
+        "https://python.langchain.com/docs/get_started/introduction",
+        "https://python.langchain.com/docs/expression_language/",
+        "https://python.langchain.com/docs/modules/model_io/",
+        "https://python.langchain.com/docs/modules/agents/",
+        "https://python.langchain.com/docs/use_cases/question_answering/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/get_started/",
+          "/docs/expression_language/",
+          "/docs/modules/",
+          "/docs/use_cases/",
+          "/docs/integrations/"
+        ],
+        "exclude": [
+          "/docs/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "introduction",
+          "quickstart",
+          "installation",
+          "setup"
+        ],
+        "expression_language": [
+          "expression-language",
+          "lcel",
+          "runnable",
+          "pipe",
+          "chain"
+        ],
+        "models": [
+          "chat-models",
+          "llms",
+          "openai",
+          "anthropic",
+          "local",
+          "streaming"
+        ],
+        "prompts": [
+          "prompts",
+          "templates",
+          "few-shot",
+          "example-selectors"
+        ],
+        "indexes": [
+          "document-loaders",
+          "text-splitters",
+          "vector-stores",
+          "embeddings",
+          "retrievers"
+        ],
+        "chains": [
+          "chains",
+          "llm-chain",
+          "retrieval",
+          "conversational",
+          "sql"
+        ],
+        "agents": [
+          "agents",
+          "tools",
+          "toolkits",
+          "agent-executor",
+          "plan-and-execute"
+        ],
+        "memory": [
+          "memory",
+          "buffer",
+          "summary",
+          "vectorstore"
+        ],
+        "use_cases": [
+          "qa",
+          "chatbots",
+          "rag",
+          "extraction",
+          "sql",
+          "api"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 500
+    }
+  ],
+  "metadata": {
+    "author": "LangChain",
+    "language": "Python/JavaScript",
+    "framework_type": "LLM Framework",
+    "use_cases": [
+      "LLM applications",
+      "RAG systems",
+      "AI agents",
+      "Chatbots",
+      "Document Q&A"
+    ],
+    "related_skills": [
+      "openai-api",
+      "python",
+      "vector-databases",
+      "anthropic"
+    ]
+  }
+}

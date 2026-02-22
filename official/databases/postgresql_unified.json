@@ -1,0 +1,146 @@
+{
+  "name": "postgresql",
+  "description": "Complete PostgreSQL knowledge combining official documentation and source code. Use when designing databases, writing queries, optimizing performance, or managing PostgreSQL instances. Covers SQL, administration, and advanced features.",
+  "version": "1.0.0",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.postgresql.org/docs/current/",
+      "extract_api": true,
+      "start_urls": [
+        "https://www.postgresql.org/docs/current/tutorial.html",
+        "https://www.postgresql.org/docs/current/sql.html",
+        "https://www.postgresql.org/docs/current/admin.html",
+        "https://www.postgresql.org/docs/current/reference.html"
+      ],
+      "selectors": {
+        "main_content": "div[role='main'], .docContent",
+        "title": "h1, h2",
+        "code_blocks": "pre, code"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/current/",
+          "/docs/15/",
+          "/docs/14/"
+        ],
+        "exclude": [
+          "/about/",
+          "/community/",
+          "/download/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "tutorial",
+          "installation",
+          "setup",
+          "started"
+        ],
+        "sql_commands": [
+          "sql-commands",
+          "select",
+          "insert",
+          "update",
+          "delete",
+          "create",
+          "alter",
+          "drop"
+        ],
+        "data_types": [
+          "datatype",
+          "numeric",
+          "string",
+          "datetime",
+          "json",
+          "array",
+          "uuid"
+        ],
+        "queries": [
+          "queries",
+          "join",
+          "subquery",
+          "cte",
+          "window",
+          "aggregate"
+        ],
+        "indexes": [
+          "indexes",
+          "btree",
+          "gin",
+          "gist",
+          "brin",
+          "hash"
+        ],
+        "performance": [
+          "performance",
+          "explain",
+          "analyze",
+          "vacuum",
+          "statistics",
+          "tuning"
+        ],
+        "replication": [
+          "replication",
+          "streaming",
+          "logical",
+          "failover",
+          "standby"
+        ],
+        "security": [
+          "security",
+          "authentication",
+          "authorization",
+          "role",
+          "privilege",
+          "ssl"
+        ],
+        "administration": [
+          "admin",
+          "backup",
+          "restore",
+          "monitoring",
+          "maintenance"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 600
+    },
+    {
+      "type": "github",
+      "repo": "postgres/postgres",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": false,
+      "max_issues": 0,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "src/backend/**/*.c",
+        "src/backend/**/*.h",
+        "src/include/**/*.h"
+      ]
+    }
+  ],
+  "metadata": {
+    "author": "PostgreSQL Global Development Group",
+    "language": "C",
+    "framework_type": "Relational Database",
+    "use_cases": [
+      "Relational data storage",
+      "Complex queries",
+      "JSON document storage",
+      "Geospatial data",
+      "Full-text search"
+    ],
+    "related_skills": [
+      "sql",
+      "redis",
+      "prisma",
+      "typeorm",
+      "django"
+    ]
+  },
+  "base_url": "https://www.postgresql.org/docs/current/"
+}

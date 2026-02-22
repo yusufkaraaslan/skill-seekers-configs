@@ -1,0 +1,131 @@
+{
+  "name": "firebase",
+  "description": "Complete Firebase knowledge from official documentation. Use when building mobile and web applications with Google's backend platform. Covers Firestore, Auth, Cloud Functions, Hosting, and Analytics.",
+  "version": "1.0.0",
+  "base_url": "https://firebase.google.com/docs",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://firebase.google.com/docs",
+      "start_urls": [
+        "https://firebase.google.com/docs/web/setup",
+        "https://firebase.google.com/docs/firestore",
+        "https://firebase.google.com/docs/auth",
+        "https://firebase.google.com/docs/functions",
+        "https://firebase.google.com/docs/hosting"
+      ],
+      "selectors": {
+        "main_content": "article, main, .devsite-article",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/web/",
+          "/docs/firestore/",
+          "/docs/auth/",
+          "/docs/functions/",
+          "/docs/hosting/",
+          "/docs/storage/",
+          "/docs/cloud-messaging/",
+          "/docs/analytics/",
+          "/docs/crashlytics/",
+          "/docs/performance/",
+          "/docs/remote-config/",
+          "/docs/ab-testing/"
+        ],
+        "exclude": [
+          "/docs/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "setup",
+          "web",
+          "ios",
+          "android",
+          "flutter"
+        ],
+        "firestore": [
+          "firestore",
+          "database",
+          "documents",
+          "queries",
+          "security-rules"
+        ],
+        "authentication": [
+          "auth",
+          "email",
+          "google",
+          "oauth",
+          "custom",
+          "anonymous"
+        ],
+        "functions": [
+          "functions",
+          "cloud-functions",
+          "triggers",
+          "https",
+          "callable"
+        ],
+        "storage": [
+          "storage",
+          "upload",
+          "download",
+          "security-rules"
+        ],
+        "hosting": [
+          "hosting",
+          "deploy",
+          "preview",
+          "rewrites",
+          "headers"
+        ],
+        "messaging": [
+          "cloud-messaging",
+          "fcm",
+          "notifications",
+          "topics"
+        ],
+        "analytics": [
+          "analytics",
+          "events",
+          "audiences",
+          "conversions"
+        ],
+        "crashlytics": [
+          "crashlytics",
+          "crashes",
+          "analytics"
+        ],
+        "remote_config": [
+          "remote-config",
+          "ab-testing",
+          "experiments"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 600
+    }
+  ],
+  "metadata": {
+    "author": "Google",
+    "language": "Multi-language",
+    "framework_type": "Backend Platform",
+    "use_cases": [
+      "Mobile app backends",
+      "Real-time databases",
+      "User authentication",
+      "File storage",
+      "Push notifications",
+      "App analytics"
+    ],
+    "related_skills": [
+      "react-native",
+      "flutter",
+      "android",
+      "ios",
+      "cloud-functions"
+    ]
+  }
+}

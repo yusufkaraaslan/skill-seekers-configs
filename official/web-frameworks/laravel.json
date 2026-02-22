@@ -23,16 +23,49 @@
         "code_blocks": "pre"
       },
       "url_patterns": {
-        "include": ["/docs/11.x/"],
-        "exclude": ["/api/", "/packages/"]
+        "include": [
+          "/docs/11.x/"
+        ],
+        "exclude": [
+          "/api/",
+          "/packages/"
+        ]
       },
       "categories": {
-        "getting_started": ["installation", "configuration", "structure", "deployment"],
-        "routing": ["routing", "middleware", "controllers"],
-        "views": ["views", "blade", "templates"],
-        "models": ["eloquent", "database", "migrations", "seeding", "queries"],
-        "authentication": ["authentication", "authorization", "passwords"],
-        "api": ["api", "resources", "requests", "responses"]
+        "getting_started": [
+          "installation",
+          "configuration",
+          "structure",
+          "deployment"
+        ],
+        "routing": [
+          "routing",
+          "middleware",
+          "controllers"
+        ],
+        "views": [
+          "views",
+          "blade",
+          "templates"
+        ],
+        "models": [
+          "eloquent",
+          "database",
+          "migrations",
+          "seeding",
+          "queries"
+        ],
+        "authentication": [
+          "authentication",
+          "authorization",
+          "passwords"
+        ],
+        "api": [
+          "api",
+          "resources",
+          "requests",
+          "responses"
+        ]
       },
       "rate_limit": 0.3,
       "max_pages": 500
@@ -52,5 +85,6 @@
         "resources/views/**/*.blade.php"
       ]
     }
-  ]
+  ],
+  "base_url": "https://laravel.com/docs/11.x/"
 }

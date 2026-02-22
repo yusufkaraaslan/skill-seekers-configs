@@ -1,0 +1,129 @@
+{
+  "name": "gensim",
+  "description": "Complete Gensim knowledge from official documentation. Use when training and using word embeddings and topic models. Covers Word2Vec, Doc2Vec, LDA, and similarity queries.",
+  "version": "1.0.0",
+  "base_url": "https://radimrehurek.com/gensim/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://radimrehurek.com/gensim/",
+      "start_urls": [
+        "https://radimrehurek.com/gensim/",
+        "https://radimrehurek.com/gensim/auto_examples/",
+        "https://radimrehurek.com/gensim/models/word2vec.html",
+        "https://radimrehurek.com/gensim/apiref.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/gensim/auto_examples/",
+          "/gensim/models/",
+          "/gensim/apiref.html",
+          "/gensim/corpora/"
+        ],
+        "exclude": [
+          "/gensim/release/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "auto_examples/core/run_core_concepts",
+          "install",
+          "tutorials"
+        ],
+        "corpora": [
+          "corpora",
+          "TextCorpus",
+          "Dictionary",
+          "corpus-streaming"
+        ],
+        "word2vec": [
+          "models/word2vec",
+          "Word2Vec",
+          "training",
+          "vectors",
+          "similarity"
+        ],
+        "doc2vec": [
+          "models/doc2vec",
+          "Doc2Vec",
+          "tagged-document",
+          "paragraph-vectors"
+        ],
+        "fasttext": [
+          "models/fasttext",
+          "FastText",
+          "subword",
+          "out-of-vocabulary"
+        ],
+        "lda": [
+          "models/ldamodel",
+          "LdaModel",
+          "topic-modeling",
+          "coherence"
+        ],
+        "lsi": [
+          "models/lsimodel",
+          "LsiModel",
+          "latent-semantic",
+          "svd"
+        ],
+        "tfidf": [
+          "models/tfidfmodel",
+          "TfidfModel",
+          "weighting"
+        ],
+        "similarity": [
+          "similarities/docsim",
+          "MatrixSimilarity",
+          "Similarity",
+          "queries"
+        ],
+        "phrases": [
+          "models/phrases",
+          "Phrases",
+          "bigram",
+          "collocation"
+        ],
+        "downloading": [
+          "downloading-api",
+          "load",
+          "glove",
+          "word2vec-pretrained"
+        ],
+        "serialization": [
+          "auto_examples/howtos/run_doc2vec_imdb",
+          "save",
+          "load",
+          "mmap"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Radim \u0158eh\u016f\u0159ek",
+    "language": "Python",
+    "framework_type": "Topic Modeling Library",
+    "use_cases": [
+      "Word embeddings",
+      "Topic modeling",
+      "Document similarity",
+      "Text mining",
+      "Semantic analysis"
+    ],
+    "related_skills": [
+      "python",
+      "numpy",
+      "scipy",
+      "nltk",
+      "spacy"
+    ]
+  }
+}

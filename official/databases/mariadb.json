@@ -1,0 +1,136 @@
+{
+  "name": "mariadb",
+  "description": "Complete MariaDB knowledge from official documentation. Use when building applications with the open-source MySQL fork. Covers SQL, storage engines, replication, and Galera Cluster.",
+  "version": "1.0.0",
+  "base_url": "https://mariadb.com/kb/en/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://mariadb.com/kb/en/",
+      "start_urls": [
+        "https://mariadb.com/kb/en/documentation/",
+        "https://mariadb.com/kb/en/sql-statements-structure/",
+        "https://mariadb.com/kb/en/mariadb-administration/",
+        "https://mariadb.com/kb/en/optimization-and-tuning/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/kb/en/documentation/",
+          "/kb/en/sql-statements-structure/",
+          "/kb/en/mariadb-administration/",
+          "/kb/en/optimization-and-tuning/"
+        ],
+        "exclude": [
+          "/kb/en/changelogs/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "documentation",
+          "getting-started",
+          "installing",
+          "basic-sql-statements"
+        ],
+        "sql_statements": [
+          "sql-statements-structure",
+          "select",
+          "insert",
+          "update",
+          "delete",
+          "join"
+        ],
+        "built-in_functions": [
+          "built-in-functions",
+          "string-functions",
+          "numeric-functions",
+          "date-time-functions",
+          "json-functions"
+        ],
+        "storage_engines": [
+          "choosing-the-right-storage-engine",
+          "innodb",
+          "aria",
+          "myrocks",
+          "columnstore"
+        ],
+        "replication": [
+          "high-availability-performance-tuning-mariadb-replication",
+          "master-slave",
+          "gtid",
+          "binlog",
+          "parallel-replication"
+        ],
+        "galera": [
+          "galera-cluster",
+          "wsrep",
+          "multi-master",
+          "cluster-configuration"
+        ],
+        "optimization": [
+          "optimization-and-tuning",
+          "query-optimization",
+          "index-hints",
+          "optimizer-switch"
+        ],
+        "security": [
+          "security",
+          "user-privileges",
+          "ssl",
+          "authentication-plugins",
+          "roles"
+        ],
+        "json": [
+          "json-functions",
+          "json_data_type",
+          "json_array",
+          "json_object"
+        ],
+        "window_functions": [
+          "window-functions",
+          "over",
+          "partition-by",
+          "row_number",
+          "rank"
+        ],
+        "backup_restore": [
+          "backup-and-restore-overview",
+          "mariabackup",
+          "mysqldump",
+          "point-in-time-recovery"
+        ],
+        "connectors": [
+          "application-programming-interfaces",
+          "connector-python",
+          "connector-nodejs",
+          "connector-j"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 450
+    }
+  ],
+  "metadata": {
+    "author": "MariaDB Foundation",
+    "language": "SQL",
+    "framework_type": "Relational Database",
+    "use_cases": [
+      "Web applications",
+      "LAMP stack",
+      "WordPress",
+      "High availability",
+      "Open source SQL"
+    ],
+    "related_skills": [
+      "sql",
+      "mysql",
+      "php",
+      "linux",
+      "galera"
+    ]
+  }
+}

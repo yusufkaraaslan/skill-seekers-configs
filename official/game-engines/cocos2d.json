@@ -1,0 +1,138 @@
+{
+  "name": "cocos2d",
+  "description": "Complete Cocos2d-x knowledge from official documentation. Use when building cross-platform 2D games in C++, Lua, or JavaScript. Covers scenes, sprites, actions, physics, and particle systems.",
+  "version": "1.0.0",
+  "base_url": "https://docs.cocos2d-x.org/api-ref/index.html",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.cocos2d-x.org/api-ref/index.html",
+      "start_urls": [
+        "https://docs.cocos2d-x.org/api-ref/index.html",
+        "https://docs.cocos2d-x.org/cocos2d-x/en/",
+        "https://docs.cocos2d-x.org/cocos2d-x/en/basic/index.html",
+        "https://docs.cocos2d-x.org/cocos2d-x/en/physics/index.html"
+      ],
+      "selectors": {
+        "main_content": "article, main, .content",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/cocos2d-x/en/",
+          "/api-ref/",
+          "/api-ref/cplusplus/"
+        ],
+        "exclude": [
+          "/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "basic",
+          "installation",
+          "project-structure",
+          "main-loop"
+        ],
+        "director": [
+          "Director",
+          "runScene",
+          "replaceScene",
+          "getWinSize"
+        ],
+        "scenes": [
+          "Scene",
+          "Layer",
+          "create",
+          "onEnter",
+          "onExit"
+        ],
+        "sprites": [
+          "Sprite",
+          "create",
+          "setPosition",
+          "setScale",
+          "setRotation"
+        ],
+        "actions": [
+          "Action",
+          "MoveTo",
+          "RotateBy",
+          "ScaleTo",
+          "Sequence",
+          "Spawn"
+        ],
+        "animations": [
+          "Animation",
+          "Animate",
+          "SpriteFrame",
+          "AnimationCache"
+        ],
+        "physics": [
+          "physics",
+          "PhysicsWorld",
+          "PhysicsBody",
+          "PhysicsShape",
+          "contact-listener"
+        ],
+        "particles": [
+          "ParticleSystem",
+          "ParticleFire",
+          "ParticleExplosion",
+          "ParticleGalaxy"
+        ],
+        "audio": [
+          "SimpleAudioEngine",
+          "playBackgroundMusic",
+          "playEffect",
+          "preload"
+        ],
+        "ui": [
+          "ui",
+          "Button",
+          "Label",
+          "TextField",
+          "ScrollView"
+        ],
+        "input": [
+          "input",
+          "EventListenerTouch",
+          "EventListenerKeyboard",
+          "EventListenerMouse"
+        ],
+        "tilemaps": [
+          "TMXTiledMap",
+          "TMXLayer",
+          "TMXObjectGroup"
+        ],
+        "shaders": [
+          "GLProgram",
+          "GLProgramState",
+          "setUniforms"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Chukong Technologies",
+    "language": "C++/Lua/JavaScript",
+    "framework_type": "Game Engine",
+    "use_cases": [
+      "2D games",
+      "Mobile games",
+      "Cross-platform games",
+      "Casual games",
+      "Educational games"
+    ],
+    "related_skills": [
+      "cpp",
+      "lua",
+      "javascript",
+      "box2d",
+      "chipmunk"
+    ]
+  }
+}

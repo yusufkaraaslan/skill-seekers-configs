@@ -1,0 +1,107 @@
+{
+  "name": "elasticsearch",
+  "description": "Complete Elasticsearch knowledge from official documentation. Use when building search, analytics, or logging solutions. Covers indexing, querying, aggregations, and cluster management.",
+  "version": "1.0.0",
+  "base_url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html",
+      "start_urls": [
+        "https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html",
+        "https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html",
+        "https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html",
+        "https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html"
+      ],
+      "selectors": {
+        "main_content": "article, main, .section",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/guide/en/elasticsearch/reference/"
+        ],
+        "exclude": [
+          "/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "installation",
+          "configuration"
+        ],
+        "indexing": [
+          "index",
+          "document",
+          "mapping",
+          "bulk",
+          "reindex"
+        ],
+        "search": [
+          "search",
+          "query",
+          "match",
+          "term",
+          "bool",
+          "filter"
+        ],
+        "aggregations": [
+          "aggregations",
+          "metrics",
+          "buckets",
+          "pipeline",
+          "nested"
+        ],
+        "mapping": [
+          "mapping",
+          "fields",
+          "types",
+          "analyzer",
+          "dynamic"
+        ],
+        "cluster": [
+          "cluster",
+          "nodes",
+          "shards",
+          "replicas",
+          "health"
+        ],
+        "performance": [
+          "performance",
+          "tuning",
+          "caching",
+          "routing"
+        ],
+        "security": [
+          "security",
+          "authentication",
+          "ssl",
+          "roles"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 500
+    }
+  ],
+  "metadata": {
+    "author": "Elastic",
+    "language": "Java",
+    "framework_type": "Search Engine",
+    "use_cases": [
+      "Full-text search",
+      "Log analytics",
+      "Metrics monitoring",
+      "Security analytics",
+      "Business intelligence"
+    ],
+    "related_skills": [
+      "kibana",
+      "logstash",
+      "beats",
+      "docker",
+      "python"
+    ]
+  }
+}

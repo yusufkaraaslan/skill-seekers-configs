@@ -1,0 +1,134 @@
+{
+  "name": "spacy",
+  "description": "Complete spaCy knowledge from official documentation. Use when building production-grade NLP pipelines. Covers tokenization, tagging, parsing, NER, transformers, and custom components.",
+  "version": "1.0.0",
+  "base_url": "https://spacy.io/usage/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://spacy.io/usage/",
+      "start_urls": [
+        "https://spacy.io/usage/",
+        "https://spacy.io/usage/spacy-101",
+        "https://spacy.io/api/",
+        "https://spacy.io/models"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/usage/",
+          "/api/",
+          "/models",
+          "/universe/"
+        ],
+        "exclude": [
+          "/usage/v2-3/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "spacy-101",
+          "installation",
+          "models"
+        ],
+        "linguistic_features": [
+          "linguistic-features",
+          "tokenization",
+          "pos-tagging",
+          "dependency-parse",
+          "ner"
+        ],
+        "pipelines": [
+          "pipelines",
+          "components",
+          "custom-components",
+          "pipeline-packages"
+        ],
+        "training": [
+          "training",
+          "config",
+          "data-formats",
+          "cli",
+          "spacy-train"
+        ],
+        "transformers": [
+          "transformers",
+          "spacy-transformers",
+          "bert",
+          "roberta",
+          "custom-models"
+        ],
+        "tokenization": [
+          "tokenization",
+          "tokenizer",
+          "custom-tokenizer",
+          "sentence-segmentation"
+        ],
+        "vocab": [
+          "vocab",
+          "lexeme",
+          "token",
+          "string-store",
+          "vectors"
+        ],
+        "word_vectors": [
+          "vectors-similarity",
+          "word-vectors",
+          "contextual-vectors",
+          "similarity"
+        ],
+        "projects": [
+          "projects",
+          "spacy-project",
+          "workflows",
+          "assets",
+          "remotes"
+        ],
+        "entity_ruler": [
+          "rule-based-matching",
+          "entityruler",
+          "phrasematcher",
+          "matcher"
+        ],
+        "extensions": [
+          "extensions",
+          "custom-attributes",
+          "underscore"
+        ],
+        "serialization": [
+          "serialization",
+          "save",
+          "to_disk",
+          "bytes",
+          "msgpack"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Explosion AI",
+    "language": "Python/Cython",
+    "framework_type": "NLP Library",
+    "use_cases": [
+      "Text processing",
+      "NER",
+      "POS tagging",
+      "Dependency parsing",
+      "Production NLP"
+    ],
+    "related_skills": [
+      "python",
+      "transformers",
+      "pytorch",
+      "tensorflow",
+      "prodigy"
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "name": "insomnia",
+  "description": "Complete Insomnia knowledge from official documentation. Use when designing, testing, and debugging APIs with an open-source client. Covers requests, collections, environments, and plugins.",
+  "version": "1.0.0",
+  "base_url": "https://docs.insomnia.rest/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.insomnia.rest/",
+      "start_urls": [
+        "https://docs.insomnia.rest/",
+        "https://docs.insomnia.rest/insomnia/get-started",
+        "https://docs.insomnia.rest/insomnia/requests",
+        "https://docs.insomnia.rest/insomnia/environment-variables"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/insomnia/",
+          "/insomnia/get-started",
+          "/insomnia/requests",
+          "/insomnia/environment-variables"
+        ],
+        "exclude": [
+          "/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "insomnia/get-started",
+          "install",
+          "first-request"
+        ],
+        "requests": [
+          "insomnia/requests",
+          "create-requests",
+          "request-body",
+          "auth"
+        ],
+        "responses": [
+          "insomnia/responses",
+          "view-responses",
+          "response-history",
+          "filtering"
+        ],
+        "collections": [
+          "insomnia/collections",
+          "create-collections",
+          "organize-requests",
+          "import-export"
+        ],
+        "environments": [
+          "insomnia/environment-variables",
+          "base-environment",
+          "sub-environments",
+          "variable-reference"
+        ],
+        "folder_organization": [
+          "insomnia/folder-management",
+          "create-folders",
+          "nesting",
+          "ordering"
+        ],
+        "templates": [
+          "insomnia/template-tags",
+          "response-tag",
+          "uuid-tag",
+          "timestamp-tag"
+        ],
+        "plugins": [
+          "insomnia/plugins",
+          "install-plugins",
+          "develop-plugins",
+          "core-plugins"
+        ],
+        "design_documents": [
+          "insomnia/design-documents",
+          "openapi",
+          "swagger",
+          "api-specs"
+        ],
+        "debugging": [
+          "insomnia/debugging",
+          "timeline",
+          "console",
+          "cookies"
+        ],
+        "sync": [
+          "insomnia/insomnia-sync",
+          "teams",
+          "version-control",
+          "conflict-resolution"
+        ],
+        "cli": [
+          "inso-cli",
+          "inso-run",
+          "inso-export",
+          "ci-cd"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 250
+    }
+  ],
+  "metadata": {
+    "author": "Kong",
+    "language": "JavaScript",
+    "framework_type": "API Client",
+    "use_cases": [
+      "API testing",
+      "API design",
+      "REST clients",
+      "GraphQL clients",
+      "OpenAPI design"
+    ],
+    "related_skills": [
+      "rest",
+      "graphql",
+      "openapi",
+      "json",
+      "http"
+    ]
+  }
+}

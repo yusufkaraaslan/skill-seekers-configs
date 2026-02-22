@@ -1,0 +1,147 @@
+{
+  "name": "pandas",
+  "description": "Complete Pandas knowledge combining documentation and source code. Use when manipulating tabular data, cleaning datasets, or performing data analysis in Python. Covers DataFrames, Series, indexing, and advanced operations.",
+  "version": "1.0.0",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://pandas.pydata.org/docs/",
+      "extract_api": true,
+      "start_urls": [
+        "https://pandas.pydata.org/docs/getting_started/index.html",
+        "https://pandas.pydata.org/docs/user_guide/index.html",
+        "https://pandas.pydata.org/docs/reference/index.html"
+      ],
+      "selectors": {
+        "main_content": "article, main, .section",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/getting_started/",
+          "/docs/user_guide/",
+          "/docs/reference/",
+          "/docs/development/"
+        ],
+        "exclude": [
+          "/blog/",
+          "/about/",
+          "/contribute/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "install",
+          "overview",
+          "10min"
+        ],
+        "data_structures": [
+          "dataframe",
+          "series",
+          "index",
+          "panel",
+          "structure"
+        ],
+        "io": [
+          "io",
+          "read_csv",
+          "read_excel",
+          "to_csv",
+          "parquet",
+          "json"
+        ],
+        "indexing": [
+          "indexing",
+          "loc",
+          "iloc",
+          "at",
+          "iat",
+          "boolean",
+          "query"
+        ],
+        "missing_data": [
+          "missing",
+          "na",
+          "null",
+          "fillna",
+          "dropna",
+          "interpolate"
+        ],
+        "groupby": [
+          "groupby",
+          "split-apply-combine",
+          "aggregate",
+          "transform",
+          "filter"
+        ],
+        "merging": [
+          "merge",
+          "join",
+          "concat",
+          "append",
+          "align"
+        ],
+        "reshaping": [
+          "reshape",
+          "pivot",
+          "melt",
+          "stack",
+          "unstack",
+          "crosstab"
+        ],
+        "time_series": [
+          "timeseries",
+          "datetime",
+          "resample",
+          "timezone",
+          "offset"
+        ],
+        "plotting": [
+          "visualization",
+          "plot",
+          "matplotlib",
+          "seaborn"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 500
+    },
+    {
+      "type": "github",
+      "repo": "pandas-dev/pandas",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "pandas/core/**/*.py",
+        "pandas/io/**/*.py"
+      ]
+    }
+  ],
+  "metadata": {
+    "author": "Pandas Development Team",
+    "language": "Python",
+    "framework_type": "Data Analysis Library",
+    "use_cases": [
+      "Data cleaning",
+      "Data transformation",
+      "Exploratory data analysis",
+      "Time series analysis",
+      "Data visualization preparation"
+    ],
+    "related_skills": [
+      "numpy",
+      "matplotlib",
+      "scikit-learn",
+      "jupyter",
+      "python"
+    ]
+  },
+  "base_url": "https://pandas.pydata.org/docs/"
+}

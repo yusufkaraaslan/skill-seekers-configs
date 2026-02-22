@@ -1,0 +1,113 @@
+{
+  "name": "kafka",
+  "description": "Complete Apache Kafka knowledge from official documentation. Use when building event-driven architectures and real-time data pipelines. Covers producers, consumers, topics, partitions, and Kafka Streams.",
+  "version": "1.0.0",
+  "base_url": "https://kafka.apache.org/documentation/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://kafka.apache.org/documentation/",
+      "start_urls": [
+        "https://kafka.apache.org/documentation/",
+        "https://kafka.apache.org/documentation/#gettingStarted",
+        "https://kafka.apache.org/documentation/#api",
+        "https://kafka.apache.org/documentation/#connect",
+        "https://kafka.apache.org/documentation/#streams"
+      ],
+      "selectors": {
+        "main_content": "article, main, .content",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/documentation/"
+        ],
+        "exclude": [
+          "/documentation/#quickstart"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "quickstart",
+          "ecosystem",
+          "use-cases"
+        ],
+        "architecture": [
+          "architecture",
+          "producers",
+          "consumers",
+          "brokers",
+          "zookeeper"
+        ],
+        "topics": [
+          "topics",
+          "partitions",
+          "replication",
+          "compaction",
+          "retention"
+        ],
+        "producers": [
+          "producers",
+          "acks",
+          "compression",
+          "batching"
+        ],
+        "consumers": [
+          "consumers",
+          "consumer-groups",
+          "offset",
+          "rebalancing"
+        ],
+        "connect": [
+          "connect",
+          "source-connectors",
+          "sink-connectors",
+          "transforms"
+        ],
+        "streams": [
+          "streams",
+          "stream-processing",
+          "ktable",
+          "kstream",
+          "topology"
+        ],
+        "security": [
+          "security",
+          "ssl",
+          "sasl",
+          "acl",
+          "encryption"
+        ],
+        "operations": [
+          "operations",
+          "monitoring",
+          "metrics",
+          "rebalancing"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Apache Software Foundation",
+    "language": "Java/Scala",
+    "framework_type": "Event Streaming",
+    "use_cases": [
+      "Event streaming",
+      "Real-time analytics",
+      "Data pipelines",
+      "Log aggregation",
+      "Stream processing"
+    ],
+    "related_skills": [
+      "java",
+      "spark",
+      "flink",
+      "elasticsearch",
+      "redis"
+    ]
+  }
+}

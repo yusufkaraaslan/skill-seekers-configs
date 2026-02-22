@@ -1,0 +1,122 @@
+{
+  "name": "gamemaker",
+  "description": "Complete GameMaker knowledge from official documentation. Use when building 2D games with drag-and-drop or GML scripting. Covers objects, rooms, sprites, physics, and multiplayer.",
+  "version": "1.0.0",
+  "base_url": "https://manual.yoyogames.com/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://manual.yoyogames.com/",
+      "start_urls": [
+        "https://manual.yoyogames.com/",
+        "https://manual.yoyogames.com/#t=Content.htm",
+        "https://manual.yoyogames.com/#t=GameMaker_Language.htm",
+        "https://manual.yoyogames.com/#t=The_IDE.htm"
+      ],
+      "selectors": {
+        "main_content": "#topic_content, article",
+        "title": "h1",
+        "code_blocks": "pre, code"
+      },
+      "url_patterns": {
+        "include": [
+          "/",
+          "/#t=Content.htm",
+          "/#t=GameMaker_Language.htm",
+          "/#t=The_IDE.htm"
+        ],
+        "exclude": [
+          "/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "Content",
+          "Quick_Start_Guide",
+          "Installation",
+          "Licensing"
+        ],
+        "ide": [
+          "The_IDE",
+          "Workspaces",
+          "Asset_Browser",
+          "Image_Editor"
+        ],
+        "objects": [
+          "Objects",
+          "Object_Events",
+          "Parent_Objects",
+          "Physics_Objects"
+        ],
+        "rooms": [
+          "Rooms",
+          "Room_Layers",
+          "Tilemaps",
+          "Views"
+        ],
+        "sprites": [
+          "Sprites",
+          "Animation",
+          "Collision_Masks",
+          "Nine_Slicing"
+        ],
+        "gml": [
+          "GameMaker_Language",
+          "Variables",
+          "Functions",
+          "Scripts",
+          "Data_Structures"
+        ],
+        "dnd": [
+          "Drag_And_Drop",
+          "Action_Blocks",
+          "GML_Visual"
+        ],
+        "audio": [
+          "Audio",
+          "Sound_Editor",
+          "Audio_Functions",
+          "Audio_Groups"
+        ],
+        "physics": [
+          "Physics",
+          "Physics_World",
+          "Fixtures",
+          "Joints"
+        ],
+        "networking": [
+          "Networking",
+          "Multiplayer",
+          "HTTP",
+          "WebSockets"
+        ],
+        "shaders": [
+          "Shaders",
+          "Shader_Editor",
+          "HLSL",
+          "GLSL"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "YoYo Games",
+    "language": "GML/C#",
+    "framework_type": "Game Engine",
+    "use_cases": [
+      "2D games",
+      "Pixel art games",
+      "Prototyping",
+      "Indie games",
+      "Mobile games"
+    ],
+    "related_skills": [
+      "gml",
+      "pixel-art",
+      "aseprite",
+      "shaders"
+    ]
+  }
+}

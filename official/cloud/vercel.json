@@ -1,0 +1,107 @@
+{
+  "name": "vercel",
+  "description": "Complete Vercel knowledge from official documentation. Use when deploying frontend applications and serverless functions. Covers deployments, serverless functions, edge network, preview environments, and CLI.",
+  "version": "1.0.0",
+  "base_url": "https://vercel.com/docs",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://vercel.com/docs",
+      "start_urls": [
+        "https://vercel.com/docs/getting-started-with-vercel",
+        "https://vercel.com/docs/concepts",
+        "https://vercel.com/docs/functions",
+        "https://vercel.com/docs/cli"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/",
+          "/docs/concepts/",
+          "/docs/functions/",
+          "/docs/cli/",
+          "/docs/frameworks/"
+        ],
+        "exclude": [
+          "/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started-with-vercel",
+          "deploying",
+          "projects",
+          "domains"
+        ],
+        "frameworks": [
+          "nextjs",
+          "sveltekit",
+          "nuxt",
+          "remix",
+          "astro"
+        ],
+        "functions": [
+          "serverless-functions",
+          "edge-functions",
+          "python",
+          "go",
+          "ruby"
+        ],
+        "deployments": [
+          "git",
+          "preview-deployments",
+          "production-checklist",
+          "rollbacks"
+        ],
+        "configuration": [
+          "projects/project-configuration",
+          "vercel-json",
+          "environment-variables",
+          "build-step"
+        ],
+        "storage": [
+          "storage/vercel-postgres",
+          "storage/vercel-kv",
+          "storage/vercel-blob"
+        ],
+        "cli": [
+          "cli",
+          "cli/deploy",
+          "cli/dev",
+          "cli/env"
+        ],
+        "concepts": [
+          "edge-network",
+          "image-optimization",
+          "analytics",
+          "speed-insights"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Vercel",
+    "language": "Multi-language",
+    "framework_type": "Cloud Platform",
+    "use_cases": [
+      "Frontend deployment",
+      "Serverless functions",
+      "Edge computing",
+      "Preview environments",
+      "Global CDN"
+    ],
+    "related_skills": [
+      "nextjs",
+      "react",
+      "nodejs",
+      "postgresql",
+      "redis"
+    ]
+  }
+}

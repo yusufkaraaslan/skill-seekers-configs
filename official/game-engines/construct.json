@@ -1,0 +1,131 @@
+{
+  "name": "construct",
+  "description": "Complete Construct 3 knowledge from official documentation. Use when building HTML5 games without coding using visual scripting. Covers events, behaviors, effects, and multiplayer.",
+  "version": "1.0.0",
+  "base_url": "https://www.construct.net/en/make-games/manuals/construct-3",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.construct.net/en/make-games/manuals/construct-3",
+      "start_urls": [
+        "https://www.construct.net/en/make-games/manuals/construct-3",
+        "https://www.construct.net/en/make-games/manuals/construct-3/overview",
+        "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives",
+        "https://www.construct.net/en/make-games/manuals/construct-3/event-system"
+      ],
+      "selectors": {
+        "main_content": "article, main, .manual-content",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/construct-3",
+          "/construct-3/overview",
+          "/construct-3/project-primitives",
+          "/construct-3/event-system",
+          "/construct-3/behaviors"
+        ],
+        "exclude": [
+          "/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "overview",
+          "interface",
+          "project-structure",
+          "exporting"
+        ],
+        "project_primitives": [
+          "project-primitives",
+          "layouts",
+          "layers",
+          "objects",
+          "families"
+        ],
+        "event_system": [
+          "event-system",
+          "events",
+          "conditions",
+          "actions",
+          "sub-events"
+        ],
+        "behaviors": [
+          "behaviors",
+          "8-direction",
+          "platform",
+          "bullet",
+          "solid"
+        ],
+        "plugins": [
+          "plugins",
+          "sprite",
+          "tiled-background",
+          "text",
+          "particles"
+        ],
+        "effects": [
+          "effects",
+          "shaders",
+          "blend-modes"
+        ],
+        "audio": [
+          "audio",
+          "sounds",
+          "music",
+          "audio-object"
+        ],
+        "timelines": [
+          "timelines",
+          "animations",
+          "tweening"
+        ],
+        "javascript": [
+          "javascript",
+          "scripting",
+          "js-plugins"
+        ],
+        "multiplayer": [
+          "multiplayer",
+          "signalling",
+          "sync",
+          "host",
+          "peer"
+        ],
+        "mobile": [
+          "mobile",
+          "touch",
+          "ads",
+          "in-app-purchases"
+        ],
+        "performance": [
+          "performance",
+          "optimization",
+          "memory",
+          "rendering"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "Scirra",
+    "language": "Visual/JavaScript",
+    "framework_type": "Game Engine",
+    "use_cases": [
+      "No-code games",
+      "Rapid prototyping",
+      "HTML5 games",
+      "Mobile games",
+      "Educational games"
+    ],
+    "related_skills": [
+      "javascript",
+      "html5",
+      "webgl",
+      "visual-scripting"
+    ]
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "name": "pico8",
+  "description": "Complete PICO-8 knowledge from official documentation. Use when creating retro-style games with Lua in a fantasy console environment. Covers graphics, sound, music, and cartridge sharing.",
+  "version": "1.0.0",
+  "base_url": "https://www.lexaloffle.com/pico8_manual.php",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.lexaloffle.com/pico8_manual.php",
+      "start_urls": [
+        "https://www.lexaloffle.com/pico8_manual.php",
+        "https://www.lexaloffle.com/pico8.php?page=manual",
+        "https://www.lexaloffle.com/pico8.php?page=faq"
+      ],
+      "selectors": {
+        "main_content": "main, article, .content",
+        "title": "h1, h2",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/pico8_manual.php",
+          "/pico8.php?page=manual"
+        ],
+        "exclude": [
+          "/bbs/"
+        ]
+      },
+      "categories": {
+        "overview": [
+          "manual",
+          "specifications",
+          "limitations"
+        ],
+        "api_reference": [
+          "api",
+          "graphics",
+          "sound",
+          "input",
+          "map",
+          "data"
+        ],
+        "graphics": [
+          "clip",
+          "cls",
+          "color",
+          "cursor",
+          "display",
+          "fillp",
+          "line",
+          "rect",
+          "rectfill",
+          "circ",
+          "circfill",
+          "oval",
+          "ovalfill",
+          "spr",
+          "sspr",
+          "sset",
+          "sget",
+          "fset",
+          "fget",
+          "print"
+        ],
+        "tables": [
+          "add",
+          "del",
+          "foreach",
+          "all",
+          "count",
+          "pairs"
+        ],
+        "math": [
+          "abs",
+          "atan2",
+          "ceil",
+          "cos",
+          "flr",
+          "max",
+          "mid",
+          "min",
+          "rnd",
+          "sgn",
+          "sin",
+          "sqrt",
+          "srand"
+        ],
+        "memory": [
+          "cstore",
+          "memcpy",
+          "memset",
+          "peek",
+          "poke",
+          "reload"
+        ],
+        "cartdata": [
+          "cartdata",
+          "dget",
+          "dset"
+        ],
+        "coroutines": [
+          "cocreate",
+          "coresume",
+          "costatus",
+          "yield"
+        ],
+        "values": [
+          "band",
+          "bnot",
+          "bor",
+          "bxor",
+          "lshr",
+          "rotl",
+          "rotr",
+          "shl",
+          "shr",
+          "type",
+          "sub",
+          "tonum"
+        ],
+        "time": [
+          "time",
+          "t"
+        ],
+        "btn": [
+          "btn",
+          "btnp"
+        ],
+        "camera": [
+          "camera"
+        ],
+        "map": [
+          "map",
+          "mget",
+          "mset"
+        ],
+        "menu": [
+          "menuitem"
+        ],
+        "music": [
+          "music"
+        ],
+        "palette": [
+          "pal",
+          "palt"
+        ],
+        "sfx": [
+          "sfx"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 100
+    }
+  ],
+  "metadata": {
+    "author": "Lexaloffle Games",
+    "language": "Lua",
+    "framework_type": "Fantasy Console",
+    "use_cases": [
+      "Retro games",
+      "Game jams",
+      "Prototypes",
+      "Pixel art games",
+      "Chiptune music"
+    ],
+    "related_skills": [
+      "lua",
+      "pixel-art",
+      "chiptune",
+      "aseprite"
+    ]
+  }
+}

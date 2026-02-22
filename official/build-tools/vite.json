@@ -1,0 +1,101 @@
+{
+  "name": "vite",
+  "description": "Complete Vite knowledge from official documentation. Use when building modern web applications with fast HMR and optimized builds. Covers configuration, plugins, SSR, and library mode.",
+  "version": "1.0.0",
+  "base_url": "https://vitejs.dev/guide/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://vitejs.dev/guide/",
+      "start_urls": [
+        "https://vitejs.dev/guide/",
+        "https://vitejs.dev/config/",
+        "https://vitejs.dev/plugins/",
+        "https://vitejs.dev/api/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/guide/",
+          "/config/",
+          "/plugins/",
+          "/api/"
+        ],
+        "exclude": [
+          "/blog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "features",
+          "why-vite"
+        ],
+        "configuration": [
+          "config/",
+          "build-options",
+          "server-options",
+          "define"
+        ],
+        "features": [
+          "features",
+          "static-assets",
+          "env-and-mode",
+          "ssr",
+          "backend-integration"
+        ],
+        "cli": [
+          "cli",
+          "build",
+          "dev",
+          "preview"
+        ],
+        "plugins": [
+          "plugins",
+          "using-plugins",
+          "api-plugin"
+        ],
+        "ssr": [
+          "ssr",
+          "ssr-external",
+          "ssr-target"
+        ],
+        "api": [
+          "javascript-api",
+          "config-reference",
+          "plugin-api"
+        ],
+        "library_mode": [
+          "build-lib",
+          "library-mode"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 200
+    }
+  ],
+  "metadata": {
+    "author": "Evan You",
+    "language": "TypeScript",
+    "framework_type": "Build Tool",
+    "use_cases": [
+      "Modern web apps",
+      "Library development",
+      "Fast development",
+      "Production builds",
+      "SSR applications"
+    ],
+    "related_skills": [
+      "vue",
+      "react",
+      "typescript",
+      "rollup",
+      "esbuild",
+      "vitest"
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "name": "jest",
+  "description": "Complete Jest knowledge from official documentation. Use when testing JavaScript applications with zero configuration. Covers matchers, async testing, mocks, snapshots, and coverage.",
+  "version": "1.0.0",
+  "base_url": "https://jestjs.io/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://jestjs.io/docs/",
+      "start_urls": [
+        "https://jestjs.io/docs/getting-started",
+        "https://jestjs.io/docs/using-matchers",
+        "https://jestjs.io/docs/asynchronous",
+        "https://jestjs.io/docs/mock-functions",
+        "https://jestjs.io/docs/snapshot-testing"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/"
+        ],
+        "exclude": [
+          "/blog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "installation",
+          "configuration"
+        ],
+        "matchers": [
+          "using-matchers",
+          "common-matchers",
+          "truthiness",
+          "numbers",
+          "strings",
+          "arrays"
+        ],
+        "async": [
+          "asynchronous",
+          "callbacks",
+          "promises",
+          "async-await"
+        ],
+        "setup_teardown": [
+          "setup-teardown",
+          "beforeeach",
+          "aftereach",
+          "beforeall",
+          "afterall"
+        ],
+        "mocking": [
+          "mock-functions",
+          "jestfn",
+          "mockmodules",
+          "manual-mocks"
+        ],
+        "snapshot": [
+          "snapshot-testing",
+          "inline-snapshots",
+          "property-matchers"
+        ],
+        "cli": [
+          "cli",
+          "jest",
+          "watch",
+          "coverage"
+        ],
+        "configuration": [
+          "configuration",
+          "jestconfig",
+          "transform",
+          "module"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 200
+    }
+  ],
+  "metadata": {
+    "author": "Meta / Open Source",
+    "language": "JavaScript",
+    "framework_type": "Testing Framework",
+    "use_cases": [
+      "Unit testing",
+      "Integration testing",
+      "Snapshot testing",
+      "Code coverage",
+      "Mock testing"
+    ],
+    "related_skills": [
+      "javascript",
+      "typescript",
+      "react",
+      "node",
+      "babel"
+    ]
+  }
+}

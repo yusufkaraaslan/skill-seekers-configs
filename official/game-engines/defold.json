@@ -1,0 +1,137 @@
+{
+  "name": "defold",
+  "description": "Complete Defold knowledge from official documentation. Use when building 2D games with a data-driven approach. Covers game objects, components, Lua scripting, particle effects, and physics.",
+  "version": "1.0.0",
+  "base_url": "https://defold.com/manuals/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://defold.com/manuals/",
+      "start_urls": [
+        "https://defold.com/manuals/introduction/",
+        "https://defold.com/manuals/editor/",
+        "https://defold.com/manuals/lua/",
+        "https://defold.com/manuals/physics/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/manuals/",
+          "/ref/",
+          "/tutorials/"
+        ],
+        "exclude": [
+          "/blog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "introduction",
+          "installation",
+          "editor",
+          "project-setup"
+        ],
+        "editor": [
+          "editor",
+          "interface",
+          "assets",
+          "building"
+        ],
+        "game_objects": [
+          "game-object",
+          "components",
+          "position",
+          "parent-child"
+        ],
+        "sprites": [
+          "sprite",
+          "atlas",
+          "flipbook",
+          "slice9"
+        ],
+        "scripting": [
+          "lua",
+          "script",
+          "modules",
+          "math",
+          "coroutines"
+        ],
+        "input": [
+          "input",
+          "bindings",
+          "keyboard",
+          "mouse",
+          "touch",
+          "gamepad"
+        ],
+        "physics": [
+          "physics",
+          "collision-object",
+          "kinematic",
+          "dynamic",
+          "triggers"
+        ],
+        "gui": [
+          "gui",
+          "nodes",
+          "templates",
+          "layouts"
+        ],
+        "particles": [
+          "particlefx",
+          "emitters",
+          "modifiers",
+          "playback"
+        ],
+        "sound": [
+          "sound",
+          "music",
+          "groups",
+          "gain"
+        ],
+        "animation": [
+          "animation",
+          "spine",
+          "model",
+          "property"
+        ],
+        "tilemap": [
+          "tilemap",
+          "tile-source",
+          "collision"
+        ],
+        "rendering": [
+          "render",
+          "camera",
+          "view-projection",
+          "material"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "Defold Foundation",
+    "language": "Lua",
+    "framework_type": "Game Engine",
+    "use_cases": [
+      "2D games",
+      "Mobile games",
+      "Web games",
+      "Console games",
+      "Prototypes"
+    ],
+    "related_skills": [
+      "lua",
+      "box2d",
+      "opengl",
+      "tiled",
+      "spine"
+    ]
+  }
+}

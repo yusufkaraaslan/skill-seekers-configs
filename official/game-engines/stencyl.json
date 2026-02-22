@@ -1,0 +1,123 @@
+{
+  "name": "stencyl",
+  "description": "Complete Stencyl knowledge from official documentation. Use when building 2D games with visual block-based programming. Covers actor types, scenes, behaviors, and publishing to multiple platforms.",
+  "version": "1.0.0",
+  "base_url": "https://www.stencyl.com/help/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.stencyl.com/help/",
+      "start_urls": [
+        "https://www.stencyl.com/help/",
+        "https://www.stencyl.com/help/article/",
+        "https://www.stencyl.com/help/view/",
+        "https://www.stencyl.com/learn/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/help/article/",
+          "/help/view/",
+          "/learn/",
+          "/learn/category/"
+        ],
+        "exclude": [
+          "/help/search/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "welcome",
+          "install",
+          "crash-course",
+          "starter-kit"
+        ],
+        "basics": [
+          "article/what-is-stencyl",
+          "article/actor-types",
+          "article/scenes",
+          "article/behaviors"
+        ],
+        "actors": [
+          "article/actor-types",
+          "article/actor-animations",
+          "article/actor-values",
+          "article/collisions"
+        ],
+        "scenes": [
+          "article/scenes",
+          "article/tiles",
+          "article/backgrounds",
+          "article/scene-behaviors"
+        ],
+        "behaviors": [
+          "article/behaviors",
+          "article/events",
+          "article/attaching-behaviors",
+          "article/behavior-library"
+        ],
+        "blocks": [
+          "article/block-guide",
+          "article/logic-blocks",
+          "article/physics-blocks",
+          "article/drawing-blocks"
+        ],
+        "physics": [
+          "article/physics",
+          "article/collisions",
+          "article/regions",
+          "article/joints"
+        ],
+        "effects": [
+          "article/effects",
+          "article/particles",
+          "article/shaders",
+          "article/tweens"
+        ],
+        "input": [
+          "article/controls",
+          "article/keyboard",
+          "article/mouse",
+          "article/mobile-controls"
+        ],
+        "sound": [
+          "article/sound",
+          "article/music",
+          "article/sound-effects"
+        ],
+        "publishing": [
+          "article/publishing",
+          "article/flash",
+          "article/html5",
+          "article/mobile",
+          "article/desktop"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Stencyl",
+    "language": "Visual Blocks/Haxe",
+    "framework_type": "2D Game Engine",
+    "use_cases": [
+      "2D platformers",
+      "No-code games",
+      "Educational games",
+      "Mobile games",
+      "Flash/HTML5 games"
+    ],
+    "related_skills": [
+      "haxe",
+      "openfl",
+      "box2d",
+      "pixel-art"
+    ]
+  }
+}

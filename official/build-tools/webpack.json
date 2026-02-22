@@ -1,0 +1,107 @@
+{
+  "name": "webpack",
+  "description": "Complete Webpack knowledge from official documentation. Use when bundling JavaScript applications with custom configurations. Covers entry/output, loaders, plugins, optimization, and development server.",
+  "version": "1.0.0",
+  "base_url": "https://webpack.js.org/concepts/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://webpack.js.org/concepts/",
+      "start_urls": [
+        "https://webpack.js.org/concepts/",
+        "https://webpack.js.org/configuration/",
+        "https://webpack.js.org/guides/",
+        "https://webpack.js.org/api/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/concepts/",
+          "/configuration/",
+          "/guides/",
+          "/api/",
+          "/loaders/",
+          "/plugins/"
+        ],
+        "exclude": [
+          "/blog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "concepts",
+          "entry-points",
+          "output",
+          "mode"
+        ],
+        "configuration": [
+          "configuration",
+          "configuration-types",
+          "configuration-languages"
+        ],
+        "loaders": [
+          "loaders",
+          "babel-loader",
+          "css-loader",
+          "ts-loader",
+          "file-loader"
+        ],
+        "plugins": [
+          "plugins",
+          "html-webpack-plugin",
+          "mini-css-extract-plugin",
+          "define-plugin"
+        ],
+        "optimization": [
+          "code-splitting",
+          "tree-shaking",
+          "caching",
+          "minimize"
+        ],
+        "development": [
+          "development",
+          "webpack-dev-server",
+          "hot-module-replacement"
+        ],
+        "guides": [
+          "getting-started",
+          "asset-management",
+          "output-management",
+          "development",
+          "production"
+        ],
+        "api": [
+          "cli",
+          "compiler-hooks",
+          "loader-api",
+          "plugin-api"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "Webpack Team",
+    "language": "JavaScript",
+    "framework_type": "Build Tool",
+    "use_cases": [
+      "Application bundling",
+      "Asset management",
+      "Code splitting",
+      "Production optimization",
+      "Legacy project support"
+    ],
+    "related_skills": [
+      "babel",
+      "typescript",
+      "react",
+      "sass",
+      "eslint"
+    ]
+  }
+}

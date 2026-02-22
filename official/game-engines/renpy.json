@@ -1,0 +1,142 @@
+{
+  "name": "renpy",
+  "description": "Complete Ren'Py knowledge from official documentation. Use when building visual novels and story-based games. Covers scripting, characters, images, audio, and GUI customization.",
+  "version": "1.0.0",
+  "base_url": "https://www.renpy.org/doc/html/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.renpy.org/doc/html/",
+      "start_urls": [
+        "https://www.renpy.org/doc/html/",
+        "https://www.renpy.org/doc/html/quickstart.html",
+        "https://www.renpy.org/doc/html/dialogue.html",
+        "https://www.renpy.org/doc/html/displaying_images.html"
+      ],
+      "selectors": {
+        "main_content": "article, main, .body",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/doc/html/",
+          "/doc/html/quickstart.html",
+          "/doc/html/dialogue.html",
+          "/doc/html/displaying_images.html"
+        ],
+        "exclude": [
+          "/doc/html/changelog.html"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "quickstart",
+          "tutorial",
+          "launcher"
+        ],
+        "dialogue": [
+          "dialogue",
+          "say",
+          "Character",
+          "nvl",
+          "centered"
+        ],
+        "menus": [
+          "menus",
+          "menu",
+          "choices",
+          "jump"
+        ],
+        "images": [
+          "displaying_images",
+          "image",
+          "scene",
+          "show",
+          "hide",
+          "layeredimage"
+        ],
+        "transforms": [
+          "transforms",
+          "at",
+          "Transform",
+          "xalign",
+          "yalign"
+        ],
+        "transitions": [
+          "transitions",
+          "with",
+          "fade",
+          "dissolve",
+          "pixellate"
+        ],
+        "audio": [
+          "audio",
+          "play",
+          "stop",
+          "queue",
+          "sound",
+          "music"
+        ],
+        "video": [
+          "movie",
+          "Movie",
+          "play",
+          "webm"
+        ],
+        "python": [
+          "python",
+          "init",
+          "init python",
+          "renpy.python"
+        ],
+        "screens": [
+          "screens",
+          "screen",
+          "screen-language",
+          "imagemap"
+        ],
+        "styles": [
+          "style",
+          "style-properties",
+          "gui",
+          "text"
+        ],
+        "persistent": [
+          "persistent",
+          "save",
+          "load",
+          "multi_persistent"
+        ],
+        "atl": [
+          "atl",
+          "animation",
+          "interpolation",
+          "warpers"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Tom Rothamel",
+    "language": "Ren'Py Script/Python",
+    "framework_type": "Visual Novel Engine",
+    "use_cases": [
+      "Visual novels",
+      "Story games",
+      "Dating sims",
+      "Kinetic novels",
+      "Narrative games"
+    ],
+    "related_skills": [
+      "python",
+      "lua",
+      "screen-language",
+      "atl",
+      "gui"
+    ]
+  }
+}

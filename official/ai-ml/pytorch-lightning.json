@@ -1,0 +1,133 @@
+{
+  "name": "pytorch-lightning",
+  "description": "Complete PyTorch Lightning knowledge from official documentation. Use when structuring PyTorch code with best practices. Covers LightningModule, Trainer, callbacks, and distributed training.",
+  "version": "1.0.0",
+  "base_url": "https://lightning.ai/docs/pytorch/stable/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://lightning.ai/docs/pytorch/stable/",
+      "start_urls": [
+        "https://lightning.ai/docs/pytorch/stable/",
+        "https://lightning.ai/docs/pytorch/stable/starter/introduction.html",
+        "https://lightning.ai/docs/pytorch/stable/common/lightning_module.html",
+        "https://lightning.ai/docs/pytorch/stable/common/trainer.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/stable/starter/",
+          "/stable/common/",
+          "/stable/advanced/",
+          "/stable/api/"
+        ],
+        "exclude": [
+          "/stable/changelog.html"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "starter/introduction",
+          "starter/converting",
+          "starter/installation"
+        ],
+        "lightning_module": [
+          "common/lightning_module",
+          "training_step",
+          "validation_step",
+          "test_step",
+          "configure_optimizers"
+        ],
+        "trainer": [
+          "common/trainer",
+          "fit",
+          "validate",
+          "test",
+          "predict"
+        ],
+        "datamodule": [
+          "common/lightning_data_module",
+          "setup",
+          "train_dataloader",
+          "val_dataloader"
+        ],
+        "callbacks": [
+          "common/callbacks",
+          "early_stopping",
+          "model_checkpoint",
+          "learning_rate_monitor",
+          "custom_callbacks"
+        ],
+        "loggers": [
+          "common/loggers",
+          "tensorboard",
+          "wandb",
+          "mlflow",
+          "csv_logger"
+        ],
+        "accelerators": [
+          "accelerators/gpu",
+          "accelerators/tpu",
+          "accelerators/ipu",
+          "accelerators/hpu"
+        ],
+        "distributed": [
+          "advanced/model_parallel",
+          "ddp",
+          "ddp_spawn",
+          "deepspeed",
+          "fsdp"
+        ],
+        "optimization": [
+          "advanced/training_tricks",
+          "accumulate_grad_batches",
+          "gradient_clipping",
+          "mixed_precision"
+        ],
+        "production": [
+          "deploy/production",
+          "export",
+          "onnx",
+          "torchscript"
+        ],
+        "loops": [
+          "common/loops",
+          "custom_loops",
+          "training_epoch_loop"
+        ],
+        "cli": [
+          "cli/lightning_cli",
+          "config_files",
+          "yaml",
+          "run"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 450
+    }
+  ],
+  "metadata": {
+    "author": "Lightning AI",
+    "language": "Python",
+    "framework_type": "Deep Learning Framework",
+    "use_cases": [
+      "PyTorch code organization",
+      "Distributed training",
+      "Mixed precision",
+      "Production deployment",
+      "Research reproducibility"
+    ],
+    "related_skills": [
+      "pytorch",
+      "python",
+      "deep-learning",
+      "gpu",
+      "distributed"
+    ]
+  }
+}

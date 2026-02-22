@@ -1,0 +1,140 @@
+{
+  "name": "flax",
+  "description": "Complete Flax Engine knowledge from official documentation. Use when building modern 3D games with C++ or C#. Covers visual scripting, physics, rendering, and editor extensibility.",
+  "version": "1.0.0",
+  "base_url": "https://docs.flaxengine.com/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.flaxengine.com/",
+      "start_urls": [
+        "https://docs.flaxengine.com/",
+        "https://docs.flaxengine.com/manual/getting-started/index.html",
+        "https://docs.flaxengine.com/manual/scripting/index.html",
+        "https://docs.flaxengine.com/manual/graphics/index.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/manual/",
+          "/manual/getting-started/",
+          "/manual/scripting/",
+          "/manual/graphics/",
+          "/manual/physics/",
+          "/manual/ui/"
+        ],
+        "exclude": [
+          "/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "install",
+          "create-project",
+          "project-structure"
+        ],
+        "editor": [
+          "editor",
+          "interface",
+          "viewport",
+          "content",
+          "scene"
+        ],
+        "scripting": [
+          "scripting",
+          "csharp",
+          "cpp",
+          "visual-script",
+          "api"
+        ],
+        "actors": [
+          "actors",
+          "components",
+          "scripts",
+          "prefabs",
+          "tags"
+        ],
+        "graphics": [
+          "graphics",
+          "materials",
+          "models",
+          "lighting",
+          "post-fx",
+          "particles"
+        ],
+        "physics": [
+          "physics",
+          "colliders",
+          "rigid-bodies",
+          "joints",
+          "triggers"
+        ],
+        "input": [
+          "input",
+          "keyboard",
+          "mouse",
+          "gamepad",
+          "virtual-input"
+        ],
+        "ui": [
+          "ui",
+          "canvas",
+          "controls",
+          "layout",
+          "user-interface"
+        ],
+        "animation": [
+          "animation",
+          "skeletal",
+          "state-machine",
+          "blend"
+        ],
+        "audio": [
+          "audio",
+          "sources",
+          "listeners",
+          "mixing"
+        ],
+        "platforms": [
+          "platforms",
+          "windows",
+          "xbox",
+          "playstation",
+          "switch"
+        ],
+        "advanced": [
+          "advanced",
+          "plugins",
+          "custom-editor",
+          "build-customization"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "Flax",
+    "language": "C++/C#",
+    "framework_type": "Game Engine",
+    "use_cases": [
+      "3D games",
+      "High-fidelity graphics",
+      "Console games",
+      "AAA indie games",
+      "Simulations"
+    ],
+    "related_skills": [
+      "cpp",
+      "csharp",
+      "hlsl",
+      "physx",
+      "git"
+    ]
+  }
+}

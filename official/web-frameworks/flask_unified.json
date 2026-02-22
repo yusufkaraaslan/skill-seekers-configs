@@ -1,0 +1,156 @@
+{
+  "name": "flask",
+  "description": "Complete Flask knowledge combining official documentation and source code. Use when building Python web applications, REST APIs, or microservices. Covers routing, templates, extensions, and deployment patterns.",
+  "version": "1.0.0",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://flask.palletsprojects.com/en/3.0.x/",
+      "extract_api": true,
+      "start_urls": [
+        "https://flask.palletsprojects.com/en/3.0.x/quickstart/",
+        "https://flask.palletsprojects.com/en/3.0.x/tutorial/",
+        "https://flask.palletsprojects.com/en/3.0.x/blueprints/",
+        "https://flask.palletsprojects.com/en/3.0.x/deploying/"
+      ],
+      "selectors": {
+        "main_content": "article, main, .document",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/quickstart/",
+          "/tutorial/",
+          "/patterns/",
+          "/api/",
+          "/blueprints/",
+          "/config/",
+          "/deploying/",
+          "/errorhandling/",
+          "/extensiondev/",
+          "/views/",
+          "/templating/",
+          "/testing/",
+          "/reqcontext/"
+        ],
+        "exclude": [
+          "/changelog/",
+          "/license/",
+          "/changes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "installation",
+          "quickstart",
+          "tutorial",
+          "foreword"
+        ],
+        "routing": [
+          "routing",
+          "url",
+          "view",
+          "endpoint",
+          "methods"
+        ],
+        "templates": [
+          "templates",
+          "jinja",
+          "rendering",
+          "static"
+        ],
+        "request_response": [
+          "request",
+          "response",
+          "session",
+          "cookie",
+          "json"
+        ],
+        "blueprints": [
+          "blueprints",
+          "modular",
+          "application-factory"
+        ],
+        "database": [
+          "sqlalchemy",
+          "sqlite",
+          "database",
+          "orm"
+        ],
+        "forms": [
+          "forms",
+          "wtforms",
+          "validation",
+          "upload"
+        ],
+        "authentication": [
+          "auth",
+          "login",
+          "session",
+          "flask-login"
+        ],
+        "api": [
+          "api",
+          "rest",
+          "json",
+          "flask-restful"
+        ],
+        "testing": [
+          "testing",
+          "test-client",
+          "coverage"
+        ],
+        "deployment": [
+          "deployment",
+          "production",
+          "docker",
+          "gunicorn",
+          "wsgi"
+        ],
+        "configuration": [
+          "configuration",
+          "config",
+          "environment",
+          "env"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    },
+    {
+      "type": "github",
+      "repo": "pallets/flask",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "src/flask/**/*.py"
+      ]
+    }
+  ],
+  "metadata": {
+    "author": "Pallets Projects",
+    "language": "Python",
+    "framework_type": "Web Framework",
+    "use_cases": [
+      "Web applications",
+      "REST APIs",
+      "Microservices",
+      "Prototyping",
+      "Machine learning interfaces"
+    ],
+    "related_skills": [
+      "python",
+      "sqlalchemy",
+      "jinja",
+      "docker",
+      "gunicorn"
+    ]
+  },
+  "base_url": "https://flask.palletsprojects.com/en/3.0.x/"
+}

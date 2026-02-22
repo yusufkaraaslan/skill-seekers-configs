@@ -1,0 +1,105 @@
+{
+  "name": "react-query",
+  "description": "Complete TanStack Query (React Query) knowledge from official documentation. Use when managing server state in React applications. Covers queries, mutations, caching, optimistic updates, and infinite queries.",
+  "version": "1.0.0",
+  "base_url": "https://tanstack.com/query/latest/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://tanstack.com/query/latest/docs/",
+      "start_urls": [
+        "https://tanstack.com/query/latest/docs/overview",
+        "https://tanstack.com/query/latest/docs/react/guides/queries",
+        "https://tanstack.com/query/latest/docs/react/guides/mutations",
+        "https://tanstack.com/query/latest/docs/react/guides/caching"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/",
+          "/docs/react/"
+        ],
+        "exclude": []
+      },
+      "categories": {
+        "getting_started": [
+          "overview",
+          "installation",
+          "quick-start"
+        ],
+        "queries": [
+          "queries",
+          "useQuery",
+          "query-keys",
+          "stale-time",
+          "cache-time"
+        ],
+        "mutations": [
+          "mutations",
+          "useMutation",
+          "onSuccess",
+          "onError",
+          "invalidate"
+        ],
+        "caching": [
+          "caching",
+          "stale-while-revalidate",
+          "garbage-collection",
+          "cache-persistence"
+        ],
+        "devtools": [
+          "devtools",
+          "debugging",
+          "react-query-devtools"
+        ],
+        "pagination": [
+          "pagination",
+          "useInfiniteQuery",
+          "fetchNextPage",
+          "hasNextPage"
+        ],
+        "optimistic": [
+          "optimistic-updates",
+          "rollback",
+          "setQueryData"
+        ],
+        "ssr": [
+          "ssr",
+          "nextjs",
+          "hydration",
+          "initialData"
+        ],
+        "testing": [
+          "testing",
+          "mock-service-worker",
+          "setQueryDefaults"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 250
+    }
+  ],
+  "metadata": {
+    "author": "TanStack",
+    "language": "TypeScript",
+    "framework_type": "Data Fetching",
+    "use_cases": [
+      "Server state management",
+      "API caching",
+      "Background refetching",
+      "Optimistic updates",
+      "Infinite scrolling"
+    ],
+    "related_skills": [
+      "react",
+      "typescript",
+      "nextjs",
+      "axios",
+      "graphql"
+    ]
+  }
+}

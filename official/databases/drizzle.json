@@ -1,0 +1,98 @@
+{
+  "name": "drizzle",
+  "description": "Complete Drizzle ORM knowledge from official documentation. Use when building type-safe database applications with SQL-like syntax. Covers schema definition, queries, relations, migrations, and type generation.",
+  "version": "1.0.0",
+  "base_url": "https://orm.drizzle.team/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://orm.drizzle.team/docs/",
+      "start_urls": [
+        "https://orm.drizzle.team/docs/overview",
+        "https://orm.drizzle.team/docs/get-started",
+        "https://orm.drizzle.team/docs/sql-schema-declaration",
+        "https://orm.drizzle.team/docs/rqb"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/",
+          "/docs/overview",
+          "/docs/get-started",
+          "/docs/sql-schema-declaration",
+          "/docs/rqb",
+          "/docs/migrations"
+        ],
+        "exclude": [
+          "/docs/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "overview",
+          "get-started",
+          "sql-like",
+          "typescript"
+        ],
+        "schema": [
+          "sql-schema-declaration",
+          "columns",
+          "indexes",
+          "constraints"
+        ],
+        "queries": [
+          "select",
+          "insert",
+          "update",
+          "delete",
+          "filtering"
+        ],
+        "relations": [
+          "rqb",
+          "one-to-one",
+          "one-to-many",
+          "many-to-many"
+        ],
+        "migrations": [
+          "migrations",
+          "drizzle-kit",
+          "push",
+          "generate",
+          "drop"
+        ],
+        "drivers": [
+          "postgresql",
+          "mysql",
+          "sqlite",
+          "turso",
+          "neon"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 200
+    }
+  ],
+  "metadata": {
+    "author": "Drizzle Team",
+    "language": "TypeScript",
+    "framework_type": "ORM",
+    "use_cases": [
+      "Type-safe database access",
+      "SQL-like queries",
+      "Edge computing",
+      "Serverless apps",
+      "Modern ORM"
+    ],
+    "related_skills": [
+      "typescript",
+      "postgresql",
+      "mysql",
+      "sqlite",
+      "nextjs"
+    ]
+  }
+}

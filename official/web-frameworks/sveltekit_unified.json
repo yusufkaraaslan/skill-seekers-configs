@@ -1,0 +1,118 @@
+{
+  "name": "sveltekit",
+  "description": "Complete SvelteKit knowledge combining documentation and source code. Use when building modern web apps with Svelte. Covers routing, server-side rendering, adapters, and full-stack Svelte development.",
+  "version": "1.0.0",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://kit.svelte.dev/docs/",
+      "extract_api": true,
+      "start_urls": [
+        "https://kit.svelte.dev/docs/introduction",
+        "https://kit.svelte.dev/docs/routing",
+        "https://kit.svelte.dev/docs/load",
+        "https://kit.svelte.dev/docs/adapters"
+      ],
+      "selectors": {
+        "main_content": "main, article, .content",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/"
+        ],
+        "exclude": [
+          "/blog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "introduction",
+          "creating-a-project",
+          "project-structure"
+        ],
+        "routing": [
+          "routing",
+          "pages",
+          "layout",
+          "error",
+          "dynamic",
+          "api-routes"
+        ],
+        "loading_data": [
+          "load",
+          "loading-data",
+          "page-data",
+          "layout-data",
+          "streaming"
+        ],
+        "forms": [
+          "form-actions",
+          "progressive-enhancement",
+          "validation"
+        ],
+        "adapters": [
+          "adapters",
+          "static",
+          "node",
+          "vercel",
+          "netlify"
+        ],
+        "configuration": [
+          "configuration",
+          "svelte-config",
+          "vite",
+          "typescript"
+        ],
+        "advanced": [
+          "advanced",
+          "hooks",
+          "service-workers",
+          "link-options"
+        ],
+        "migration": [
+          "migration",
+          "sveltekit-1",
+          "sveltekit-2"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 200
+    },
+    {
+      "type": "github",
+      "repo": "sveltejs/kit",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "packages/kit/src/**/*.js",
+        "packages/kit/src/**/*.ts"
+      ]
+    }
+  ],
+  "metadata": {
+    "author": "Svelte Team",
+    "language": "JavaScript/TypeScript",
+    "framework_type": "Full-Stack Framework",
+    "use_cases": [
+      "Modern web applications",
+      "Server-side rendering",
+      "Static site generation",
+      "Full-stack development",
+      "Progressive enhancement"
+    ],
+    "related_skills": [
+      "svelte",
+      "javascript",
+      "typescript",
+      "vite"
+    ]
+  },
+  "base_url": "https://kit.svelte.dev/docs/"
+}

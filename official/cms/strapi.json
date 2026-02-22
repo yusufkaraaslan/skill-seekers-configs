@@ -1,0 +1,109 @@
+{
+  "name": "strapi",
+  "description": "Complete Strapi knowledge from official documentation. Use when building headless CMS APIs with customizable admin panel. Covers content types, API generation, authentication, plugins, and deployment.",
+  "version": "1.0.0",
+  "base_url": "https://docs.strapi.io/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.strapi.io/",
+      "start_urls": [
+        "https://docs.strapi.io/dev-docs/intro",
+        "https://docs.strapi.io/dev-docs/quick-start",
+        "https://docs.strapi.io/dev-docs/backend-customization",
+        "https://docs.strapi.io/dev-docs/api/rest"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/dev-docs/",
+          "/user-docs/",
+          "/cloud/"
+        ],
+        "exclude": [
+          "/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "intro",
+          "quick-start",
+          "installation",
+          "setup-deployment"
+        ],
+        "content_types": [
+          "content-types",
+          "create",
+          "attributes",
+          "relations"
+        ],
+        "api": [
+          "api",
+          "rest",
+          "graphql",
+          "filters",
+          "populate"
+        ],
+        "admin": [
+          "admin-panel",
+          "content-manager",
+          "media-library"
+        ],
+        "authentication": [
+          "authentication",
+          "jwt",
+          "permissions",
+          "roles"
+        ],
+        "customization": [
+          "backend-customization",
+          "controllers",
+          "services",
+          "middlewares"
+        ],
+        "plugins": [
+          "plugins",
+          "developing-plugins",
+          "users-permissions",
+          "graphql"
+        ],
+        "deployment": [
+          "deployment",
+          "configurations",
+          "environment"
+        ],
+        "cli": [
+          "cli",
+          "commands",
+          "generate"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "Strapi",
+    "language": "JavaScript/Node.js",
+    "framework_type": "Headless CMS",
+    "use_cases": [
+      "Content management",
+      "API generation",
+      "E-commerce",
+      "Multi-language sites",
+      "Custom admin panels"
+    ],
+    "related_skills": [
+      "nodejs",
+      "react",
+      "graphql",
+      "rest",
+      "postgresql",
+      "mysql"
+    ]
+  }
+}

@@ -14,16 +14,39 @@
       },
       "url_patterns": {
         "include": [],
-        "exclude": ["/img/", "/js/"]
+        "exclude": [
+          "/img/",
+          "/js/"
+        ]
       },
       "categories": {
-        "getting_started": ["tutorial", "first-steps"],
-        "path_operations": ["path-params", "query-params", "body"],
-        "dependencies": ["dependencies"],
-        "security": ["security", "oauth2"],
-        "database": ["sql-databases"],
-        "advanced": ["advanced", "async", "middleware"],
-        "deployment": ["deployment"]
+        "getting_started": [
+          "tutorial",
+          "first-steps"
+        ],
+        "path_operations": [
+          "path-params",
+          "query-params",
+          "body"
+        ],
+        "dependencies": [
+          "dependencies"
+        ],
+        "security": [
+          "security",
+          "oauth2"
+        ],
+        "database": [
+          "sql-databases"
+        ],
+        "advanced": [
+          "advanced",
+          "async",
+          "middleware"
+        ],
+        "deployment": [
+          "deployment"
+        ]
       },
       "rate_limit": 0.5,
       "max_pages": 150
@@ -41,5 +64,6 @@
         "fastapi/**/*.py"
       ]
     }
-  ]
+  ],
+  "base_url": "https://fastapi.tiangolo.com/"
 }

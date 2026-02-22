@@ -1,0 +1,145 @@
+{
+  "name": "foundation",
+  "description": "Complete Foundation knowledge from official documentation. Use when building responsive, accessible websites and apps. Covers grid, components, utilities, and JavaScript plugins.",
+  "version": "1.0.0",
+  "base_url": "https://get.foundation/sites/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://get.foundation/sites/docs/",
+      "start_urls": [
+        "https://get.foundation/sites/docs/",
+        "https://get.foundation/sites/docs/installation.html",
+        "https://get.foundation/sites/docs/grid.html",
+        "https://get.foundation/sites/docs/sass.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/sites/docs/",
+          "/sites/docs/grid.html",
+          "/sites/docs/sass.html",
+          "/sites/docs/typography-base.html",
+          "/sites/docs/button.html"
+        ],
+        "exclude": [
+          "/sites/docs/changelog.html"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "installation",
+          "starter-projects",
+          "javascript"
+        ],
+        "sass": [
+          "sass",
+          "global-styles",
+          "mixins",
+          "functions",
+          "variables"
+        ],
+        "grid": [
+          "grid",
+          "xy-grid",
+          "float-grid",
+          "flex-grid",
+          "grid-container"
+        ],
+        "general": [
+          "global",
+          "forms",
+          "media-queries",
+          "visibility",
+          "flex"
+        ],
+        "typography": [
+          "typography-base",
+          "typography-helpers",
+          "prototyping-helpers"
+        ],
+        "controls": [
+          "button",
+          "button-group",
+          "close-button",
+          "slider",
+          "switch"
+        ],
+        "navigation": [
+          "menu",
+          "dropdown-menu",
+          "drilldown-menu",
+          "accordion-menu",
+          "top-bar",
+          "pagination",
+          "breadcrumbs"
+        ],
+        "containers": [
+          "accordion",
+          "callout",
+          "card",
+          "media-object",
+          "off-canvas",
+          "reveal",
+          "table",
+          "tabs"
+        ],
+        "media": [
+          "badge",
+          "label",
+          "progress-bar",
+          "thumbnail",
+          "tooltip",
+          "orbit"
+        ],
+        "plugins": [
+          "abide",
+          "accordion",
+          "dropdown",
+          "equalizer",
+          "interchange",
+          "magellan",
+          "offcanvas",
+          "reveal",
+          "slider",
+          "sticky",
+          "tabs",
+          "toggler",
+          "tooltip"
+        ],
+        "utilities": [
+          "float-classes",
+          "flexbox-utilities",
+          "visibility",
+          "prototype-utilities"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "ZURB",
+    "language": "CSS/Sass/JavaScript",
+    "framework_type": "CSS Framework",
+    "use_cases": [
+      "Responsive websites",
+      "Enterprise apps",
+      "Accessibility-first",
+      "Email templates",
+      "Rapid prototyping"
+    ],
+    "related_skills": [
+      "html",
+      "css",
+      "sass",
+      "javascript",
+      "responsive-design"
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "name": "sqlite",
+  "description": "Complete SQLite knowledge from official documentation. Use when building embedded, serverless databases for applications. Covers SQL, FTS, R*Trees, and JSON support.",
+  "version": "1.0.0",
+  "base_url": "https://www.sqlite.org/docs.html",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.sqlite.org/docs.html",
+      "start_urls": [
+        "https://www.sqlite.org/docs.html",
+        "https://www.sqlite.org/lang.html",
+        "https://www.sqlite.org/datatype3.html",
+        "https://www.sqlite.org/queryplanner.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/lang.html",
+          "/datatype3.html",
+          "/queryplanner.html",
+          "/fts3.html",
+          "/json1.html",
+          "/wal.html"
+        ],
+        "exclude": [
+          "/changes.html"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "about",
+          "quickstart",
+          "features"
+        ],
+        "sql_syntax": [
+          "lang",
+          "lang_select",
+          "lang_insert",
+          "lang_update",
+          "lang_delete",
+          "lang_create_table"
+        ],
+        "datatypes": [
+          "datatype3",
+          "storage-classes",
+          "affinity",
+          "boolean",
+          "datetime"
+        ],
+        "query_optimizer": [
+          "queryplanner",
+          "optoverview",
+          "indexes",
+          "covering-index"
+        ],
+        "fts": [
+          "fts3",
+          "fts4",
+          "fts5",
+          "full-text-search",
+          "tokenizers"
+        ],
+        "json": [
+          "json1",
+          "json-functions",
+          "json-path",
+          "json-patch"
+        ],
+        "rtree": [
+          "rtree",
+          "spatial-indexing",
+          "geopoly"
+        ],
+        "transactions": [
+          "atomiccommit",
+          "wal",
+          "locking",
+          "isolation"
+        ],
+        "c_api": [
+          "cintro",
+          "c3ref",
+          "sqlite3_prepare",
+          "sqlite3_bind",
+          "sqlite3_step"
+        ],
+        "performance": [
+          "optoverview",
+          "mmap",
+          "pragma",
+          "query-planner"
+        ],
+        "security": [
+          "security",
+          "cipher",
+          "sqlcipher"
+        ],
+        "backup": [
+          "backup",
+          "online-backup",
+          "dump"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "SQLite Consortium",
+    "language": "SQL/C",
+    "framework_type": "Embedded Database",
+    "use_cases": [
+      "Mobile apps",
+      "Desktop apps",
+      "IoT devices",
+      "Testing",
+      "Caching"
+    ],
+    "related_skills": [
+      "sql",
+      "c",
+      "python",
+      "mobile-development",
+      "embedded"
+    ]
+  }
+}

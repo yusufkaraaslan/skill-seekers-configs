@@ -1,0 +1,131 @@
+{
+  "name": "ray",
+  "description": "Complete Ray knowledge from official documentation. Use when building distributed Python applications and scaling ML workloads. Covers tasks, actors, train, tune, serve, and data.",
+  "version": "1.0.0",
+  "base_url": "https://docs.ray.io/en/latest/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.ray.io/en/latest/",
+      "start_urls": [
+        "https://docs.ray.io/en/latest/",
+        "https://docs.ray.io/en/latest/ray-overview/index.html",
+        "https://docs.ray.io/en/latest/ray-core/walkthrough.html",
+        "https://docs.ray.io/en/latest/train/train.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/en/latest/ray-core/",
+          "/en/latest/train/",
+          "/en/latest/tune/",
+          "/en/latest/serve/",
+          "/en/latest/data/"
+        ],
+        "exclude": [
+          "/en/latest/releases/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "ray-overview",
+          "installation",
+          "quickstart"
+        ],
+        "ray_core": [
+          "ray-core/walkthrough",
+          "tasks",
+          "actors",
+          "objects",
+          "placement-groups"
+        ],
+        "train": [
+          "train/train",
+          "pytorch",
+          "tensorflow",
+          "horovod",
+          "xgboost"
+        ],
+        "tune": [
+          "tune/key-concepts",
+          "tune-tutorial",
+          "search-algorithms",
+          "schedulers"
+        ],
+        "serve": [
+          "serve/getting_started",
+          "key-concepts",
+          "deployments",
+          "model-composition"
+        ],
+        "data": [
+          "data/data",
+          "loading-data",
+          "transforming-data",
+          "saving-data"
+        ],
+        "rllib": [
+          "rllib/index",
+          "algorithms",
+          "environments",
+          "policies"
+        ],
+        "workflows": [
+          "workflows/index",
+          "steps",
+          "virtual-actors",
+          "events"
+        ],
+        "cluster": [
+          "cluster/getting-started",
+          "autoscaling",
+          "aws",
+          "gcp",
+          "azure"
+        ],
+        "raysgd": [
+          "train/dl-guidelines",
+          "distributed-training",
+          "gpu"
+        ],
+        "monitoring": [
+          "cluster/usage-stats",
+          "ray-metrics",
+          "prometheus",
+          "grafana"
+        ],
+        "debugging": [
+          "ray-observability",
+          "ray-debugger",
+          "profiling"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 600
+    }
+  ],
+  "metadata": {
+    "author": "Anyscale",
+    "language": "Python",
+    "framework_type": "Distributed Computing",
+    "use_cases": [
+      "Distributed ML",
+      "Hyperparameter tuning",
+      "Model serving",
+      "Reinforcement learning",
+      "Big data processing"
+    ],
+    "related_skills": [
+      "python",
+      "pytorch",
+      "tensorflow",
+      "kubernetes",
+      "aws"
+    ]
+  }
+}

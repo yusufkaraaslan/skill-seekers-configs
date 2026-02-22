@@ -1,0 +1,108 @@
+{
+  "name": "zod",
+  "description": "Complete Zod knowledge from official documentation. Use when building type-safe schemas for TypeScript validation. Covers schema definition, parsing, inference, transformations, and error handling.",
+  "version": "1.0.0",
+  "base_url": "https://zod.dev/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://zod.dev/",
+      "start_urls": [
+        "https://zod.dev/",
+        "https://zod.dev/?id=basic-usage",
+        "https://zod.dev/?id=primitives",
+        "https://zod.dev/?id=error-handling"
+      ],
+      "selectors": {
+        "main_content": "main, article",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/"
+        ],
+        "exclude": []
+      },
+      "categories": {
+        "getting_started": [
+          "introduction",
+          "installation",
+          "basic-usage"
+        ],
+        "primitives": [
+          "primitives",
+          "string",
+          "number",
+          "boolean",
+          "date"
+        ],
+        "objects": [
+          "objects",
+          "shape",
+          "partial",
+          "deeppartial",
+          "merge"
+        ],
+        "arrays": [
+          "arrays",
+          "element",
+          "nonempty",
+          "min",
+          "max"
+        ],
+        "unions": [
+          "unions",
+          "or",
+          "discriminated",
+          "literal"
+        ],
+        "validation": [
+          "validation",
+          "safe-parse",
+          "parse",
+          "refine",
+          "super-refine"
+        ],
+        "transformations": [
+          "transform",
+          "preprocess",
+          "pipe"
+        ],
+        "error_handling": [
+          "error-handling",
+          "issues",
+          "flatten",
+          "formerrors"
+        ],
+        "advanced": [
+          "generic-types",
+          " branded",
+          "recursive",
+          "promise"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 100
+    }
+  ],
+  "metadata": {
+    "author": "Colin McDonnell",
+    "language": "TypeScript",
+    "framework_type": "Validation Library",
+    "use_cases": [
+      "Schema validation",
+      "Type inference",
+      "API validation",
+      "Form validation",
+      "Configuration validation"
+    ],
+    "related_skills": [
+      "typescript",
+      "react",
+      "nextjs",
+      "trpc",
+      "prisma"
+    ]
+  }
+}

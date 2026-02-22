@@ -1,0 +1,131 @@
+{
+  "name": "flutter",
+  "description": "Complete Flutter knowledge from official documentation. Use when building cross-platform applications for mobile, web, and desktop with Dart. Covers widgets, state management, navigation, and platform integration.",
+  "version": "1.0.0",
+  "base_url": "https://docs.flutter.dev/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.flutter.dev/",
+      "start_urls": [
+        "https://docs.flutter.dev/get-started/install",
+        "https://docs.flutter.dev/ui/widgets-intro",
+        "https://docs.flutter.dev/ui",
+        "https://docs.flutter.dev/development/data-and-backend/state-mgmt",
+        "https://docs.flutter.dev/deployment"
+      ],
+      "selectors": {
+        "main_content": "main, article",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/get-started/",
+          "/ui/",
+          "/cookbook/",
+          "/development/",
+          "/deployment/"
+        ],
+        "exclude": [
+          "/community/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "get-started",
+          "install",
+          "test-drive",
+          "write-first-app"
+        ],
+        "widgets": [
+          "widgets",
+          "layout",
+          "material",
+          "cupertino",
+          "custom"
+        ],
+        "ui": [
+          "ui",
+          "layout",
+          "constraints",
+          "responsive",
+          "adaptive"
+        ],
+        "state_management": [
+          "state",
+          "setstate",
+          "provider",
+          "bloc",
+          "riverpod",
+          "getx"
+        ],
+        "navigation": [
+          "navigation",
+          "routing",
+          "navigator",
+          "go-router"
+        ],
+        "async": [
+          "async",
+          "future",
+          "stream",
+          "async-await"
+        ],
+        "networking": [
+          "networking",
+          "http",
+          "json",
+          "graphql"
+        ],
+        "persistence": [
+          "persistence",
+          "sqflite",
+          "shared-preferences",
+          "hive"
+        ],
+        "platform": [
+          "platform",
+          "plugins",
+          "packages",
+          "ffi",
+          "platform-channels"
+        ],
+        "testing": [
+          "testing",
+          "unit",
+          "widget",
+          "integration"
+        ],
+        "deployment": [
+          "deployment",
+          "android",
+          "ios",
+          "web",
+          "desktop"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 500
+    }
+  ],
+  "metadata": {
+    "author": "Google / Flutter Team",
+    "language": "Dart",
+    "framework_type": "UI Toolkit",
+    "use_cases": [
+      "Cross-platform mobile apps",
+      "Web applications",
+      "Desktop applications",
+      "Embedded systems",
+      "Progressive web apps"
+    ],
+    "related_skills": [
+      "dart",
+      "android",
+      "ios",
+      "firebase",
+      "graphql"
+    ]
+  }
+}

@@ -14,15 +14,46 @@
       },
       "url_patterns": {
         "include": [],
-        "exclude": ["/search.html", "/_static/", "/_images/"]
+        "exclude": [
+          "/search.html",
+          "/_static/",
+          "/_images/"
+        ]
       },
       "categories": {
-        "getting_started": ["introduction", "getting_started", "step_by_step"],
-        "scripting": ["scripting", "gdscript", "c_sharp"],
-        "2d": ["2d", "canvas", "sprite", "animation"],
-        "3d": ["3d", "spatial", "mesh", "shader"],
-        "physics": ["physics", "collision", "rigidbody"],
-        "api": ["api", "class", "reference", "method"]
+        "getting_started": [
+          "introduction",
+          "getting_started",
+          "step_by_step"
+        ],
+        "scripting": [
+          "scripting",
+          "gdscript",
+          "c_sharp"
+        ],
+        "2d": [
+          "2d",
+          "canvas",
+          "sprite",
+          "animation"
+        ],
+        "3d": [
+          "3d",
+          "spatial",
+          "mesh",
+          "shader"
+        ],
+        "physics": [
+          "physics",
+          "collision",
+          "rigidbody"
+        ],
+        "api": [
+          "api",
+          "class",
+          "reference",
+          "method"
+        ]
       },
       "rate_limit": 0.5,
       "max_pages": 500
@@ -45,5 +76,6 @@
         "servers/**/*.cpp"
       ]
     }
-  ]
+  ],
+  "base_url": "https://docs.godotengine.org/en/stable/"
 }

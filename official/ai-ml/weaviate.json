@@ -1,0 +1,136 @@
+{
+  "name": "weaviate",
+  "description": "Complete Weaviate knowledge from official documentation. Use when building vector search with GraphQL interface. Covers schema, modules, hybrid search, and multi-tenant architecture.",
+  "version": "1.0.0",
+  "base_url": "https://weaviate.io/developers/weaviate/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://weaviate.io/developers/weaviate/",
+      "start_urls": [
+        "https://weaviate.io/developers/weaviate/",
+        "https://weaviate.io/developers/weaviate/quickstart",
+        "https://weaviate.io/developers/weaviate/api/graphql",
+        "https://weaviate.io/developers/weaviate/configuration"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/developers/weaviate/",
+          "/developers/weaviate/quickstart",
+          "/developers/weaviate/api/",
+          "/developers/weaviate/configuration/",
+          "/developers/weaviate/search/"
+        ],
+        "exclude": [
+          "/developers/weaviate/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "quickstart",
+          "installation",
+          "core-concepts"
+        ],
+        "schema": [
+          "configuration/schema-configuration",
+          "classes",
+          "properties",
+          "data-types",
+          "vectorizer"
+        ],
+        "data": [
+          "manage-data",
+          "create",
+          "import",
+          "batch",
+          "update",
+          "delete"
+        ],
+        "search": [
+          "search",
+          "similarity-search",
+          "bm25",
+          "hybrid-search",
+          "generative-search"
+        ],
+        "graphql": [
+          "api/graphql",
+          "get",
+          "aggregate",
+          "explore",
+          "additional-properties"
+        ],
+        "filters": [
+          "search/filters",
+          "where",
+          "operators",
+          "near-text",
+          "near-vector"
+        ],
+        "modules": [
+          "modules",
+          "text2vec",
+          "qna",
+          "ner",
+          "sum",
+          "generative"
+        ],
+        "vectorizers": [
+          "modules/text2vec",
+          "text2vec-openai",
+          "text2vec-cohere",
+          "text2vec-huggingface",
+          "text2vec-transformers"
+        ],
+        "multi_tenancy": [
+          "configuration/multi-tenancy",
+          "tenants",
+          "multi-tenant"
+        ],
+        "replication": [
+          "configuration/replication",
+          "consistency",
+          "quorum"
+        ],
+        "authentication": [
+          "configuration/authentication",
+          "oidc",
+          "api-keys"
+        ],
+        "python_client": [
+          "client-libraries/python",
+          "weaviate-client",
+          "connection",
+          "crud"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 450
+    }
+  ],
+  "metadata": {
+    "author": "Weaviate",
+    "language": "Go/Python",
+    "framework_type": "Vector Database",
+    "use_cases": [
+      "Semantic search",
+      "Hybrid search",
+      "RAG",
+      "AI-native applications",
+      "Knowledge graphs"
+    ],
+    "related_skills": [
+      "graphql",
+      "python",
+      "docker",
+      "kubernetes",
+      "openai"
+    ]
+  }
+}

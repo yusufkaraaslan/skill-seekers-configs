@@ -1,0 +1,111 @@
+{
+  "name": "sentry",
+  "description": "Complete Sentry knowledge from official documentation. Use when monitoring application errors and performance. Covers error tracking, performance monitoring, release health, and distributed tracing.",
+  "version": "1.0.0",
+  "base_url": "https://docs.sentry.io/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.sentry.io/",
+      "start_urls": [
+        "https://docs.sentry.io/",
+        "https://docs.sentry.io/platforms/",
+        "https://docs.sentry.io/product/",
+        "https://docs.sentry.io/api/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/platforms/",
+          "/product/",
+          "/api/",
+          "/concepts/",
+          "/cli/"
+        ],
+        "exclude": [
+          "/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "install",
+          "configure",
+          "verify"
+        ],
+        "platforms": [
+          "javascript",
+          "python",
+          "node",
+          "react",
+          "vue",
+          "nextjs"
+        ],
+        "error_tracking": [
+          "errors",
+          "capturing",
+          "scopes",
+          "context",
+          "breadcrumbs"
+        ],
+        "performance": [
+          "performance",
+          "instrumentation",
+          "distributed-tracing",
+          "queries",
+          "web-vitals"
+        ],
+        "releases": [
+          "releases",
+          "source-maps",
+          "suspect-commits",
+          "release-health"
+        ],
+        "configuration": [
+          "options",
+          "environments",
+          "sampling",
+          "filtering"
+        ],
+        "integrations": [
+          "integrations",
+          "github",
+          "slack",
+          "jira",
+          "vercel"
+        ],
+        "api": [
+          "api",
+          "auth",
+          "pagination",
+          "rate-limits"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Sentry",
+    "language": "Multi-language",
+    "framework_type": "Error Monitoring",
+    "use_cases": [
+      "Error tracking",
+      "Performance monitoring",
+      "Release health",
+      "Crash analytics",
+      "User feedback"
+    ],
+    "related_skills": [
+      "javascript",
+      "python",
+      "react",
+      "nodejs",
+      "docker"
+    ]
+  }
+}

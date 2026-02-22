@@ -1,0 +1,132 @@
+{
+  "name": "docker-compose",
+  "description": "Complete Docker Compose knowledge from official documentation. Use when defining and running multi-container Docker applications. Covers services, networks, volumes, and profiles.",
+  "version": "1.0.0",
+  "base_url": "https://docs.docker.com/compose/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.docker.com/compose/",
+      "start_urls": [
+        "https://docs.docker.com/compose/",
+        "https://docs.docker.com/compose/gettingstarted/",
+        "https://docs.docker.com/compose/compose-file/",
+        "https://docs.docker.com/compose/networking/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/compose/",
+          "/compose/gettingstarted/",
+          "/compose/compose-file/",
+          "/compose/networking/",
+          "/compose/environment-variables/"
+        ],
+        "exclude": [
+          "/compose/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "gettingstarted",
+          "install",
+          "quickstart"
+        ],
+        "compose_file": [
+          "compose-file",
+          "services",
+          "networks",
+          "volumes",
+          "configs",
+          "secrets"
+        ],
+        "services": [
+          "compose-file/services",
+          "build",
+          "image",
+          "ports",
+          "environment"
+        ],
+        "networking": [
+          "networking",
+          "bridge",
+          "host",
+          "none",
+          "overlay"
+        ],
+        "volumes": [
+          "compose-file/volumes",
+          "bind-mounts",
+          "named-volumes",
+          "tmpfs"
+        ],
+        "environment": [
+          "environment-variables",
+          "env-file",
+          "variable-substitution"
+        ],
+        "cli": [
+          "reference",
+          "up",
+          "down",
+          "logs",
+          "exec",
+          "run"
+        ],
+        "profiles": [
+          "profiles",
+          "targeted-services",
+          "development",
+          "production"
+        ],
+        "scaling": [
+          "scaling",
+          "replicas",
+          "deploy",
+          "swarm"
+        ],
+        "watch": [
+          "file-watch",
+          "develop",
+          "sync"
+        ],
+        "production": [
+          "production",
+          "deploying-compose",
+          "swarm-mode"
+        ],
+        "migrate": [
+          "migrate",
+          "compose-v2",
+          "compatibility"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Docker",
+    "language": "YAML",
+    "framework_type": "Container Orchestration",
+    "use_cases": [
+      "Local development",
+      "Multi-container apps",
+      "Service orchestration",
+      "Development environments",
+      "CI/CD testing"
+    ],
+    "related_skills": [
+      "docker",
+      "yaml",
+      "linux",
+      "devops",
+      "kubernetes"
+    ]
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "name": "heaps",
+  "description": "Complete Heaps.io knowledge from official documentation. Use when building high-performance 2D/3D games in Haxe. Covers graphics, shaders, ECS, and resource management.",
+  "version": "1.0.0",
+  "base_url": "https://heaps.io/documentation/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://heaps.io/documentation/",
+      "start_urls": [
+        "https://heaps.io/documentation/",
+        "https://heaps.io/documentation/getting-started.html",
+        "https://heaps.io/documentation/h2d.html",
+        "https://heaps.io/documentation/h3d.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/documentation/",
+          "/documentation/getting-started.html",
+          "/documentation/h2d.html",
+          "/documentation/h3d.html",
+          "/documentation/particles.html"
+        ],
+        "exclude": [
+          "/documentation/changelog.html"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "getting-started",
+          "installation",
+          "hello-world"
+        ],
+        "h2d": [
+          "h2d",
+          "scene",
+          "object",
+          "bitmap",
+          "text"
+        ],
+        "graphics": [
+          "h2d",
+          "h3d",
+          "graphics",
+          "drawcall",
+          "texture"
+        ],
+        "h3d": [
+          "h3d",
+          "scene",
+          "mesh",
+          "material",
+          "light"
+        ],
+        "shaders": [
+          "hxsl",
+          "shaders",
+          "shader-graph",
+          "custom-shaders"
+        ],
+        "resources": [
+          "resource-management",
+          "embed",
+          "fs",
+          "hxd-res"
+        ],
+        "input": [
+          "input",
+          "keyboard",
+          "mouse",
+          "pad"
+        ],
+        "audio": [
+          "audio",
+          "sound",
+          "music",
+          "hxd-snd"
+        ],
+        "particles": [
+          "particles",
+          "h2d-particles",
+          "emitter",
+          "configuration"
+        ],
+        "domkit": [
+          "domkit",
+          "components",
+          "css",
+          "ui"
+        ],
+        "ecs": [
+          "ecs",
+          "entities",
+          "components",
+          "systems"
+        ],
+        "network": [
+          "network",
+          "socket",
+          "multiplayer"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 250
+    }
+  ],
+  "metadata": {
+    "author": "Shiro Games",
+    "language": "Haxe",
+    "framework_type": "Game Framework",
+    "use_cases": [
+      "High-performance games",
+      "2D games",
+      "3D games",
+      "Commercial games",
+      "Shaders-heavy games"
+    ],
+    "related_skills": [
+      "haxe",
+      "hashlink",
+      "hxsl",
+      "opengl",
+      "directx"
+    ]
+  }
+}

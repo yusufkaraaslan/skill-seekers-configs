@@ -1,0 +1,96 @@
+{
+  "name": "graphql",
+  "description": "Complete GraphQL knowledge from official documentation. Use when designing APIs, querying data, or implementing type-safe data fetching. Covers schema, queries, mutations, subscriptions, and best practices.",
+  "version": "1.0.0",
+  "base_url": "https://graphql.org/learn/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://graphql.org/learn/",
+      "start_urls": [
+        "https://graphql.org/learn/",
+        "https://graphql.org/learn/schema/",
+        "https://graphql.org/learn/queries/",
+        "https://graphql.org/learn/execution/",
+        "https://graphql.org/learn/best-practices/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/learn/"
+        ],
+        "exclude": [
+          "/foundation/"
+        ]
+      },
+      "categories": {
+        "introduction": [
+          "introduction",
+          "thinking-in-graphs",
+          "overview"
+        ],
+        "queries": [
+          "queries",
+          "fields",
+          "arguments",
+          "aliases",
+          "fragments"
+        ],
+        "schema": [
+          "schema",
+          "types",
+          "object",
+          "scalar",
+          "enum",
+          "interface",
+          "union"
+        ],
+        "validation": [
+          "validation",
+          "type-system",
+          "introspection"
+        ],
+        "execution": [
+          "execution",
+          "root-fields",
+          "resolvers"
+        ],
+        "introspection": [
+          "introspection",
+          "schema-exploration"
+        ],
+        "best_practices": [
+          "best-practices",
+          "pagination",
+          "caching",
+          "authorization"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 150
+    }
+  ],
+  "metadata": {
+    "author": "GraphQL Foundation",
+    "language": "Specification",
+    "framework_type": "API Technology",
+    "use_cases": [
+      "API design",
+      "Data fetching",
+      "Type-safe queries",
+      "Mobile APIs",
+      "Real-time data"
+    ],
+    "related_skills": [
+      "apollo",
+      "nodejs",
+      "python",
+      "prisma",
+      "trpc"
+    ]
+  }
+}

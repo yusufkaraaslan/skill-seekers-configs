@@ -1,0 +1,67 @@
+name: Report Config Issue
+Description: Report a problem with an existing configuration
+title: "[Bug] <config-name>: <brief description>"
+labels: ["bug", "config-issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Config Bug Report
+        
+        Report issues with existing configs (broken selectors, wrong URLs, etc.)
+
+  - type: input
+    id: config-name
+    attributes:
+      label: Config Name
+      description: Which config has the issue?
+      placeholder: e.g., react, kubernetes, docker
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Issue Description
+      description: What's wrong with this config?
+      placeholder: "Selectors are not extracting content correctly on the new documentation site redesign..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What should happen?
+      placeholder: "Content should be extracted from article elements..."
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: What actually happens?
+      placeholder: "No content is being extracted, getting empty pages..."
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      render: shell
+      placeholder: |
+        skill-seekers scrape --config react.json --dry-run
+        # Or specific URL that's failing
+        skill-seekers scrape --config react.json --url https://react.dev/docs/thinking-in-react
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots/Logs
+      description: Add screenshots or log output if helpful
+
+  - type: input
+    id: skill-seekers-version
+    attributes:
+      label: Skill Seekers Version
+      description: What version of skill-seekers are you using?
+      placeholder: e.g., 2.6.0

@@ -1,0 +1,106 @@
+{
+  "name": "prometheus",
+  "description": "Complete Prometheus knowledge from official documentation. Use when monitoring systems and applications with time-series metrics. Covers scraping, querying, alerting, and exporters.",
+  "version": "1.0.0",
+  "base_url": "https://prometheus.io/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://prometheus.io/docs/",
+      "start_urls": [
+        "https://prometheus.io/docs/introduction/overview/",
+        "https://prometheus.io/docs/concepts/",
+        "https://prometheus.io/docs/prometheus/latest/querying/",
+        "https://prometheus.io/docs/prometheus/latest/configuration/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/introduction/",
+          "/docs/concepts/",
+          "/docs/prometheus/",
+          "/docs/instrumenting/",
+          "/docs/alerting/",
+          "/docs/guides/"
+        ],
+        "exclude": [
+          "/docs/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "overview",
+          "first-steps",
+          "installation"
+        ],
+        "concepts": [
+          "data-model",
+          "metric-types",
+          "jobs",
+          "instances"
+        ],
+        "querying": [
+          "basics",
+          "operators",
+          "functions",
+          "examples",
+          "http-api"
+        ],
+        "configuration": [
+          "configuration",
+          "scrape-config",
+          "relabel",
+          "recording-rules",
+          "alerting-rules"
+        ],
+        "instrumenting": [
+          "client-libraries",
+          "writing-exporters",
+          "exposition-formats"
+        ],
+        "alerting": [
+          "alerting",
+          "alertmanager",
+          "configuration",
+          "notifications"
+        ],
+        "storage": [
+          "storage",
+          "tsdb",
+          "retention",
+          "federation"
+        ],
+        "exporters": [
+          "exporters",
+          "node-exporter",
+          "blackbox-exporter"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "Prometheus",
+    "language": "Go",
+    "framework_type": "Monitoring",
+    "use_cases": [
+      "System monitoring",
+      "Application metrics",
+      "Alerting",
+      "Time-series data",
+      "DevOps observability"
+    ],
+    "related_skills": [
+      "grafana",
+      "kubernetes",
+      "docker",
+      "alertmanager",
+      "thanos"
+    ]
+  }
+}

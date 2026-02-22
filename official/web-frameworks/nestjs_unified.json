@@ -1,0 +1,154 @@
+{
+  "name": "nestjs",
+  "description": "Complete NestJS knowledge combining official documentation and source code. Use when building enterprise-grade Node.js applications with TypeScript. Covers modules, controllers, providers, dependency injection, and microservices.",
+  "version": "1.0.0",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.nestjs.com/",
+      "extract_api": true,
+      "start_urls": [
+        "https://docs.nestjs.com/first-steps",
+        "https://docs.nestjs.com/controllers",
+        "https://docs.nestjs.com/providers",
+        "https://docs.nestjs.com/modules",
+        "https://docs.nestjs.com/microservices"
+      ],
+      "selectors": {
+        "main_content": "main, article, .content",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/first-steps",
+          "/controllers",
+          "/providers",
+          "/modules",
+          "/middleware",
+          "/exception-filters",
+          "/pipes",
+          "/guards",
+          "/interceptors",
+          "/microservices",
+          "/websockets",
+          "/graphql",
+          "/security",
+          "/techniques",
+          "/cli"
+        ],
+        "exclude": [
+          "/discover/",
+          "/enterprise/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "first-steps",
+          "introduction",
+          "installation",
+          "typescript"
+        ],
+        "overview": [
+          "overview",
+          "controllers",
+          "providers",
+          "modules",
+          "middleware"
+        ],
+        "fundamentals": [
+          "custom-providers",
+          "dynamic-modules",
+          "injection-scopes",
+          "circular-dependency"
+        ],
+        "techniques": [
+          "configuration",
+          "database",
+          "validation",
+          "caching",
+          "serialization",
+          "compression"
+        ],
+        "security": [
+          "authentication",
+          "authorization",
+          "guards",
+          "encryption",
+          "helmet",
+          "csrf"
+        ],
+        "interceptors": [
+          "interceptors",
+          "exception-filters",
+          "pipes",
+          "transformation"
+        ],
+        "microservices": [
+          "microservices",
+          "redis",
+          "mqtt",
+          "nats",
+          "rabbitmq",
+          "kafka"
+        ],
+        "websockets": [
+          "websockets",
+          "gateway",
+          "adapter"
+        ],
+        "graphql": [
+          "graphql",
+          "resolvers",
+          "mutations",
+          "subscriptions",
+          "federation"
+        ],
+        "cli": [
+          "cli",
+          "monorepo",
+          "library",
+          "schematics"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    },
+    {
+      "type": "github",
+      "repo": "nestjs/nest",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "packages/core/**/*.ts",
+        "packages/common/**/*.ts",
+        "packages/microservices/**/*.ts"
+      ]
+    }
+  ],
+  "metadata": {
+    "author": "Kamil My\u015bliwiec / NestJS Team",
+    "language": "TypeScript",
+    "framework_type": "Node.js Framework",
+    "use_cases": [
+      "Enterprise applications",
+      "REST APIs",
+      "Microservices",
+      "GraphQL APIs",
+      "Real-time applications"
+    ],
+    "related_skills": [
+      "typescript",
+      "nodejs",
+      "express",
+      "graphql",
+      "typeorm"
+    ]
+  },
+  "base_url": "https://docs.nestjs.com/"
+}

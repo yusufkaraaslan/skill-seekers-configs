@@ -1,0 +1,106 @@
+{
+  "name": "testing-library",
+  "description": "Complete Testing Library knowledge from official documentation. Use when testing UI components with user-centric queries. Covers DOM Testing Library, React Testing Library, and best practices.",
+  "version": "1.0.0",
+  "base_url": "https://testing-library.com/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://testing-library.com/docs/",
+      "start_urls": [
+        "https://testing-library.com/docs/",
+        "https://testing-library.com/docs/queries/about/",
+        "https://testing-library.com/docs/react-testing-library/intro/",
+        "https://testing-library.com/docs/guiding-principles/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/",
+          "/docs/dom-testing-library/",
+          "/docs/react-testing-library/",
+          "/docs/vue-testing-library/",
+          "/docs/queries/"
+        ],
+        "exclude": [
+          "/docs/react-native-testing-library/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "introduction",
+          "guiding-principles",
+          "which-query"
+        ],
+        "queries": [
+          "queries",
+          "getBy",
+          "findBy",
+          "queryBy",
+          "text",
+          "role",
+          "labelText"
+        ],
+        "react": [
+          "react-testing-library",
+          "setup",
+          "render",
+          "events",
+          "async"
+        ],
+        "user_event": [
+          "user-event",
+          "setup",
+          "click",
+          "type",
+          "keyboard"
+        ],
+        "dom": [
+          "dom-testing-library",
+          "setup",
+          "firing-events",
+          "async"
+        ],
+        "vue": [
+          "vue-testing-library",
+          "setup",
+          "examples"
+        ],
+        "cypress": [
+          "cypress-testing-library",
+          "queries"
+        ],
+        "best_practices": [
+          "queries",
+          "appearance-disappearance",
+          "not-recommended"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 200
+    }
+  ],
+  "metadata": {
+    "author": "Testing Library Team",
+    "language": "JavaScript",
+    "framework_type": "Testing Utility",
+    "use_cases": [
+      "Component testing",
+      "User-centric queries",
+      "Integration testing",
+      "Accessible testing",
+      "E2E testing"
+    ],
+    "related_skills": [
+      "react",
+      "jest",
+      "vitest",
+      "cypress",
+      "playwright"
+    ]
+  }
+}

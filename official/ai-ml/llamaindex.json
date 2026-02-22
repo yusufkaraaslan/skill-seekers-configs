@@ -1,0 +1,141 @@
+{
+  "name": "llamaindex",
+  "description": "Complete LlamaIndex knowledge from official documentation. Use when building RAG applications and data frameworks for LLMs. Covers indexing, querying, agents, and multi-modal.",
+  "version": "1.0.0",
+  "base_url": "https://docs.llamaindex.ai/en/stable/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.llamaindex.ai/en/stable/",
+      "start_urls": [
+        "https://docs.llamaindex.ai/en/stable/",
+        "https://docs.llamaindex.ai/en/stable/getting_started/installation.html",
+        "https://docs.llamaindex.ai/en/stable/understanding/",
+        "https://docs.llamaindex.ai/en/stable/module_guides/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/en/stable/",
+          "/en/stable/getting_started/",
+          "/en/stable/understanding/",
+          "/en/stable/module_guides/",
+          "/en/stable/examples/"
+        ],
+        "exclude": [
+          "/en/stable/changes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "getting_started/installation",
+          "starter_example",
+          "concepts"
+        ],
+        "loading": [
+          "module_guides/loading/",
+          "data_connectors",
+          "document",
+          "node",
+          "reader"
+        ],
+        "indexing": [
+          "module_guides/indexing/",
+          "vector_store_index",
+          "summary_index",
+          "tree_index",
+          "keyword_table"
+        ],
+        "storing": [
+          "module_guides/storing/",
+          "vector_stores",
+          "docstore",
+          "index_store",
+          "kvstore"
+        ],
+        "querying": [
+          "module_guides/deploying/query_engine",
+          "query_engine",
+          "retriever",
+          "response_synthesizer"
+        ],
+        "chat_engine": [
+          "module_guides/deploying/chat_engines",
+          "chat_engine",
+          "condense_question",
+          "react",
+          "openai_agent"
+        ],
+        "agents": [
+          "module_guides/deploying/agents",
+          "openai_agent",
+          "react_agent",
+          "tool",
+          "function_calling"
+        ],
+        "embeddings": [
+          "module_guides/models/embeddings",
+          "openai",
+          "huggingface",
+          "cohere"
+        ],
+        "llms": [
+          "module_guides/models/llms",
+          "openai",
+          "anthropic",
+          "azure",
+          "local"
+        ],
+        "node_postprocessors": [
+          "module_guides/querying/node_postprocessors",
+          "metadata",
+          "similarity",
+          "reranking"
+        ],
+        "multi_modal": [
+          "examples/multi_modal",
+          "image",
+          "gpt4v",
+          "clip"
+        ],
+        "observability": [
+          "module_guides/observability/",
+          "callbacks",
+          "wandb",
+          "arize"
+        ],
+        "evaluating": [
+          "examples/evaluation/",
+          "response_evaluation",
+          "retrieval_evaluation"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 600
+    }
+  ],
+  "metadata": {
+    "author": "LlamaIndex",
+    "language": "Python",
+    "framework_type": "RAG Framework",
+    "use_cases": [
+      "RAG applications",
+      "Document Q&A",
+      "AI agents",
+      "Knowledge bases",
+      "Multi-modal apps"
+    ],
+    "related_skills": [
+      "python",
+      "openai",
+      "langchain",
+      "vector-databases",
+      "embeddings"
+    ]
+  }
+}

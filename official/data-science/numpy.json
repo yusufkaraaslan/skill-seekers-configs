@@ -1,0 +1,119 @@
+{
+  "name": "numpy",
+  "description": "Complete NumPy knowledge from official documentation. Use when performing numerical computing, array operations, or mathematical computations in Python. Covers ndarrays, broadcasting, linear algebra, and random sampling.",
+  "version": "1.0.0",
+  "base_url": "https://numpy.org/doc/stable/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://numpy.org/doc/stable/",
+      "start_urls": [
+        "https://numpy.org/doc/stable/user/quickstart.html",
+        "https://numpy.org/doc/stable/user/basics.html",
+        "https://numpy.org/doc/stable/reference/arrays.html",
+        "https://numpy.org/doc/stable/reference/routines.html"
+      ],
+      "selectors": {
+        "main_content": "article, main, .section",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/doc/stable/user/",
+          "/doc/stable/reference/"
+        ],
+        "exclude": [
+          "/doc/stable/release/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "quickstart",
+          "absolute-beginners",
+          "installation"
+        ],
+        "ndarray": [
+          "ndarray",
+          "array",
+          "shape",
+          "dtype",
+          "reshape"
+        ],
+        "indexing": [
+          "indexing",
+          "slicing",
+          "boolean",
+          "fancy",
+          "ix_"
+        ],
+        "operations": [
+          "ufuncs",
+          "broadcasting",
+          "vectorization",
+          "universal-functions"
+        ],
+        "linalg": [
+          "linalg",
+          "linear-algebra",
+          "matrix",
+          "eigen",
+          "svd"
+        ],
+        "random": [
+          "random",
+          "generator",
+          "distributions",
+          "sampling"
+        ],
+        "manipulation": [
+          "manipulation",
+          "reshape",
+          "concatenate",
+          "split",
+          "tile"
+        ],
+        "math": [
+          "mathematical",
+          "trigonometric",
+          "exponential",
+          "logarithm"
+        ],
+        "io": [
+          "io",
+          "loadtxt",
+          "savetxt",
+          "npy",
+          "npz"
+        ],
+        "performance": [
+          "performance",
+          "cython",
+          "numba",
+          "memory"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "NumPy Team",
+    "language": "Python/C",
+    "framework_type": "Numerical Computing",
+    "use_cases": [
+      "Numerical computations",
+      "Array operations",
+      "Linear algebra",
+      "Signal processing",
+      "Scientific computing"
+    ],
+    "related_skills": [
+      "pandas",
+      "scipy",
+      "scikit-learn",
+      "matplotlib",
+      "python"
+    ]
+  }
+}

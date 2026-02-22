@@ -1,0 +1,110 @@
+{
+  "name": "playwright",
+  "description": "Complete Playwright knowledge from official documentation. Use when testing modern web apps across multiple browsers. Covers locators, actions, auto-waiting, and parallel execution.",
+  "version": "1.0.0",
+  "base_url": "https://playwright.dev/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://playwright.dev/docs/",
+      "start_urls": [
+        "https://playwright.dev/docs/intro",
+        "https://playwright.dev/docs/writing-tests",
+        "https://playwright.dev/docs/locators",
+        "https://playwright.dev/docs/api/class-playwright"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/"
+        ],
+        "exclude": [
+          "/community/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "intro",
+          "installation",
+          "first-test"
+        ],
+        "writing_tests": [
+          "writing-tests",
+          "actions",
+          "assertions",
+          "test-annotations"
+        ],
+        "locators": [
+          "locators",
+          "getbyrole",
+          "gettext",
+          "getbytestid"
+        ],
+        "pages": [
+          "pages",
+          "navigation",
+          "screenshots",
+          "videos"
+        ],
+        "input": [
+          "input",
+          "click",
+          "fill",
+          "type",
+          "press"
+        ],
+        "network": [
+          "network",
+          "mock",
+          "intercept",
+          "handle"
+        ],
+        "browsers": [
+          "browsers",
+          "chromium",
+          "firefox",
+          "webkit"
+        ],
+        "ci": [
+          "ci",
+          "docker",
+          "github-actions"
+        ],
+        "api": [
+          "api-testing",
+          "request"
+        ],
+        "parallel": [
+          "parallel",
+          "sharding",
+          "workers"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Microsoft",
+    "language": "JavaScript/TypeScript",
+    "framework_type": "E2E Testing",
+    "use_cases": [
+      "Cross-browser testing",
+      "Web automation",
+      "API testing",
+      "Mobile web testing",
+      "Visual regression"
+    ],
+    "related_skills": [
+      "typescript",
+      "javascript",
+      "cypress",
+      "jest",
+      "docker"
+    ]
+  }
+}

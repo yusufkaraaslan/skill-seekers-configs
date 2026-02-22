@@ -1,0 +1,143 @@
+{
+  "name": "esbuild",
+  "description": "Complete esbuild knowledge from official documentation. Use when bundling JavaScript with extremely fast build speeds. Covers API, plugins, loaders, and transformations.",
+  "version": "1.0.0",
+  "base_url": "https://esbuild.github.io/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://esbuild.github.io/",
+      "start_urls": [
+        "https://esbuild.github.io/",
+        "https://esbuild.github.io/getting-started/",
+        "https://esbuild.github.io/api/",
+        "https://esbuild.github.io/plugins/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/getting-started/",
+          "/api/",
+          "/plugins/",
+          "/content-types/",
+          "/faq/"
+        ],
+        "exclude": [
+          "/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "getting-started",
+          "install",
+          "your-first-bundle"
+        ],
+        "cli": [
+          "api/#build-api",
+          "cli",
+          "command-line-flags",
+          "serve"
+        ],
+        "javascript_api": [
+          "api/#build-api",
+          "javascript-api",
+          "build",
+          "transform",
+          "context"
+        ],
+        "build_options": [
+          "api/#build-options",
+          "entry-points",
+          "bundle",
+          "outdir",
+          "format"
+        ],
+        "loaders": [
+          "content-types",
+          "loader",
+          "js",
+          "ts",
+          "jsx",
+          "tsx",
+          "css",
+          "json",
+          "file"
+        ],
+        "plugins": [
+          "plugins",
+          "plugin-api",
+          "onResolve",
+          "onLoad",
+          "onStart",
+          "onEnd"
+        ],
+        "transform": [
+          "api/#transform-api",
+          "transform-api",
+          "transformSync",
+          "transform"
+        ],
+        "target": [
+          "api/#target",
+          "target",
+          "es2020",
+          "esnext",
+          "chrome",
+          "firefox"
+        ],
+        "minification": [
+          "api/#minify",
+          "minify",
+          "minifyWhitespace",
+          "minifyIdentifiers",
+          "minifySyntax"
+        ],
+        "source_maps": [
+          "api/#sourcemap",
+          "sourcemap",
+          "sources-content",
+          "inline-sourcemap"
+        ],
+        "splitting": [
+          "api/#splitting",
+          "splitting",
+          "chunk-names",
+          "manual-chunks"
+        ],
+        "metafile": [
+          "api/#metafile",
+          "metafile",
+          "inputs",
+          "outputs",
+          "analysis"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 200
+    }
+  ],
+  "metadata": {
+    "author": "Evan Wallace",
+    "language": "Go/JavaScript",
+    "framework_type": "Bundler",
+    "use_cases": [
+      "Fast bundling",
+      "TypeScript compilation",
+      "Minification",
+      "JavaScript transformation",
+      "Development builds"
+    ],
+    "related_skills": [
+      "javascript",
+      "typescript",
+      "nodejs",
+      "webpack",
+      "vite"
+    ]
+  }
+}

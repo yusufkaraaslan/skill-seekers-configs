@@ -1,0 +1,131 @@
+{
+  "name": "torque3d",
+  "description": "Complete Torque3D knowledge from official documentation. Use when building open-source 3D games with C++ and TorqueScript. Covers terrain, vehicles, multiplayer, and world editor.",
+  "version": "1.0.0",
+  "base_url": "http://docs.torque3d.org/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "http://docs.torque3d.org/",
+      "start_urls": [
+        "http://docs.torque3d.org/",
+        "http://docs.torque3d.org/gettingstarted/",
+        "http://docs.torque3d.org/torquescript/",
+        "http://docs.torque3d.org/worldeditor/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/gettingstarted/",
+          "/torquescript/",
+          "/worldeditor/",
+          "/gui/",
+          "/scripting/"
+        ],
+        "exclude": [
+          "/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "gettingstarted",
+          "setup",
+          "project-generation",
+          "first-run"
+        ],
+        "world_editor": [
+          "worldeditor",
+          "interface",
+          "viewport",
+          "toolbar",
+          "sidebar"
+        ],
+        "terrain": [
+          "terrain",
+          "heightfield",
+          "texture-layers",
+          "painting",
+          "brushes"
+        ],
+        "torquescript": [
+          "torquescript",
+          "syntax",
+          "variables",
+          "functions",
+          "objects"
+        ],
+        "gameplay": [
+          "gameplay",
+          "player",
+          "weapons",
+          "vehicles",
+          "items"
+        ],
+        "multiplayer": [
+          "multiplayer",
+          "client-server",
+          "ghosting",
+          "netscope"
+        ],
+        "rendering": [
+          "rendering",
+          "materials",
+          "lighting",
+          "shadows",
+          "postfx"
+        ],
+        "gui": [
+          "gui",
+          "controls",
+          "profiles",
+          "menus",
+          "hud"
+        ],
+        "datablocks": [
+          "datablocks",
+          "definition",
+          "client-side",
+          "server-side"
+        ],
+        "modules": [
+          "modules",
+          "module-manager",
+          "assets",
+          "dependencies"
+        ],
+        "scripting_advanced": [
+          "scripting",
+          "console",
+          "command-to-function",
+          "schedules"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "Torque3D Team",
+    "language": "C++/TorqueScript",
+    "framework_type": "3D Game Engine",
+    "use_cases": [
+      "Open-world games",
+      "Vehicle simulations",
+      "Multiplayer games",
+      "Terrain-based games",
+      "Educational 3D"
+    ],
+    "related_skills": [
+      "cpp",
+      "torquescript",
+      "opengl",
+      "bullet",
+      "physx"
+    ]
+  }
+}

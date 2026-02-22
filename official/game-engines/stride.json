@@ -1,0 +1,137 @@
+{
+  "name": "stride",
+  "description": "Complete Stride knowledge from official documentation. Use when building cross-platform 3D games with C# and .NET. Covers ECS, rendering, physics, animation, and scripting.",
+  "version": "1.0.0",
+  "base_url": "https://doc.stride3d.net/latest/en/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://doc.stride3d.net/latest/en/",
+      "start_urls": [
+        "https://doc.stride3d.net/latest/en/",
+        "https://doc.stride3d.net/latest/en/manual/get-started.html",
+        "https://doc.stride3d.net/latest/en/manual/scripts/index.html",
+        "https://doc.stride3d.net/latest/en/manual/graphics/index.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/manual/",
+          "/manual/get-started",
+          "/manual/scripts/",
+          "/manual/graphics/",
+          "/manual/physics/",
+          "/manual/audio/"
+        ],
+        "exclude": [
+          "/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "get-started",
+          "install-stride",
+          "create-a-project",
+          "scene-management"
+        ],
+        "editor": [
+          "editor",
+          "game-studio",
+          "asset-view",
+          "scene-editor"
+        ],
+        "scripts": [
+          "scripts",
+          "create-a-script",
+          "events",
+          "debugging",
+          "async-scripts"
+        ],
+        "entities": [
+          "entities",
+          "entity-components",
+          "transforms",
+          "entity-hierarchy"
+        ],
+        "graphics": [
+          "graphics",
+          "materials",
+          "lighting",
+          "models",
+          "sprites",
+          "post-effects"
+        ],
+        "physics": [
+          "physics",
+          "colliders",
+          "rigid-bodies",
+          "triggers",
+          "raycasting"
+        ],
+        "animation": [
+          "animation",
+          "animation-playback",
+          " skeletal-animation",
+          " blend-trees"
+        ],
+        "audio": [
+          "audio",
+          "sound",
+          "spatialized-audio",
+          "audio-listeners"
+        ],
+        "ui": [
+          "ui",
+          "pages",
+          "ui-elements",
+          "layout-system"
+        ],
+        "input": [
+          "input",
+          "keyboard",
+          "mouse",
+          "virtual-buttons",
+          "gamepads"
+        ],
+        "platforms": [
+          "platforms",
+          "windows",
+          "linux",
+          "android",
+          "ios"
+        ],
+        "dotnet": [
+          "dotnet",
+          "csharp",
+          "nuget",
+          "dependencies"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "Stride Contributors",
+    "language": "C#",
+    "framework_type": "Game Engine",
+    "use_cases": [
+      "3D games",
+      ".NET applications",
+      "VR/AR",
+      "Architectural visualization",
+      "Training simulations"
+    ],
+    "related_skills": [
+      "csharp",
+      "dotnet",
+      "hlsl",
+      "bullet-physics",
+      "xenko"
+    ]
+  }
+}

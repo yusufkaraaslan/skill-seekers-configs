@@ -1,0 +1,129 @@
+{
+  "name": "phaser",
+  "description": "Complete Phaser knowledge from official documentation. Use when building HTML5 games for web and mobile. Covers scenes, sprites, physics, tilemaps, and WebGL rendering.",
+  "version": "1.0.0",
+  "base_url": "https://phaser.io/tutorials/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://phaser.io/tutorials/",
+      "start_urls": [
+        "https://phaser.io/tutorials/getting-started-phaser3",
+        "https://newdocs.phaser.io/docs/3.60.0/",
+        "https://phaser.io/tutorials/making-your-first-phaser-3-game",
+        "https://phaser.io/examples"
+      ],
+      "selectors": {
+        "main_content": "article, main, .content",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/tutorials/",
+          "/docs/",
+          "/examples"
+        ],
+        "exclude": [
+          "/news/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started-phaser3",
+          "making-your-first-phaser-3-game",
+          "config"
+        ],
+        "scenes": [
+          "scenes",
+          "scene-lifecycle",
+          "scene-manager",
+          "switching-scenes"
+        ],
+        "gameobjects": [
+          "gameobjects",
+          "sprites",
+          "text",
+          "images",
+          "containers"
+        ],
+        "physics": [
+          "physics",
+          "arcade",
+          "matter",
+          "bodies",
+          "collisions"
+        ],
+        "input": [
+          "input",
+          "keyboard",
+          "mouse",
+          "touch",
+          "gamepad"
+        ],
+        "animation": [
+          "animation",
+          "tweens",
+          "spritesheets",
+          "timeline"
+        ],
+        "audio": [
+          "audio",
+          "sound",
+          "music",
+          "web-audio"
+        ],
+        "tilemaps": [
+          "tilemaps",
+          "tilemap-layer",
+          "tiled",
+          "collision"
+        ],
+        "cameras": [
+          "cameras",
+          "camera-effects",
+          "following",
+          "scroll"
+        ],
+        "particles": [
+          "particles",
+          "emitters",
+          "gravity-wells"
+        ],
+        "shader": [
+          "shader",
+          "pipelines",
+          "webgl",
+          "effects"
+        ],
+        "scale": [
+          "scale-manager",
+          "responsive",
+          "fullscreen",
+          "orientation"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "Photon Storm",
+    "language": "JavaScript",
+    "framework_type": "Game Engine",
+    "use_cases": [
+      "HTML5 games",
+      "Browser games",
+      "Mobile web games",
+      "Facebook Instant Games",
+      "Educational games"
+    ],
+    "related_skills": [
+      "javascript",
+      "typescript",
+      "webpack",
+      "webgl",
+      "tiled"
+    ]
+  }
+}

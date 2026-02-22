@@ -1,0 +1,130 @@
+{
+  "name": "dynamodb",
+  "description": "Complete Amazon DynamoDB knowledge from official documentation. Use when building serverless, NoSQL applications at any scale. Covers data modeling, streams, DAX, and global tables.",
+  "version": "1.0.0",
+  "base_url": "https://docs.aws.amazon.com/dynamodb/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.aws.amazon.com/dynamodb/",
+      "start_urls": [
+        "https://docs.aws.amazon.com/dynamodb/latest/developerguide/Introduction.html",
+        "https://docs.aws.amazon.com/dynamodb/latest/developerguide/HowItWorks.html",
+        "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html",
+        "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-general.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/dynamodb/latest/developerguide/",
+          "/amazondynamodb/latest/developerguide/"
+        ],
+        "exclude": [
+          "/dynamodb/latest/developerguide/WhatsNew.html"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "Introduction",
+          "GettingStartedDynamoDB",
+          "SettingUp",
+          "ProgrammingWithDynamoDB"
+        ],
+        "core_concepts": [
+          "HowItWorks",
+          "HowItWorks.CoreComponents",
+          "HowItWorks.Partitions",
+          "ReadWriteCapacityMode"
+        ],
+        "data_modeling": [
+          "bp-general",
+          "bp-relational-modeling",
+          "bp-indexes",
+          "bp-query-scan",
+          "bp-sort-keys"
+        ],
+        "tables": [
+          "WorkingWithTables",
+          "WorkingWithTables.Basics",
+          "WorkingWithTables.Basics.html",
+          "CreateTable"
+        ],
+        "items": [
+          "WorkingWithItems",
+          "WorkingWithItems.ReadingData",
+          "WorkingWithItems.WritingData",
+          "WorkingWithItems.Attributes"
+        ],
+        "queries_scans": [
+          "Query",
+          "Scan",
+          "Query.Pagination",
+          "Query.FilterExpression"
+        ],
+        "indexes": [
+          "SecondaryIndexes",
+          "GSI",
+          "LSI",
+          "ib-secondary-indexes.html"
+        ],
+        "streams": [
+          "Streams",
+          "Streams.Lambda",
+          "Streams.KCL",
+          "Streams.DynamoDBStreams"
+        ],
+        "dax": [
+          "DAX",
+          "DAX.concepts",
+          "DAX.create-cluster",
+          "DAX.best-practices"
+        ],
+        "global_tables": [
+          "GlobalTables",
+          "GlobalTables HowItWorks",
+          "GlobalTables.CreateTable"
+        ],
+        "transactions": [
+          "Transactions",
+          "transaction-apis",
+          "transaction-conflicts"
+        ],
+        "on_demand": [
+          "ReadWriteCapacityMode",
+          "HowItWorks.ReadWriteCapacityMode",
+          "ondemand-capacity-mode"
+        ],
+        "partiql": [
+          "ql-reference",
+          "ql-reference.select",
+          "ql-reference.insert"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Amazon Web Services",
+    "language": "NoSQL",
+    "framework_type": "Managed NoSQL Database",
+    "use_cases": [
+      "Serverless apps",
+      "High-scale OLTP",
+      "Gaming",
+      "IoT",
+      "E-commerce"
+    ],
+    "related_skills": [
+      "aws",
+      "lambda",
+      "nodejs",
+      "python",
+      "java"
+    ]
+  }
+}

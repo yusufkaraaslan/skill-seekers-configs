@@ -1,0 +1,129 @@
+{
+  "name": "heroku",
+  "description": "Complete Heroku knowledge from official documentation. Use when deploying, managing, and scaling applications on the platform-as-a-service. Covers dynos, add-ons, CLI, and pipelines.",
+  "version": "1.0.0",
+  "base_url": "https://devcenter.heroku.com/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://devcenter.heroku.com/",
+      "start_urls": [
+        "https://devcenter.heroku.com/",
+        "https://devcenter.heroku.com/articles/getting-started-with-python",
+        "https://devcenter.heroku.com/articles/deploying-nodejs",
+        "https://devcenter.heroku.com/categories/reference"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/articles/getting-started",
+          "/articles/deploying",
+          "/categories/reference",
+          "/categories/buildpacks"
+        ],
+        "exclude": [
+          "/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "getting-started-with-python",
+          "getting-started-with-nodejs",
+          "getting-started-with-ruby",
+          "getting-started-with-java"
+        ],
+        "deployment": [
+          "deploying-nodejs",
+          "git",
+          "buildpacks",
+          "slug-compiler",
+          "releases"
+        ],
+        "dynos": [
+          "dynos",
+          "dyno-types",
+          "scaling",
+          "dyno-configuration",
+          "one-off-dynos"
+        ],
+        "addons": [
+          "managing-add-ons",
+          "heroku-postgres",
+          "heroku-redis",
+          "scheduler"
+        ],
+        "postgres": [
+          "heroku-postgresql",
+          "connecting-to-heroku-postgres-databases",
+          "heroku-postgres-backups",
+          "heroku-postgres-plans"
+        ],
+        "cli": [
+          "heroku-cli",
+          "using-cli",
+          "cli-commands",
+          "autocomplete"
+        ],
+        "pipelines": [
+          "pipelines",
+          "review-apps",
+          "promotion",
+          "staging"
+        ],
+        "config_vars": [
+          "config-vars",
+          "environment-variables",
+          "heroku-config"
+        ],
+        "logs": [
+          "logging",
+          "log-drains",
+          "runtime-metrics"
+        ],
+        "security": [
+          "ssl",
+          "acm",
+          "app-encryption",
+          "private-spaces"
+        ],
+        "monitoring": [
+          "metrics",
+          "alerting",
+          "apm",
+          "librato"
+        ],
+        "ci_cd": [
+          "github-integration",
+          "heroku-ci",
+          "deployment-method-github-actions"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "Salesforce",
+    "language": "Multi-language",
+    "framework_type": "PaaS",
+    "use_cases": [
+      "Web applications",
+      "API hosting",
+      "Rapid deployment",
+      "Prototypes",
+      "Small to medium apps"
+    ],
+    "related_skills": [
+      "git",
+      "ruby",
+      "nodejs",
+      "python",
+      "postgresql"
+    ]
+  }
+}

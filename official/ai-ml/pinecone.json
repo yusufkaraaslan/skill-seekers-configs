@@ -1,0 +1,133 @@
+{
+  "name": "pinecone",
+  "description": "Complete Pinecone knowledge from official documentation. Use when building vector search applications at scale. Covers indexes, vectors, metadata filtering, hybrid search, and namespaces.",
+  "version": "1.0.0",
+  "base_url": "https://docs.pinecone.io/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.pinecone.io/",
+      "start_urls": [
+        "https://docs.pinecone.io/",
+        "https://docs.pinecone.io/guides/getting-started",
+        "https://docs.pinecone.io/guides/indexes",
+        "https://docs.pinecone.io/guides/data/upsert-data"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/guides/",
+          "/guides/getting-started",
+          "/guides/indexes",
+          "/guides/data/",
+          "/guides/search/",
+          "/reference/"
+        ],
+        "exclude": [
+          "/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "guides/getting-started",
+          "quickstart",
+          "overview"
+        ],
+        "indexes": [
+          "guides/indexes",
+          "create-index",
+          "configure-index",
+          "delete-index",
+          "collections"
+        ],
+        "vectors": [
+          "guides/data/upsert-data",
+          "upsert",
+          "fetch",
+          "update",
+          "delete"
+        ],
+        "search": [
+          "guides/search/query-data",
+          "query",
+          "top-k",
+          "similarity"
+        ],
+        "metadata": [
+          "guides/data/filter-with-metadata",
+          "metadata",
+          "filtering",
+          "operators"
+        ],
+        "namespaces": [
+          "guides/data/use-namespaces",
+          "namespaces",
+          "partition"
+        ],
+        "embeddings": [
+          "guides/getting-started/embeddings",
+          "openai",
+          "cohere",
+          "sentence-transformers"
+        ],
+        "hybrid_search": [
+          "guides/search/keyword-search",
+          "hybrid",
+          "sparse-dense",
+          "bm25"
+        ],
+        "pods": [
+          "guides/indexes/understanding-indexes",
+          "pods",
+          "pod-types",
+          "serverless"
+        ],
+        "integrations": [
+          "guides/integrations",
+          "langchain",
+          "llamaindex",
+          "openai",
+          "huggingface"
+        ],
+        "security": [
+          "guides/security",
+          "api-keys",
+          "encryption",
+          "rbac"
+        ],
+        "monitoring": [
+          "guides/monitoring",
+          "metrics",
+          "usage",
+          "alerts"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Pinecone",
+    "language": "Python/JavaScript/REST",
+    "framework_type": "Vector Database",
+    "use_cases": [
+      "Semantic search",
+      "RAG applications",
+      "Recommendation systems",
+      "Similarity matching",
+      "LLM memory"
+    ],
+    "related_skills": [
+      "python",
+      "embeddings",
+      "openai",
+      "langchain",
+      "numpy"
+    ]
+  }
+}

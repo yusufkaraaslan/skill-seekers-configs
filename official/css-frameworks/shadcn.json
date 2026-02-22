@@ -1,0 +1,118 @@
+{
+  "name": "shadcn",
+  "description": "Complete shadcn/ui knowledge from official documentation. Use when building accessible React components with Radix UI and Tailwind CSS. Covers components, theming, CLI, and customization.",
+  "version": "1.0.0",
+  "base_url": "https://ui.shadcn.com/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://ui.shadcn.com/docs/",
+      "start_urls": [
+        "https://ui.shadcn.com/docs/",
+        "https://ui.shadcn.com/docs/installation",
+        "https://ui.shadcn.com/docs/components",
+        "https://ui.shadcn.com/docs/theming"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/",
+          "/docs/installation",
+          "/docs/components/",
+          "/docs/theming",
+          "/docs/cli"
+        ],
+        "exclude": [
+          "/docs/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "introduction",
+          "installation",
+          "nextjs",
+          "vite",
+          "remix"
+        ],
+        "components": [
+          "accordion",
+          "alert",
+          "button",
+          "card",
+          "dialog",
+          "dropdown-menu",
+          "form",
+          "table"
+        ],
+        "theming": [
+          "theming",
+          "colors",
+          "dark-mode",
+          "customize"
+        ],
+        "cli": [
+          "cli",
+          "init",
+          "add",
+          "update"
+        ],
+        "forms": [
+          "form",
+          "input",
+          "textarea",
+          "select",
+          "checkbox",
+          "radio-group"
+        ],
+        "layout": [
+          "aspect-ratio",
+          "container",
+          "resizable",
+          "separator",
+          "skeleton"
+        ],
+        "overlays": [
+          "alert-dialog",
+          "dialog",
+          "drawer",
+          "hover-card",
+          "popover",
+          "sheet",
+          "tooltip"
+        ],
+        "data": [
+          "calendar",
+          "carousel",
+          "chart",
+          "table",
+          "pagination"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 200
+    }
+  ],
+  "metadata": {
+    "author": "shadcn",
+    "language": "TypeScript",
+    "framework_type": "UI Library",
+    "use_cases": [
+      "React components",
+      "Accessible UI",
+      "Design systems",
+      "Rapid prototyping",
+      "Modern interfaces"
+    ],
+    "related_skills": [
+      "react",
+      "tailwindcss",
+      "radix-ui",
+      "nextjs",
+      "typescript"
+    ]
+  }
+}

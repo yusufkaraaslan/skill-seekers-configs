@@ -1,0 +1,126 @@
+{
+  "name": "bevy",
+  "description": "Complete Bevy knowledge from official documentation. Use when building data-driven games in Rust with ECS architecture. Covers systems, components, resources, queries, and rendering.",
+  "version": "1.0.0",
+  "base_url": "https://bevyengine.org/learn/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://bevyengine.org/learn/",
+      "start_urls": [
+        "https://bevyengine.org/learn/book/getting-started/",
+        "https://bevyengine.org/learn/book/ecs/",
+        "https://bevyengine.org/learn/book/getting-started/ecs/",
+        "https://docs.rs/bevy/latest/bevy/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/learn/book/",
+          "/learn/book/getting-started/",
+          "/learn/book/ecs/",
+          "/learn/book/graphics/"
+        ],
+        "exclude": [
+          "/news/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "installation",
+          "apps",
+          "plugins"
+        ],
+        "ecs": [
+          "ecs",
+          "entities",
+          "components",
+          "systems",
+          "queries",
+          "commands"
+        ],
+        "resources": [
+          "resources",
+          "local-resources",
+          "init-resource",
+          "change-detection"
+        ],
+        "events": [
+          "events",
+          "sending-events",
+          "reading-events",
+          "event-reader"
+        ],
+        "assets": [
+          "assets",
+          "asset-server",
+          "handles",
+          "loading"
+        ],
+        "graphics": [
+          "graphics",
+          "2d",
+          "3d",
+          "cameras",
+          "meshes"
+        ],
+        "input": [
+          "input",
+          "keyboard",
+          "mouse",
+          "gamepad",
+          "touch"
+        ],
+        "audio": [
+          "audio",
+          "playing-sounds",
+          "spatial-audio"
+        ],
+        "physics": [
+          "physics",
+          "rapier",
+          "xpbd",
+          "collision"
+        ],
+        "ui": [
+          "ui",
+          "buttons",
+          "text",
+          "layout"
+        ],
+        "scenes": [
+          "scenes",
+          "saving",
+          "loading",
+          "dynamic-scene"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Bevy Contributors",
+    "language": "Rust",
+    "framework_type": "Game Engine",
+    "use_cases": [
+      "2D games",
+      "3D games",
+      "ECS architecture",
+      "Rust game dev",
+      "High-performance games"
+    ],
+    "related_skills": [
+      "rust",
+      "wgpu",
+      "vulkan",
+      "blender",
+      "glsl"
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "name": "selenium",
+  "description": "Complete Selenium knowledge from official documentation. Use when automating browser testing across different platforms. Covers WebDriver, locators, waits, and grid.",
+  "version": "1.0.0",
+  "base_url": "https://www.selenium.dev/documentation/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.selenium.dev/documentation/",
+      "start_urls": [
+        "https://www.selenium.dev/documentation/",
+        "https://www.selenium.dev/documentation/webdriver/",
+        "https://www.selenium.dev/documentation/grid/",
+        "https://www.selenium.dev/selenium/docs/api/py/api.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/documentation/webdriver/",
+          "/documentation/grid/",
+          "/selenium/docs/api/"
+        ],
+        "exclude": [
+          "/blog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "overview",
+          "getting_started",
+          "install"
+        ],
+        "webdriver": [
+          "webdriver",
+          "drivers",
+          "browser-manipulation",
+          "waits"
+        ],
+        "locating_elements": [
+          "webdriver/elements/locators",
+          "by-id",
+          "by-class",
+          "by-xpath",
+          "by-css"
+        ],
+        "waits": [
+          "webdriver/waits",
+          "implicit-wait",
+          "explicit-wait",
+          "fluent-wait"
+        ],
+        "actions": [
+          "webdriver/actions_api",
+          "mouse",
+          "keyboard",
+          "pen"
+        ],
+        "alerts_frames_windows": [
+          "webdriver/alerts",
+          "frames",
+          "windows",
+          "popups"
+        ],
+        "page_loading": [
+          "webdriver/page_loading_strategy",
+          "document-ready",
+          "eager"
+        ],
+        "grid": [
+          "grid",
+          "getting_started",
+          "components",
+          "advanced_features"
+        ],
+        "remote_webdriver": [
+          "grid/setting_up_your_own_grid",
+          "remote-webdriver",
+          "capabilities"
+        ],
+        "mobile": [
+          "webdriver/mobile",
+          "chromedriver-mobile",
+          "appium"
+        ],
+        "best_practices": [
+          "guidelines_and_recommendations",
+          "page_object_models",
+          "generating_application_state"
+        ],
+        "browsers": [
+          "webdriver/browsers",
+          "chrome",
+          "firefox",
+          "edge",
+          "safari"
+        ],
+        "headless": [
+          "webdriver/drivers/options",
+          "headless",
+          "arguments"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Selenium Project",
+    "language": "Python/Java/JavaScript",
+    "framework_type": "Browser Automation",
+    "use_cases": [
+      "Web testing",
+      "Cross-browser testing",
+      "Regression testing",
+      "E2E testing",
+      "Web scraping"
+    ],
+    "related_skills": [
+      "python",
+      "java",
+      "javascript",
+      "testing",
+      "cicd"
+    ]
+  }
+}

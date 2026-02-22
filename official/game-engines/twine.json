@@ -1,0 +1,124 @@
+{
+  "name": "twine",
+  "description": "Complete Twine knowledge from official documentation. Use when building interactive fiction and branching narratives. Covers story formats, variables, macros, styling with CSS, and JavaScript.",
+  "version": "1.0.0",
+  "base_url": "https://twinery.org/cookbook/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://twinery.org/cookbook/",
+      "start_urls": [
+        "https://twinery.org/cookbook/",
+        "https://twinery.org/cookbook/terms/terms.html",
+        "https://twinery.org/cookbook/passages/passages.html",
+        "https://twinery.org/cookbook/storyformats/index.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/cookbook/",
+          "/cookbook/terms/",
+          "/cookbook/passages/",
+          "/cookbook/storyformats/",
+          "/cookbook/starting/"
+        ],
+        "exclude": [
+          "/cookbook/appendix/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "starting/twine2",
+          "terms/story",
+          "terms/passage"
+        ],
+        "passages": [
+          "passages/passages",
+          "passages/links",
+          "passages/formatting",
+          "passages/embedding"
+        ],
+        "story_formats": [
+          "storyformats/index",
+          "storyformats/chapbook",
+          "storyformats/harlowe",
+          "storyformats/sugarcube"
+        ],
+        "harlowe": [
+          "starting/twine2",
+          "harlowe",
+          "macros",
+          "variables",
+          "hooks"
+        ],
+        "sugarcube": [
+          "sugarcube",
+          "sugarcube-macros",
+          "sugarcube-variables",
+          "sugarcube-widgets"
+        ],
+        "chapbook": [
+          "chapbook",
+          "chapbook-modifiers",
+          "chapbook-conditional"
+        ],
+        "variables": [
+          "terms/variable",
+          "datamap",
+          "array",
+          "set-macro"
+        ],
+        "conditionals": [
+          "conditional",
+          "if-macro",
+          "else-macro",
+          "unless"
+        ],
+        "css_styling": [
+          "terms/stylesheet",
+          "css",
+          "selectors",
+          "customization"
+        ],
+        "javascript": [
+          "javascript",
+          "script-passage",
+          "dom",
+          "custom-functions"
+        ],
+        "publishing": [
+          "publishing",
+          "html",
+          "proofing",
+          "archiving"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 250
+    }
+  ],
+  "metadata": {
+    "author": "Twine Contributors",
+    "language": "Markdown/CSS/JavaScript",
+    "framework_type": "Interactive Fiction",
+    "use_cases": [
+      "Interactive fiction",
+      "Branching narratives",
+      "Text adventures",
+      "Educational stories",
+      "Prototypes"
+    ],
+    "related_skills": [
+      "html",
+      "css",
+      "javascript",
+      "writing",
+      "storytelling"
+    ]
+  }
+}

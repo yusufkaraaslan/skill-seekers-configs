@@ -1,0 +1,114 @@
+{
+  "name": "stripe",
+  "description": "Complete Stripe knowledge from official documentation. Use when implementing payments, subscriptions, invoicing, or financial infrastructure. Covers Stripe.js, Payment Intents, Billing, and Connect.",
+  "version": "1.0.0",
+  "base_url": "https://stripe.com/docs",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://stripe.com/docs",
+      "start_urls": [
+        "https://stripe.com/docs/payments/accept-a-payment",
+        "https://stripe.com/docs/billing/quickstart",
+        "https://stripe.com/docs/api",
+        "https://stripe.com/docs/stripe-js"
+      ],
+      "selectors": {
+        "main_content": "article, main, .Doc__content",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/payments/",
+          "/docs/billing/",
+          "/docs/connect/",
+          "/docs/api/",
+          "/docs/stripe-js/",
+          "/docs/webhooks/",
+          "/docs/checkout/"
+        ],
+        "exclude": [
+          "/docs/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "quickstart",
+          "accept-a-payment",
+          "integration"
+        ],
+        "payments": [
+          "payments",
+          "payment-intents",
+          "payment-methods",
+          "cards",
+          "checkout"
+        ],
+        "stripe_js": [
+          "stripe-js",
+          "elements",
+          "payment-element",
+          "card-element",
+          "link"
+        ],
+        "billing": [
+          "billing",
+          "subscriptions",
+          "invoices",
+          "pricing",
+          "metered"
+        ],
+        "customers": [
+          "customers",
+          "setup-intents",
+          "saved-cards"
+        ],
+        "connect": [
+          "connect",
+          "marketplaces",
+          "platforms",
+          "express",
+          "custom"
+        ],
+        "webhooks": [
+          "webhooks",
+          "signatures",
+          "events",
+          "listen"
+        ],
+        "testing": [
+          "testing",
+          "test-cards",
+          "test-clocks"
+        ],
+        "security": [
+          "security",
+          "pci",
+          "3d-secure",
+          "sca"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Stripe",
+    "language": "Multi-language",
+    "framework_type": "Payment Platform",
+    "use_cases": [
+      "Online payments",
+      "Subscriptions",
+      "Invoicing",
+      "Marketplaces",
+      "Financial reporting"
+    ],
+    "related_skills": [
+      "nodejs",
+      "python",
+      "react",
+      "webhooks"
+    ]
+  }
+}

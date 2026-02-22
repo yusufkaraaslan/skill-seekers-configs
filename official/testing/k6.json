@@ -1,0 +1,108 @@
+{
+  "name": "k6",
+  "description": "Complete k6 knowledge from official documentation. Use when load testing APIs and applications. Covers HTTP requests, scenarios, thresholds, extensions, and cloud execution.",
+  "version": "1.0.0",
+  "base_url": "https://k6.io/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://k6.io/docs/",
+      "start_urls": [
+        "https://k6.io/docs/get-started/running-k6/",
+        "https://k6.io/docs/using-k6/",
+        "https://k6.io/docs/examples/",
+        "https://k6.io/docs/cloud/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/get-started/",
+          "/docs/using-k6/",
+          "/docs/examples/",
+          "/docs/cloud/",
+          "/docs/javascript-api/"
+        ],
+        "exclude": [
+          "/docs/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "installation",
+          "running-k6",
+          "results-output"
+        ],
+        "http_requests": [
+          "http-requests",
+          "get",
+          "post",
+          "params",
+          "headers"
+        ],
+        "scenarios": [
+          "scenarios",
+          "executors",
+          "ramping-vus",
+          "constant-vus",
+          "per-vu-iterations"
+        ],
+        "thresholds": [
+          "thresholds",
+          "checks",
+          "metrics",
+          "pass-fail"
+        ],
+        "metrics": [
+          "metrics",
+          "http-req-duration",
+          "vus",
+          "custom",
+          "rate"
+        ],
+        "modules": [
+          "modules",
+          "builtins",
+          "remote",
+          "node-modules"
+        ],
+        "extensions": [
+          "extensions",
+          "xk6",
+          "building",
+          "output"
+        ],
+        "cloud": [
+          "cloud",
+          "k6-cloud",
+          "scheduling",
+          "notifications"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 250
+    }
+  ],
+  "metadata": {
+    "author": "Grafana Labs",
+    "language": "Go/JavaScript",
+    "framework_type": "Load Testing",
+    "use_cases": [
+      "API load testing",
+      "Performance testing",
+      "Chaos engineering",
+      "CI/CD testing",
+      "Stress testing"
+    ],
+    "related_skills": [
+      "javascript",
+      "grafana",
+      "docker",
+      "github-actions",
+      "cloud"
+    ]
+  }
+}

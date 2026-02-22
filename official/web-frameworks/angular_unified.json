@@ -1,0 +1,146 @@
+{
+  "name": "angular",
+  "description": "Complete Angular knowledge combining official documentation and source code. Use when building enterprise web applications with TypeScript. Covers components, services, routing, forms, and Angular CLI. Version 17+ with standalone components.",
+  "version": "1.0.0",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://angular.dev/",
+      "extract_api": true,
+      "start_urls": [
+        "https://angular.dev/tutorials",
+        "https://angular.dev/guide/components",
+        "https://angular.dev/guide/signals",
+        "https://angular.dev/guide/routing",
+        "https://angular.dev/guide/forms"
+      ],
+      "selectors": {
+        "main_content": "article, main, .docs-content",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/tutorials/",
+          "/guide/",
+          "/api/",
+          "/cli/",
+          "/best-practices/",
+          "/error/"
+        ],
+        "exclude": [
+          "/presskit/",
+          "/resources/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "tutorials",
+          "first-app",
+          "install",
+          "setup"
+        ],
+        "components": [
+          "components",
+          "lifecycle",
+          "inputs",
+          "outputs",
+          "templates",
+          "directives"
+        ],
+        "signals": [
+          "signals",
+          "computed",
+          "effect",
+          "input",
+          "model"
+        ],
+        "dependency_injection": [
+          "di",
+          "injectable",
+          "providers",
+          "inject",
+          "hierarchical"
+        ],
+        "routing": [
+          "routing",
+          "router",
+          "navigation",
+          "guards",
+          "resolvers",
+          "lazy-loading"
+        ],
+        "forms": [
+          "forms",
+          "reactive",
+          "template-driven",
+          "validation",
+          "form-control"
+        ],
+        "http_client": [
+          "http",
+          "httpclient",
+          "interceptors",
+          "requests"
+        ],
+        "cli": [
+          "cli",
+          "build",
+          "serve",
+          "generate",
+          "schematics"
+        ],
+        "testing": [
+          "testing",
+          "jasmine",
+          "karma",
+          "component-tests"
+        ],
+        "performance": [
+          "performance",
+          "change-detection",
+          "onpush",
+          "lazy-loading"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 500
+    },
+    {
+      "type": "github",
+      "repo": "angular/angular",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "packages/core/src/**/*.ts",
+        "packages/router/src/**/*.ts",
+        "packages/forms/src/**/*.ts"
+      ]
+    }
+  ],
+  "metadata": {
+    "author": "Google / Angular Team",
+    "language": "TypeScript",
+    "framework_type": "Web Framework",
+    "use_cases": [
+      "Enterprise applications",
+      "Single-page applications",
+      "Progressive web apps",
+      "Cross-platform development",
+      "Large-scale applications"
+    ],
+    "related_skills": [
+      "typescript",
+      "rxjs",
+      "ngrx",
+      "angular-material",
+      "jest"
+    ]
+  },
+  "base_url": "https://angular.dev/"
+}

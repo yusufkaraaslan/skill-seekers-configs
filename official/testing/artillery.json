@@ -1,0 +1,134 @@
+{
+  "name": "artillery",
+  "description": "Complete Artillery knowledge from official documentation. Use when load testing APIs and applications. Covers scenarios, plugins, metrics, and distributed testing.",
+  "version": "1.0.0",
+  "base_url": "https://www.artillery.io/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.artillery.io/docs/",
+      "start_urls": [
+        "https://www.artillery.io/docs/",
+        "https://www.artillery.io/docs/guides/getting-started/",
+        "https://www.artillery.io/docs/guides/core-concepts/",
+        "https://www.artillery.io/docs/reference/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/guides/",
+          "/docs/guides/getting-started/",
+          "/docs/reference/",
+          "/docs/examples/"
+        ],
+        "exclude": [
+          "/docs/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "guides/getting-started/installation",
+          "guides/getting-started/running-first-test",
+          "guides/getting-started/writing-your-first-test"
+        ],
+        "core_concepts": [
+          "guides/core-concepts/",
+          "test-definitions",
+          "scenarios",
+          "phases",
+          "context"
+        ],
+        "http_testing": [
+          "guides/guides/http-reference",
+          "get",
+          "post",
+          "headers",
+          "capture"
+        ],
+        "websockets": [
+          "guides/guides/websocket-reference",
+          "connect",
+          "send",
+          "receive"
+        ],
+        "scenarios": [
+          "guides/guides/scenarios",
+          "flow",
+          "weight",
+          "beforeScenario",
+          "afterScenario"
+        ],
+        "variables": [
+          "guides/guides/variables",
+          "csv",
+          "json",
+          "random",
+          "loop"
+        ],
+        "captures": [
+          "guides/guides/captures",
+          "json",
+          "xpath",
+          "regexp",
+          "selector"
+        ],
+        "assertions": [
+          "guides/guides/assertions",
+          "expect",
+          "statusCode",
+          "contentType"
+        ],
+        "plugins": [
+          "guides/guides/plugins",
+          "publish-metrics",
+          "hls",
+          "fuzz"
+        ],
+        "metrics": [
+          "guides/guides/reports",
+          "latency",
+          "rps",
+          "errors",
+          "apdex"
+        ],
+        "distributed": [
+          "guides/guides/distributed-testing",
+          "aws-fargate",
+          "lambda"
+        ],
+        "ci_cd": [
+          "guides/guides/ci-cd",
+          "github-actions",
+          "gitlab-ci",
+          "circleci"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 250
+    }
+  ],
+  "metadata": {
+    "author": "Artillery",
+    "language": "JavaScript/YAML",
+    "framework_type": "Load Testing",
+    "use_cases": [
+      "API load testing",
+      "WebSocket testing",
+      "Performance testing",
+      "CI/CD integration",
+      "Distributed load"
+    ],
+    "related_skills": [
+      "javascript",
+      "nodejs",
+      "http",
+      "websockets",
+      "aws"
+    ]
+  }
+}

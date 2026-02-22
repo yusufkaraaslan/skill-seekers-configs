@@ -1,0 +1,106 @@
+{
+  "name": "clerk",
+  "description": "Complete Clerk knowledge from official documentation. Use when adding authentication and user management to React/Next.js applications. Covers sign-in, sessions, organizations, and webhooks.",
+  "version": "1.0.0",
+  "base_url": "https://clerk.com/docs",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://clerk.com/docs",
+      "start_urls": [
+        "https://clerk.com/docs/quickstarts/overview",
+        "https://clerk.com/docs/components",
+        "https://clerk.com/docs/users/overview",
+        "https://clerk.com/docs/organizations/overview"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/",
+          "/docs/quickstarts/",
+          "/docs/components/",
+          "/docs/users/",
+          "/docs/organizations/",
+          "/docs/references/"
+        ],
+        "exclude": [
+          "/docs/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "quickstarts",
+          "setup-clerk",
+          "create-clerk-app"
+        ],
+        "authentication": [
+          "authentication",
+          "sign-in",
+          "sign-up",
+          "social-connections"
+        ],
+        "components": [
+          "components",
+          "signin",
+          "userbutton",
+          "userprofile",
+          "organizationlist"
+        ],
+        "sessions": [
+          "sessions",
+          "tokens",
+          "session-tokens",
+          "jwt"
+        ],
+        "users": [
+          "users",
+          "user-object",
+          "metadata",
+          "web3"
+        ],
+        "organizations": [
+          "organizations",
+          "org-object",
+          "roles",
+          "invitations"
+        ],
+        "webhooks": [
+          "webhooks",
+          "sync-data",
+          "payload"
+        ],
+        "security": [
+          "security",
+          "csrf",
+          "xss",
+          "cors"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Clerk",
+    "language": "TypeScript",
+    "framework_type": "Authentication",
+    "use_cases": [
+      "User authentication",
+      "Multi-tenancy",
+      "Organization management",
+      "Social login",
+      "Session management"
+    ],
+    "related_skills": [
+      "nextjs",
+      "react",
+      "nodejs",
+      "jwt",
+      "oauth"
+    ]
+  }
+}

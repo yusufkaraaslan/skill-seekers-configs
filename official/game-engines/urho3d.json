@@ -1,0 +1,136 @@
+{
+  "name": "urho3d",
+  "description": "Complete Urho3D knowledge from official documentation. Use when building lightweight 3D games with C++, AngelScript, or Lua. Covers scene management, rendering, physics, and scripting.",
+  "version": "1.0.0",
+  "base_url": "https://urho3d.io/documentation/1.7.1/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://urho3d.io/documentation/1.7.1/",
+      "start_urls": [
+        "https://urho3d.io/documentation/1.7.1/index.html",
+        "https://urho3d.io/documentation/1.7.1/_main.html",
+        "https://urho3d.io/documentation/1.7.1/_structure.html",
+        "https://urho3d.io/documentation/1.7.1/_scripting.html"
+      ],
+      "selectors": {
+        "main_content": "article, main, .contents",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/documentation/1.7.1/",
+          "/documentation/1.7.1/_main.html",
+          "/documentation/1.7.1/_structure.html",
+          "/documentation/1.7.1/_scripting.html"
+        ],
+        "exclude": [
+          "/documentation/HEAD/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "_main",
+          "_building",
+          "_running"
+        ],
+        "structure": [
+          "_structure",
+          "context",
+          "subsystem",
+          "event",
+          "object"
+        ],
+        "scene_model": [
+          "_scene_model",
+          "node",
+          "component",
+          "scene",
+          "serialization"
+        ],
+        "resources": [
+          "_resources",
+          "cache",
+          "async-loading",
+          "packages"
+        ],
+        "rendering": [
+          "_rendering",
+          "viewport",
+          "renderpath",
+          "material",
+          "shader"
+        ],
+        "input": [
+          "_input",
+          "keyboard",
+          "mouse",
+          "joystick",
+          "touch"
+        ],
+        "physics": [
+          "_physics",
+          "bullet",
+          "rigidbody",
+          "collision",
+          "constraints"
+        ],
+        "scripting": [
+          "_scripting",
+          "angelscript",
+          "lua",
+          "scriptinstance",
+          "api"
+        ],
+        "audio": [
+          "_audio",
+          "sound",
+          "music",
+          "listener"
+        ],
+        "ui": [
+          "_ui",
+          "uielement",
+          "layout",
+          "drag-drop"
+        ],
+        "network": [
+          "_network",
+          "connection",
+          "replication",
+          "scenereplication"
+        ],
+        "tools": [
+          "_tools",
+          "editor",
+          "assetimporter",
+          "package"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Urho3D Contributors",
+    "language": "C++/AngelScript/Lua",
+    "framework_type": "3D Game Engine",
+    "use_cases": [
+      "Lightweight 3D games",
+      "Mobile games",
+      "Indie games",
+      "Prototypes",
+      "Educational projects"
+    ],
+    "related_skills": [
+      "cpp",
+      "angelscript",
+      "lua",
+      "bullet",
+      "opengl",
+      "sdl"
+    ]
+  }
+}

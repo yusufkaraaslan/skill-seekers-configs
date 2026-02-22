@@ -1,0 +1,139 @@
+{
+  "name": "nltk",
+  "description": "Complete NLTK knowledge from official documentation. Use when building NLP applications with classic algorithms. Covers tokenization, parsing, classification, and corpora.",
+  "version": "1.0.0",
+  "base_url": "https://www.nltk.org/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.nltk.org/",
+      "start_urls": [
+        "https://www.nltk.org/",
+        "https://www.nltk.org/book/",
+        "https://www.nltk.org/api/nltk.html",
+        "https://www.nltk.org/howto/"
+      ],
+      "selectors": {
+        "main_content": "article, main, .body",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/",
+          "/book/",
+          "/api/",
+          "/howto/"
+        ],
+        "exclude": [
+          "/news/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "book/ch00",
+          "install",
+          "download"
+        ],
+        "tokenization": [
+          "book/ch03",
+          "tokenize",
+          "word_tokenize",
+          "sent_tokenize",
+          "regexp"
+        ],
+        "stemming_lemmatization": [
+          "book/ch03",
+          "stem",
+          "PorterStemmer",
+          "WordNetLemmatizer"
+        ],
+        "corpora": [
+          "book/ch02",
+          "corpus",
+          "gutenberg",
+          "brown",
+          "wordnet"
+        ],
+        "tagging": [
+          "book/ch05",
+          "tag",
+          "pos_tag",
+          "UnigramTagger",
+          "BigramTagger"
+        ],
+        "chunking": [
+          "book/ch07",
+          "chunk",
+          "ne_chunk",
+          "RegexpParser"
+        ],
+        "parsing": [
+          "book/ch08",
+          "parse",
+          "ChartParser",
+          "RecursiveDescentParser"
+        ],
+        "classification": [
+          "book/ch06",
+          "classify",
+          "NaiveBayesClassifier",
+          "MaxentClassifier"
+        ],
+        "text_classification": [
+          "howto/classify",
+          "sentiment",
+          "feature_extraction"
+        ],
+        "wordnet": [
+          "howto/wordnet",
+          "synsets",
+          "lemmas",
+          "synonyms",
+          "antonyms"
+        ],
+        "metrics": [
+          "metrics",
+          "accuracy",
+          "precision",
+          "recall",
+          "f_measure"
+        ],
+        "clustering": [
+          "cluster",
+          "kmeans",
+          "gaac",
+          "em"
+        ],
+        "semantics": [
+          "sem",
+          "logic",
+          "valuation",
+          "model"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 500
+    }
+  ],
+  "metadata": {
+    "author": "NLTK Team",
+    "language": "Python",
+    "framework_type": "NLP Library",
+    "use_cases": [
+      "Text processing",
+      "Academic NLP",
+      "Classification",
+      "Parsing",
+      "Corpus analysis"
+    ],
+    "related_skills": [
+      "python",
+      "spacy",
+      "numpy",
+      "pandas",
+      "machine-learning"
+    ]
+  }
+}

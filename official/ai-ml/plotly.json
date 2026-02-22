@@ -1,0 +1,145 @@
+{
+  "name": "plotly",
+  "description": "Complete Plotly knowledge from official documentation. Use when creating interactive web-based visualizations. Covers Plotly Express, Graph Objects, Dash, and animation.",
+  "version": "1.0.0",
+  "base_url": "https://plotly.com/python/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://plotly.com/python/",
+      "start_urls": [
+        "https://plotly.com/python/",
+        "https://plotly.com/python/getting-started/",
+        "https://plotly.com/python/plotly-express/",
+        "https://plotly.com/python/graph-objects/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/python/",
+          "/python/getting-started/",
+          "/python/plotly-express/",
+          "/python/graph-objects/",
+          "/python/statistical-charts/"
+        ],
+        "exclude": [
+          "/python/v4-migration/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "getting-started",
+          "installation",
+          "chart-studio"
+        ],
+        "plotly_express": [
+          "plotly-express",
+          "px.scatter",
+          "px.line",
+          "px.bar",
+          "px.histogram",
+          "px.imshow"
+        ],
+        "graph_objects": [
+          "graph-objects",
+          "go.Figure",
+          "go.Scatter",
+          "go.Bar",
+          "go.Heatmap"
+        ],
+        "statistical_charts": [
+          "statistical-charts",
+          "box-plots",
+          "histograms",
+          "distplot",
+          "violin"
+        ],
+        "scientific_charts": [
+          "scientific-charts",
+          "contour-plots",
+          "heatmaps",
+          "log-plot",
+          "polar-chart"
+        ],
+        "maps": [
+          "maps",
+          "scatter-geo",
+          "choropleth-maps",
+          "mapbox-layers"
+        ],
+        "3d_charts": [
+          "3d-charts",
+          "3d-scatter-plots",
+          "3d-surface-plots",
+          "3d-mesh"
+        ],
+        "subplots": [
+          "subplots",
+          "make_subplots",
+          "multiple-axes",
+          "inset-plots"
+        ],
+        "animation": [
+          "animations",
+          "slider",
+          "play-button",
+          "frame"
+        ],
+        "layout": [
+          "layout",
+          "legend",
+          "axes",
+          "title",
+          "template"
+        ],
+        "interactive": [
+          "callbacks",
+          "hover",
+          "click",
+          "selection",
+          "lasso"
+        ],
+        "dash": [
+          "dash",
+          "layout",
+          "callbacks",
+          "components",
+          "deployment"
+        ],
+        "export": [
+          "static-image-export",
+          "html",
+          "json",
+          "svg",
+          "pdf"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 500
+    }
+  ],
+  "metadata": {
+    "author": "Plotly",
+    "language": "Python/JavaScript",
+    "framework_type": "Visualization Library",
+    "use_cases": [
+      "Interactive dashboards",
+      "Web visualizations",
+      "Real-time plots",
+      "Statistical graphics",
+      "Business intelligence"
+    ],
+    "related_skills": [
+      "python",
+      "pandas",
+      "dash",
+      "jupyter",
+      "javascript"
+    ]
+  }
+}

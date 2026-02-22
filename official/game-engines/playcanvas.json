@@ -1,0 +1,141 @@
+{
+  "name": "playcanvas",
+  "description": "Complete PlayCanvas knowledge from official documentation. Use when building WebGL and WebGPU games that run in browsers. Covers entity system, rendering, physics, and cloud-based development.",
+  "version": "1.0.0",
+  "base_url": "https://developer.playcanvas.com/en/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://developer.playcanvas.com/en/",
+      "start_urls": [
+        "https://developer.playcanvas.com/en/",
+        "https://developer.playcanvas.com/en/user-manual/",
+        "https://developer.playcanvas.com/en/api/",
+        "https://developer.playcanvas.com/en/tutorials/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/user-manual/",
+          "/api/",
+          "/tutorials/"
+        ],
+        "exclude": [
+          "/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "getting-started",
+          "creating-account",
+          "dashboard"
+        ],
+        "editor": [
+          "editor",
+          "interface",
+          "viewport",
+          "hierarchy",
+          "inspector"
+        ],
+        "entities": [
+          "entities",
+          "entity-basics",
+          "components",
+          "templates"
+        ],
+        "scripting": [
+          "scripting",
+          "creating-scripts",
+          "script-attributes",
+          "communication",
+          "debugging"
+        ],
+        "graphics": [
+          "graphics",
+          "materials",
+          "lighting",
+          "models",
+          "particles",
+          "post-effects"
+        ],
+        "physics": [
+          "physics",
+          "ammo",
+          "rigid-bodies",
+          "collision",
+          "triggers"
+        ],
+        "input": [
+          "input",
+          "mouse",
+          "keyboard",
+          "touch",
+          "gamepad"
+        ],
+        "audio": [
+          "audio",
+          "sound-component",
+          "audio-listener",
+          "positional"
+        ],
+        "animation": [
+          "animation",
+          "anim-state-graph",
+          "blend-trees",
+          "layers"
+        ],
+        "ui": [
+          "ui",
+          "elements",
+          "layout",
+          "localization"
+        ],
+        "assets": [
+          "assets",
+          "importing",
+          "asset-store",
+          "version-control"
+        ],
+        "publishing": [
+          "publishing",
+          "web",
+          "mobile",
+          "facebook",
+          "snapchat"
+        ],
+        "optimization": [
+          "optimization",
+          "profiler",
+          "batching",
+          "culling"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "PlayCanvas",
+    "language": "JavaScript",
+    "framework_type": "Web Game Engine",
+    "use_cases": [
+      "WebGL games",
+      "HTML5 games",
+      "Facebook Instant Games",
+      "Snapchat games",
+      "Web-based VR/AR"
+    ],
+    "related_skills": [
+      "javascript",
+      "webgl",
+      "webgpu",
+      "gltf",
+      "html5"
+    ]
+  }
+}

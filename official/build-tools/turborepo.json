@@ -1,0 +1,105 @@
+{
+  "name": "turborepo",
+  "description": "Complete Turborepo knowledge from official documentation. Use when building monorepos with efficient task running and caching. Covers configuration, pipelines, caching, remote caching, and filtering.",
+  "version": "1.0.0",
+  "base_url": "https://turbo.build/repo/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://turbo.build/repo/docs/",
+      "start_urls": [
+        "https://turbo.build/repo/docs/",
+        "https://turbo.build/repo/docs/getting-started",
+        "https://turbo.build/repo/docs/core-concepts",
+        "https://turbo.build/repo/docs/reference/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/repo/docs/",
+          "/repo/docs/getting-started/",
+          "/repo/docs/core-concepts/",
+          "/repo/docs/reference/",
+          "/repo/docs/handbook/"
+        ],
+        "exclude": [
+          "/repo/docs/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "installing",
+          "create-new",
+          "add-to-existing"
+        ],
+        "core_concepts": [
+          "core-concepts",
+          "why-turborepo",
+          "caching",
+          "remote-caching"
+        ],
+        "configuration": [
+          "configuration",
+          "turbo-json",
+          "pipeline",
+          "global-deps"
+        ],
+        "pipeline": [
+          "pipeline",
+          "tasks",
+          "outputs",
+          "dependsOn",
+          "env"
+        ],
+        "filtering": [
+          "filtering",
+          "scope",
+          "include-dependencies",
+          "include-dependents"
+        ],
+        "remote_caching": [
+          "remote-caching",
+          "vercel",
+          "self-hosted"
+        ],
+        "handbook": [
+          "handbook",
+          "building-your-app",
+          "developing-apps",
+          "deploying"
+        ],
+        "reference": [
+          "configuration",
+          "command-line-reference",
+          "api-reference"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 200
+    }
+  ],
+  "metadata": {
+    "author": "Vercel",
+    "language": "Rust/Go",
+    "framework_type": "Monorepo Tool",
+    "use_cases": [
+      "Monorepo management",
+      "Task orchestration",
+      "Build caching",
+      "CI/CD optimization",
+      "Large codebases"
+    ],
+    "related_skills": [
+      "pnpm",
+      "npm",
+      "yarn",
+      "vercel",
+      "docker"
+    ]
+  }
+}

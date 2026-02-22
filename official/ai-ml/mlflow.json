@@ -1,0 +1,144 @@
+{
+  "name": "mlflow",
+  "description": "Complete MLflow knowledge from official documentation. Use when managing ML lifecycle including experiments, models, and deployments. Covers tracking, projects, models, and registry.",
+  "version": "1.0.0",
+  "base_url": "https://mlflow.org/docs/latest/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://mlflow.org/docs/latest/",
+      "start_urls": [
+        "https://mlflow.org/docs/latest/",
+        "https://mlflow.org/docs/latest/tracking.html",
+        "https://mlflow.org/docs/latest/models.html",
+        "https://mlflow.org/docs/latest/projects.html"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/latest/",
+          "/docs/latest/tracking.html",
+          "/docs/latest/models.html",
+          "/docs/latest/projects.html",
+          "/docs/latest/model-registry.html"
+        ],
+        "exclude": [
+          "/docs/latest/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "quickstart",
+          "introduction",
+          "installation"
+        ],
+        "tracking": [
+          "tracking",
+          "start_run",
+          "log_param",
+          "log_metric",
+          "log_artifact"
+        ],
+        "experiments": [
+          "tracking",
+          "experiments",
+          "runs",
+          "set_experiment",
+          "search_runs"
+        ],
+        "autolog": [
+          "tracking",
+          "autolog",
+          "sklearn",
+          "tensorflow",
+          "pytorch",
+          "xgboost"
+        ],
+        "models": [
+          "models",
+          "log_model",
+          "load_model",
+          "save_model",
+          "flavors"
+        ],
+        "model_registry": [
+          "model-registry",
+          "register_model",
+          "model-versions",
+          "stage-transitions",
+          "aliases"
+        ],
+        "model_serving": [
+          "models",
+          "serving",
+          "mlflow-models",
+          "deploy",
+          "predict"
+        ],
+        "projects": [
+          "projects",
+          "mlproject",
+          "run",
+          "entry-points",
+          "conda",
+          "docker"
+        ],
+        "deployment": [
+          "deployment",
+          "deploy-to-sagemaker",
+          "deploy-to-azure",
+          "rest-api"
+        ],
+        "ui": [
+          "tracking-ui",
+          "artifacts",
+          "metrics",
+          "comparing-runs"
+        ],
+        "artifacts": [
+          "tracking",
+          "artifacts",
+          "log_artifact",
+          "mlflow-artifacts"
+        ],
+        "system_metrics": [
+          "system-metrics",
+          "gpu",
+          "cpu",
+          "memory"
+        ],
+        "prompts": [
+          "prompts",
+          "mlflow-prompts",
+          "prompt-management"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Databricks",
+    "language": "Python",
+    "framework_type": "MLOps Platform",
+    "use_cases": [
+      "Experiment tracking",
+      "Model management",
+      "ML lifecycle",
+      "Model deployment",
+      "Collaborative ML"
+    ],
+    "related_skills": [
+      "python",
+      "docker",
+      "kubernetes",
+      "aws",
+      "azure"
+    ]
+  }
+}

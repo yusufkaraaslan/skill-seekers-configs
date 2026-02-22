@@ -1,0 +1,139 @@
+{
+  "name": "svelte",
+  "description": "Complete Svelte knowledge combining official documentation and source code. Use when building reactive web applications with compiled components. Covers Svelte 4 with runes, stores, animations, and transitions.",
+  "version": "1.0.0",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://svelte.dev/docs/",
+      "extract_api": true,
+      "start_urls": [
+        "https://svelte.dev/docs/introduction",
+        "https://svelte.dev/docs/basic-markup",
+        "https://svelte.dev/docs/logic-blocks",
+        "https://svelte.dev/docs/reactivity",
+        "https://svelte.dev/docs/runtime"
+      ],
+      "selectors": {
+        "main_content": "article, main, .content",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/"
+        ],
+        "exclude": [
+          "/blog/",
+          "/tutorial/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "introduction",
+          "getting-started",
+          "component-format"
+        ],
+        "template_syntax": [
+          "basic-markup",
+          "tags",
+          "attributes",
+          "components",
+          "element-directives"
+        ],
+        "logic_blocks": [
+          "logic-blocks",
+          "if",
+          "each",
+          "await",
+          "key"
+        ],
+        "reactivity": [
+          "reactivity",
+          "runes",
+          "state",
+          "derived",
+          "effect",
+          "props"
+        ],
+        "stores": [
+          "stores",
+          "writable",
+          "readable",
+          "derived"
+        ],
+        "lifecycle": [
+          "lifecycle",
+          "onmount",
+          "beforeupdate",
+          "afterupdate",
+          "ontick",
+          "ondestroy"
+        ],
+        "animations": [
+          "animations",
+          "transitions",
+          "in",
+          "out",
+          "crossfade",
+          "animate",
+          "motion"
+        ],
+        "actions": [
+          "actions",
+          "use",
+          "element-directives"
+        ],
+        "context": [
+          "context",
+          "setcontext",
+          "getcontext"
+        ],
+        "special_elements": [
+          "special-elements",
+          "svelte-self",
+          "svelte-component",
+          "svelte-window",
+          "svelte-body",
+          "svelte-head"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 250
+    },
+    {
+      "type": "github",
+      "repo": "sveltejs/svelte",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "packages/svelte/src/**/*.js",
+        "packages/svelte/src/**/*.ts"
+      ]
+    }
+  ],
+  "metadata": {
+    "author": "Svelte Team",
+    "language": "JavaScript",
+    "framework_type": "UI Framework",
+    "use_cases": [
+      "Reactive web applications",
+      "Component-based UI",
+      "High-performance apps",
+      "Progressive enhancement",
+      "Interactive interfaces"
+    ],
+    "related_skills": [
+      "sveltekit",
+      "javascript",
+      "typescript",
+      "vite"
+    ]
+  },
+  "base_url": "https://svelte.dev/docs/"
+}

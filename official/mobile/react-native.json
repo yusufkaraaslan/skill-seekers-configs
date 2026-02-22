@@ -1,0 +1,118 @@
+{
+  "name": "react-native",
+  "description": "Complete React Native knowledge from official documentation. Use when building cross-platform mobile applications with React. Covers components, navigation, native modules, and deployment to iOS/Android.",
+  "version": "1.0.0",
+  "base_url": "https://reactnative.dev/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://reactnative.dev/docs/",
+      "start_urls": [
+        "https://reactnative.dev/docs/getting-started",
+        "https://reactnative.dev/docs/components-and-apis",
+        "https://reactnative.dev/docs/navigation",
+        "https://reactnative.dev/docs/accessibility",
+        "https://reactnative.dev/docs/running-on-device"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/"
+        ],
+        "exclude": [
+          "/blog/",
+          "/showcase/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "environment-setup",
+          "tutorial"
+        ],
+        "components": [
+          "components",
+          "view",
+          "text",
+          "image",
+          "scrollview",
+          "flatlist"
+        ],
+        "apis": [
+          "apis",
+          "appregistry",
+          "stylesheet",
+          "dimensions",
+          "asyncstorage"
+        ],
+        "navigation": [
+          "navigation",
+          "react-navigation",
+          "stack",
+          "tab",
+          "drawer"
+        ],
+        "styling": [
+          "style",
+          "flexbox",
+          "height-and-width",
+          "colors"
+        ],
+        "networking": [
+          "networking",
+          "fetch",
+          "websocket"
+        ],
+        "native_modules": [
+          "native-modules",
+          "android",
+          "ios",
+          "turbo"
+        ],
+        "gestures": [
+          "gestures",
+          "handling",
+          "responder",
+          "pan"
+        ],
+        "animations": [
+          "animations",
+          "animated",
+          "layoutanimation"
+        ],
+        "deployment": [
+          "deployment",
+          "publishing",
+          "app-store",
+          "play-store"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Meta / React Native Team",
+    "language": "JavaScript",
+    "framework_type": "Mobile Framework",
+    "use_cases": [
+      "Cross-platform mobile apps",
+      "iOS applications",
+      "Android applications",
+      "Mobile prototypes",
+      "Native module integration"
+    ],
+    "related_skills": [
+      "react",
+      "javascript",
+      "typescript",
+      "expo",
+      "ios",
+      "android"
+    ]
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "name": "anthropic",
+  "description": "Complete Anthropic API knowledge from official documentation. Use when building applications with Claude AI models. Covers Messages API, tool use, vision, streaming, and prompt engineering.",
+  "version": "1.0.0",
+  "base_url": "https://docs.anthropic.com/en/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.anthropic.com/en/",
+      "start_urls": [
+        "https://docs.anthropic.com/en/",
+        "https://docs.anthropic.com/en/api/getting-started",
+        "https://docs.anthropic.com/en/api/messages",
+        "https://docs.anthropic.com/en/docs/build-with-claude/overview"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/en/api/",
+          "/en/docs/",
+          "/en/docs/build-with-claude/",
+          "/en/docs/test-and-evaluate/"
+        ],
+        "exclude": [
+          "/en/release-notes/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "api/getting-started",
+          "api/sdk",
+          "api/errors"
+        ],
+        "messages_api": [
+          "api/messages",
+          "messages-examples",
+          "system-prompts",
+          "multi-turn"
+        ],
+        "models": [
+          "docs/models-overview",
+          "claude-3-5-sonnet",
+          "claude-3-opus",
+          "claude-3-haiku"
+        ],
+        "tool_use": [
+          "docs/tool-use",
+          "tool-use-overview",
+          "computer-use",
+          "streaming-tool-use"
+        ],
+        "vision": [
+          "docs/vision",
+          "vision-examples",
+          "image-processing",
+          "pdf-support"
+        ],
+        "streaming": [
+          "api/messages-streaming",
+          "streaming",
+          "sse",
+          "delta"
+        ],
+        "prompt_engineering": [
+          "docs/prompt-engineering",
+          "prompt-examples",
+          "best-practices"
+        ],
+        "tokens": [
+          "api/tokens",
+          "token-counting",
+          "context-window",
+          "max-tokens"
+        ],
+        "testing": [
+          "docs/test-and-evaluate",
+          "evals",
+          "experimentation",
+          "unit-testing"
+        ],
+        "citations": [
+          "docs/citations",
+          "grounding",
+          "sources"
+        ],
+        "prompt_caching": [
+          "docs/prompt-caching",
+          "cache-control",
+          "ephemeral"
+        ],
+        "rate_limits": [
+          "api/rate-limits",
+          "limits",
+          "tier-usage"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Anthropic",
+    "language": "Python/JavaScript/REST",
+    "framework_type": "LLM API",
+    "use_cases": [
+      "Chatbots",
+      "AI assistants",
+      "Content generation",
+      "Code generation",
+      "Vision applications"
+    ],
+    "related_skills": [
+      "python",
+      "javascript",
+      "langchain",
+      "openai",
+      "api-development"
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "name": "supabase",
+  "description": "Complete Supabase knowledge from official documentation. Use when building applications with open-source Firebase alternative. Covers PostgreSQL, Auth, Real-time, Edge Functions, and Storage.",
+  "version": "1.0.0",
+  "base_url": "https://supabase.com/docs",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://supabase.com/docs",
+      "start_urls": [
+        "https://supabase.com/docs/guides/getting-started",
+        "https://supabase.com/docs/reference/javascript",
+        "https://supabase.com/docs/guides/database",
+        "https://supabase.com/docs/guides/auth",
+        "https://supabase.com/docs/guides/realtime"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/guides/",
+          "/docs/reference/"
+        ],
+        "exclude": [
+          "/docs/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "quickstart",
+          "concepts",
+          "architecture"
+        ],
+        "database": [
+          "database",
+          "postgres",
+          "tables",
+          "rls",
+          "policies",
+          "extensions"
+        ],
+        "auth": [
+          "auth",
+          "authentication",
+          "providers",
+          "email",
+          "oauth",
+          "sessions"
+        ],
+        "api": [
+          "api",
+          "javascript",
+          "rest",
+          "graphql"
+        ],
+        "realtime": [
+          "realtime",
+          "subscriptions",
+          "presence",
+          "broadcast"
+        ],
+        "storage": [
+          "storage",
+          "buckets",
+          "upload",
+          "cdn"
+        ],
+        "edge_functions": [
+          "edge-functions",
+          "functions",
+          "deno",
+          "webhooks"
+        ],
+        "cli": [
+          "cli",
+          "supabase-cli",
+          "local",
+          "migration"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    }
+  ],
+  "metadata": {
+    "author": "Supabase",
+    "language": "TypeScript",
+    "framework_type": "Backend Platform",
+    "use_cases": [
+      "PostgreSQL applications",
+      "Real-time apps",
+      "Authentication",
+      "File storage",
+      "Edge computing"
+    ],
+    "related_skills": [
+      "postgresql",
+      "react",
+      "nextjs",
+      "prisma",
+      "firebase"
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "name": "storybook",
+  "description": "Complete Storybook knowledge from official documentation. Use when developing UI components in isolation. Covers configuration, addons, testing, and documentation.",
+  "version": "1.0.0",
+  "base_url": "https://storybook.js.org/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://storybook.js.org/docs/",
+      "start_urls": [
+        "https://storybook.js.org/docs/get-started/install",
+        "https://storybook.js.org/docs/writing-stories",
+        "https://storybook.js.org/docs/essentials/",
+        "https://storybook.js.org/docs/configure/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/get-started/",
+          "/docs/writing-stories/",
+          "/docs/writing-docs/",
+          "/docs/essentials/",
+          "/docs/addons/",
+          "/docs/configure/",
+          "/docs/api/"
+        ],
+        "exclude": [
+          "/docs/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "install",
+          "whats-a-story",
+          "setup"
+        ],
+        "writing_stories": [
+          "stories",
+          "args",
+          "parameters",
+          "decorators",
+          "play-function"
+        ],
+        "writing_docs": [
+          "autodocs",
+          "mdx",
+          "doc-blocks"
+        ],
+        "essentials": [
+          "actions",
+          "backgrounds",
+          "controls",
+          "docs",
+          "viewport",
+          "toolbars"
+        ],
+        "testing": [
+          "testing",
+          "interaction-testing",
+          "visual-testing",
+          "coverage"
+        ],
+        "addons": [
+          "addons",
+          "writing-addons",
+          "addon-catalog"
+        ],
+        "configure": [
+          "overview",
+          "story-rendering",
+          "typescript",
+          "styling"
+        ],
+        "api": [
+          "stories",
+          "arg-types",
+          "parameters"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Storybook",
+    "language": "JavaScript/TypeScript",
+    "framework_type": "Development Tool",
+    "use_cases": [
+      "Component development",
+      "UI documentation",
+      "Visual testing",
+      "Design systems",
+      "Collaboration"
+    ],
+    "related_skills": [
+      "react",
+      "vue",
+      "angular",
+      "svelte",
+      "chromatic"
+    ]
+  }
+}

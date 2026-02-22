@@ -1,0 +1,151 @@
+{
+  "name": "nextjs",
+  "description": "Complete Next.js knowledge combining official documentation and Next.js source code. Use when building React applications with SSR, SSG, API routes, and App Router. Covers Next.js 14+ with App Router, Server Components, and edge runtime.",
+  "version": "1.0.0",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://nextjs.org/docs/",
+      "extract_api": true,
+      "start_urls": [
+        "https://nextjs.org/docs/getting-started",
+        "https://nextjs.org/docs/app",
+        "https://nextjs.org/docs/pages",
+        "https://nextjs.org/docs/api-reference"
+      ],
+      "selectors": {
+        "main_content": "article, main, [class*='docs-content']",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/getting-started/",
+          "/docs/app/",
+          "/docs/pages/",
+          "/docs/api-reference/",
+          "/docs/architecture/"
+        ],
+        "exclude": [
+          "/blog/",
+          "/showcase/",
+          "/enterprise/",
+          "/conf/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "installation",
+          "setup",
+          "quickstart",
+          "project-structure"
+        ],
+        "app_router": [
+          "app",
+          "router",
+          "layout",
+          "page",
+          "template",
+          "loading",
+          "error",
+          "route",
+          "dynamic"
+        ],
+        "pages_router": [
+          "pages",
+          "getstaticprops",
+          "getserversideprops",
+          "getstaticpaths"
+        ],
+        "rendering": [
+          "rendering",
+          "ssr",
+          "ssg",
+          "csr",
+          "server-components",
+          "client-components",
+          "streaming"
+        ],
+        "data_fetching": [
+          "data-fetching",
+          "fetch",
+          "cache",
+          "revalidate",
+          "server-actions"
+        ],
+        "styling": [
+          "css",
+          "tailwind",
+          "styled-components",
+          "sass",
+          "css-modules",
+          "fonts"
+        ],
+        "optimizing": [
+          "images",
+          "fonts",
+          "scripts",
+          "metadata",
+          "lazy-loading",
+          "analytics"
+        ],
+        "api_routes": [
+          "api-routes",
+          "route-handlers",
+          "middleware",
+          "edge"
+        ],
+        "deployment": [
+          "deployment",
+          "vercel",
+          "docker",
+          "static-export"
+        ],
+        "configuration": [
+          "next.config",
+          "typescript",
+          "eslint",
+          "environment-variables"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 400
+    },
+    {
+      "type": "github",
+      "repo": "vercel/next.js",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "packages/next/src/**/*.ts",
+        "packages/next/src/**/*.tsx",
+        "packages/next/src/**/*.js"
+      ]
+    }
+  ],
+  "metadata": {
+    "author": "Vercel",
+    "language": "TypeScript/JavaScript",
+    "framework_type": "React Framework",
+    "use_cases": [
+      "Server-side rendering",
+      "Static site generation",
+      "Full-stack React apps",
+      "API routes",
+      "Edge computing"
+    ],
+    "related_skills": [
+      "react",
+      "typescript",
+      "tailwind",
+      "vercel"
+    ]
+  },
+  "base_url": "https://nextjs.org/docs/"
+}

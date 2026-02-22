@@ -1,0 +1,112 @@
+{
+  "name": "d3",
+  "description": "Complete D3.js knowledge from official documentation. Use when creating data visualizations with custom SVG, Canvas, and HTML. Covers selections, scales, axes, transitions, and geographic projections.",
+  "version": "1.0.0",
+  "base_url": "https://d3js.org/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://d3js.org/",
+      "start_urls": [
+        "https://d3js.org/getting-started",
+        "https://d3js.org/d3-selection",
+        "https://d3js.org/d3-scale",
+        "https://d3js.org/d3-shape"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/d3-",
+          "/getting-started"
+        ],
+        "exclude": [
+          "/community/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "installation",
+          "modules"
+        ],
+        "selection": [
+          "d3-selection",
+          "select",
+          "data-join",
+          "events"
+        ],
+        "scales": [
+          "d3-scale",
+          "linear",
+          "ordinal",
+          "time",
+          "color"
+        ],
+        "shapes": [
+          "d3-shape",
+          "line",
+          "area",
+          "arc",
+          "curve"
+        ],
+        "axes": [
+          "d3-axis",
+          "bottom",
+          "top",
+          "left",
+          "right"
+        ],
+        "transitions": [
+          "d3-transition",
+          "duration",
+          "delay",
+          "easing"
+        ],
+        "geo": [
+          "d3-geo",
+          "projection",
+          "path",
+          "graticule"
+        ],
+        "hierarchy": [
+          "d3-hierarchy",
+          "tree",
+          "treemap",
+          "pack",
+          "partition"
+        ],
+        "layouts": [
+          "d3-force",
+          "d3-chord",
+          "d3-sankey",
+          "d3-voronoi"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Observable",
+    "language": "JavaScript",
+    "framework_type": "Data Visualization",
+    "use_cases": [
+      "Custom charts",
+      "Data visualization",
+      "Interactive dashboards",
+      "Maps",
+      "Network diagrams"
+    ],
+    "related_skills": [
+      "javascript",
+      "svg",
+      "canvas",
+      "react",
+      "typescript"
+    ]
+  }
+}

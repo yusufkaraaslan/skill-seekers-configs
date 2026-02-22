@@ -1,0 +1,147 @@
+{
+  "name": "nuxt",
+  "description": "Complete Nuxt.js knowledge combining official documentation and source code. Use when building Vue-based universal applications with SSR, SSG, and file-based routing. Covers Nuxt 3 with Nitro engine and Vue 3 Composition API.",
+  "version": "1.0.0",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://nuxt.com/docs/",
+      "extract_api": true,
+      "start_urls": [
+        "https://nuxt.com/docs/getting-started/introduction",
+        "https://nuxt.com/docs/guide/concepts/auto-imports",
+        "https://nuxt.com/docs/guide/directory-structure",
+        "https://nuxt.com/docs/api/composables"
+      ],
+      "selectors": {
+        "main_content": "article, main, .docs-body",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/getting-started/",
+          "/docs/guide/",
+          "/docs/api/",
+          "/docs/examples/",
+          "/docs/modules/"
+        ],
+        "exclude": [
+          "/blog/",
+          "/showcase/",
+          "/sponsors/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "installation",
+          "configuration",
+          "deployment"
+        ],
+        "concepts": [
+          "concepts",
+          "auto-imports",
+          "server-engine",
+          "rendering",
+          "vuejs"
+        ],
+        "directory_structure": [
+          "directory-structure",
+          "pages",
+          "components",
+          "composables",
+          "layouts",
+          "middleware",
+          "plugins",
+          "assets",
+          "public",
+          "server"
+        ],
+        "api_composables": [
+          "composables",
+          "usefetch",
+          "useasyncdata",
+          "usestate",
+          "useseo",
+          "uselazyasyncdata"
+        ],
+        "rendering": [
+          "rendering",
+          "ssr",
+          "csr",
+          "ssg",
+          "hybrid",
+          "island"
+        ],
+        "data_fetching": [
+          "data-fetching",
+          "fetch",
+          "asyncdata",
+          "transform",
+          "pick"
+        ],
+        "server": [
+          "server",
+          "nitro",
+          "api",
+          "routes",
+          "middleware",
+          "plugins"
+        ],
+        "modules": [
+          "modules",
+          "community",
+          "content",
+          "image",
+          "auth"
+        ],
+        "deployment": [
+          "deployment",
+          "node-server",
+          "static",
+          "cloudflare",
+          "vercel",
+          "netlify"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 350
+    },
+    {
+      "type": "github",
+      "repo": "nuxt/nuxt",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "packages/nuxt/src/**/*.ts",
+        "packages/schema/src/**/*.ts"
+      ]
+    }
+  ],
+  "metadata": {
+    "author": "Nuxt Team",
+    "language": "TypeScript",
+    "framework_type": "Vue Framework",
+    "use_cases": [
+      "Universal Vue applications",
+      "Server-side rendering",
+      "Static site generation",
+      "Hybrid rendering",
+      "Full-stack development"
+    ],
+    "related_skills": [
+      "vue",
+      "vue3",
+      "nitro",
+      "typescript",
+      "tailwind"
+    ]
+  },
+  "base_url": "https://nuxt.com/docs/"
+}

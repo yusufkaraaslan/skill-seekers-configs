@@ -13,18 +13,70 @@
         "code_blocks": "pre code"
       },
       "url_patterns": {
-        "include": ["/guide/", "/api/", "/examples/"],
-        "exclude": ["/about/", "/sponsor/", "/partners/"]
+        "include": [
+          "/guide/",
+          "/api/",
+          "/examples/"
+        ],
+        "exclude": [
+          "/about/",
+          "/sponsor/",
+          "/partners/"
+        ]
       },
       "categories": {
-        "essentials": ["essentials", "quick-start", "introduction", "getting-started"],
-        "components": ["component", "props", "events", "slots", "emit"],
-        "reactivity": ["reactivity", "reactive", "ref", "computed", "watch", "watcheffect"],
-        "composition_api": ["composition", "setup", "composables", "lifecycle"],
-        "router": ["router", "navigation", "route", "routing"],
-        "state_management": ["pinia", "store", "state", "vuex"],
-        "tooling": ["vite", "devtools", "testing", "typescript"],
-        "best_practices": ["performance", "production", "ssr", "ssg", "optimize"]
+        "essentials": [
+          "essentials",
+          "quick-start",
+          "introduction",
+          "getting-started"
+        ],
+        "components": [
+          "component",
+          "props",
+          "events",
+          "slots",
+          "emit"
+        ],
+        "reactivity": [
+          "reactivity",
+          "reactive",
+          "ref",
+          "computed",
+          "watch",
+          "watcheffect"
+        ],
+        "composition_api": [
+          "composition",
+          "setup",
+          "composables",
+          "lifecycle"
+        ],
+        "router": [
+          "router",
+          "navigation",
+          "route",
+          "routing"
+        ],
+        "state_management": [
+          "pinia",
+          "store",
+          "state",
+          "vuex"
+        ],
+        "tooling": [
+          "vite",
+          "devtools",
+          "testing",
+          "typescript"
+        ],
+        "best_practices": [
+          "performance",
+          "production",
+          "ssr",
+          "ssg",
+          "optimize"
+        ]
       },
       "rate_limit": 0.5,
       "max_pages": 350
@@ -45,5 +97,6 @@
         "packages/compiler-core/src/**/*.ts"
       ]
     }
-  ]
+  ],
+  "base_url": "https://vuejs.org/"
 }

@@ -1,0 +1,109 @@
+{
+  "name": "docusaurus",
+  "description": "Complete Docusaurus knowledge from official documentation. Use when building documentation websites with Markdown and React. Covers theming, plugins, versioning, i18n, and deployment.",
+  "version": "1.0.0",
+  "base_url": "https://docusaurus.io/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docusaurus.io/docs/",
+      "start_urls": [
+        "https://docusaurus.io/docs/",
+        "https://docusaurus.io/docs/category/getting-started",
+        "https://docusaurus.io/docs/category/guides",
+        "https://docusaurus.io/docs/api/"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/",
+          "/docs/api/",
+          "/docs/cli/",
+          "/docs/advanced/"
+        ],
+        "exclude": [
+          "/blog/",
+          "/showcase/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "introduction",
+          "installation",
+          "configuration",
+          "deployment"
+        ],
+        "guides": [
+          "guides",
+          "docs",
+          "blog",
+          "pages",
+          "styling"
+        ],
+        "plugins": [
+          "plugins",
+          "plugin-content-docs",
+          "plugin-content-blog",
+          "plugin-pwa"
+        ],
+        "themes": [
+          "themes",
+          "classic",
+          "configuration",
+          "swizzling"
+        ],
+        "api": [
+          "api",
+          "docusaurus-core",
+          "lifecycle-apis"
+        ],
+        "advanced": [
+          "advanced",
+          "ssg",
+          "plugins",
+          "architecture"
+        ],
+        "i18n": [
+          "i18n",
+          "tutorial",
+          "cli"
+        ],
+        "versioning": [
+          "versioning",
+          "sidebar",
+          "fallback"
+        ],
+        "search": [
+          "search",
+          "algolia",
+          "local"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 250
+    }
+  ],
+  "metadata": {
+    "author": "Meta Open Source",
+    "language": "TypeScript",
+    "framework_type": "Documentation Framework",
+    "use_cases": [
+      "Documentation sites",
+      "Open source projects",
+      "API docs",
+      "Blogs",
+      "Landing pages"
+    ],
+    "related_skills": [
+      "react",
+      "markdown",
+      "mdx",
+      "css",
+      "typescript"
+    ]
+  }
+}

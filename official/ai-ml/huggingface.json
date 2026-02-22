@@ -1,0 +1,136 @@
+{
+  "name": "huggingface",
+  "description": "Complete Hugging Face knowledge from official documentation. Use when working with transformer models, datasets, and ML pipelines. Covers Transformers, Datasets, Tokenizers, Accelerate, and model hub.",
+  "version": "1.0.0",
+  "base_url": "https://huggingface.co/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://huggingface.co/docs/",
+      "start_urls": [
+        "https://huggingface.co/docs/transformers/index",
+        "https://huggingface.co/docs/datasets/index",
+        "https://huggingface.co/docs/tokenizers/index",
+        "https://huggingface.co/docs/hub/index"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/transformers/",
+          "/docs/datasets/",
+          "/docs/tokenizers/",
+          "/docs/accelerate/",
+          "/docs/peft/",
+          "/docs/trl/"
+        ],
+        "exclude": [
+          "/docs/transformers/release-notes"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "index",
+          "quicktour",
+          "installation",
+          "philosophy"
+        ],
+        "transformers": [
+          "transformers",
+          "model_summary",
+          "pipeline",
+          "autoclass",
+          "preprocessing"
+        ],
+        "training": [
+          "training",
+          "trainer",
+          "training_args",
+          "fine-tuning",
+          "distributed"
+        ],
+        "datasets": [
+          "datasets",
+          "loading",
+          "processing",
+          "map",
+          "filter",
+          "streaming"
+        ],
+        "tokenizers": [
+          "tokenizers",
+          "tokenizer_summary",
+          "training",
+          "fast",
+          "python"
+        ],
+        "models": [
+          "model_sharing",
+          "uploading",
+          "model-cards",
+          "gguf",
+          "onnx"
+        ],
+        "peft": [
+          "peft",
+          "lora",
+          "qlora",
+          "prompt_tuning",
+          " adapters"
+        ],
+        "trl": [
+          "trl",
+          "ppo",
+          "dpo",
+          "sft",
+          "reward_trainer"
+        ],
+        "inference": [
+          "inference",
+          "pipeline",
+          "generation",
+          "chat",
+          "text-generation"
+        ],
+        "deployment": [
+          "deploy",
+          "inference_endpoints",
+          "spaces",
+          "tgi",
+          "vllm"
+        ],
+        "accelerate": [
+          "accelerate",
+          "big_modeling",
+          "fsdp",
+          "deepspeed",
+          "multi_gpu"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 600
+    }
+  ],
+  "metadata": {
+    "author": "Hugging Face",
+    "language": "Python",
+    "framework_type": "ML Platform",
+    "use_cases": [
+      "NLP models",
+      "Model fine-tuning",
+      "Dataset management",
+      "Model deployment",
+      "LLM training"
+    ],
+    "related_skills": [
+      "pytorch",
+      "tensorflow",
+      "python",
+      "docker",
+      "kubernetes"
+    ]
+  }
+}

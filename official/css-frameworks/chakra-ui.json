@@ -1,0 +1,113 @@
+{
+  "name": "chakra-ui",
+  "description": "Complete Chakra UI knowledge from official documentation. Use when building accessible React applications with composable components. Covers theming, styling, forms, and hooks.",
+  "version": "1.0.0",
+  "base_url": "https://chakra-ui.com/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://chakra-ui.com/docs/",
+      "start_urls": [
+        "https://chakra-ui.com/getting-started",
+        "https://chakra-ui.com/docs/styled-system/theming",
+        "https://chakra-ui.com/docs/components",
+        "https://chakra-ui.com/docs/hooks"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/getting-started",
+          "/docs/",
+          "/docs/components/",
+          "/docs/styled-system/",
+          "/docs/hooks/"
+        ],
+        "exclude": [
+          "/blog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "installation",
+          "nextjs",
+          "create-react-app"
+        ],
+        "components": [
+          "box",
+          "stack",
+          "flex",
+          "grid",
+          "button",
+          "input",
+          "modal",
+          "drawer"
+        ],
+        "theming": [
+          "theming",
+          "theme",
+          "colors",
+          "fonts",
+          "breakpoints"
+        ],
+        "styled_system": [
+          "styled-system",
+          "sx",
+          "style-props",
+          "responsive"
+        ],
+        "forms": [
+          "form-control",
+          "input",
+          "select",
+          "textarea",
+          "checkbox",
+          "radio"
+        ],
+        "hooks": [
+          "use-color-mode",
+          "use-theme",
+          "use-disclosure",
+          "use-toast"
+        ],
+        "accessibility": [
+          "accessibility",
+          "aria",
+          "keyboard",
+          "focus"
+        ],
+        "layout": [
+          "container",
+          "center",
+          "spacer",
+          "divider"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 300
+    }
+  ],
+  "metadata": {
+    "author": "Chakra UI Team",
+    "language": "TypeScript",
+    "framework_type": "UI Library",
+    "use_cases": [
+      "React applications",
+      "Accessible UIs",
+      "Design systems",
+      "Rapid prototyping",
+      "Responsive layouts"
+    ],
+    "related_skills": [
+      "react",
+      "nextjs",
+      "emotion",
+      "typescript",
+      "framer-motion"
+    ]
+  }
+}

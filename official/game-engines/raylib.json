@@ -1,0 +1,130 @@
+{
+  "name": "raylib",
+  "description": "Complete Raylib knowledge from official documentation. Use when learning game programming with a simple C library. Covers graphics, audio, input, physics, and shaders.",
+  "version": "1.0.0",
+  "base_url": "https://www.raylib.com/cheatsheet/cheatsheet.html",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://www.raylib.com/cheatsheet/cheatsheet.html",
+      "start_urls": [
+        "https://www.raylib.com/cheatsheet/cheatsheet.html",
+        "https://www.raylib.com/examples.html",
+        "https://github.com/raysan5/raylib/wiki",
+        "https://www.raylib.com/"
+      ],
+      "selectors": {
+        "main_content": "main, article, .content",
+        "title": "h1, h2",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/cheatsheet/",
+          "/examples.html",
+          "/wiki"
+        ],
+        "exclude": [
+          "/games/"
+        ]
+      },
+      "categories": {
+        "core": [
+          "cheatsheet",
+          "InitWindow",
+          "WindowShouldClose",
+          "CloseWindow",
+          "SetTargetFPS"
+        ],
+        "drawing": [
+          "BeginDrawing",
+          "EndDrawing",
+          "ClearBackground",
+          "DrawText",
+          "DrawRectangle"
+        ],
+        "shapes": [
+          "DrawLine",
+          "DrawCircle",
+          "DrawTriangle",
+          "DrawPoly",
+          "CheckCollisionRecs"
+        ],
+        "textures": [
+          "LoadTexture",
+          "DrawTexture",
+          "UnloadTexture",
+          "GenImageChecked"
+        ],
+        "text": [
+          "LoadFont",
+          "DrawTextEx",
+          "MeasureText",
+          "Font"
+        ],
+        "models": [
+          "LoadModel",
+          "DrawModel",
+          "UnloadModel",
+          "Model"
+        ],
+        "audio": [
+          "InitAudioDevice",
+          "LoadSound",
+          "PlaySound",
+          "LoadMusicStream"
+        ],
+        "input": [
+          "IsKeyDown",
+          "IsMouseButtonPressed",
+          "GetMousePosition",
+          "GetGamepadAxisMovement"
+        ],
+        "math": [
+          "Vector2",
+          "Vector3",
+          "Matrix",
+          "Quaternion"
+        ],
+        "camera": [
+          "Camera3D",
+          "Camera2D",
+          "UpdateCamera",
+          "SetCameraMode"
+        ],
+        "rlgl": [
+          "rlPushMatrix",
+          "rlBegin",
+          "rlEnd",
+          "rlColor4ub"
+        ],
+        "physac": [
+          "InitPhysics",
+          "CreatePhysicsBodyCircle",
+          "RunPhysicsStep"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 200
+    }
+  ],
+  "metadata": {
+    "author": "raysan5",
+    "language": "C/C++",
+    "framework_type": "Game Library",
+    "use_cases": [
+      "Learning game dev",
+      "Prototypes",
+      "2D/3D games",
+      "Educational tools",
+      "Embedded systems"
+    ],
+    "related_skills": [
+      "c",
+      "cpp",
+      "opengl",
+      "glfw",
+      "box2d"
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "name": "dvc",
+  "description": "Complete DVC (Data Version Control) knowledge from official documentation. Use when versioning data, models, and ML pipelines. Covers data versioning, pipelines, experiments, and storage.",
+  "version": "1.0.0",
+  "base_url": "https://dvc.org/doc/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://dvc.org/doc/",
+      "start_urls": [
+        "https://dvc.org/doc/",
+        "https://dvc.org/doc/start",
+        "https://dvc.org/doc/user-guide",
+        "https://dvc.org/doc/command-reference"
+      ],
+      "selectors": {
+        "main_content": "article, main",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/doc/",
+          "/doc/start",
+          "/doc/user-guide/",
+          "/doc/command-reference/"
+        ],
+        "exclude": [
+          "/doc/changelog/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "",
+          "start",
+          "install",
+          "what-is-dvc"
+        ],
+        "data_versioning": [
+          "start/data-versioning",
+          "add",
+          "push",
+          "pull",
+          "checkout"
+        ],
+        "pipelines": [
+          "start/data-pipelines",
+          "dvc.yaml",
+          "stages",
+          "dag",
+          "repro"
+        ],
+        "experiments": [
+          "start/experiments",
+          "exp",
+          "exp-run",
+          "exp-show",
+          "queue"
+        ],
+        "metrics_params": [
+          "start/metrics-parameters-plots",
+          "metrics",
+          "params",
+          "plots"
+        ],
+        "storage": [
+          "command-reference/remote-add",
+          "s3",
+          "gs",
+          "azure",
+          "ssh"
+        ],
+        "commands": [
+          "command-reference",
+          "init",
+          "add",
+          "run",
+          "repro",
+          "push",
+          "pull"
+        ],
+        "studio": [
+          "studio",
+          "user-guide/studio",
+          "experiments",
+          "collaboration"
+        ],
+        "cml": [
+          "cml",
+          "ci-cd",
+          "github-actions",
+          "gitlab-ci"
+        ],
+        "external_data": [
+          "user-guide/managing-external-data",
+          "import-url",
+          "update",
+          "import"
+        ],
+        "large_datasets": [
+          "user-guide/large-dataset-optimization",
+          "checkout",
+          "partial"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    }
+  ],
+  "metadata": {
+    "author": "Iterative",
+    "language": "Python",
+    "framework_type": "Data Version Control",
+    "use_cases": [
+      "Data versioning",
+      "ML pipelines",
+      "Experiment tracking",
+      "Model management",
+      "Git for ML"
+    ],
+    "related_skills": [
+      "git",
+      "python",
+      "aws",
+      "gcp",
+      "azure",
+      "mlflow"
+    ]
+  }
+}

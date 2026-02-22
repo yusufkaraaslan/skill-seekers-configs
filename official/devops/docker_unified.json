@@ -1,0 +1,158 @@
+{
+  "name": "docker",
+  "description": "Complete Docker knowledge combining official documentation and Moby source code. Use when containerizing applications, writing Dockerfiles, managing containers, or orchestrating with Docker Compose. Covers Docker Engine, CLI, and best practices.",
+  "version": "1.0.0",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.docker.com/",
+      "extract_api": true,
+      "start_urls": [
+        "https://docs.docker.com/get-started/",
+        "https://docs.docker.com/engine/",
+        "https://docs.docker.com/compose/",
+        "https://docs.docker.com/build/",
+        "https://docs.docker.com/network/",
+        "https://docs.docker.com/storage/"
+      ],
+      "selectors": {
+        "main_content": "article, main, .content",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/get-started/",
+          "/engine/",
+          "/compose/",
+          "/build/",
+          "/network/",
+          "/storage/",
+          "/config/",
+          "/reference/"
+        ],
+        "exclude": [
+          "/blog/",
+          "/search/",
+          "/_images/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "overview",
+          "dockerfile",
+          "docker-compose",
+          "quickstart"
+        ],
+        "dockerfile": [
+          "dockerfile",
+          "build",
+          "image",
+          "layer",
+          "cache",
+          "multi-stage"
+        ],
+        "containers": [
+          "container",
+          "run",
+          "exec",
+          "stop",
+          "rm",
+          "ps",
+          "logs"
+        ],
+        "images": [
+          "image",
+          "pull",
+          "push",
+          "tag",
+          "registry",
+          "hub",
+          "buildx"
+        ],
+        "compose": [
+          "compose",
+          "docker-compose",
+          "yaml",
+          "service",
+          "volume",
+          "network"
+        ],
+        "networking": [
+          "network",
+          "bridge",
+          "host",
+          "overlay",
+          "port",
+          "expose"
+        ],
+        "storage": [
+          "volume",
+          "bind-mount",
+          "tmpfs",
+          "storage",
+          "persist"
+        ],
+        "security": [
+          "security",
+          "secret",
+          "scan",
+          "rootless",
+          "cap"
+        ],
+        "orchestration": [
+          "swarm",
+          "stack",
+          "service",
+          "node",
+          "cluster"
+        ],
+        "reference": [
+          "cli",
+          "api",
+          "reference",
+          "command"
+        ]
+      },
+      "rate_limit": 0.5,
+      "max_pages": 500
+    },
+    {
+      "type": "github",
+      "repo": "moby/moby",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "daemon/**/*.go",
+        "builder/**/*.go",
+        "container/**/*.go",
+        "api/**/*.go"
+      ]
+    }
+  ],
+  "metadata": {
+    "author": "Docker Inc.",
+    "language": "Go",
+    "framework_type": "Containerization",
+    "use_cases": [
+      "Application containerization",
+      "Development environments",
+      "CI/CD pipelines",
+      "Microservices deployment",
+      "Local development"
+    ],
+    "related_skills": [
+      "kubernetes",
+      "docker-compose",
+      "terraform",
+      "github-actions"
+    ]
+  },
+  "base_url": "https://docs.docker.com/"
+}

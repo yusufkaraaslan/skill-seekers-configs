@@ -1,0 +1,115 @@
+{
+  "name": "helm",
+  "description": "Complete Helm knowledge from official documentation. Use when packaging Kubernetes applications, managing charts, or templating deployments. Covers Helm 3 with OCI support.",
+  "version": "1.0.0",
+  "base_url": "https://helm.sh/docs/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://helm.sh/docs/",
+      "start_urls": [
+        "https://helm.sh/docs/intro/quickstart/",
+        "https://helm.sh/docs/chart_template_guide/",
+        "https://helm.sh/docs/topics/charts/",
+        "https://helm.sh/docs/helm/"
+      ],
+      "selectors": {
+        "main_content": "main, article",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/intro/",
+          "/docs/chart_template_guide/",
+          "docs/topics/",
+          "/docs/helm/"
+        ],
+        "exclude": [
+          "/blog/",
+          "/community/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "quickstart",
+          "install",
+          "kubernetes",
+          "concepts"
+        ],
+        "charts": [
+          "charts",
+          "structure",
+          "chart-yaml",
+          "dependencies",
+          "lock"
+        ],
+        "templates": [
+          "templates",
+          "functions",
+          "pipelines",
+          "variables",
+          "control-structures"
+        ],
+        "commands": [
+          "helm",
+          "install",
+          "upgrade",
+          "rollback",
+          "uninstall",
+          "list"
+        ],
+        "repositories": [
+          "repositories",
+          "search",
+          "repo",
+          "chartmuseum",
+          "oci"
+        ],
+        "values": [
+          "values",
+          "configuration",
+          "overrides",
+          "schema"
+        ],
+        "hooks": [
+          "hooks",
+          "pre-install",
+          "post-install",
+          "lifecycle"
+        ],
+        "testing": [
+          "testing",
+          "chart-tests",
+          "verification"
+        ],
+        "security": [
+          "security",
+          "signing",
+          "provenance",
+          "verify"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 250
+    }
+  ],
+  "metadata": {
+    "author": "Helm Community",
+    "language": "Go",
+    "framework_type": "Package Manager",
+    "use_cases": [
+      "Kubernetes package management",
+      "Application deployment",
+      "Configuration templating",
+      "Release management",
+      "Chart distribution"
+    ],
+    "related_skills": [
+      "kubernetes",
+      "docker",
+      "terraform",
+      "github-actions"
+    ]
+  }
+}

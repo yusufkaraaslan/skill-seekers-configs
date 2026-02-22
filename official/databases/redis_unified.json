@@ -1,0 +1,145 @@
+{
+  "name": "redis",
+  "description": "Complete Redis knowledge combining documentation and source code. Use when implementing caching, message queues, real-time features, or session storage. Covers data structures, persistence, clustering, and Redis Stack features.",
+  "version": "1.0.0",
+  "merge_mode": "rule-based",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://redis.io/docs/",
+      "extract_api": true,
+      "start_urls": [
+        "https://redis.io/docs/getting-started/",
+        "https://redis.io/docs/data-types/",
+        "https://redis.io/docs/management/",
+        "https://redis.io/docs/reference/"
+      ],
+      "selectors": {
+        "main_content": "article, main, .docs-content",
+        "title": "h1",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/docs/getting-started/",
+          "/docs/data-types/",
+          "/docs/management/",
+          "/docs/reference/",
+          "/docs/stack/",
+          "/commands/"
+        ],
+        "exclude": [
+          "/blog/",
+          "/resources/",
+          "/partners/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "getting-started",
+          "installation",
+          "quick-start",
+          "introduction"
+        ],
+        "data_structures": [
+          "strings",
+          "lists",
+          "sets",
+          "sorted-sets",
+          "hashes",
+          "streams",
+          "geospatial",
+          "bitmap",
+          "hyperloglog"
+        ],
+        "commands": [
+          "commands",
+          "get",
+          "set",
+          "del",
+          "expire",
+          "ttl"
+        ],
+        "persistence": [
+          "persistence",
+          "rdb",
+          "aof",
+          "snapshot",
+          "appendonly"
+        ],
+        "clustering": [
+          "cluster",
+          "replication",
+          "sentinel",
+          "sharding",
+          "failover"
+        ],
+        "caching": [
+          "caching",
+          "cache",
+          "eviction",
+          "maxmemory",
+          "lru",
+          "lfu"
+        ],
+        "messaging": [
+          "pubsub",
+          "streams",
+          "consumer-group",
+          "queue"
+        ],
+        "redis_stack": [
+          "search",
+          "json",
+          "timeseries",
+          "graph",
+          "bloom"
+        ],
+        "security": [
+          "security",
+          "acl",
+          "tls",
+          "auth",
+          "encryption"
+        ]
+      },
+      "rate_limit": 0.3,
+      "max_pages": 400
+    },
+    {
+      "type": "github",
+      "repo": "redis/redis",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 100,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "src/*.c",
+        "src/*.h"
+      ]
+    }
+  ],
+  "metadata": {
+    "author": "Redis Ltd.",
+    "language": "C",
+    "framework_type": "In-Memory Data Store",
+    "use_cases": [
+      "Caching layer",
+      "Session storage",
+      "Real-time analytics",
+      "Message broker",
+      "Rate limiting",
+      "Leaderboards"
+    ],
+    "related_skills": [
+      "postgresql",
+      "mongodb",
+      "nodejs",
+      "python",
+      "docker"
+    ]
+  },
+  "base_url": "https://redis.io/docs/"
+}
