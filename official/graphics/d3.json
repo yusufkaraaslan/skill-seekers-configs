@@ -1,7 +1,7 @@
 {
   "name": "d3",
   "description": "Complete D3.js knowledge from official documentation. Use when creating data visualizations with custom SVG, Canvas, and HTML. Covers selections, scales, axes, transitions, and geographic projections.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://d3js.org/",
   "sources": [
     {

@@ -1,28 +1,26 @@
 {
   "name": "threejs",
   "description": "Complete Three.js knowledge from official documentation. Use when building 3D graphics in the browser with WebGL. Covers scenes, cameras, materials, lighting, geometries, and animation.",
-  "version": "1.0.0",
-  "base_url": "https://threejs.org/docs/",
+  "version": "1.1.0",
+  "base_url": "https://threejs.org/",
   "sources": [
     {
       "type": "documentation",
-      "base_url": "https://threejs.org/docs/",
+      "base_url": "https://threejs.org/",
       "start_urls": [
-        "https://threejs.org/docs/index.html#manual/en/introduction",
-        "https://threejs.org/docs/index.html#api/en/core",
-        "https://threejs.org/docs/index.html#api/en/materials",
-        "https://threejs.org/examples/"
+        "https://threejs.org/manual/en/fundamentals.html",
+        "https://threejs.org/manual/en/",
+        "https://threejs.org/docs/"
       ],
       "selectors": {
-        "main_content": "#content",
+        "main_content": "#content, article, main",
         "title": "h1",
         "code_blocks": "code, pre"
       },
       "url_patterns": {
         "include": [
-          "/docs/",
-          "/manual/",
-          "/api/"
+          "/manual/en/",
+          "/docs/"
         ],
         "exclude": [
           "/examples/"
@@ -30,6 +28,7 @@
       },
       "categories": {
         "getting_started": [
+          "fundamentals",
           "introduction",
           "installation",
           "creating-a-scene",
