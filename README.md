@@ -4,7 +4,7 @@
 
 Convert any documentation website into an AI skill using these pre-configured scrapers!
 
-> **Skill Seekers v3.1.0+** — 178 production configs across 21 categories.
+> **Skill Seekers v3.6.0+** — 178 production configs across 21 categories.
 
 ---
 
@@ -89,7 +89,7 @@ fetch_config(config_name='nextjs')
 curl -O https://raw.githubusercontent.com/yusufkaraaslan/skill-seekers-configs/main/official/web-frameworks/nextjs_unified.json
 
 # Use with Skill Seekers
-skill-seekers scrape --config nextjs_unified.json
+skill-seekers create --config nextjs_unified.json
 ```
 
 ### Option 3: Use API
@@ -104,7 +104,7 @@ curl -O https://api.skillseekersweb.com/api/download/nextjs.json
 
 Have a config for a popular framework or tool? Share it with the community!
 
-1. **Test your config** — `skill-seekers scrape --config your-config.json --dry-run`
+1. **Test your config** — `skill-seekers create --config your-config.json --dry-run`
 2. **Validate your config** — `python scripts/validate-config.py your-config.json`
 3. **Submit via Issue** — [Create submission issue](https://github.com/yusufkaraaslan/skill-seekers-configs/issues/new/choose)
 4. **Review process** — Maintainers will test and approve
@@ -185,7 +185,7 @@ skill-seekers-configs/
 
 - **Total Official Configs**: 178
 - **Categories**: 21 production + 1 test-examples
-- **Skill Seekers Compatibility**: v3.1.0+
+- **Skill Seekers Compatibility**: v3.6.0+
 - **Quality Level**: All production configs validated to v1.1.0 standards
 
 ---
@@ -198,7 +198,7 @@ skill-seekers-configs/
 2. **Review [CONTRIBUTING.md](CONTRIBUTING.md)** — Detailed contribution guide
 3. **Use the template** from `official/test-examples/template-example.json`
 4. **Validate** with `python scripts/validate-config.py your-config.json`
-5. **Test** with dry-run mode (`skill-seekers scrape --config your-config.json --dry-run`)
+5. **Test** with dry-run mode (`skill-seekers create --config your-config.json --dry-run`)
 6. **Submit** via [submission issue](https://github.com/yusufkaraaslan/skill-seekers-configs/issues/new/choose)
 
 ---

@@ -223,7 +223,7 @@ This checks:
 ### Step 2: Dry-Run Test
 
 ```bash
-skill-seekers scrape --config my-config.json --dry-run
+skill-seekers create --config my-config.json --dry-run
 ```
 
 This validates:
@@ -238,7 +238,7 @@ For initial testing, create a separate test config (in `official/test-examples/`
 Run actual scrape:
 
 ```bash
-skill-seekers scrape --config my-config-test.json
+skill-seekers create --config my-config-test.json
 ```
 
 Verify:
@@ -251,7 +251,7 @@ Verify:
 If limited test passes, run full scrape:
 
 ```bash
-skill-seekers scrape --config my-config.json
+skill-seekers create --config my-config.json
 ```
 
 Review the generated SKILL.md to ensure quality.
