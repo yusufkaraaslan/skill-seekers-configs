@@ -1,0 +1,134 @@
+{
+  "name": "xquik",
+  "description": "Use when building X automation with Xquik docs, REST API, MCP server, webhooks, monitors, SDKs, and agent integrations.",
+  "version": "1.0.0",
+  "merge_mode": "rule-based",
+  "base_url": "https://docs.xquik.com/",
+  "sources": [
+    {
+      "type": "documentation",
+      "base_url": "https://docs.xquik.com/",
+      "extract_api": true,
+      "start_urls": [
+        "https://docs.xquik.com/api-reference/overview",
+        "https://docs.xquik.com/mcp/overview",
+        "https://docs.xquik.com/webhooks/overview",
+        "https://docs.xquik.com/guides/langchain",
+        "https://docs.xquik.com/guides/pipedream"
+      ],
+      "selectors": {
+        "main_content": "main, article, div[role='main']",
+        "title": "h1, title",
+        "code_blocks": "pre code, pre"
+      },
+      "url_patterns": {
+        "include": [
+          "/api-reference/",
+          "/mcp/",
+          "/webhooks/",
+          "/guides/"
+        ],
+        "exclude": [
+          "/changelog/",
+          "/legal/",
+          "/privacy/",
+          "/terms/"
+        ]
+      },
+      "categories": {
+        "getting_started": [
+          "overview",
+          "quickstart",
+          "authentication",
+          "api-key"
+        ],
+        "api_reference": [
+          "api-reference",
+          "endpoint",
+          "request",
+          "response",
+          "pagination"
+        ],
+        "search_and_timelines": [
+          "search",
+          "tweet",
+          "timeline",
+          "user-tweets"
+        ],
+        "profiles_and_followers": [
+          "profile",
+          "user",
+          "followers",
+          "following"
+        ],
+        "media_and_engagement": [
+          "media",
+          "replies",
+          "retweets",
+          "likes",
+          "quotes"
+        ],
+        "monitors_and_webhooks": [
+          "monitor",
+          "webhook",
+          "event",
+          "delivery",
+          "signature"
+        ],
+        "mcp_and_agents": [
+          "mcp",
+          "agent",
+          "tool",
+          "server",
+          "integration"
+        ],
+        "integrations_and_sdks": [
+          "sdk",
+          "langchain",
+          "pipedream",
+          "n8n",
+          "zapier"
+        ]
+      },
+      "rate_limit": 0.5
+    },
+    {
+      "type": "github",
+      "repo": "Xquik-dev/x-twitter-scraper",
+      "enable_codebase_analysis": true,
+      "code_analysis_depth": "deep",
+      "fetch_issues": true,
+      "max_issues": 50,
+      "fetch_changelog": true,
+      "fetch_releases": true,
+      "file_patterns": [
+        "README.md",
+        "skills/**/*.md",
+        "task-guides/**/*.md",
+        "server.json",
+        "openclaw.plugin.json",
+        "mcpize/**/*.md",
+        "docker-mcp-registry/**/*.{json,yaml,yml}"
+      ]
+    }
+  ],
+  "metadata": {
+    "author": "Xquik",
+    "language": "TypeScript",
+    "framework_type": "X Automation API",
+    "use_cases": [
+      "X data workflows",
+      "Tweet search and timelines",
+      "Follower and engagement analysis",
+      "Webhook delivery",
+      "MCP tool integration"
+    ],
+    "related_skills": [
+      "openai-api",
+      "langchain",
+      "pipedream",
+      "webhooks",
+      "typescript"
+    ]
+  }
+}
